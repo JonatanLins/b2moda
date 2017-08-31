@@ -1,0 +1,1 @@
+Não mude as imagens da pasta 'media', adicione imagens em pastas novas!
