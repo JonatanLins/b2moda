@@ -9454,7 +9454,7 @@ select.input-sm {
 }
 .header-opt-13 .block-search .form-search .form-control {
     padding-left: 20px;
-    border: 1px solid #ffad00;
+    border: 1px solid #f36;
     height: 45px;
     width: 100%;
     max-width: 100%;
@@ -9478,7 +9478,7 @@ select.input-sm {
     font-size: 14px;
     color: #fff;
     width: 55px;
-    background-color: #ffad00;
+    background-color: #f36;
     border: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -32095,9 +32095,6 @@ img.alignright {
     font-family: Montserrat-Black, sans-serif;
     line-height: 1
 }
-.style-opt13.block-categori-opt12 .item .title .sub-title {
-    color: #ffae00
-}
 @media (max-width: 1199px) and (min-width: 992px) {
     .block-categori-opt12 .item .title {
         width: 100%;
@@ -32197,13 +32194,13 @@ img.alignright {
     color: #11a8ab
 }
 .style-opt13.block-categori-opt12 .item2 .title .sub-title {
-    color: #ffae00
+    color: #f36
 }
 .block-categori-opt12 .item3 .title .sub-title {
     color: #2b5e92;
 }
 .style-opt13.block-categori-opt12 .item3 .title .sub-title {
-    color: #ffae00
+    color: #f36
 }
 .block-recent-blog-opt12 {
     margin-bottom: 30px;
@@ -32495,7 +32492,7 @@ img.alignright {
     padding-left: 8px
 }
 .slide-opt-13 .view-opt13 {
-    background-color: #ffae00;
+    background-color: #f36    ;
     color: #fff;
     line-height: 40px;
     padding: 0 15px;
@@ -32774,7 +32771,7 @@ img.alignright {
     background-color: #ffad00
 }
 .block-deal-opt13 .product-item .product-item-actions .btn-cart {
-    background-color: #FFAD00;
+    background-color: #F36;
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 400
@@ -32794,7 +32791,7 @@ img.alignright {
     height: 50px
 }
 .block-deal-opt13 .product-item .product-item-label.label-sale {
-    background-color: #ffae00;
+    background-color: #f36;
     top: 30px;
     right: 30px
 }
@@ -33145,7 +33142,7 @@ img.alignright {
     height: 2px;
     position: absolute;
     bottom: -2px;
-    background-color: #ffad00;
+    background-color: #f36;
     opacity: 0;
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
@@ -33750,7 +33747,7 @@ img.alignright {
 }
 .block-recent-blog-opt13 .blog-item .blog-date {
     display: inline-block;
-    background-color: #ffad00;
+    background-color: #f36;
     line-height: 30px;
     padding: 0 13px;
     color: #fff;
@@ -33842,12 +33839,9 @@ img.alignright {
 .block-recent-blog-opt13 .owl-nav .owl-next:hover {
     background-image: url(../images/icon/index13/next-hover.png)
 }
-.index-opt-13 .back-to-top {
-    border-color: #ffad00
-}
 .index-opt-13 .back-to-top .fa,
 .index-opt-13 .back-to-top:hover {
-    background-color: #ffad00
+    background-color: #f36
 }
 .slide-opt-14 {
     margin-bottom: 30px;
