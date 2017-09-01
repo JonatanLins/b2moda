@@ -164,12 +164,12 @@ ol li,
 ul li {
     list-style: none
 }
-@media (max-width: 600px){
+@media (max-width: 991px){
     .hide_on_mobile{
         display: none !important;
     }
 }
-@media (min-width: 601px){
+@media (min-width: 992px){
     .hide_on_desktop{
         display: none !important;
     }
