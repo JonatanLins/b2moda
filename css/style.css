@@ -1931,7 +1931,7 @@ select.input-sm {
         display: block
     }
     .site-header .block-nav-menu .ui-menu>li>a {
-        padding: 0 15px;
+        padding-left: 15px;
         line-height: 46px
     }
     .site-header .block-nav-menu .ui-menu li {
@@ -1949,7 +1949,6 @@ select.input-sm {
         display: inline-block;
         position: relative;
         z-index: 20;
-        margin-right: 30px
     }
     .site-header .block-nav-menu .ui-menu .open-submenu>a {
         color: #f36
@@ -9554,14 +9553,14 @@ select.input-sm {
 .header-opt-13 .block-minicart>.dropdown-toggle:after {
     clear: both
 }
-.header-opt-13 .block-minicart>.dropdown-toggle .cart-icon {
+.cart-icon {
     width: 30px;
     height: 45px;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/icon/index13/minicart.png);
     display: inline-block;
-    vertical-align: bottom
+    vertical-align: bottom;
 }
 .header-opt-13 .block-minicart>.dropdown-toggle .counter-title {
     display: none
@@ -11398,20 +11397,20 @@ select.input-sm {
     clear: both
 }
 .site-footer .block-social .block-content a {
-    width: 32px;
     line-height: 30px;
     border: 1px solid #aaa;
     border-radius: 100%;
     text-align: center;
     color: #333;
-    font-size: 16px;
+    font-size: 30px;
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
     display: block;
     float: left;
-    margin-right: 7px;
-    margin-bottom: 5px
+    width: 50px;
+    padding: 10px;
+    margin: 0 20px;
 }
 .site-footer .block-social .block-content a:last-child {
     margin-right: 0
@@ -32204,7 +32203,6 @@ img.alignright {
 }
 .block-categori-opt12 .item3 .title .sub-title {
     color: #2b5e92;
-    font-size: 22px
 }
 .style-opt13.block-categori-opt12 .item3 .title .sub-title {
     color: #ffae00
@@ -33256,9 +33254,6 @@ img.alignright {
 .block-tab-product-opt13 .owl-nav .owl-next:hover {
     background-image: url(../images/icon/index13/next-hover.png)
 }
-.block-banner-bottom-opt13 .box-img {
-    position: relative
-}
 .block-banner-bottom-opt13 .box-img:after,
 .block-banner-bottom-opt13 .box-img:before {
     content: "";
@@ -33292,8 +33287,14 @@ img.alignright {
     width: 100%
 }
 .block-banner-bottom-opt13 .box-img {
+    position: relative;
     margin-bottom: 30px;
     display: block
+}
+.block-banner-bottom-opt13 .box-img-no-anim {
+    position: relative;
+    margin-bottom: 30px;
+    display: block;
 }
 .block-banner-bottom-opt13 img {
     display: block;
