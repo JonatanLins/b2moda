@@ -15864,24 +15864,18 @@ select.input-sm {
 .product-item-opt-13 .product-item-info .btn-cart {
     left: 0;
     right: 0;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     z-index: 20;
     background-color: rgba(57, 66, 100, .9);
     color: #fff;
     height: 44px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
     font-family: Montserrat, sans-serif;
     text-transform: none;
     -webkit-transition: .45s;
     -o-transition: .45s;
     transition: .45s;
-    -webkit-transform: translate(0, 60px);
-    -ms-transform: translate(0, 60px);
-    -o-transform: translate(0, 60px);
-    transform: translate(0, 60px)
 }
 .product-item-opt-13 .product-item-info .btn-cart:before {
     content: "";
