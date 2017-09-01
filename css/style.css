@@ -166,9 +166,13 @@ ul li {
 }
 @media (max-width: 600px){
     .hide_on_mobile{
-        display: none !important;    
+        display: none !important;
     }
 }
+@media (min-width: 601px){
+    .hide_on_desktop{
+        display: none !important;
+    }
 }
 .video-responsive {
     height: 0;
