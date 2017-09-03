@@ -2536,10 +2536,10 @@ select.input-sm {
     line-height: 40px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../images/icon/index1/close-popup.png);
+    background-image: url(../images/icon/close-popup-white.png);
     float: right;
     clear: right;
-    background-color: rgba(104, 51, 102, .2);
+    background-color: #F36;
     display: none;
     cursor: pointer
 }
@@ -9317,9 +9317,6 @@ select.input-sm {
 .header-opt-13 .header-top .nav-right {
     float: right
 }
-.header-opt-13 .header-top .nav-right .block-minicart .counter-number{
-    transform: translateX(-5px);
-}
 .header-opt-13 .header-top .nav-right .notif,
 .header-opt-13 .header-top .nav-right .chat{
     float: right;
@@ -9329,7 +9326,14 @@ select.input-sm {
 }
 .header-opt-13 .header-top .counter.notif-qty .counter-number,
 .header-opt-13 .header-top .counter.chat-qty .counter-number{
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
     transform: translateY(-5px);
+}
+.header-opt-13 .header-top .counter.cart-qty .counter-number{
+    -webkit-transform: translateY(-12px);
+    -ms-transform: translateY(-12px);
+    transform: translateY(-12px);
 }
 .header-opt-13 .header-top .top-social a {
     line-height: 22px;
@@ -9574,7 +9578,7 @@ select.input-sm {
 }
 .header-opt-13 .block-minicart>.dropdown-toggle .counter-number,
 .counter .counter-number{
-    background-color: #333;
+    background-color: #F36;
     display: inline-block;
     color: #fff;
     padding: 0 5px;
@@ -9584,17 +9588,6 @@ select.input-sm {
     text-align: center;
     font-size: 12px;
     font-weight: 400;
-}
-.header-opt-13 .block-minicart>.dropdown-toggle .counter-number:before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 5px 5px 0;
-    border-color: #333 transparent transparent;
-    position: absolute;
-    bottom: -5px;
-    left: 14px
 }
 .header-opt-13 .block-minicart>.dropdown-toggle .counter-label {
     display: none
@@ -12773,8 +12766,8 @@ select.input-sm {
     font-weight: 700
 }
 .index-opt-13 .footer-opt-12 .block-social .block-content a:hover {
-    background-color: #ffad00;
-    border-color: #ffad00
+    background-color: #f36;
+    border-color: #f36
 }
 .index-opt-13 .footer-opt-12 .copyright {
     font-size: 13px;
@@ -35006,6 +34999,5 @@ img.alignright {
     margin: 50px 0 20px;
 }
 .copyright a{
-    color: #333;
     font-weight: 400;
 }
