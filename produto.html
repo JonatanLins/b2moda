@@ -104,7 +104,7 @@
                         <div class="nav-left">
                             <!-- logo -->
                             <strong class="logo">
-                                <a href=""><img src="images/logomarcas/b2moda-01.png" alt="logo"></a>
+                                <img src="images/logomarcas/b2moda-01.png" alt="logo">
                             </strong>
                             <!-- logo -->
                         </div>
@@ -219,45 +219,29 @@
 
                                 <div class="product-media media-horizontal">
 
-                                    <div class="image_preview_container images-large">
-
-                                        <img id="img_zoom" data-zoom-image="images/media/detail/thumb-lag1.jpg" src="images/media/detail/thumb-img1.jpg" alt="">
-
-                                        <button class="btn-zoom open_qv"><span>zoom</span></button>
-
-                                    </div>
-
-                                    <div class="product_preview images-small">
-
-                                        <div class="owl-carousel thumbnails_carousel" id="thumbnails" data-nav="true" data-dots="false" data-margin="10" data-responsive='{"0":{"items":3},"480":{"items":4},"600":{"items":5},"768":{"items":3}}'>
-
-                                            <a href="#" data-image="images/media/detail/thumb-img1.jpg" data-zoom-image="images/media/detail/thumb-lag1.jpg">
-
-                                                <img src="images/media/detail/thumb1.jpg" data-large-image="images/media/detail/thumb-img1.jpg" alt="">
-
-                                            </a>
-
-                                            <a href="#" data-image="images/media/detail/thumb-img2.jpg" data-zoom-image="images/media/detail/thumb-lag2.jpg">
-
-                                                <img src="images/media/detail/thumb2.jpg" data-large-image="images/media/detail/thumb-img2.jpg" alt="">
-
-                                            </a>
-                                            <a href="#" data-image="images/media/detail/thumb-img3.jpg" data-zoom-image="images/media/detail/thumb-lag3.jpg">
-
-                                                <img src="images/media/detail/thumb3.jpg" data-large-image="images/media/detail/thumb-img3.jpg" alt="">
-
-                                            </a>
-                                            <a href="#" data-image="images/media/detail/thumb-img1.jpg" data-zoom-image="images/media/detail/thumb-lag1.jpg">
-
-                                                <img src="images/media/detail/thumb1.jpg" data-large-image="images/media/detail/thumb-img1.jpg" alt="">
-
-                                            </a>
-
+                                    <!-- product preview -->
+                                    <div class="slide-preview">
+                                        <div class="owl-carousel" 
+                                            data-loop="true"
+                                            data-nav="true" 
+                                            data-dots="true" 
+                                            data-margin="15" 
+                                            data-responsive='{
+                                            "0":{"items":1},
+                                            "360":{"items":1},
+                                            "480":{"items":1},
+                                            "768":{"items":1},
+                                            "992":{"items":1},
+                                            "1200":{"items":1}
+                                            }'>
+                                            
+                                            <div class="item"><img src="images/produtos/template-6.jpg" alt=""></div>
+                                            <div class="item"><img src="images/produtos/template-7.jpg" alt=""></div>
+                                            <div class="item"><img src="images/produtos/template-8.jpg" alt=""></div>
+                                            <div class="item"><img src="images/produtos/template-9.jpg" alt=""></div>
                                         </div>
-                                        <!--/ .owl-carousel-->
-
                                     </div>
-                                    <!--/ .product_preview-->
+                                    <!-- product preview -->
 
                                 </div>
                                 <!-- image product -->
@@ -357,27 +341,11 @@
                                                     <button type="submit" title="Add to Cart" class="action btn-cart">
                                                         <span>Add to Cart</span>
                                                     </button>
-                                                    <div class="product-addto-links">
-
-                                                        <a href="#" class="action btn-wishlist" title="Wish List">
-                                                            <span>Wishlist</span>
-                                                        </a>
-                                                        <a href="#" class="action btn-compare" title="Compare">
-                                                            <span>Compare</span>
-                                                        </a>
-                                                    </div>
                                                 </div>
 
                                             </div>
 
                                         </form>
-                                    </div>
-                                    <div class="product-addto-links-second">
-                                        <a href="" class="action action-print">Print</a>
-                                        <a href="" class="action action-friend">Send to a friend</a>
-                                    </div>
-                                    <div class="share">
-                                        <img src="images/media/index1/share.png" alt="share">
                                     </div>
                                 </div>
                                 <!-- detail- product -->
@@ -1127,7 +1095,6 @@
 
                         <!-- block slide top -->
                         <div class="block-sidebar block-sidebar-testimonials2">
-
                             <div class="block-content">
                                 <div class="owl-carousel" data-nav="false" data-dots="true" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="true" data-loop="true">
                                     <div class="item ">
