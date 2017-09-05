@@ -216,89 +216,74 @@
 
                 <div class="page-content page-order">
                     <div class="order-detail-content">
-                        <div class="table-responsive">
-                            <table class="table table-bordered  cart_summary">
-                                <thead>
-                                    <tr>
-                                        <th class="cart_product">Product</th>
-                                        <th>Description</th>
-                                        <th>Avail.</th>
-                                        <th>Unit price</th>
-                                        <th>Qty</th>
-                                        <th>Total</th>
-                                        <th class="action"><i class="fa fa-trash-o"></i></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="cart_product">
-                                            <a href="#"><img alt="Product" src="images/media/detail/product-100x122.jpg"></a>
-                                        </td>
-                                        <td class="cart_description">
-                                            <p class="product-name"><a href="#">Frederique Constant </a></p>
-                                            <small class="cart_ref">SKU : #123654999</small><br>
-                                            <small><a href="#">Color : Beige</a></small><br>
-                                            <small><a href="#">Size : S</a></small>
-                                        </td>
-                                        <td class="cart_avail"><span class="label label-success">In stock</span></td>
-                                        <td class="price"><span>61,19 €</span></td>
-                                        <td class="qty">
-
-                                            <input type="text" minlength="1" maxlength="12" name="qty0" id="qty0" value="1" class="form-control input-sm">
-                                            <span data-field="qty0" data-type="minus" class="btn-number"><i class="fa fa-caret-up"></i></span>
-                                            <span data-field="qty0" data-type="plus" class="btn-number"><i class="fa fa-caret-down"></i></span>
-                                        </td>
-                                        <td class="price">
-                                            <span>61,19 €</span>
-                                        </td>
-                                        <td class="action">
-                                            <a href="#">Delete item</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cart_product">
-                                            <a href="#"><img alt="Product" src="images/media/detail/product-100x122.jpg"></a>
-                                        </td>
-                                        <td class="cart_description">
-                                            <p class="product-name"><a href="#">Frederique Constant </a></p>
-                                            <small class="cart_ref">SKU : #123654999</small><br>
-                                            <small><a href="#">Color : Beige</a></small><br>
-                                            <small><a href="#">Size : S</a></small>
-                                        </td>
-                                        <td class="cart_avail"><span class="label label-success">In stock</span></td>
-                                        <td class="price"><span>61,19 €</span></td>
-                                        <td class="qty">
-
-                                            <input type="text" minlength="1" maxlength="12" name="qty1" id="qty1" value="1" class="form-control input-sm">
-                                            <span data-field="qty1" data-type="minus" class="btn-number"><i class="fa fa-caret-up"></i></span>
-                                            <span data-field="qty1" data-type="plus" class="btn-number"><i class="fa fa-caret-down"></i></span>
-                                        </td>
-
-
-                                        <td class="price">
-                                            <span>61,19 €</span>
-                                        </td>
-                                        <td class="action">
-                                            <a href="#">Delete item</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td rowspan="2" colspan="2"></td>
-                                        <td colspan="3">Total products (tax incl.)</td>
-                                        <td colspan="2">122.38 €</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="3"><strong>Total</strong></td>
-                                        <td colspan="2"><strong>122.38 €</strong></td>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                        <div class="detalhes-produto">
+                            <div class="bloco bloco-descricao">
+                                <img src="images/produtos/template-6.jpg" alt="" class="foto-produto">
+                                <div class="descricao-produto">
+                                    <h2>Vendido e entregue por</h2>
+                                    <h1>Zigurat Jeans</h1>
+                                    <ul>
+                                        <li>Calça Cigarrete Jeans Fashion</li>
+                                        <li><b>REF: </b>789821</li>
+                                        <li><b>Preço: </b>R$ 35,90 / unid.</li>
+                                        <li><b>Pagamento: </b>30/60/90 Dias</li>
+                                        <li><b>Entrega: </b>60 Dias</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="bloco bloco-cor">
+                                <h3>Cor</h3>
+                                <div class="cor" style="background-color: #00B"></div>
+                                <div class="nome-cor">Azul Royal</div>
+                            </div>
+                            
+                            <div class="bloco bloco-tam-qnt">
+                                <h3>Tamanhos e Quantidades</h3>
+                                <div class="tam-qnt">
+                                    <div><span class="tam">36</span><span class="qnt">[02 unid.]</span></div>
+                                    <div><span class="tam">38</span><span class="qnt">[02 unid.]</span></div>
+                                    <div><span class="tam">40</span><span class="qnt">[02 unid.]</span></div>
+                                    <div><span class="tam">42</span><span class="qnt">[02 unid.]</span></div>
+                                    <div><span class="tam">44</span><span class="qnt">[02 unid.]</span></div>
+                                    <div><span class="tam">46</span><span class="qnt">[02 unid.]</span></div>
+                                    <div><span class="tam">48</span><span class="qnt">[02 unid.]</span></div>
+                                    <div><span class="tam">50</span><span class="qnt">[02 unid.]</span></div>
+                                    <div><span class="tam">52</span><span class="qnt">[02 unid.]</span></div>
+                                </div>
+                                <div class="editar-tam-qnt">
+                                    <div class="mais"><i class="fa fa-plus-square" aria-hidden="true"></i></div>
+                                    <div class="menos"><i class="fa fa-minus-square" aria-hidden="true"></i></div>
+                                    <span class="texto">EDITAR</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bloco bloco-preco">
+                                <h4>30 Unidades X R$ 35,90</h4>
+                                <div class="preco-val"><p>R$ 1.077,00</p><p>R$ 1.000,00</p></div>
+                                <div class="preco-leg"><p>SUBTOTAL</p><p>TOTAL</p></div>
+                            </div>
+                            
+                            <div class="bloco bloco-extras">
+                                <div class="botao botao-cupom">
+                                    <span class="fa-stack">
+                                        <i class="fa fa-certificate fa-stack-2x" aria-hidden="true"></i>
+                                        <i class="fa fa-percent fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="texto">Cupom Desconto</span>
+                                    <span class="counter-number">01</span>
+                                </div>
+                                <div class="botao botao-chat">
+                                    <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
+                                    <span class="texto">Chat</span>
+                                    <span class="counter-number">01</span>
+                                </div>
+                                <span class="status-compra">Status: Aguardando Pagamento</span>
+                            </div>
                         </div>
                         <div class="cart_navigation">
-                            <a href="#" class="prev-btn">Continue shopping</a>
-                            <a href="#" class="next-btn">Proceed to checkout</a>
+                            <a href="#" class="concluir-pedido">CONCLUIR PEDIDO</a>
+                            <a href="#" class="excluir-pedido">EXCLUIR <i class="fa fa-trash-o" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
