@@ -10979,97 +10979,119 @@ select.input-sm {
     padding-left: 6px
 }
 
-.detalhes-produto{
+.detalhes-produto {
     border-top: 10px solid #F36;
+    position: relative;
+    display: table;
 }
-.detalhes-produto h1{
+
+.detalhes-produto h1 {
     text-transform: uppercase;
     color: #444;
     font-size: 1.5em;
     font-weight: bold;
     margin: 0 0 20px;
 }
-.detalhes-produto h2{
+
+.detalhes-produto h2 {
     text-transform: uppercase;
     color: #888;
     font-size: 0.9em;
     margin: 10px 0 15px;
 }
-.detalhes-produto h3{
+
+.detalhes-produto h3 {
     text-transform: uppercase;
     color: #00D;
     font-size: 1em;
     font-weight: bold;
     margin: 0 0 10px 10px;
 }
-.detalhes-produto h4{
+
+.detalhes-produto h4 {
     text-transform: uppercase;
     margin-left: 10px;
 }
-.detalhes-produto .bloco{
+
+.detalhes-produto .bloco {
     position: relative;
     border: 2px solid #DDD;
     border-top-color: transparent;
     padding: 5px;
+    box-sizing: border-box;
 }
-.detalhes-produto .foto-produto{
+
+.detalhes-produto .foto-produto {
     border: 1px solid #DDD;
     width: 170px;
     position: absolute;
 }
-.detalhes-produto .descricao-produto{
+
+.detalhes-produto .descricao-produto {
     margin-left: 170px;
     text-align: right;
 }
-.detalhes-produto .descricao-produto li{
+
+.detalhes-produto .descricao-produto li {
     line-height: 1.8em;
 }
-.detalhes-produto .cor{
+
+.detalhes-produto .cor {
     display: inline-block;
     margin-left: 10px;
     width: 30px;
     height: 30px;
 }
-.detalhes-produto .nome-cor{
+
+.detalhes-produto .nome-cor {
     display: inline-block;
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     transform: translateY(-10px);
 }
-.detalhes-produto .tam-qnt{
+
+.detalhes-produto .tam-qnt {
     margin-bottom: 20px;
 }
-.detalhes-produto .tam-qnt div{
+
+.detalhes-produto .tam-qnt div {
     display: inline-block;
     margin: 2px 10px;
 }
-.detalhes-produto .tam-qnt .qnt{
+
+.detalhes-produto .tam-qnt .qnt {
     margin-left: 5px;
     color: #00B;
 }
-.detalhes-produto .editar-tam-qnt{
+
+.detalhes-produto .editar-tam-qnt {
     float: right;
     cursor: pointer;
     -webkit-transform: translateY(-20px);
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
 }
+
 .detalhes-produto .editar-tam-qnt .mais,
-.detalhes-produto .editar-tam-qnt .menos{
+.detalhes-produto .editar-tam-qnt .menos {
     display: inline-block;
 }
-.detalhes-produto .editar-tam-qnt .texto{
+
+.detalhes-produto .editar-tam-qnt .texto {
     font-weight: bold;
 }
-.detalhes-produto .preco-val{
+
+.detalhes-produto .preco-val {
     font-size: 1.1em;
 }
-.detalhes-produto .preco-leg{
+
+.detalhes-produto .preco-leg {
     color: #888;
     margin-right: 20px;
 }
+
 .detalhes-produto .preco-val,
-.detalhes-produto .preco-leg{
+.detalhes-produto .preco-leg {
     float: right;
     font-weight: bold;
     text-align: right;
@@ -11077,29 +11099,35 @@ select.input-sm {
     -ms-transform: translateY(-85px);
     transform: translateY(-85px);
 }
-.detalhes-produto .bloco-preco h4{
+
+.detalhes-produto .bloco-preco h4 {
     margin-bottom: 100px;
 }
-.detalhes-produto .botao{
+
+.detalhes-produto .botao {
     white-space: nowrap;
     padding: 10px;
     cursor: pointer;
 }
-.detalhes-produto .botao .texto{
+
+.detalhes-produto .botao .texto {
     color: #0C0;
     font-weight: bold;
     margin: 0 5px;
 }
-.detalhes-produto .botao:hover .texto{
+
+.detalhes-produto .botao:hover .texto {
     color: #0F0;
 }
-.detalhes-produto .status-compra{
+
+.detalhes-produto .status-compra {
     text-align: center;
     text-transform: uppercase;
     display: block;
     font-weight: bold;
 }
-.order-detail-content .concluir-pedido{
+
+.order-detail-content .concluir-pedido {
     background-color: #38ba38;
     color: #FFF;
     font-weight: bold;
@@ -11109,31 +11137,86 @@ select.input-sm {
     min-width: 180px;
     margin: 0 auto;
 }
-.order-detail-content .concluir-pedido:hover{
+
+.order-detail-content .concluir-pedido:hover {
     background-color: #5fcb5f !important;
 }
-.order-detail-content .excluir-pedido{
+
+.order-detail-content .excluir-pedido {
     display: block;
     width: 120px;
     font-weight: bold;
     text-align: center;
     margin: 10px auto;
 }
+
 .order-detail-content {
     margin-bottom: 130px;
 }
 
-@media (min-width: 750px){
-    
+@media (min-width: 700px) {
+    .detalhes-produto .bloco-descricao{
+        width: 60%;
+        display: inline-block;
+        min-height: 300px;
+    }
+    .detalhes-produto .agrupar-700{
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .detalhes-produto .bloco-cor{
+        height: 80px;
+        border-left-color: transparent;
+    }
+    .detalhes-produto .bloco-tam-qnt{
+        min-height: 220px;
+        border-left-color: transparent;
+    }
+    .detalhes-produto .bloco-preco{
+        width: 50%;
+        display: inline-block;
+        height: 150px;
+        vertical-align: top;
+    }
+    .detalhes-produto .bloco-extras{
+        width: 50%;
+        display: inline-block;
+        border-left-color: transparent;
+        height: 150px;
+        vertical-align: top;
+    }
 }
 
-@media (max-width: 380px){
-    .detalhes-produto .foto-produto{
+@media (min-width: 1200px) {
+    .detalhes-produto .bloco-descricao{
+        width: 35%;
+    }
+    .detalhes-produto .agrupar-700{
+        width: 35%;
+    }
+    .detalhes-produto .agrupar-1200{
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+    }
+    .detalhes-produto .bloco-preco{
+        width: 100%;
+        height: 150px;
+    }
+    .detalhes-produto .bloco-extras{
+        width: 100%;
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 380px) {
+    .detalhes-produto .foto-produto {
         width: 80%;
         margin-left: 10%;
         position: relative;
     }
-    .detalhes-produto .descricao-produto{
+    .detalhes-produto .descricao-produto {
         text-align: left;
         margin-left: 10px;
     }
@@ -11246,7 +11329,7 @@ select.input-sm {
     vertical-align: baseline
 }
 
-.header-opt-13 .block-nav-categori .ui-categori>li:hover>label ,
+.header-opt-13 .block-nav-categori .ui-categori>li:hover>label,
 .header-opt-13 .block-nav-categori .ui-categori>li:hover>a {
     color: #f36;
 }
