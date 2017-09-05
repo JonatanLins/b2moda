@@ -11066,19 +11066,19 @@ select.input-sm {
 }
 .detalhes-produto .preco-leg{
     color: #888;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .detalhes-produto .preco-val,
 .detalhes-produto .preco-leg{
     float: right;
     font-weight: bold;
     text-align: right;
-    -webkit-transform: translateY(-55px);
-    -ms-transform: translateY(-55px);
-    transform: translateY(-55px);
+    -webkit-transform: translateY(-85px);
+    -ms-transform: translateY(-85px);
+    transform: translateY(-85px);
 }
 .detalhes-produto .bloco-preco h4{
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 .detalhes-produto .botao{
     white-space: nowrap;
@@ -11105,14 +11105,22 @@ select.input-sm {
     font-weight: bold;
     text-align: center;
     display: block;
-    margin: 0 10%;
+    width: 80%;
+    min-width: 180px;
+    margin: 0 auto;
 }
 .order-detail-content .concluir-pedido:hover{
     background-color: #5fcb5f !important;
 }
 .order-detail-content .excluir-pedido{
-    float: right;
-    margin: 5px 10%;
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+.order-detail-content {
+    margin-bottom: 130px;
 }
 
 @media (min-width: 750px){
