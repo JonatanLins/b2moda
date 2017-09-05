@@ -1112,7 +1112,6 @@ select.input-sm {
 }
 
 .block-nav-categori {
-    width: 300px;
     position: relative
 }
 
@@ -1125,7 +1124,7 @@ select.input-sm {
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
-    padding: 0 44px 0 25px;
+    padding: 0 25px;
     background-repeat: no-repeat;
     background-position: center right 25px;
     background-image: url(../images/icon/index1/menu-cat.png);
@@ -2259,10 +2258,6 @@ select.input-sm {
         font-family: FontAwesome;
         font-size: 18px
     }
-    .site-header .block-nav-categori {
-        width: 200px;
-        width: 280px!important
-    }
     .site-header .block-nav-categori .block-title {
         cursor: pointer
     }
@@ -2859,18 +2854,6 @@ select.input-sm {
 
 .sticky-wrapper:not(.is-sticky) {
     height: auto!important
-}
-
-@media (max-width: 991px) {
-    .site-header .block-nav-categori {
-        width: 160px!important
-    }
-    .site-header .block-nav-categori .block-title {
-        width: 160px!important;
-        padding-left: 12px!important;
-        padding-right: 5px!important;
-        background-position: center right 9px!important
-    }
 }
 
 .close-cate,
@@ -11022,10 +11005,6 @@ select.input-sm {
 .header-opt-13 .block-minicart .minicart-items .product-item .product-item-name a:focus,
 .header-opt-13 .block-minicart .minicart-items .product-item .product-item-name a:hover {
     color: #ffad00
-}
-
-.header-opt-13 .block-nav-categori {
-    width: 270px
 }
 
 .header-opt-13 .block-nav-categori .block-title {
