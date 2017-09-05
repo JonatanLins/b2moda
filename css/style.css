@@ -2879,14 +2879,13 @@ select.input-sm {
     width: 40px;
     text-align: center;
     line-height: 40px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../images/icon/close-popup-white.png);
     float: right;
     clear: right;
     background-color: #F36;
     display: none;
-    cursor: pointer
+    cursor: pointer;
+    color: #FFF;
+    font-size: 30px;
 }
 
 .close-cate span,
@@ -11090,6 +11089,7 @@ select.input-sm {
     padding-right: 20px
 }
 
+.header-opt-13 .block-nav-categori .ui-categori>li>label,
 .header-opt-13 .block-nav-categori .ui-categori>li>a {
     line-height: 44px;
     border-top: 1px solid #eee;
@@ -11097,7 +11097,8 @@ select.input-sm {
     font-family: Montserrat, sans-serif;
     color: #333;
     font-size: 14px;
-    font-weight: 300
+    font-weight: 300;
+    cursor: pointer;
 }
 
 .header-opt-13 .block-nav-categori .ui-categori>li>a .icon {
@@ -11107,8 +11108,9 @@ select.input-sm {
     vertical-align: baseline
 }
 
+.header-opt-13 .block-nav-categori .ui-categori>li:hover>label ,
 .header-opt-13 .block-nav-categori .ui-categori>li:hover>a {
-    color: #ffad00
+    color: #f36;
 }
 
 .header-opt-13 .block-nav-categori .ui-categori>li:first-child>a {

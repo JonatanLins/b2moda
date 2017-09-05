@@ -145,10 +145,47 @@
                     <div class="box-header-nav">
 
                         <span data-action="toggle-nav" class="nav-toggle-menu"><span>Menu</span><i aria-hidden="true" class="fa fa-bars"></i></span>
+                        
+                        <!-- menu categorias -->
+                        <div class="block-nav-categori hide_on_desktop">
 
+                            <div class="block-title">
+                                <span>Categorias</span>
+                            </div>
+
+                            <div class="block-content">
+                                <div class="clearfix">
+                                    <span data-action="close-cat" class="close-cate">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <ul class="ui-categori">
+                                    <li>
+                                        <label><input type="checkbox"> Moda Masculina </label>
+                                    </li>
+                                    <li>
+                                        <label><input type="checkbox"> Moda Feminina </label>
+                                    </li>
+                                    <li>
+                                        <label><input type="checkbox"> Moda Infantil </label>
+                                    </li>
+                                    <li>
+                                        <label><input type="checkbox"> Moda Praia </label>
+                                    </li>
+                                    <li>
+                                        <label><input type="checkbox"> Acessórios </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- menu categorias -->
+                       
                         <!-- menu -->
                         <div class="block-nav-menu">
-                            <div class="clearfix"><span data-action="close-nav" class="close-nav"><span>close</span></span>
+                            <div class="clearfix">
+                                <span data-action="close-nav" class="close-nav">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </span>
                             </div>
                             <ul class="ui-menu">
                                 <li>
@@ -210,28 +247,30 @@
 
                 <div class="row">
 
-                    <!-- Main Content -->
-                    <div class="col-md-12 col-main">
-
-                        <!-- images categori -->
-                        <div class="category-view">
-                            <div class="owl-carousel " data-nav="true" data-dots="false" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="true" data-loop="true">
-                                <div class="item ">
-                                    <a href=""><img src="images/media/category-images1.jpg" alt="category-images"></a>
-                                </div>
-                                <div class="item ">
-                                    <a href=""><img src="images/media/category-images2.jpg" alt="category-images"></a>
-                                </div>
+                    <!-- images categori -->
+                    <div class="category-view">
+                        <div class="owl-carousel " data-nav="true" data-dots="false" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="true" data-loop="true">
+                            <div class="item ">
+                                <a href=""><img src="images/media/category-images1.jpg" alt="category-images"></a>
+                            </div>
+                            <div class="item ">
+                                <a href=""><img src="images/media/category-images2.jpg" alt="category-images"></a>
                             </div>
                         </div>
-                        <!-- images categori -->
-    
+                    </div>
+                    <!-- images categori -->
+
+                    <!-- Main Content -->
+                    <div class="col-md-9 col-md-push-3 col-main">
+
                         <!-- Toolbar -->
                         <div class=" toolbar-products toolbar-top">
 
                             <h1 class="cate-title">Loja X</h1>
-                            
-                            <button class="follow-store-button" type="button"><a href="">Seguir Loja</a></button>
+
+                            <button class="follow-store-button" type="button">
+                                <a href=""><i class="fa fa-plus" aria-hidden="true"></i> Seguir</a>
+                            </button>
 
                         </div>
                         <!-- Toolbar -->
@@ -318,7 +357,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                
+
                                 <li class="col-sm-3 product-item ">
                                     <div class="product-item-opt-1">
                                         <div class="product-item-info">
@@ -358,7 +397,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                
+
                                 <li class="col-sm-3 product-item ">
                                     <div class="product-item-opt-1">
                                         <div class="product-item-info">
@@ -522,6 +561,39 @@
 
                     </div>
                     <!-- Main Content -->
+                    
+                    <!-- Sidebar -->
+                    <div class="col-md-3 col-md-pull-9  col-sidebar">
+                        <!-- block filter products -->
+                        <div id="layered-filter-block" class="block-sidebar block-filter no-hide">
+                            <div class="block-content">
+
+                                <!-- Filter Item  categori-->
+                                <div class="filter-options-item filter-options-categori">
+                                    <div class="filter-options-title">Categorias</div>
+                                    <div class="filter-options-content">
+                                        <ol class="items">
+                                            <li class="item">
+                                                <label><input type="checkbox"><span>Moda Masculina</span></label>
+                                            </li>
+                                            <li class="item">
+                                                <label><input type="checkbox"><span>Moda Feminina</span></label>
+                                            </li>
+                                            <li class="item">
+                                                <label><input type="checkbox"><span>Moda Infantil</span></label>
+                                            </li>
+                                            <li class="item">
+                                                <label><input type="checkbox"><span>Moda Praia</span></label>
+                                            </li>
+                                            <li class="item">
+                                                <label><input type="checkbox"><span>Acessórios</span></label>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div><!-- Filter Item  categori-->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
