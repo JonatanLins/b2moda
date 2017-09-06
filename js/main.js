@@ -653,5 +653,19 @@
         });
 
     }
+    
+    // blocos laterais deslizantes
+    $(".slider-block.botao").click(function(){
+        $(".slider-block.block-content.block-" + $(this).data("bloco")).toggleClass("ativo");
+    });
+    $(".slider-block .close-block").click(function(){
+        $(".slider-block.block-content.block-" + $(this).data("bloco")).removeClass("ativo");
+    });
+    $(document).click(function(event) { 
+        if(!$(event.target).closest('.slider-block').length) {
+            $(".slider-block.block-content").removeClass("ativo");
+        }        
+    });
+    
 
 })(jQuery);

@@ -1433,7 +1433,7 @@ select.input-sm {
 @media (min-width: 992px) {
     .block-nav-menu {
         position: relative;
-        z-index: 500
+        z-index: 50
     }
     .block-nav-menu .ui-menu:after,
     .block-nav-menu .ui-menu:before {
@@ -2782,7 +2782,7 @@ select.input-sm {
 }
 
 .sticky-wrapper.is-sticky .mid-header {
-    z-index: 9999;
+    z-index: 100;
     -webkit-box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, .09);
     box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, .09)
 }
@@ -11155,31 +11155,32 @@ select.input-sm {
 }
 
 @media (min-width: 700px) {
-    .detalhes-produto .bloco-descricao{
+    .detalhes-produto .bloco-descricao {
         width: 60%;
         display: inline-block;
         min-height: 300px;
     }
-    .detalhes-produto .agrupar-700{
+    .detalhes-produto .agrupar-700 {
         width: 40%;
         display: inline-block;
         vertical-align: top;
     }
-    .detalhes-produto .bloco-cor{
+    .detalhes-produto .bloco-cor {
         height: 80px;
         border-left-color: transparent;
     }
-    .detalhes-produto .bloco-tam-qnt{
+    .detalhes-produto .bloco-tam-qnt {
         min-height: 220px;
         border-left-color: transparent;
     }
-    .detalhes-produto .bloco-preco{
+    .detalhes-produto .bloco-preco {
         width: 50%;
         display: inline-block;
         height: 150px;
         vertical-align: top;
     }
-    .detalhes-produto .bloco-extras{
+    .detalhes-produto .bloco-extras {
+        margin-left: -4px;
         width: 50%;
         display: inline-block;
         border-left-color: transparent;
@@ -11189,24 +11190,26 @@ select.input-sm {
 }
 
 @media (min-width: 1200px) {
-    .detalhes-produto .bloco-descricao{
+    .detalhes-produto .bloco-descricao {
         width: 35%;
     }
-    .detalhes-produto .agrupar-700{
+    .detalhes-produto .agrupar-700 {
         width: 35%;
     }
-    .detalhes-produto .agrupar-1200{
+    .detalhes-produto .agrupar-1200 {
         display: inline-block;
         vertical-align: top;
         width: 30%;
     }
-    .detalhes-produto .bloco-preco{
+    .detalhes-produto .bloco-preco {
         width: 100%;
         height: 150px;
+        border-left-color: transparent;
     }
-    .detalhes-produto .bloco-extras{
+    .detalhes-produto .bloco-extras {
         width: 100%;
         min-height: 150px;
+        margin-left: 0;
     }
 }
 
@@ -11249,7 +11252,8 @@ select.input-sm {
     color: #ffad00
 }
 
-.header-opt-13 .block-nav-categori .block-title {
+.header-opt-13 .block-nav-categori .block-title,
+.detalhes-produto .block-title {
     background-color: #333;
     cursor: pointer;
     line-height: 50px;
@@ -11257,6 +11261,10 @@ select.input-sm {
     background-image: none;
     font-size: 14px;
     font-weight: 700
+}
+
+.detalhes-produto .block-title {
+    display: inline-block;
 }
 
 @media (min-width: 991px) {
@@ -31125,6 +31133,138 @@ img.alignright {
     padding: 0 8px
 }
 
+.slider-block.block-content{
+    z-index: 1500;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 40%;
+    min-width: 500px;
+    background-color: #EEE;
+    box-shadow: 2px 0 50px rgba(0,0,0,0.5);
+    height: 100%;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    visibility: hidden;
+}
+.slider-block.block-content.ativo{
+    visibility: visible;
+    left: 0;
+}
+@media (max-width: 500px){
+    .slider-block.block-content{
+        min-width: initial;
+        width: 100%;
+    }
+}
+.slider-block.block-content .close-block{
+    float: right;
+    width: 80px;
+    line-height: 80px;
+    background-color: #F36;
+    font-size: 30px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.block-chat .header-chat{
+    height: 80px;
+    background-color: #F36;
+    position: relative;
+}
+.block-chat .header-chat .foto{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 15px 15px;
+}
+.block-chat .header-chat .nome{
+    font-size: 22px;
+    margin-left: 20px;
+    color: #FFF;
+    font-weight: bold;
+}
+.block-chat .header-chat .digitando{
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+}
+.block-chat .chat-area{
+    height: calc(100% - 140px);
+    padding: 20px 10px;
+}
+.block-chat .chat-area .chat-me,
+.block-chat .chat-area .chat-you{
+    position: relative;
+    clear: both;
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    vertical-align: bottom;
+}
+.block-chat .chat-area .chat-me{
+    float: right;
+    background-color: #F36;
+    color: #FFF;
+}
+.block-chat .chat-area .chat-you{
+    float: left;
+    background-color: #BBB;
+    color: #000;
+}
+.block-chat .chat-area .msg-hora{
+    float: right;
+    font-size: .7em;
+    opacity: .7;
+}
+.block-chat .write-area{
+    height: 60px;
+    background-color: #F36;
+    position: relative;
+}
+.block-chat .write-area input[type=text]{
+    display: block;
+    width: calc(100% - 90px);
+    height: 46px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 7px;
+    margin-left: 15px;
+    float: left;
+}
+.block-chat .write-area input[type=submit]{
+    float: right;
+    background-color: #FFF;
+    background-image: url(../images/icon/send.png);
+    background-size: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    margin: 7px 12px;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.block-chat .write-area input[type=submit]:hover{
+    transform: rotate(-50deg);
+}
+.block-chat .write-area .icon-enviar{
+    position: absolute;
+    margin: 10px;
+    font-size: 30px;
+    top: 0;
+}
+    
 .block-hot-deals-opt7 .product-item .product-item-name {
     display: block;
     background-color: #424242;
