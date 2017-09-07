@@ -667,5 +667,10 @@
         }        
     });
     
+    //bloco de cores
+    $(".block-tam-cores .cor").click(function(){
+        $(".block-tam-cores .cores .ativo").removeClass("ativo");
+        $(".block-tam-cores .cores li:nth-child(" + $(this).data("id") + ")").addClass("ativo");
+    });
 
 })(jQuery);

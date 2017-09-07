@@ -13016,11 +13016,11 @@ select.input-sm {
 }
 
 .block-banner-sidebar:hover img {
-    -webkit-filter: sepia(100%);
-    filter: sepia(100%);
-    -moz-filter: sepia(100%);
-    -o-filter: sepia(100%);
-    -ms-filter: sepia(100%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s
@@ -20860,9 +20860,18 @@ select.input-sm {
 }
 
 .catalog-view_op1 .product-media {
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+    .catalog-view_op1 .product-media img{
+        margin: 0 auto;
+    }
+    .product-info-main{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
 @media (min-width: 767px) {
     .catalog-view_op1 .product-media {
         margin-bottom: 20px
@@ -21059,6 +21068,11 @@ select.input-sm {
     color: #666;
     font-size: 14px;
     margin-bottom: 7px
+}
+
+.catalog-view_op1 .product-info-main .product-code{
+    font-size: 0.8em;
+    color: #AAA;
 }
 
 .catalog-view_op1 .product-info-main .product-overview {
@@ -31160,13 +31174,90 @@ img.alignright {
 }
 .slider-block.block-content .close-block{
     float: right;
-    width: 80px;
-    line-height: 80px;
+    width: 40px;
+    line-height: 40px;
     background-color: #F36;
     font-size: 30px;
     text-align: center;
     color: #FFF;
     cursor: pointer;
+}
+
+.product-info-main .product-add-form .slider-block.botao{
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #CCC;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+@media (max-width: 767px){
+    .product-info-main .product-add-form .slider-block.botao{
+        margin: 0 auto;
+    }
+}
+.product-info-main .product-add-form .slider-block.botao:hover{
+    background-color: #F36;
+    color: #FFF;
+    border-color: #F36;
+}
+
+.block-tam-cores .close-block{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.block-tam-cores h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 40px 0;
+    text-align: center;
+}
+.block-tam-cores .cor div{
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    cursor: pointer;
+}
+.block-tam-cores .ativo .cor{
+    background-color: #AAA;
+    width: 47px;
+}
+.block-tam-cores .ativo .cor div{
+    border-color: #AAA;
+}
+.block-tam-cores .cores{
+    position: absolute;
+    left: 0;
+}
+.block-tam-cores .cores .tamanhos{
+    display: none;
+    position: absolute;
+    margin-left: 90px;
+    padding-left: 20px;
+    top: 10px;
+    border-left: 3px solid #DDD;
+}
+.block-tam-cores .cores .ativo .tamanhos{
+    display: block;
+}
+.block-tam-cores .cores .tamanhos li{
+    display: inline-block;
+    margin: 5px 0;
+}
+.block-tam-cores .cores .tamanhos li span{
+    font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-right: 25px;
+}
+.block-tam-cores .cores .tamanhos li input{
+    width: 80px;
+    padding: 5px 0;
 }
 
 .block-chat .header-chat{
