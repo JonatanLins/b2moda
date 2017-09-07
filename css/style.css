@@ -11051,7 +11051,7 @@ select.input-sm {
 }
 
 .detalhes-produto .tam-qnt {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .detalhes-produto .tam-qnt div {
@@ -11067,9 +11067,10 @@ select.input-sm {
 .detalhes-produto .editar-tam-qnt {
     float: right;
     cursor: pointer;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
+    margin-top: 10px;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
 }
 
 .detalhes-produto .editar-tam-qnt .mais,
@@ -11172,6 +11173,11 @@ select.input-sm {
     .detalhes-produto .bloco-tam-qnt {
         min-height: 220px;
         border-left-color: transparent;
+    }
+    .detalhes-produto .editar-tam-qnt {
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
     }
     .detalhes-produto .bloco-preco {
         width: 50%;
@@ -41090,14 +41096,25 @@ img.alignright {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 23px;
-    margin: 40px 0;
+    margin: 40px 0 20px;
     text-align: center;
+    color: inherit;
+}
+.block-tam-cores p{
+    text-align: center;
+}
+.alerta-quantidades .qnt-total{
+    font-weight: bold;
+}
+.alerta-quantidades .qnt-min{
+    color: red;
 }
 .block-tam-cores .cor div{
     width: 50px;
     height: 50px;
     margin: 10px 20px;
     border-radius: 50%;
+    font-size: 23px;
     border: 3px solid #FFF;
     cursor: pointer;
 }
@@ -41232,4 +41249,46 @@ img.alignright {
     margin: 10px;
     font-size: 30px;
     top: 0;
+}
+.popup-cupom-desconto{
+    display: none;    
+}
+.popup-cupom-desconto.ativo{
+    display: block;
+    position: fixed;
+    width: 300px;
+    height: 110px;
+    background-color: #EEE;
+    border-radius: 10px;
+    margin: -50px -150px;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #BBB;
+}
+.popup-cupom-desconto input[type=text]{
+    width: 250px;
+    display: block;
+    margin: 15px auto;
+    font-size: 1.3em;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.popup-cupom-desconto input[type=submit]{
+    width: 100px;
+    display: block;
+    margin: -5px auto;
+    background-color: #F36;
+    border: none;
+    color: #FFF;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.popup-cupom-desconto input[type=submit]:hover{
+    background-color: #EEE;
+    color: #F36;
 }
