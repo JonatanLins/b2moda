@@ -12453,24 +12453,6 @@ select.input-sm {
 }
 
 @media (max-width: 991px) {
-    .block-filter {
-        position: fixed;
-        top: 0;
-        left: -110%;
-        bottom: 0;
-        width: 300px;
-        background-color: #fff;
-        z-index: 888;
-        visibility: hidden;
-        opacity: 0;
-        -webkit-transition: .35s;
-        -o-transition: .35s;
-        transition: .35s;
-        overflow-y: auto;
-        margin: 0!important;
-        -webkit-box-shadow: 0 0 3px 0 rgba(136, 136, 136, .23);
-        box-shadow: 0 0 3px 0 rgba(136, 136, 136, .23)
-    }
     .block-filter.active {
         left: 0;
         visibility: visible;
@@ -12522,11 +12504,6 @@ select.input-sm {
     }
     .block-filter .block-content .filter-options-title.active:after {
         content: "\f107"
-    }
-    .block-filter .block-content .filter-options-content {
-        display: none;
-        border: none;
-        padding-bottom: 20px
     }
 }
 
