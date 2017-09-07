@@ -11036,7 +11036,7 @@ select.input-sm {
     line-height: 1.8em;
 }
 
-.detalhes-produto .cor {
+.detalhes-produto .bloco-cor .cor {
     display: inline-block;
     margin-left: 10px;
     width: 30px;
@@ -11104,19 +11104,19 @@ select.input-sm {
     margin-bottom: 100px;
 }
 
-.detalhes-produto .botao {
+.detalhes-produto .bloco-extras .botao {
     white-space: nowrap;
     padding: 10px;
     cursor: pointer;
 }
 
-.detalhes-produto .botao .texto {
+.detalhes-produto .bloco-extras .botao .texto {
     color: #0C0;
     font-weight: bold;
     margin: 0 5px;
 }
 
-.detalhes-produto .botao:hover .texto {
+.detalhes-produto .bloco-extras .botao:hover .texto {
     color: #0F0;
 }
 
@@ -31146,215 +31146,6 @@ img.alignright {
 .block-hot-deals-opt7 .product-item .product-item-detail {
     padding: 0 8px
 }
-
-.slider-block.block-content{
-    z-index: 1500;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 40%;
-    min-width: 500px;
-    background-color: #EEE;
-    box-shadow: 2px 0 50px rgba(0,0,0,0.5);
-    height: 100%;
-    -webkit-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    visibility: hidden;
-}
-.slider-block.block-content.ativo{
-    visibility: visible;
-    left: 0;
-}
-@media (max-width: 500px){
-    .slider-block.block-content{
-        min-width: initial;
-        width: 100%;
-    }
-}
-.slider-block.block-content .close-block{
-    float: right;
-    width: 40px;
-    line-height: 40px;
-    background-color: #F36;
-    font-size: 30px;
-    text-align: center;
-    color: #FFF;
-    cursor: pointer;
-}
-
-.product-info-main .product-add-form .slider-block.botao{
-    width: 200px;
-    padding: 10px;
-    border: 2px solid #CCC;
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-@media (max-width: 767px){
-    .product-info-main .product-add-form .slider-block.botao{
-        margin: 0 auto;
-    }
-}
-.product-info-main .product-add-form .slider-block.botao:hover{
-    background-color: #F36;
-    color: #FFF;
-    border-color: #F36;
-}
-
-.block-tam-cores .close-block{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.block-tam-cores h2{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 23px;
-    margin: 40px 0;
-    text-align: center;
-}
-.block-tam-cores .cor div{
-    width: 50px;
-    height: 50px;
-    margin: 10px 20px;
-    border-radius: 50%;
-    border: 3px solid #FFF;
-    cursor: pointer;
-}
-.block-tam-cores .ativo .cor{
-    background-color: #AAA;
-    width: 47px;
-}
-.block-tam-cores .ativo .cor div{
-    border-color: #AAA;
-}
-.block-tam-cores .cores{
-    position: absolute;
-    left: 0;
-}
-.block-tam-cores .cores .tamanhos{
-    display: none;
-    position: absolute;
-    margin-left: 90px;
-    padding-left: 20px;
-    top: 10px;
-    border-left: 3px solid #DDD;
-}
-.block-tam-cores .cores .ativo .tamanhos{
-    display: block;
-}
-.block-tam-cores .cores .tamanhos li{
-    display: inline-block;
-    margin: 5px 0;
-}
-.block-tam-cores .cores .tamanhos li span{
-    font-weight: bold;
-    font-size: 1.3em;
-    letter-spacing: 1px;
-    margin-right: 25px;
-}
-.block-tam-cores .cores .tamanhos li input{
-    width: 80px;
-    padding: 5px 0;
-}
-
-.block-chat .header-chat{
-    height: 80px;
-    background-color: #F36;
-    position: relative;
-}
-.block-chat .header-chat .foto{
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    margin: 15px 15px;
-}
-.block-chat .header-chat .nome{
-    font-size: 22px;
-    margin-left: 20px;
-    color: #FFF;
-    font-weight: bold;
-}
-.block-chat .header-chat .digitando{
-    font-size: 10px;
-    font-weight: bold;
-    color: #FFF;
-    position: absolute;
-    bottom: 10px;
-    left: 120px;
-}
-.block-chat .chat-area{
-    height: calc(100% - 140px);
-    padding: 20px 10px;
-}
-.block-chat .chat-area .chat-me,
-.block-chat .chat-area .chat-you{
-    position: relative;
-    clear: both;
-    width: 70%;
-    border-radius: 5px;
-    padding: 5px 15px;
-    margin-bottom: 10px;
-    vertical-align: bottom;
-}
-.block-chat .chat-area .chat-me{
-    float: right;
-    background-color: #F36;
-    color: #FFF;
-}
-.block-chat .chat-area .chat-you{
-    float: left;
-    background-color: #BBB;
-    color: #000;
-}
-.block-chat .chat-area .msg-hora{
-    float: right;
-    font-size: .7em;
-    opacity: .7;
-}
-.block-chat .write-area{
-    height: 60px;
-    background-color: #F36;
-    position: relative;
-}
-.block-chat .write-area input[type=text]{
-    display: block;
-    width: calc(100% - 90px);
-    height: 46px;
-    padding-left: 20px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 7px;
-    margin-left: 15px;
-    float: left;
-}
-.block-chat .write-area input[type=submit]{
-    float: right;
-    background-color: #FFF;
-    background-image: url(../images/icon/send.png);
-    background-size: 36px;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 50%;
-    width: 46px;
-    height: 46px;
-    margin: 7px 12px;
-    -webkit-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-.block-chat .write-area input[type=submit]:hover{
-    transform: rotate(-50deg);
-}
-.block-chat .write-area .icon-enviar{
-    position: absolute;
-    margin: 10px;
-    font-size: 30px;
-    top: 0;
-}
     
 .block-hot-deals-opt7 .product-item .product-item-name {
     display: block;
@@ -41232,4 +41023,213 @@ img.alignright {
 
 .copyright a {
     font-weight: 400;
+}
+
+.slider-block.block-content{
+    z-index: 1500;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 40%;
+    min-width: 500px;
+    background-color: #EEE;
+    box-shadow: 2px 0 50px rgba(0,0,0,0.5);
+    height: 100%;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    visibility: hidden;
+}
+.slider-block.block-content.ativo{
+    visibility: visible;
+    left: 0;
+}
+@media (max-width: 500px){
+    .slider-block.block-content{
+        min-width: initial;
+        width: 100%;
+    }
+}
+.slider-block.block-content .close-block{
+    float: right;
+    width: 40px;
+    line-height: 40px;
+    background-color: #F36;
+    font-size: 30px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.product-info-main .product-add-form .slider-block.botao{
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #CCC;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+@media (max-width: 767px){
+    .product-info-main .product-add-form .slider-block.botao{
+        margin: 0 auto;
+    }
+}
+.product-info-main .product-add-form .slider-block.botao:hover{
+    background-color: #F36;
+    color: #FFF;
+    border-color: #F36;
+}
+
+.block-tam-cores .close-block{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.block-tam-cores h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 40px 0;
+    text-align: center;
+}
+.block-tam-cores .cor div{
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    cursor: pointer;
+}
+.block-tam-cores .ativo .cor{
+    background-color: #AAA;
+    width: 47px;
+}
+.block-tam-cores .ativo .cor div{
+    border-color: #AAA;
+}
+.block-tam-cores .cores{
+    position: absolute;
+    left: 0;
+}
+.block-tam-cores .cores .tamanhos{
+    display: none;
+    position: absolute;
+    margin-left: 90px;
+    padding-left: 20px;
+    top: 10px;
+    border-left: 3px solid #DDD;
+}
+.block-tam-cores .cores .ativo .tamanhos{
+    display: block;
+}
+.block-tam-cores .cores .tamanhos li{
+    display: inline-block;
+    margin: 5px 0;
+}
+.block-tam-cores .cores .tamanhos li span{
+    font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-right: 25px;
+}
+.block-tam-cores .cores .tamanhos li input{
+    width: 80px;
+    padding: 5px 0;
+}
+
+.block-chat .header-chat{
+    height: 80px;
+    background-color: #F36;
+    position: relative;
+}
+.block-chat .header-chat .foto{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 15px 15px;
+}
+.block-chat .header-chat .nome{
+    font-size: 22px;
+    margin-left: 20px;
+    color: #FFF;
+    font-weight: bold;
+}
+.block-chat .header-chat .digitando{
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+}
+.block-chat .chat-area{
+    height: calc(100% - 140px);
+    padding: 20px 10px;
+}
+.block-chat .chat-area .chat-me,
+.block-chat .chat-area .chat-you{
+    position: relative;
+    clear: both;
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    vertical-align: bottom;
+}
+.block-chat .chat-area .chat-me{
+    float: right;
+    background-color: #F36;
+    color: #FFF;
+}
+.block-chat .chat-area .chat-you{
+    float: left;
+    background-color: #BBB;
+    color: #000;
+}
+.block-chat .chat-area .msg-hora{
+    float: right;
+    font-size: .7em;
+    opacity: .7;
+}
+.block-chat .write-area{
+    height: 60px;
+    background-color: #F36;
+    position: relative;
+}
+.block-chat .write-area input[type=text]{
+    display: block;
+    width: calc(100% - 90px);
+    height: 46px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 7px;
+    margin-left: 15px;
+    float: left;
+}
+.block-chat .write-area input[type=submit]{
+    float: right;
+    background-color: #FFF;
+    background-image: url(../images/icon/send.png);
+    background-size: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    margin: 7px 12px;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.block-chat .write-area input[type=submit]:hover{
+    transform: rotate(-50deg);
+}
+.block-chat .write-area .icon-enviar{
+    position: absolute;
+    margin: 10px;
+    font-size: 30px;
+    top: 0;
 }
