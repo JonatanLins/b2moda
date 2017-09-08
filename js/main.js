@@ -704,7 +704,7 @@
     });
 
 
-    // soma dos elementos
+    // soma dos itens comprados
     $(".block-tam-cores .tamanhos input").change(function () {
         var totalItens = 0;
         $(".block-tam-cores .tamanhos input").each(function (index, element) {
