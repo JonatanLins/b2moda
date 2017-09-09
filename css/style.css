@@ -12506,7 +12506,7 @@ select.input-sm {
         display: block;
         line-height: 25px;
         position: absolute;
-        top: 0;
+        top: 10px;
         right: 0;
         width: 20px;
         font-weight: 400
@@ -13051,6 +13051,7 @@ select.input-sm {
     font-size: 13px
 }
 
+.block-sidebar-categorie .items li.stay-active>ul,
 .block-sidebar-categorie .items li.active>ul,
 .block-sidebar-categorie .items li:hover>ul {
     height: auto;
@@ -41060,6 +41061,13 @@ img.alignright {
     -webkit-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease;
+}
+.product-info-main .product-info-price .form-control{
+    width: 200px;
+    margin: 0 auto;
+    border: 2px solid #CCC;
+    padding: 6px 18px;
+    text-align: center;
 }
 
 @media (max-width: 767px) {
