@@ -41325,3 +41325,16 @@ img.alignright {
     background-color: #EEE;
     color: #F36;
 }
+.block-content.block-categorias{
+    min-width: initial;
+    max-width: initial;
+    width: 250px;
+}
+.block-content.block-categorias div.close-block{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.block-content.block-categorias ul.items{
+    padding: 50px 30px;
+}
