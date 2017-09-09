@@ -707,26 +707,34 @@
     // soma dos itens comprados
     $(".block-tam-cores .tamanhos input").change(function () {
         var totalItens = 0;
+        $(this).val(parseInt($(this).val()));
+        if ($(this).val() < 0) {
+            $(this).val(0);
+        }
         $(".block-tam-cores .tamanhos input").each(function (index, element) {
-            if ($(element).val() < 0){
-                $(element).val(0);
-            }else if ($(element).val()) {
+            if ($(element).val()) {
                 totalItens += parseInt($(element).val());
             }
         });
-        if(totalItens < 30){
+        var strTamanho = $(this).parent().children("span").text();
+        var quantidadePecasTam = 0;
+        $(".block-tam-cores .tamanhos li span:contains('" + strTamanho + "')").each(function () {
+            quantidadePecasTam += parseInt($(this).parent().children("input").val());
+        });
+        $(".bloco-tam-qnt .tam:contains('" + strTamanho + "')").parent().children(".qnt").text("[" + quantidadePecasTam + " unid.]");
+        if (totalItens < 30) {
             $(".alerta-quantidades .qnt-min").removeClass("hide");
-        }else{
+        } else {
             $(".alerta-quantidades .qnt-min").addClass("hide");
         }
         $(".alerta-quantidades .qnt-total span").text(totalItens);
     });
 
-    
+
     // trocar preço na página do produto
-    $(".trocar-preco .lista-precos li").click(function(){
+    $(".trocar-preco .lista-precos li").click(function () {
         $(this).parent().parent().parent().removeClass("open-submenu").children(".toggle-submenu span").text($(this).text());
-        
+
     });
 
 })(jQuery);
