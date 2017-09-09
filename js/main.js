@@ -722,5 +722,11 @@
         $(".alerta-quantidades .qnt-total span").text(totalItens);
     });
 
+    
+    // trocar preço na página do produto
+    $(".trocar-preco .lista-precos li").click(function(){
+        $(this).parent().parent().parent().removeClass("open-submenu").children(".toggle-submenu").text($(this).text());
+        
+    });
 
 })(jQuery);

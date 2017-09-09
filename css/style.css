@@ -11033,7 +11033,7 @@ select.input-sm {
 }
 
 .detalhes-produto .descricao-produto li,
-.detalhes-produto .descricao-produto li *{
+.detalhes-produto .descricao-produto li * {
     line-height: 1.8em;
     color: #333;
     margin: 0 !important;
@@ -11066,6 +11066,7 @@ select.input-sm {
     margin-left: 5px;
     color: #00B;
 }
+
 .detalhes-produto .bloco-tam-qnt .qnt-total {
     margin-left: 10px;
 }
@@ -12614,7 +12615,7 @@ select.input-sm {
         padding-right: 0
     }
     .catalog-view_op1 .block-filter .block-content .filter-options-item {
-        padding-bottom: 10px
+        margin: -15px 0 0;
     }
 }
 
@@ -20863,14 +20864,16 @@ select.input-sm {
 }
 
 @media (max-width: 767px) {
-    .catalog-view_op1 .product-media img{
+    .catalog-view_op1 .product-media img {
         margin: 0 auto;
     }
-    .product-info-main{
+    .catalog-view_op1 .product-info-main .product-info-price .conteudo-menu .lista-precos li,
+    .product-info-main {
         margin: 0 auto;
         text-align: center;
     }
 }
+
 @media (min-width: 767px) {
     .catalog-view_op1 .product-media {
         margin-bottom: 20px
@@ -21023,43 +21026,28 @@ select.input-sm {
 }
 
 .catalog-view_op1 .product-info-main .product-info-price {
-    margin-bottom: 10px
-}
-
-.catalog-view_op1 .product-info-main .product-info-price .price {
-    font-weight: 700;
+    margin-bottom: 10px font-weight: 700;
     color: #f36;
-    font-size: 18px
+    font-size: 18px;
 }
-
-.catalog-view_op1 .product-info-main .product-info-price .old-price {
-    font-size: 14px;
-    color: #666;
-    text-decoration: line-through;
-    margin-left: 12px
+.catalog-view_op1 .product-info-main .product-info-price .toggle-submenu {
+    cursor: pointer;
 }
-
-.catalog-view_op1 .product-info-main .product-info-price .label-sale {
-    display: inline-block;
-    line-height: 23px;
-    background-color: #f90;
-    color: #fff;
-    padding: 0 12px;
-    font-size: 14px;
-    margin-left: 12px
+.catalog-view_op1 .product-info-main .product-info-price.open-submenu .toggle-submenu,
+.catalog-view_op1 .product-info-main .product-info-price .conteudo-menu {
+    display: none;
 }
-
-.catalog-view_op1 .product-info-main .product-info-stock {
-    color: #096;
-    font-size: 14px;
-    margin-bottom: 7px
+.catalog-view_op1 .product-info-main .product-info-price.open-submenu .conteudo-menu {
+    display: block;
 }
-
-.catalog-view_op1 .product-info-main .product-info-stock .label {
-    color: #666;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 400
+.catalog-view_op1 .product-info-main .product-info-price .conteudo-menu li {
+    width: 250px;
+    padding: 5px 10px;
+}
+.catalog-view_op1 .product-info-main .product-info-price .conteudo-menu li:hover {
+    cursor: pointer;
+    background-color: #F36;
+    color: #FFF;
 }
 
 .catalog-view_op1 .product-info-main .product-code,
@@ -21069,7 +21057,7 @@ select.input-sm {
     margin-bottom: 7px
 }
 
-.catalog-view_op1 .product-info-main .product-code{
+.catalog-view_op1 .product-info-main .product-code {
     font-size: 0.8em;
     color: #AAA;
 }
@@ -31145,7 +31133,7 @@ img.alignright {
 .block-hot-deals-opt7 .product-item .product-item-detail {
     padding: 0 8px
 }
-    
+
 .block-hot-deals-opt7 .product-item .product-item-name {
     display: block;
     background-color: #424242;
@@ -41024,7 +41012,7 @@ img.alignright {
     font-weight: 400;
 }
 
-.slider-block.block-content{
+.slider-block.block-content {
     z-index: 1500;
     position: fixed;
     top: 0;
@@ -41032,7 +41020,7 @@ img.alignright {
     width: 40%;
     min-width: 500px;
     background-color: #EEE;
-    box-shadow: 2px 0 50px rgba(0,0,0,0.5);
+    box-shadow: 2px 0 50px rgba(0, 0, 0, 0.5);
     height: 100%;
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -41040,17 +41028,20 @@ img.alignright {
     visibility: hidden;
     overflow-y: auto;
 }
-.slider-block.block-content.ativo{
+
+.slider-block.block-content.ativo {
     visibility: visible;
     left: 0;
 }
-@media (max-width: 500px){
-    .slider-block.block-content{
+
+@media (max-width: 500px) {
+    .slider-block.block-content {
         min-width: initial;
         width: 100%;
     }
 }
-.slider-block.block-content .close-block{
+
+.slider-block.block-content .close-block {
     float: right;
     width: 40px;
     line-height: 40px;
@@ -41061,7 +41052,7 @@ img.alignright {
     cursor: pointer;
 }
 
-.product-info-main .product-add-form .slider-block.botao{
+.product-info-main .product-add-form .slider-block.botao {
     width: 200px;
     padding: 10px;
     border: 2px solid #CCC;
@@ -41070,23 +41061,26 @@ img.alignright {
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-@media (max-width: 767px){
-    .product-info-main .product-add-form .slider-block.botao{
+
+@media (max-width: 767px) {
+    .product-info-main .product-add-form .slider-block.botao {
         margin: 0 auto;
     }
 }
-.product-info-main .product-add-form .slider-block.botao:hover{
+
+.product-info-main .product-add-form .slider-block.botao:hover {
     background-color: #F36;
     color: #FFF;
     border-color: #F36;
 }
 
-.block-tam-cores .close-block{
+.block-tam-cores .close-block {
     position: absolute;
     top: 0;
     right: 0;
 }
-.block-tam-cores h2{
+
+.block-tam-cores h2 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 23px;
@@ -41094,16 +41088,20 @@ img.alignright {
     text-align: center;
     color: inherit;
 }
-.block-tam-cores p{
+
+.block-tam-cores p {
     text-align: center;
 }
-.alerta-quantidades .qnt-total{
+
+.alerta-quantidades .qnt-total {
     font-weight: bold;
 }
-.alerta-quantidades .qnt-min{
+
+.alerta-quantidades .qnt-min {
     color: red;
 }
-.block-tam-cores .cor div{
+
+.block-tam-cores .cor div {
     width: 50px;
     height: 50px;
     margin: 10px 20px;
@@ -41112,18 +41110,22 @@ img.alignright {
     border: 3px solid #FFF;
     cursor: pointer;
 }
-.block-tam-cores .ativo .cor{
+
+.block-tam-cores .ativo .cor {
     background-color: #AAA;
     width: 47px;
 }
-.block-tam-cores .ativo .cor div{
+
+.block-tam-cores .ativo .cor div {
     border-color: #AAA;
 }
-.block-tam-cores .cores{
+
+.block-tam-cores .cores {
     position: absolute;
     left: 0;
 }
-.block-tam-cores .cores .tamanhos{
+
+.block-tam-cores .cores .tamanhos {
     display: none;
     position: absolute;
     margin-left: 90px;
@@ -41131,42 +41133,49 @@ img.alignright {
     top: 10px;
     border-left: 3px solid #DDD;
 }
-.block-tam-cores .cores .ativo .tamanhos{
+
+.block-tam-cores .cores .ativo .tamanhos {
     display: block;
 }
-.block-tam-cores .cores .tamanhos li{
+
+.block-tam-cores .cores .tamanhos li {
     display: inline-block;
     margin: 5px 0;
 }
-.block-tam-cores .cores .tamanhos li span{
+
+.block-tam-cores .cores .tamanhos li span {
     font-weight: bold;
     font-size: 1.3em;
     letter-spacing: 1px;
     margin-right: 25px;
 }
-.block-tam-cores .cores .tamanhos li input{
+
+.block-tam-cores .cores .tamanhos li input {
     width: 80px;
     padding: 5px 0;
 }
 
-.block-chat .header-chat{
+.block-chat .header-chat {
     height: 80px;
     background-color: #F36;
     position: relative;
 }
-.block-chat .header-chat .foto{
+
+.block-chat .header-chat .foto {
     height: 50px;
     width: 50px;
     border-radius: 25px;
     margin: 15px 15px;
 }
-.block-chat .header-chat .nome{
+
+.block-chat .header-chat .nome {
     font-size: 22px;
     margin-left: 20px;
     color: #FFF;
     font-weight: bold;
 }
-.block-chat .header-chat .digitando{
+
+.block-chat .header-chat .digitando {
     font-size: 10px;
     font-weight: bold;
     color: #FFF;
@@ -41174,12 +41183,14 @@ img.alignright {
     bottom: 10px;
     left: 120px;
 }
-.block-chat .chat-area{
+
+.block-chat .chat-area {
     height: calc(100% - 140px);
     padding: 20px 10px;
 }
+
 .block-chat .chat-area .chat-me,
-.block-chat .chat-area .chat-you{
+.block-chat .chat-area .chat-you {
     position: relative;
     clear: both;
     width: 70%;
@@ -41188,27 +41199,32 @@ img.alignright {
     margin-bottom: 10px;
     vertical-align: bottom;
 }
-.block-chat .chat-area .chat-me{
+
+.block-chat .chat-area .chat-me {
     float: right;
     background-color: #F36;
     color: #FFF;
 }
-.block-chat .chat-area .chat-you{
+
+.block-chat .chat-area .chat-you {
     float: left;
     background-color: #BBB;
     color: #000;
 }
-.block-chat .chat-area .msg-hora{
+
+.block-chat .chat-area .msg-hora {
     float: right;
     font-size: .7em;
     opacity: .7;
 }
-.block-chat .write-area{
+
+.block-chat .write-area {
     height: 60px;
     background-color: #F36;
     position: relative;
 }
-.block-chat .write-area input[type=text]{
+
+.block-chat .write-area input[type=text] {
     display: block;
     width: calc(100% - 90px);
     height: 46px;
@@ -41219,7 +41235,8 @@ img.alignright {
     margin-left: 15px;
     float: left;
 }
-.block-chat .write-area input[type=submit]{
+
+.block-chat .write-area input[type=submit] {
     float: right;
     background-color: #FFF;
     background-image: url(../images/icon/send.png);
@@ -41235,19 +41252,23 @@ img.alignright {
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.block-chat .write-area input[type=submit]:hover{
+
+.block-chat .write-area input[type=submit]:hover {
     transform: rotate(-50deg);
 }
-.block-chat .write-area .icon-enviar{
+
+.block-chat .write-area .icon-enviar {
     position: absolute;
     margin: 10px;
     font-size: 30px;
     top: 0;
 }
-.popup-cupom-desconto{
-    display: none;    
+
+.popup-cupom-desconto {
+    display: none;
 }
-.popup-cupom-desconto.ativo{
+
+.popup-cupom-desconto.ativo {
     display: block;
     position: fixed;
     width: 300px;
@@ -41258,21 +41279,24 @@ img.alignright {
     left: 50%;
     border: 2px solid #BBB;
 }
-.popup-cupom-desconto div.close-popup{
+
+.popup-cupom-desconto div.close-popup {
     position: absolute;
     top: 0;
     cursor: pointer;
-    right: 0;    
+    right: 0;
     width: 40px;
     background-color: #F36;
     color: #FFF;
     text-align: center;
 }
-.popup-cupom-desconto div.close-popup i{
+
+.popup-cupom-desconto div.close-popup i {
     font-size: 30px;
     line-height: 40px;
 }
-.popup-cupom-desconto input[type=text]{
+
+.popup-cupom-desconto input[type=text] {
     width: 210px;
     display: block;
     margin: 15px 25px;
@@ -41281,7 +41305,8 @@ img.alignright {
     text-align: center;
     text-transform: uppercase;
 }
-.popup-cupom-desconto input[type=submit]{
+
+.popup-cupom-desconto input[type=submit] {
     width: 100px;
     display: block;
     margin: -5px auto;
@@ -41295,7 +41320,8 @@ img.alignright {
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.popup-cupom-desconto input[type=submit]:hover{
+
+.popup-cupom-desconto input[type=submit]:hover {
     background-color: #EEE;
     color: #F36;
 }
