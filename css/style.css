@@ -40400,6 +40400,7 @@ img.alignright {
     transition: all 0.5s ease;
     visibility: hidden;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .slider-block.block-content.ativo {
@@ -40550,9 +40551,19 @@ img.alignright {
 
 .block-chat .header-chat .nome {
     font-size: 22px;
-    margin-left: 20px;
+    top: 20px;
+    height: 32px;
+    left: 0;
+    padding-right: 40px;
+    padding-left: 80px;
     color: #FFF;
     font-weight: bold;
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .block-chat .header-chat .digitando {
@@ -40565,8 +40576,12 @@ img.alignright {
 }
 
 .block-chat .chat-area {
-    height: calc(100% - 140px);
-    padding: 20px 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    padding: 100px 10px 80px 10px;
 }
 
 .block-chat .chat-area .chat-me,
@@ -40579,7 +40594,6 @@ img.alignright {
     margin-bottom: 10px;
     vertical-align: bottom;
 }
-
 .block-chat .chat-area .chat-me {
     float: right;
     background-color: #F36;
@@ -40601,9 +40615,12 @@ img.alignright {
 .block-chat .write-area {
     height: 60px;
     background-color: #F36;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
+.block-chat .write-area input[type=text]:focus,
 .block-chat .write-area input[type=text] {
     display: block;
     width: calc(100% - 90px);
@@ -40614,6 +40631,7 @@ img.alignright {
     margin-top: 7px;
     margin-left: 15px;
     float: left;
+    outline: none;
 }
 
 .block-chat .write-area input[type=submit] {
@@ -40628,13 +40646,6 @@ img.alignright {
     width: 46px;
     height: 46px;
     margin: 7px 12px;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-
-.block-chat .write-area input[type=submit]:hover {
-    -webkit-transform: rotate(-50deg);
-            transform: rotate(-50deg);
 }
 
 .block-chat .write-area .icon-enviar {
