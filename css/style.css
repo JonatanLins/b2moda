@@ -40722,6 +40722,7 @@ img.alignright {
     border: 2px solid #CCC;
     width: 250px;
     margin: 20px 0;
+    text-align: left;
 }
 @media (max-width: 767px){
     .product-info-main .product-add-form .detalhes-produto{
