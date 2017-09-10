@@ -40738,3 +40738,13 @@ img.alignright {
     min-height: initial;
     border-top: 1px solid #CCC;
 }
+.product-info-main .product-add-form .detalhes-produto .editar-tam-qnt{
+    border: none;
+    position: relative;
+    padding: 2px;
+    text-align: center;
+    float: right;
+    margin-top: 20px;
+    border-radius: 3px;
+    width: 110px;
+}
