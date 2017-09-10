@@ -40723,6 +40723,11 @@ img.alignright {
     width: 250px;
     margin: 20px 0;
 }
+@media (max-width: 767px){
+    .product-info-main .product-add-form .detalhes-produto{
+        margin: 20px auto;
+    }
+}
 .product-info-main .product-add-form .detalhes-produto .bloco-cor{
     border: none;
     padding-top: 10px;
