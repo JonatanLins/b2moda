@@ -40717,3 +40717,19 @@ img.alignright {
 .block-content.block-categorias ul.items{
     padding: 50px 30px;
 }
+
+.product-info-main .product-add-form .detalhes-produto{
+    border: 2px solid #CCC;
+    width: 250px;
+    margin: 20px 0;
+}
+.product-info-main .product-add-form .detalhes-produto .bloco-cor{
+    border: none;
+    padding-top: 10px;
+}
+.product-info-main .product-add-form .detalhes-produto .bloco-tam-qnt{
+    border: none;
+    padding-top: 10px;
+    min-height: initial;
+    border-top: 1px solid #CCC;
+}
