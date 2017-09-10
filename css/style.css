@@ -12806,6 +12806,7 @@ select.input-sm {
     transition: .3s
 }
 
+.block-sidebar-categorie .items .toggle-submenu,
 .block-sidebar-categorie .items a {
     color: #666;
     font-size: 14px;
@@ -12813,14 +12814,17 @@ select.input-sm {
     display: block;
     line-height: 26px;
     margin-left: 17px;
-    position: relative
+    position: relative;
+    cursor: pointer;
 }
 
+.block-sidebar-categorie .items .toggle-submenu:hover,
+.block-sidebar-categorie .items .toggle-submenu:hover:before,
 .block-sidebar-categorie .items a:hover,
 .block-sidebar-categorie .items a:hover:before {
     color: #f36
 }
-
+.block-sidebar-categorie .items .toggle-submenu:before,
 .block-sidebar-categorie .items a:before {
     content: "\f0da";
     font-family: FontAwesome;
@@ -12831,15 +12835,14 @@ select.input-sm {
     font-size: 13px
 }
 
-.block-sidebar-categorie .items li.stay-active>ul,
-.block-sidebar-categorie .items li.active>ul,
-.block-sidebar-categorie .items li:hover>ul {
+.block-sidebar-categorie .items .parent .subcategory.active{
     height: auto;
     display: block;
     -webkit-transition: .35s;
     transition: .35s
 }
 
+.block-sidebar-categorie .items .toggle-submenu:before,
 .block-sidebar-categorie .items>li>a:before {
     content: "\f105";
     font-size: 14px;
@@ -21001,6 +21004,7 @@ select.input-sm {
     line-height: 36px;
     -webkit-transition: .2s;
     transition: .2s;
+    width: 250px;
     margin-bottom: 10px
 }
 
@@ -40422,7 +40426,7 @@ img.alignright {
 }
 
 .product-info-main .product-add-form .slider-block.botao {
-    width: 200px;
+    width: 250px;
     padding: 10px;
     border: 2px solid #CCC;
     cursor: pointer;
@@ -40430,14 +40434,15 @@ img.alignright {
     transition: all 0.2s ease;
 }
 .product-info-main .product-info-price .form-control{
-    width: 200px;
-    margin: 0 auto;
+    width: 250px;
     border: 2px solid #CCC;
     padding: 6px 18px;
-    text-align: center;
 }
 
 @media (max-width: 767px) {
+    .product-info-main .product-info-price .form-control{
+        margin: 0 auto;
+    }
     .product-info-main .product-add-form .slider-block.botao {
         margin: 0 auto;
     }

@@ -500,7 +500,7 @@
         if (width > 992) {
             /*if($('header').hasClass('cate-show') && $('body').hasClass('cms-index-index') ){
                 if($('#sticky-wrapper').hasClass('is-sticky') ){
-                    
+
                 }else{
 
                     return false;
@@ -735,6 +735,12 @@
     $(".trocar-preco .lista-precos li").click(function () {
         $(this).parent().parent().parent().removeClass("open-submenu").children(".toggle-submenu span").text($(this).text());
 
+    });
+
+
+    // submenu dropdown
+    $(".parent .toggle-submenu").click(function(){
+        $(this).parent().children(".subcategory").toggleClass("active");
     });
 
 })(jQuery);
