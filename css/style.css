@@ -40416,7 +40416,9 @@ img.alignright {
 }
 
 .slider-block.block-content .close-block {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 40px;
     line-height: 40px;
     background-color: #F36;
@@ -40424,6 +40426,7 @@ img.alignright {
     text-align: center;
     color: #FFF;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .product-info-main .product-add-form .slider-block.botao {
@@ -40540,6 +40543,7 @@ img.alignright {
     height: 80px;
     background-color: #F36;
     position: relative;
+    z-index: 500;
 }
 
 .block-chat .header-chat .foto {
@@ -40564,6 +40568,7 @@ img.alignright {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    z-index: 600;
 }
 
 .block-chat .header-chat .digitando {
