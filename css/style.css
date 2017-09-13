@@ -40396,9 +40396,8 @@ img.alignright {
     -webkit-box-shadow: 2px 0 50px rgba(0, 0, 0, 0.5);
             box-shadow: 2px 0 50px rgba(0, 0, 0, 0.5);
     height: 100vh;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    visibility: hidden;
+    -webkit-transition: left 0.5s ease;
+    transition: left 0.5s ease;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -40591,7 +40590,9 @@ img.alignright {
 
 .block-chat .chat-area {
     width: 100%;
-    padding: 100px 10px 80px 10px;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
