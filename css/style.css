@@ -1932,11 +1932,8 @@ select.input-sm {
     font-size: 15px;
     font-weight: 600;
     line-height: 57px;
-    padding: 0 44px 0 25px;
+    padding: 0 20px;
     cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center right 25px;
-    background-image: url(../images/icon/menu-cat.png)
 }
 
 .site-header .nav-toggle-menu span {
@@ -1946,7 +1943,6 @@ select.input-sm {
 .site-header .nav-toggle-menu .fa {
     font-size: 24px;
     vertical-align: middle;
-    display: none
 }
 
 .site-header .nav-toggle-menu.active:before {
@@ -2317,29 +2313,11 @@ select.input-sm {
         width: 100%
     }
     .site-header .nav-toggle-menu {
-        text-transform: uppercase;
-        text-align: center;
-        background-color: #f36;
-        color: #fff;
         display: block;
-        float: right;
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 57px;
-        padding: 0 44px 0 25px;
-        cursor: pointer;
-        background-repeat: no-repeat;
-        background-position: center right 25px;
-        background-image: url(../images/icon/menu-cat.png)
     }
     .site-header .nav-toggle-menu span {
         margin-right: 10px;
         display: none;
-    }
-    .site-header .nav-toggle-menu .fa {
-        font-size: 24px;
-        vertical-align: middle;
-        display: none
     }
     .site-header .nav-toggle-menu.active:before {
         content: "";
@@ -10794,9 +10772,12 @@ select.input-sm {
 }
 
 .detalhes-produto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     border-top: 10px solid #F36;
-    position: relative;
-    display: table;
 }
 
 .detalhes-produto h1 {
@@ -10834,6 +10815,11 @@ select.input-sm {
     padding: 5px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+}
+.detalhes-produto .bloco-descricao {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
 .detalhes-produto .foto-produto {
@@ -10974,16 +10960,33 @@ select.input-sm {
     margin-bottom: 130px;
 }
 
+.detalhes-produto .agrupar-700,
+.detalhes-produto .agrupar-1200{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
 @media (min-width: 700px) {
     .detalhes-produto .bloco-descricao {
         width: 60%;
-        display: inline-block;
         min-height: 300px;
     }
     .detalhes-produto .agrupar-700 {
         width: 40%;
-        display: inline-block;
-        vertical-align: top;
+    }
+    .detalhes-produto .agrupar-1200 {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
     .detalhes-produto .bloco-cor {
         height: 80px;
@@ -10998,18 +11001,17 @@ select.input-sm {
         transform: translateY(-20px);
     }
     .detalhes-produto .bloco-preco {
-        width: 50%;
-        display: inline-block;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
         height: 150px;
-        vertical-align: top;
     }
     .detalhes-produto .bloco-extras {
-        margin-left: -4px;
-        width: 50%;
-        display: inline-block;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
         border-left-color: transparent;
         height: 150px;
-        vertical-align: top;
     }
     .order-detail-content .excluir-pedido,
     .order-detail-content .concluir-pedido {
@@ -11026,9 +11028,11 @@ select.input-sm {
         width: 35%;
     }
     .detalhes-produto .agrupar-1200 {
-        display: inline-block;
-        vertical-align: top;
         width: 30%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     .detalhes-produto .bloco-preco {
         width: 100%;
@@ -40391,13 +40395,14 @@ img.alignright {
     width: 40%;
     min-width: 500px;
     background-color: #EEE;
-    -webkit-box-shadow: 2px 0 50px rgba(0, 0, 0, 0.5);
-            box-shadow: 2px 0 50px rgba(0, 0, 0, 0.5);
-    height: 100vh;
+    -webkit-box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
+    height: 100%;
     -webkit-transition: left 0.5s ease;
     transition: left 0.5s ease;
     overflow-y: auto;
     overflow-x: hidden;
+    /*visibility: hidden;*/
 }
 
 .slider-block.block-content.ativo {
@@ -40408,7 +40413,9 @@ img.alignright {
 @media (max-width: 500px) {
     .slider-block.block-content {
         min-width: initial;
-        width: 100vw;
+        width: 100%;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
 }
 
