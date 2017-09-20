@@ -1,13 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Arimo:400,400i,700,700i|Merriweather:400,400italic|Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300,800|Roboto:400,700,400italic,500,300italic,300|Roboto+Condensed:400,700|Lato:300,400,700|Libre+Baskerville|Dosis:400,700|Oswald:300,400,700|Raleway:400,100,900,700,300);
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Arimo:400,400i,700,700i|Merriweather:400,400italic|Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300,800|Roboto:400,700,400italic,500,300italic,300|Roboto+Condensed:400,700|Lato:300,400,700|Libre+Baskerville|Dosis:400,700|Oswald:300,400,700|Raleway:400,100,900,700,300);*/
 @import url(bootstrap.min.css);
 @import url(owl.carousel.css);
 @import url(font-awesome.min.css);
-@import url(animate.min.css);
-@import url(chosen.css);
-@import url(../js/fancybox/source/jquery.fancybox.css);
-@import url(../js/fancybox/source/helpers/jquery.fancybox-thumbs.css);
-@import url(../js/arcticmodal/jquery.arcticmodal.css);
-@font-face {
+/*@import url(animate.min.css);*/
+/*@import url(chosen.css);*/
+/*@import url(../js/fancybox/source/jquery.fancybox.css);*/
+/*@import url(../js/fancybox/source/helpers/jquery.fancybox-thumbs.css);*/
+/*@import url(../js/arcticmodal/jquery.arcticmodal.css);*/
+/*@font-face {
     font-family: 'Arial Narrow';
     src: url(../fonts//arial-narrow/arial-narrow.eot);
     src: url(../fonts//arial-narrow/ArialNarrow.woff) format('woff'), url(../fonts//arial-narrow/arial-narrow.woff2) format('woff2'), url(../fonts//arial-narrow/arial-narrow.eot?#iefix) format('embedded-opentype'), url(../fonts//arial-narrow/ArialNarrow.ttf) format('truetype'), url(../fonts//arial-narrow/ArialNarrow.svg#ArialNarrow) format('svg');
@@ -149,7 +149,7 @@
     src: url(../fonts/MyriadPro-Regular/MyriadPro-Regular.woff2) format('woff2'), url(../fonts/MyriadPro-Regular/MyriadPro-Regular.woff) format('woff'), url(../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf) format('truetype'), url(../fonts/MyriadPro-Regular/MyriadPro-Regular.svg#MyriadPro-Regular) format('svg'), url(../fonts/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix) format('embedded-opentype');
     font-weight: 400;
     font-style: normal
-}
+}*/
 
 body {
     max-width: 1920px;
