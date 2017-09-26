@@ -743,4 +743,9 @@
         $(this).parent().children(".subcategory").toggleClass("active");
     });
 
+
+    // lightbox da imagem dos produtos
+    $("a.imagem-produto-lightbox").fancybox({
+		'hideOnContentClick': true
+	});
 })(jQuery);

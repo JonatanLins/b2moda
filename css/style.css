@@ -4,7 +4,7 @@
 @import url(font-awesome.min.css);
 /*@import url(animate.min.css);*/
 /*@import url(chosen.css);*/
-/*@import url(../js/fancybox/source/jquery.fancybox.css);*/
+@import url(../js/fancybox/source/jquery.fancybox.css);
 /*@import url(../js/fancybox/source/helpers/jquery.fancybox-thumbs.css);*/
 /*@import url(../js/arcticmodal/jquery.arcticmodal.css);*/
 /*@font-face {
@@ -10822,7 +10822,7 @@ select.input-sm {
     flex-grow: 1;
 }
 
-.detalhes-produto .foto-produto {
+.detalhes-produto .imagem-produto-lightbox {
     border: 1px solid #DDD;
     width: 170px;
     position: absolute;
@@ -11047,7 +11047,7 @@ select.input-sm {
 }
 
 @media (max-width: 380px) {
-    .detalhes-produto .foto-produto {
+    .detalhes-produto .imagem-produto-lightbox {
         width: 80%;
         margin-left: 10%;
         position: relative;
