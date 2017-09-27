@@ -279,8 +279,9 @@
 
                             <h1 class="cate-title">Pepe Jeans</h1>
 
-                            <button class="follow-store-button" type="button">
-                                <a href=""><i class="fa fa-plus" aria-hidden="true"></i> Seguir</a>
+                            <button class="follow-store-button" type="button" onclick="$(this).children('span').toggleClass('hide')">
+                                <span><i class="fa fa-plus" aria-hidden="true"></i>Seguir</span>
+                                <span class="hide"><i class="fa fa-check" aria-hidden="true"></i>Seguindo</span>
                             </button>
 
                         </div>

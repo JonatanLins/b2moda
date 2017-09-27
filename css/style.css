@@ -541,10 +541,14 @@ fieldset[disabled] .btn-inline:hover {
     background-color: rgba(255, 51, 102, 0.75);
 }
 
-.follow-store-button a {
+.follow-store-button span {
     font-size: 18px;
     color: #FFF;
     padding: 10px 20px;
+}
+
+.follow-store-button span .fa{
+    margin-right: 20px;
 }
 
 .btn-inline-sub.active,
