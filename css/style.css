@@ -302,6 +302,10 @@ ul li {
     border-color: #1a1a1a
 }
 
+.fancybox-opened{
+    z-index: 10000
+}
+
 .breadcrumb {
     background-color: transparent;
     text-transform: capitalize;
