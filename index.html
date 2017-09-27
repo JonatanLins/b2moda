@@ -2,34 +2,51 @@
 <html lang="pt-br">
 
 <head>
-    <!--<meta http-equiv="refresh" content="0; url=home.html">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://materializecss.com/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <title>ㅤ</title>
 </head>
 
 <body>
     <style>
-        a {
-            color: #222;
-            text-decoration: none;
-            padding: 20px;
-            line-height: 70px;
-            border-radius: 10px;
-            transition: all 0.2s ease;
-        }
-
-        a:hover {
-            color: #FFF;
-            background-color: #222;
-        }
-
+        main{padding: 50px 0}
+        .card{width: 100%; text-align: center; color: #FFF; background-color: #f36; padding: 1em; cursor: pointer; transition: all .2s ease}
+        .card:hover{color: #f36; background-color: #FFF}
+        .card i{display: block; font-size: 5em; margin-bottom: .3em}
+        .card a{text-decoration: none; color: inherit; text-transform: capitalize; font-weight: bold}
     </style>
 
-    <main>
-        <h1><a href="home.html">Home</a></h1>
-        <h1><a href="carrinho.html">Carrinho</a></h1>
-        <h1><a href="loja.html">Loja</a></h1>
-        <h1><a href="produto.html">Produto Detalhe</a></h1>
+    <main class="container row">
+        <section class="col s6 m4 l2 container">
+            <div class="card">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <a href="dist/home.html">home</a>
+            </div>
+        </section>
+
+        <section class="col s6 m4 l2 container">
+            <div class="card">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <a href="dist/carrinho.html">carrinho</a>
+            </div>
+        </section>
+
+        <section class="col s6 m4 l2 container">
+            <div class="card">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                <a href="dist/loja.html">loja</a>
+            </div>
+        </section>
+
+        <section class="col s6 m4 l2 container">
+            <div class="card">
+                <i class="fa fa-info" aria-hidden="true"></i>
+                <a href="dist/produto-detalhe.html">produto detalhe</a>
+            </div>
+        </section>
+
     </main>
 </body>
 

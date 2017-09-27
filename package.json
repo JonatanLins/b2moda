@@ -1,0 +1,29 @@
+{
+  "name": "b2moda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatanpinheiro/B2Moda.git"
+  },
+  "author": "Jonatan Pinheiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonatanpinheiro/B2Moda/issues"
+  },
+  "homepage": "https://github.com/jonatanpinheiro/B2Moda#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
