@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="http://materializecss.com/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <title>ㅤ</title>
+    <title>B2Moda</title>
 </head>
 
 <body>
@@ -14,38 +14,88 @@
         main{padding: 50px 0}
         .card{width: 100%; text-align: center; color: #FFF; background-color: #f36; padding: 1em; cursor: pointer; transition: all .2s ease}
         .card:hover{color: #f36; background-color: #FFF}
+        .card.desativado{color: #aaa; background-color: #eee; cursor: default}
         .card i{display: block; font-size: 5em; margin-bottom: .3em}
-        .card a{text-decoration: none; color: inherit; text-transform: capitalize; font-weight: bold}
+        .card span{text-decoration: none; color: inherit; text-transform: capitalize; font-weight: bold}
     </style>
 
     <main class="container row">
-        <section class="col s6 m4 l2 container">
+        <a class="col s6 m4 l2 container" href="dist/home.html">
             <div class="card">
                 <i class="fa fa-home" aria-hidden="true"></i>
-                <a href="dist/home.html">home</a>
+                <span>home</span>
             </div>
-        </section>
+        </a>
 
-        <section class="col s6 m4 l2 container">
+        <a class="col s6 m4 l2 container" href="dist/carrinho.html">
             <div class="card">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <a href="dist/carrinho.html">carrinho</a>
+                <span>carrinho</span>
             </div>
-        </section>
+        </a>
 
-        <section class="col s6 m4 l2 container">
+        <a class="col s6 m4 l2 container" href="dist/loja.html">
             <div class="card">
                 <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                <a href="dist/loja.html">loja</a>
+                <span>loja</span>
             </div>
-        </section>
+        </a>
 
-        <section class="col s6 m4 l2 container">
+        <a class="col s6 m4 l2 container" href="dist/produto-detalhe.html">
             <div class="card">
                 <i class="fa fa-info" aria-hidden="true"></i>
-                <a href="dist/produto-detalhe.html">produto detalhe</a>
+                <span>produto detalhe</span>
             </div>
-        </section>
+        </a>
+
+        <a class="col s6 m4 l2 container" href="dist/pedidos.html">
+            <div class="card desativado">
+                <i class="fa fa-list" aria-hidden="true"></i>
+                <span>pedidos</span>
+            </div>
+        </a>
+
+        <a class="col s6 m4 l2 container" href="dist/perfil.html">
+            <div class="card desativado">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>perfil</span>
+            </div>
+        </a>
+
+        <a class="col s6 m4 l2 container" href="dist/parceiros.html">
+            <div class="card desativado">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <span>parceiros</span>
+            </div>
+        </a>
+
+        <a class="col s6 m4 l2 container" href="dist/login.html">
+            <div class="card desativado">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <span>login</span>
+            </div>
+        </a>
+
+        <a class="col s6 m4 l2 container" href="dist/cadastro-produtos.html">
+            <div class="card desativado">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                <span>cadastro produtos</span>
+            </div>
+        </a>
+
+        <a class="col s6 m4 l2 container" href="https://github.com/JonatanPinheiro/B2Moda">
+            <div class="card">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <span>repositório github</span>
+            </div>
+        </a>
+
+        <a class="col s6 m4 l2 container" href="https://github.com/JonatanPinheiro/B2Moda/archive/master.zip">
+            <div class="card">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                <span>baixar site</span>
+            </div>
+        </a>
 
     </main>
 </body>
