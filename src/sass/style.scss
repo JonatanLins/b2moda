@@ -10227,6 +10227,7 @@ select.input-sm {
 
 .header-opt-13 .header-top {
     background-color: transparent;
+    z-index: 70;
     padding: 0;
     position: relative;
     color: #666;
@@ -10282,7 +10283,7 @@ select.input-sm {
 .header-opt-13 .header-top .nav-left>li,
 .header-opt-13 .header-top .nav-right>li {
     position: relative;
-    padding-left: 12px;
+    margin: 6px 12px;
     margin-left: 12px;
     float: left
 }
@@ -10339,10 +10340,13 @@ select.input-sm {
     float: right
 }
 
+.header-opt-13 .header-top .nav-right .notif{
+    transform: translateY(-4px);
+}
 .header-opt-13 .header-top .nav-right .notif,
 .header-opt-13 .header-top .nav-right .chat {
     float: right;
-    font-size: 1.7em;
+    font-size: 25px;
     color: #ffad00;
     margin: 6px 0 0 20px;
 }
@@ -10394,11 +10398,6 @@ select.input-sm {
     font-weight: 400;
     font-size: 13px;
     color: #999
-}
-
-.header-opt-13 .switcher .dropdown-toggle .fa {
-    margin-left: 6px;
-    font-size: 14px
 }
 
 @media (max-width: 479px) {
@@ -10637,6 +10636,63 @@ select.input-sm {
 .header-opt-13 .block-minicart>.dropdown-toggle .counter {
     padding-left: 6px
 }
+
+
+
+.header-opt-13 .header-top .nav-right .notif .dropdown-menu{
+    width: 300px;
+    color: #f36;
+    
+    .notif-header{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    li:not(.notif-header){
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        
+        &:hover{
+            background-color: #ebebeb;
+        }
+        
+        span{
+            width: 100%;
+        }
+        
+        button{
+            outline: none;
+            border: none;
+            margin: 10px 3px;
+            background-color: lighten(#F36, 10%);
+            color: #FFF;
+            display: inline-block;
+            
+            padding: .3em;
+            border-bottom: 4px solid #F36;
+            
+            &:hover{
+                background-color: lighten(#f36, 20%);
+                border-bottom-color: lighten(#f36, 10%);
+            }
+            
+            &:active{
+                border-bottom-width: 1px;
+                height: 29px;
+                transform: translateY(3px);
+            }
+        }
+    }
+}
+
+
+
+
+
 
 .detalhes-produto {
     display: -webkit-box;
