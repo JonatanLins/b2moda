@@ -1,14 +1,1 @@
-/*! Copyright 2012, Ben Lin (http://dreamerslab.com/)
- * Licensed under the MIT License (LICENSE.txt).
- *
- * Version: 1.0.16
- *
- * Requires: jQuery >= 1.2.3
- */
-(function(a){a.fn.addBack=a.fn.addBack||a.fn.andSelf;
-a.fn.extend({actual:function(b,l){if(!this[b]){throw'$.actual => The jQuery method "'+b+'" you called does not exist';}var f={absolute:false,clone:false,includeMargin:false};
-var i=a.extend(f,l);var e=this.eq(0);var h,j;if(i.clone===true){h=function(){var m="position: absolute !important; top: -1000 !important; ";e=e.clone().attr("style",m).appendTo("body");
-};j=function(){e.remove();};}else{var g=[];var d="";var c;h=function(){c=e.parents().addBack().filter(":hidden");d+="visibility: hidden !important; display: block !important; ";
-if(i.absolute===true){d+="position: absolute !important; ";}c.each(function(){var m=a(this);var n=m.attr("style");g.push(n);m.attr("style",n?n+";"+d:d);
-});};j=function(){c.each(function(m){var o=a(this);var n=g[m];if(n===undefined){o.removeAttr("style");}else{o.attr("style",n);}});};}h();var k=/(outer)/.test(b)?e[b](i.includeMargin):e[b]();
-j();return k;}});})(jQuery);
+!function(t){t.fn.addBack=t.fn.addBack||t.fn.andSelf,t.fn.extend({actual:function(e,n){if(!this[e])throw'$.actual => The jQuery method "'+e+'" you called does not exist';var a,i,o={absolute:!1,clone:!1,includeMargin:!1},r=t.extend(o,n),l=this.eq(0);if(!0===r.clone)a=function(){l=l.clone().attr("style","position: absolute !important; top: -1000 !important; ").appendTo("body")},i=function(){l.remove()};else{var s,c=[],d="";a=function(){s=l.parents().addBack().filter(":hidden"),d+="visibility: hidden !important; display: block !important; ",!0===r.absolute&&(d+="position: absolute !important; "),s.each(function(){var e=t(this),n=e.attr("style");c.push(n),e.attr("style",n?n+";"+d:d)})},i=function(){s.each(function(e){var n=t(this),a=c[e];void 0===a?n.removeAttr("style"):n.attr("style",a)})}}a();var u=/(outer)/.test(e)?l[e](r.includeMargin):l[e]();return i(),u}})}(jQuery);
