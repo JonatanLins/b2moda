@@ -748,4 +748,17 @@
     $("a.imagem-produto-lightbox").fancybox({
 		'hideOnContentClick': true
 	});
+    
+    
+    // menu dropdown do menu principal do lado direito
+    $(".drop-menu .open-drop-menu").click(function(){
+        $('.drop-menu.open').removeClass('open');
+        $(this).parent().toggleClass('open');
+    });
+    $(document).click(function(event){
+        if(!$(event.target).closest('.drop-menu').length){
+            $('.drop-menu').removeClass('open');
+        }
+    });
+    
 })(jQuery);
