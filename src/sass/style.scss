@@ -10660,6 +10660,41 @@ select.input-sm {
 
 
 
+.buscar-pedidos{
+    margin-bottom: 50px;
+    display: flex;
+    max-width: 100%;
+    float: right;
+    
+    input[type=text]{
+        flex: 0 1 auto;
+        border: none;
+        border-bottom: 1px solid #9e9e9e;
+        padding: 10px 0;
+        outline: none;
+        font-size: 2rem;
+        height: 5rem;
+        transition: all .3s;
+        color: #555;
+        text-transform: capitalize;
+        
+        &:focus{
+            border-bottom: 1px solid #f36;
+            box-shadow: 0 1px #f36;
+        }
+    }
+    
+    input[type=submit]{
+        height: 5rem;
+        width: 5rem;
+        margin-left: 2rem;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        background: #f36 url(../img/icon/search.png) no-repeat center;
+    }
+}
+
 
 
 
@@ -10670,6 +10705,8 @@ select.input-sm {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     border-top: 10px solid #F36;
+    clear: both;
+    margin-bottom: 50px;
 }
 
 .detalhes-produto h1 {
@@ -22421,7 +22458,7 @@ img.alignright {
 }
 
 .cart_navigation {
-    margin-top: 10px;
+    margin-top: -30px;
     float: left;
     width: 100%
 }
