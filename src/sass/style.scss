@@ -10248,7 +10248,7 @@ select.input-sm {
 }
 
 .header-opt-13 .header-top .container {
-    position: relative
+    position: relative;
 }
 
 .header-opt-13 .header-top .container:after,
@@ -10275,6 +10275,7 @@ select.input-sm {
     display: table
 }
 
+
 .header-opt-13 .header-top .nav-left:after,
 .header-opt-13 .header-top .nav-right:after {
     clear: both
@@ -10283,8 +10284,6 @@ select.input-sm {
 .header-opt-13 .header-top .nav-left>li,
 .header-opt-13 .header-top .nav-right>li {
     position: relative;
-    margin: 6px 12px;
-    margin-left: 12px;
     float: left
 }
 
@@ -10305,23 +10304,9 @@ select.input-sm {
     color: #f36
 }
 
-.header-opt-13 .header-top .nav-left>li:first-child,
-.header-opt-13 .header-top .nav-right>li:first-child {
-    padding-left: 0;
-    margin-left: 0
-}
-
 .header-opt-13 .header-top .nav-left>li:first-child:before,
 .header-opt-13 .header-top .nav-right>li:first-child:before {
     content: none
-}
-
-@media (max-width: 479px) {
-    .header-opt-13 .header-top .nav-left>li,
-    .header-opt-13 .header-top .nav-right>li {
-        padding-left: 6px;
-        margin-left: 6px
-    }
 }
 
 .header-opt-13 .header-top .nav-right {
@@ -10330,6 +10315,15 @@ select.input-sm {
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
+}
+
+@media (max-width: 349px){
+    .header-opt-13 .header-top .nav-left,
+    .header-opt-13 .header-top .nav-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .header-opt-13 .header-top .nav-right .counter .counter-number {

@@ -752,8 +752,13 @@
     
     // menu dropdown do menu principal do lado direito
     $(".drop-menu .open-drop-menu").click(function(){
-        $('.drop-menu.open').removeClass('open');
-        $(this).parent().toggleClass('open');
+        var parentMenu = $(this).parent('.drop-menu');
+        if(parentMenu.hasClass('open')){
+            parentMenu.removeClass('open');
+        }else{
+            $('.drop-menu').removeClass('open');
+            parentMenu.addClass('open');
+        }
     });
     $(document).click(function(event){
         if(!$(event.target).closest('.drop-menu').length){
