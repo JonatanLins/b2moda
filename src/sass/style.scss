@@ -10284,7 +10284,8 @@ select.input-sm {
 .header-opt-13 .header-top .nav-left>li,
 .header-opt-13 .header-top .nav-right>li {
     position: relative;
-    float: left
+    float: left;
+    margin: 6px;
 }
 
 .header-opt-13 .header-top .nav-left>li>a,
@@ -10323,6 +10324,13 @@ select.input-sm {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 380px){
+    .header-opt-13 .header-top .nav-left>li,
+    .header-opt-13 .header-top .nav-right>li{
+        margin: 2px;
     }
 }
 
