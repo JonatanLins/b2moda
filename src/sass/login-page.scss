@@ -1,0 +1,69 @@
+@import "style";
+
+
+
+.login-page{
+    .logo{
+        margin: 50px auto;
+        display: block;
+    }
+
+    .sign-in,
+    .sign-up{
+        margin-bottom: 50px;
+        padding: 0 30px;
+        
+        h2{
+            padding-bottom: 2em;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        label{
+            font-size: 1.5rem;
+            font-weight: initial;
+            color: #444 !important;
+        }
+        input{
+            font-size: 1.8rem;
+            color: #444;
+        }
+        
+        a{
+            text-align: right;
+        }
+        
+        input[type=submit]{
+            padding: .5em;
+            font-size: 1.5em;
+            border: none;
+            outline: none;
+            color: #fff;
+            background-color: lighten(#f36, 10%);
+            box-shadow: 0 5px #f36;
+            min-width: 200px;
+            display: block;
+            margin: 40px auto;
+            transition: all .1s;
+            
+            &:hover{
+                background-color: lighten(#f36, 15%);
+            }
+            
+            &:active{
+                transform: translateY(3px);
+                box-shadow: 0 2px #f36;
+            }
+        }
+        
+        .formulario-expansivel{
+            overflow: hidden;
+            transition: all 5s ease;
+        
+            &:not(.open){
+                height: 0;
+            }
+        }
+    }
+}
+
