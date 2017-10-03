@@ -766,5 +766,11 @@
         }
     });
     
+    $('.abrir-expansivel').click(function(){
+        $(this).parent().children('.expansivel').toggleClass('open');
+    });
+    
+    
+    
     
 })(jQuery);
