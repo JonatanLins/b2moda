@@ -10484,7 +10484,9 @@ select.input-sm {
     padding-right: 50px;
     color: #333;
     font-size: 14px;
-    font-weight: 300
+    font-weight: 300;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .header-opt-13 .block-search .form-search .form-control::-moz-placeholder {
@@ -10502,6 +10504,7 @@ select.input-sm {
 
 .header-opt-13 .block-search .form-search .btn-search {
     font-size: 14px;
+    box-shadow: none;
     color: #fff;
     width: 55px;
     background-color: #f36;
@@ -10513,7 +10516,7 @@ select.input-sm {
 
 .header-opt-13 .block-search .form-search .btn-search:focus,
 .header-opt-13 .block-search .form-search .btn-search:hover {
-    background-color: #996800;
+    background-color: lighten(#f36, 15%);
     color: #fff
 }
 
@@ -10820,6 +10823,58 @@ select.input-sm {
     }
 }
 
+
+
+
+.modificar-dados-usuario{
+    width: 40%;
+    min-width: 250px;
+    margin: 0 auto;
+    
+    label{
+        font-size: 1.5rem;
+        font-weight: initial;
+        color: #444 !important;
+    }
+    
+    input{
+        font-size: 1.8rem !important;
+        color: #444;
+    }
+    
+    input[type=submit]{
+        padding: .5em;
+        font-size: 1.5em;
+        border: none;
+        outline: none;
+        color: #fff;
+        background-color: lighten(#f36, 10%);
+        box-shadow: 0 5px #f36;
+        min-width: 200px;
+        display: block;
+        margin: 40px auto;
+        transition: all .1s;
+
+        &:hover{
+            background-color: lighten(#f36, 15%);
+        }
+
+        &:active{
+            transform: translateY(3px);
+            box-shadow: 0 2px #f36;
+        }
+    }
+    
+    @media (max-width: 320px){
+        width: 90%;
+        
+        input[type=submit]{
+            width: 100%;
+        }
+    }
+    
+    .caret{display: none}
+}
 
 
 

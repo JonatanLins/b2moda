@@ -245,11 +245,92 @@
 
             <div class="columns container">
                 <h2 class="page-heading">
-                    <span class="page-heading-title2">Perfil</span>
+                    <span class="page-heading-title2">Modificar Perfil</span>
                 </h2>
 
-                <div class="page-content page-order">
-                    
+               
+               
+               
+                <div class="page-content">
+                    <form action="" class="modificar-dados-usuario">
+
+                        <label for="email-reg">E-mail</label>
+                        <input type="email" id="email-reg" name="email">
+
+                        <label for="cnpj-reg">CNPJ</label>
+                        <input type="text" id="cnpj-reg" name="cnpj" disabled>
+
+                        <label for="senha-reg">Senha</label>
+                        <input type="password" id="senha-reg" name="senha">
+                        
+                        <label for="senha-reg">Digite a Senha Novamente</label>
+                        <input type="password" id="senha-reg" name="senha">
+
+                        <label for="razao-social-reg">Razão Social</label>
+                        <input type="text" id="razao-social-reg" name="razaoSocial" disabled>
+
+                        <label for="nome-fantasia-reg">Nome de Fantasia</label>
+                        <input type="text" id="nome-fantasia-reg" name="nomeFantasia">
+
+                        <label for="inscricao-estadual-reg">Inscrição Estadual</label>
+                        <input type="text" id="inscricao-estadual-reg" name="inscricaoEstadual">
+
+                        <label for="cep-reg">CEP</label>
+                        <input type="text" id="cep-reg" name="cep">
+
+                        <label for="endereco-reg">Endereço</label>
+                        <input type="text" id="endereco-reg" name="endereco">
+
+                        <label for="bairro-reg">Bairro</label>
+                        <input type="text" id="bairro-reg" name="bairro">
+
+                        <label for="cidade-reg">Cidade</label>
+                        <input type="text" id="cidade-reg" name="cidade">
+
+                        <div class="input-field"><br>
+                            <select id="estado-reg" name="estado">
+                                <option value="" disabled selected>Escolha um Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div><br>
+
+                        <label for="responsavel-reg">Responsável por Contato Comercial</label>
+                        <input type="text" id="responsavel-reg" name="responsavel">
+
+                        <label for="email-responsavel-reg">E-mail para Contato Comercial</label>
+                        <input type="text" id="email-responsavel-reg" name="emailResponsavel">
+
+                        <label for="celular-reg">Celular</label>
+                        <input type="tel" id="celular-reg" name="celular">
+
+                        <input type="submit" value="Confirmar alterações">
+                    </form>
                 </div>
             </div>
 
@@ -375,6 +456,15 @@
 
     <!-- Main -->
     <script type="text/javascript" src="js/main.js"></script>
+    
+    
+    
+    
+    <!-- Custom -->
+    <script>
+        // Ativar selector do materialize
+        $('select').material_select();
+    </script>
 
 </body>
 
