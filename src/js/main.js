@@ -678,8 +678,11 @@
     });
     $(document).click(function (event) {
         if (!$(event.target).closest('.slider-block').length) {
-            $(".slider-block.block-content").removeClass("ativo");
+            $(".slider-block.block-content.ativo").removeClass("ativo");
         }
+    });
+    $('[data-action="toggle-nav"], .dropdown.switcher').click(function(){
+        $(".slider-block.block-content.ativo").removeClass("ativo");
     });
 
 
@@ -761,11 +764,16 @@
         }
     });
     $(document).click(function(event){
-        if(!$(event.target).closest('.drop-menu').length){
-            $('.drop-menu').removeClass('open');
+        if (!$(event.target).closest('.drop-menu').length) {
+            $(".drop-menu.open").removeClass("open");
         }
     });
+    $('[data-action="toggle-nav"], .nav-left .dropdown.switcher').click(function(){
+        $(".drop-menu.open").removeClass("open");
+    });
     
+    
+    // Abrir divisão expansível
     $('.abrir-expansivel').click(function(){
         $(this).parent().children('.expansivel').toggleClass('open');
     });
