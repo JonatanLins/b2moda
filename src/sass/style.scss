@@ -10824,6 +10824,74 @@ select.input-sm {
 }
 
 
+.pagina-produtos{
+    
+    .btn{
+        color: #fff;
+        font-size: 1.5rem;
+        padding: .5em 1em;
+    }
+    .btn-floating{
+        background-color: #f36;
+    }
+    
+    table{
+        margin-top: 50px;
+        
+        td{
+            padding: 0 10px;
+        }
+        
+        img{
+            max-width: 100px;
+        } 
+        
+        tbody td:last-child{
+            white-space: nowrap;
+            
+            .fa{
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 767px){
+            thead{
+                display: none;
+            }
+            
+            tbody{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                tr{
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+                    border-radius: 2px;
+                    margin: 10px;
+                }
+                
+                img{
+                    max-width: 180px;
+                }
+                
+                td{
+                    margin: 10px 0;
+
+                    &:first-child{
+                        align-self: center;
+                    }
+                        
+                    &:last-child{
+                        align-self: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 .modificar-dados-usuario{

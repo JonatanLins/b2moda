@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -240,7 +241,7 @@
 
 
         <!-- MAIN -->
-        <main class="site-main">
+        <main class="site-main pagina-produtos">
 
             <div class="columns container">
                 <h2 class="page-heading">
@@ -248,7 +249,72 @@
                 </h2>
 
                 <div class="page-content">
+                    <button data-open="adicionar-item" class="btn">Adicionar Produto</button>
                     
+                    
+                    <table class="bordered highlight">
+                        <thead>
+                            <tr>
+                                <td>Foto</td>
+                                <td>Referência</td>
+                                <td>Descrição</td>
+                                <td>Grupo</td>
+                                <td>Status</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        
+                        
+                        <tbody>
+                            <tr>
+                                <td><img src="img/produtos/template-1.jpg" class="responsive-img" alt="Foto do Produto"></td>
+                                <td>789821</td>
+                                <td>Calça Cigarrete Jeans Fashion</td>
+                                <td>Zigurat Jeans</td>
+                                <td>Aguardando Pagamento</td>
+                                <td>
+                                    <button data-open="configurar-item" class="btn-floating waves-effect waves-light">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                    <button data-acao="deletar-item" class="btn-floating waves-effect waves-light">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img src="img/produtos/template-2.jpg" class="responsive-img" alt="Foto do Produto"></td>
+                                <td>789821</td>
+                                <td>Calça Cigarrete Jeans Fashion</td>
+                                <td>Zigurat Jeans</td>
+                                <td>Aguardando Pagamento</td>
+                                <td>
+                                    <button data-open="configurar-item" class="btn-floating waves-effect waves-light">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                    <button data-acao="deletar-item" class="btn-floating waves-effect waves-light">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img src="img/produtos/template-3.jpg" class="responsive-img" alt="Foto do Produto"></td>
+                                <td>789821</td>
+                                <td>Calça Cigarrete Jeans Fashion</td>
+                                <td>Zigurat Jeans</td>
+                                <td>Aguardando Pagamento</td>
+                                <td>
+                                    <button data-open="configurar-item" class="btn-floating waves-effect waves-light">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                    <button data-acao="deletar-item" class="btn-floating waves-effect waves-light">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
@@ -366,9 +432,19 @@
     <!-- arcticmodal -->
     <script src="js/arcticmodal/jquery.arcticmodal.js"></script>
 
+    <!-- Materialize -->
+    <script type="text/javascript" src="js/materialize.js"></script>
+
     <!-- Main -->
     <script type="text/javascript" src="js/main.js"></script>
 
+    
+    
+    <!-- Custom -->
+    <script>
+        // Ativar selector do materialize
+        $('select').material_select();
+    </script>
 </body>
 
 </html>
