@@ -10665,10 +10665,10 @@ select.input-sm {
 
     .notif .dropdown-menu{
         width: 270px;
+        max-width: 90vw;
 
         li:not(.notif-header){
             padding: 10px;
-            justify-content: flex-end;
 
             &:hover{
                 background-color: #ebebeb;
@@ -10677,29 +10677,30 @@ select.input-sm {
             span{
                 width: 100%;
             }
-
+            
+            .botoes{
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+            }
+            
             button{
+                white-space: nowrap;
                 background-color: #f36;
                 color: #FFF;
                 border: none;
                 outline: none;
                 font-size: 14px;
-                margin-top: 5px;
-                margin-right: 5px;
+                margin: 5px 2px;
                 transition: all .1s;
-                box-shadow: 0 3px 0 0 lighten(#f36, 20%);
+                border-radius: 2px;
 
                 &:hover{
                     background-color: lighten(#f36, 10%);
                 }
-
+                
                 &:active{
-                    transform: translateY(2px);
-                    box-shadow: 0 1px 0 0 lighten(#f36, 20%);
-                }
-
-                &:last-child{
-                    margin-right: 0;
+                    background-color: lighten(#f36, 15%);
                 }
             }
         }
