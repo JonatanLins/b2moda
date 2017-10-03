@@ -1810,6 +1810,7 @@ select.input-sm {
 .site-header .nav-toggle-menu .fa {
     font-size: 24px;
     vertical-align: middle;
+    transform: translateY(-3px);
 }
 
 .site-header .nav-toggle-menu.active:before {
@@ -2184,7 +2185,6 @@ select.input-sm {
     }
     .site-header .nav-toggle-menu span {
         margin-right: 10px;
-        display: none;
     }
     .site-header .nav-toggle-menu.active:before {
         content: "";
