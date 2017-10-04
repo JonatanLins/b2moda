@@ -10810,6 +10810,7 @@ select.input-sm {
         height: 5rem;
         transition: all .3s;
         color: #555;
+        max-width: calc(100% - 70px);
         text-transform: capitalize;
         
         &:focus{
@@ -10819,9 +10820,10 @@ select.input-sm {
     }
     
     input[type=submit]{
-        height: 5rem;
-        width: 5rem;
-        margin-left: 2rem;
+        height: 50px;
+        width: 50px;
+        flex: 0 0 50px;
+        margin-left: 20px;
         border: none;
         outline: none;
         border-radius: 2px;
