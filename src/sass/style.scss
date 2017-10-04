@@ -10828,6 +10828,7 @@ select.input-sm {
 .pagina-produtos{
     
     .btn{
+        background-color: #f36;
         color: #fff;
         font-size: 1.5rem;
         padding: .5em 1em;
@@ -10839,8 +10840,16 @@ select.input-sm {
     table{
         margin-top: 50px;
         
+        thead td{
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
         td{
             padding: 0 10px;
+            text-align: center;
         }
         
         img{
@@ -10879,6 +10888,7 @@ select.input-sm {
                 
                 td{
                     margin: 10px 0;
+                    text-align: left;
 
                     &:first-child{
                         align-self: center;
@@ -10890,6 +10900,37 @@ select.input-sm {
                 }
             }
         }
+    }
+}
+
+.block-adicionar-produto.block-content,
+.block-editar-produto.block-content{
+    padding: 30px;
+    
+    h2{
+        margin: 30px 0 40px;
+    }
+    
+    .switch{
+        margin-bottom: 20px;
+    }
+    
+    label, input{
+        font-size: 1.5rem;
+        color: #555;
+    }
+    
+    btn:active{
+        box-shadow: none;
+    }
+    
+    .file-field .btn{
+        line-height: 45px;
+        width: 45px;
+        border: none;
+        text-align: center;
+        height: initial;
+        padding: 0;
     }
 }
 
@@ -40569,7 +40610,7 @@ img.alignright {
     z-index: 1500;
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -120%;
     width: 40%;
     min-width: 500px;
     background-color: #EEE;
@@ -40597,7 +40638,7 @@ img.alignright {
     }
 }
 
-.slider-block.block-content .close-block {
+.slider-block.block-content .close-block.superior {
     position: absolute;
     top: 0;
     right: 0;

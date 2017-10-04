@@ -255,7 +255,7 @@
                 </h2>
 
                 <div class="page-content">
-                    <button data-open="adicionar-item" class="btn">Adicionar Produto</button>
+                    <button data-bloco="adicionar-produto" class="btn slider-block botao">Adicionar Produto</button>
                     
                     
                     <table class="bordered highlight">
@@ -279,10 +279,10 @@
                                 <td>Zigurat Jeans</td>
                                 <td>Aguardando Pagamento</td>
                                 <td>
-                                    <button data-open="configurar-item" class="btn-floating waves-effect waves-light">
+                                    <button data-bloco="editar-produto" class="btn-floating waves-effect waves-light slider-block botao">
                                         <i class="fa fa-cog" aria-hidden="true"></i>
                                     </button>
-                                    <button data-acao="deletar-item" class="btn-floating waves-effect waves-light">
+                                    <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -295,10 +295,10 @@
                                 <td>Zigurat Jeans</td>
                                 <td>Aguardando Pagamento</td>
                                 <td>
-                                    <button data-open="configurar-item" class="btn-floating waves-effect waves-light">
+                                    <button data-bloco="editar-produto" class="btn-floating waves-effect waves-light slider-block botao">
                                         <i class="fa fa-cog" aria-hidden="true"></i>
                                     </button>
-                                    <button data-acao="deletar-item" class="btn-floating waves-effect waves-light">
+                                    <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -311,10 +311,10 @@
                                 <td>Zigurat Jeans</td>
                                 <td>Aguardando Pagamento</td>
                                 <td>
-                                    <button data-open="configurar-item" class="btn-floating waves-effect waves-light">
+                                    <button data-bloco="editar-produto" class="btn-floating waves-effect waves-light slider-block botao">
                                         <i class="fa fa-cog" aria-hidden="true"></i>
                                     </button>
-                                    <button data-acao="deletar-item" class="btn-floating waves-effect waves-light">
+                                    <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -332,7 +332,7 @@
             <!-- chat lateral deslizante -->
             <div class="slider-block block-content block-chat">
                 <div class="header-chat">
-                    <div class="slider-block close-block" data-bloco="chat"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    <div class="slider-block close-block superior" data-bloco="chat"><i class="fa fa-times" aria-hidden="true"></i></div>
                     <img src="img/depoimentos/rosto-01.jpg" class="foto">
                     <div class="nome">Zigurat Jeans</div>
                     <span class="digitando">Digitando...</span>
@@ -356,7 +356,120 @@
             </div>
             <!-- chat lateral deslizante -->
 
+            
+            
+            
+            <!-- adicionar produto -->
+            <div class="slider-block block-content block-adicionar-produto ativo">
+                <form action="">
+                    <div class="slider-block close-block superior" data-bloco="adicionar-produto"><i class="fa fa-times" aria-hidden="true"></i></div>
 
+                    <h2>Informações básicas</h2>
+
+                    <div class="switch">
+                        <label>
+                            Produto Ativo
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+
+                    <label for="referencia-add">Referência / SKU</label>
+                    <input type="text" id="referencia-add" name="referencia">
+
+                    <label for="categoria-add">Categoria Sem categoria</label>
+                    <input type="text" id="categoria-add" name="categoria">
+
+                    <label for="titulo-add">Título</label>
+                    <input type="text" id="titulo-add" name="titulo">
+
+                    <label for="descricao-add">Descrição</label>
+                    <input type="text" id="descricao-add" name="descricao">
+
+                    <label for="composicao-add">Composição</label>
+                    <input type="text" id="composicao-add" name="composicao">
+
+                    <label for="hashtags-add">Hashtags / Palavras-chave</label>
+                    <input type="text" id="hashtags-add" name="hashtags">
+
+                    <button class="btn waves-effect waves-light">Definir cores e Tamanhos</button>
+
+                    <label for="guia-tamanhos-add">Guia de tamanhos</label>
+                    <input type="text" id="guia-tamanhos-add" name="guiaTamanhos">
+
+                    <label for="disponibilidade-add">Disponibilidade</label>
+                    <input type="text" id="disponibilidade-add" name="disponibilidade">
+
+
+                    <h2>Frete</h2>
+
+                    <label for="unidade-add">Unidade</label>
+                    <input type="text" id="unidade-add" name="unidade">
+
+                    <label for="peso-add">Peso</label>
+                    <input type="text" id="peso-add" name="peso">
+
+                    <label for="dimensoes-add">Dimensões</label>
+                    <input type="text" id="dimensoes-add" name="dimensoes">
+
+                    <label for="pedido-minimo-add">Pedido mínimo</label>
+                    <input type="text" id="pedido-minimo-add" name="pedidoMinimo">
+
+                    <label for="tipo-frete-add">Tipo de frete</label>
+                    <input type="text" id="tipo-frete-add" name="tipoFrete">
+
+                    <label for="observacoes-frete-add">Observações de frete</label>
+                    <input type="text" id="observacoes-frete-add" name="observacoesFrete">
+
+
+                    <h2>Exibição, Tabela de preços, Formas de pagamento</h2>
+
+                    <p>Escolha quem pode ver seu produto e por qual preço e condição de pagamento.</p>
+                    <p>O cliente que estiver cadastrado em mais de um grupo, receberá a melhor oferta (menor preço).</p>
+                    <p>Quem você quer que veja este produto?</p>
+
+                    <div class="chips grupos-clientes"></div>
+
+
+                    <h2>Enviar fotos (upload)</h2>
+
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <i class="fa fa-upload" aria-hidden="true"></i>
+                            <input type="file" multiple>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Escolher Arquivos">
+                        </div>
+                    </div>
+
+                    <div class="acao-final">
+                        <input type="submit" id="submit-adicionar" class="hide">
+                        <label for="submit-adicionar" class="btn-floating waves-effect waves-light salvar-produto slider-block close-block" data-bloco="adicionar-produto">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </label>
+
+                        <input type="reset" id="reset-adicionar" class="hide">
+                        <label for="reset-adicionar" class="btn-floating waves-effect waves-light cancelar-produto slider-block close-block" data-bloco="adicionar-produto">
+                            <i class="fa fa-close" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <!-- adicionar produto -->
+            
+            
+            
+            
+            
+            <!-- editar produto -->
+            <div class="slider-block block-content block-editar-produto">
+                <div class="slider-block close-block superior" data-bloco="editar-produto"><i class="fa fa-times" aria-hidden="true"></i></div>
+                
+            </div>
+            <!-- editar produto -->
+
+       
         </main>
         <!-- end MAIN -->
 
@@ -439,6 +552,7 @@
     <script src="js/arcticmodal/jquery.arcticmodal.js"></script>
 
     <!-- Materialize -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script type="text/javascript" src="js/materialize.js"></script>
 
     <!-- Main -->
@@ -448,8 +562,27 @@
     
     <!-- Custom -->
     <script>
-        // Ativar selector do materialize
+        // Ativar objetos do materialize
         $('select').material_select();
+        
+        $('.chips.grupos-clientes').material_chip({
+            placeholder: 'Digite um grupo',
+            secondaryPlaceholder: '+Grupo',
+//            autocompleteOptions: {
+//                data: {
+//                    'Grupo 1': null,
+//                    'Grupo 2': null,
+//                    'Grupo 3': null
+//                },
+//                limit: Infinity,
+//                minLength: 1
+//            }
+            data: [{
+                tag: 'Grupo 1',
+            }, {
+                tag: 'Grupo 2',
+            }],
+        });
     </script>
 </body>
 

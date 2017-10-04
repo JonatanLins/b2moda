@@ -779,6 +779,10 @@
     });
     
     
+    // Deletar item da lista de produtos ao clicar no botão referente
+    $('[data-action="deletar-item"]').click(function(){
+        $(this).closest('tr').addClass('hide');
+    });
     
     
 })(jQuery);
