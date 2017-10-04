@@ -10795,6 +10795,10 @@ select.input-sm {
     max-width: 100%;
     justify-content: center;
     
+    @media (min-width: 600px){
+        justify-content: flex-start;
+    }
+
     input[type=text]{
         flex: 0 1 auto;
         border: none;
@@ -10824,6 +10828,18 @@ select.input-sm {
     }
 }
 
+
+
+
+.pagina-pedidos{
+    h4.id-pedido{
+        float: left;
+    }
+    h5.id-pedido{
+        float: right;
+        font-size: 18px;
+    }
+}
 
 .pagina-produtos{
     
