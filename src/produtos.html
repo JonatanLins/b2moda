@@ -255,7 +255,7 @@
                 </h2>
 
                 <div class="page-content">
-                    <button data-bloco="adicionar-produto" class="btn slider-block botao">Adicionar Produto</button>
+                    <button data-bloco="config-produto" class="btn slider-block botao">Adicionar Produto</button>
                     
                     
                     <table class="bordered highlight">
@@ -279,7 +279,7 @@
                                 <td>Zigurat Jeans</td>
                                 <td>Aguardando Pagamento</td>
                                 <td>
-                                    <button data-bloco="editar-produto" class="btn-floating waves-effect waves-light slider-block botao">
+                                    <button data-bloco="config-produto" class="btn-floating waves-effect waves-light slider-block botao">
                                         <i class="fa fa-cog" aria-hidden="true"></i>
                                     </button>
                                     <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
@@ -295,7 +295,7 @@
                                 <td>Zigurat Jeans</td>
                                 <td>Aguardando Pagamento</td>
                                 <td>
-                                    <button data-bloco="editar-produto" class="btn-floating waves-effect waves-light slider-block botao">
+                                    <button data-bloco="config-produto" class="btn-floating waves-effect waves-light slider-block botao">
                                         <i class="fa fa-cog" aria-hidden="true"></i>
                                     </button>
                                     <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
@@ -311,7 +311,7 @@
                                 <td>Zigurat Jeans</td>
                                 <td>Aguardando Pagamento</td>
                                 <td>
-                                    <button data-bloco="editar-produto" class="btn-floating waves-effect waves-light slider-block botao">
+                                    <button data-bloco="config-produto" class="btn-floating waves-effect waves-light slider-block botao">
                                         <i class="fa fa-cog" aria-hidden="true"></i>
                                     </button>
                                     <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
@@ -360,9 +360,9 @@
             
             
             <!-- adicionar produto -->
-            <div class="slider-block block-content block-adicionar-produto ativo">
+            <div class="slider-block block-content block-config-produto">
                 <form action="">
-                    <div class="slider-block close-block superior" data-bloco="adicionar-produto"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    <div class="slider-block close-block superior" data-bloco="config-produto"><i class="fa fa-times" aria-hidden="true"></i></div>
 
                     <h2>Informações básicas</h2>
 
@@ -374,52 +374,52 @@
                         </label>
                     </div>
 
-                    <label for="referencia-add">Referência / SKU</label>
-                    <input type="text" id="referencia-add" name="referencia">
+                    <label for="referencia-config">Referência / SKU</label>
+                    <input type="text" id="referencia-config" name="referencia">
 
-                    <label for="categoria-add">Categoria Sem categoria</label>
-                    <input type="text" id="categoria-add" name="categoria">
+                    <label for="categoria-config">Categoria</label>
+                    <input type="text" id="categoria-config" name="categoria">
 
-                    <label for="titulo-add">Título</label>
-                    <input type="text" id="titulo-add" name="titulo">
+                    <label for="titulo-config">Título</label>
+                    <input type="text" id="titulo-config" name="titulo">
 
-                    <label for="descricao-add">Descrição</label>
-                    <input type="text" id="descricao-add" name="descricao">
+                    <label for="descricao-config">Descrição</label>
+                    <input type="text" id="descricao-config" name="descricao">
 
-                    <label for="composicao-add">Composição</label>
-                    <input type="text" id="composicao-add" name="composicao">
+                    <label for="composicao-config">Composição</label>
+                    <input type="text" id="composicao-config" name="composicao">
 
-                    <label for="hashtags-add">Hashtags / Palavras-chave</label>
-                    <input type="text" id="hashtags-add" name="hashtags">
+                    <label for="hashtags-config">Hashtags / Palavras-chave</label>
+                    <input type="text" id="hashtags-config" name="hashtags">
 
-                    <button class="btn waves-effect waves-light">Definir cores e Tamanhos</button>
+                    <div data-bloco="cores-tamanhos" class="btn waves-effect waves-light slider-block botao">Definir cores e Tamanhos</div>
 
-                    <label for="guia-tamanhos-add">Guia de tamanhos</label>
-                    <input type="text" id="guia-tamanhos-add" name="guiaTamanhos">
+                    <label for="guia-tamanhos-config">Guia de tamanhos</label>
+                    <input type="text" id="guia-tamanhos-config" name="guiaTamanhos">
 
-                    <label for="disponibilidade-add">Disponibilidade</label>
-                    <input type="text" id="disponibilidade-add" name="disponibilidade">
+                    <label for="disponibilidade-config">Disponibilidade</label>
+                    <input type="text" id="disponibilidade-config" name="disponibilidade">
 
 
                     <h2>Frete</h2>
 
-                    <label for="unidade-add">Unidade</label>
-                    <input type="text" id="unidade-add" name="unidade">
+                    <label for="unidade-config">Unidade</label>
+                    <input type="text" id="unidade-config" name="unidade">
 
-                    <label for="peso-add">Peso</label>
-                    <input type="text" id="peso-add" name="peso">
+                    <label for="peso-config">Peso</label>
+                    <input type="text" id="peso-config" name="peso">
 
-                    <label for="dimensoes-add">Dimensões</label>
-                    <input type="text" id="dimensoes-add" name="dimensoes">
+                    <label for="dimensoes-config">Dimensões</label>
+                    <input type="text" id="dimensoes-config" name="dimensoes">
 
-                    <label for="pedido-minimo-add">Pedido mínimo</label>
-                    <input type="text" id="pedido-minimo-add" name="pedidoMinimo">
+                    <label for="pedido-minimo-config">Pedido mínimo</label>
+                    <input type="text" id="pedido-minimo-config" name="pedidoMinimo">
 
-                    <label for="tipo-frete-add">Tipo de frete</label>
-                    <input type="text" id="tipo-frete-add" name="tipoFrete">
+                    <label for="tipo-frete-config">Tipo de frete</label>
+                    <input type="text" id="tipo-frete-config" name="tipoFrete">
 
-                    <label for="observacoes-frete-add">Observações de frete</label>
-                    <input type="text" id="observacoes-frete-add" name="observacoesFrete">
+                    <label for="observacoes-frete-config">Observações de frete</label>
+                    <input type="text" id="observacoes-frete-config" name="observacoesFrete">
 
 
                     <h2>Exibição, Tabela de preços, Formas de pagamento</h2>
@@ -429,7 +429,23 @@
                     <p>Quem você quer que veja este produto?</p>
 
                     <div class="chips grupos-clientes"></div>
+                    
+                    <div class="info-pagamento">
+                        <label for="forma-pagamento-config">Forma de Pagamento</label>
+                        <select id="forma-pagamento-config" name="formaPagamento">
+                            <option value="" disabled selected>Escolha uma Forma</option>
+                            <option value="a-vista">À Vista</option>
+                            <option value="cartao">Cartão</option>
+                            <option value="30">30 Dias</option>
+                            <option value="60">60 Dias</option>
+                            <option value="90">90 Dias</option>
+                        </select>
 
+                        <input type="number" id="preco-config" name="preco" placeholder="Preço">
+                        
+                        <div class="adicionar-pagamento btn waves-effect waves-light">Adicionar forma de pagamento</div>
+                    </div>
+                    
 
                     <h2>Enviar fotos (upload)</h2>
 
@@ -443,14 +459,16 @@
                         </div>
                     </div>
 
+                   
+                   
                     <div class="acao-final">
-                        <input type="submit" id="submit-adicionar" class="hide">
-                        <label for="submit-adicionar" class="btn-floating waves-effect waves-light salvar-produto slider-block close-block" data-bloco="adicionar-produto">
+                        <input type="submit" id="submit-produto" class="hide">
+                        <label for="submit-produto" class="btn-floating btn-large waves-effect waves-light slider-block close-block" data-bloco="config-produto">
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </label>
 
-                        <input type="reset" id="reset-adicionar" class="hide">
-                        <label for="reset-adicionar" class="btn-floating waves-effect waves-light cancelar-produto slider-block close-block" data-bloco="adicionar-produto">
+                        <input type="reset" id="reset-produto" class="hide">
+                        <label for="reset-produto" class="btn-floating btn-large waves-effect waves-light slider-block close-block" data-bloco="config-produto">
                             <i class="fa fa-close" aria-hidden="true"></i>
                         </label>
                     </div>
@@ -462,12 +480,132 @@
             
             
             
-            <!-- editar produto -->
-            <div class="slider-block block-content block-editar-produto">
-                <div class="slider-block close-block superior" data-bloco="editar-produto"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <!-- Cores e tamanhos do produto -->
+            <div class="slider-block block-content block-cores-tamanhos">
+                <div class="slider-block close-block superior" data-bloco="cores-tamanhos"><i class="fa fa-times" aria-hidden="true"></i></div>
                 
+                <form action="">
+                    <h2>Selecione as cores deste produto</h2>
+                    
+                    <div class="lista-cores-produto">
+                        <fieldset>
+                            <input type="checkbox" id="produto-cor-01">
+                            <label for="produto-cor-01">
+                                <i class="fa fa-circle" aria-hidden="true" style="color: #f36"></i>
+                                Rosa
+                            </label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="checkbox" id="produto-cor-02">
+                            <label for="produto-cor-02">
+                                <i class="fa fa-circle" aria-hidden="true" style="color: blue"></i>
+                                Azul
+                            </label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="checkbox" id="produto-cor-03">
+                            <label for="produto-cor-03">
+                                <i class="fa fa-circle" aria-hidden="true" style="color: red"></i>
+                                Vermelho
+                            </label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="checkbox" id="produto-cor-04">
+                            <label for="produto-cor-04">
+                                <i class="fa fa-circle" aria-hidden="true" style="color: yellow"></i>
+                                Amarelo
+                            </label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="checkbox" id="produto-cor-05">
+                            <label for="produto-cor-05">
+                                <i class="fa fa-circle" aria-hidden="true" style="color: black"></i>
+                                Preto
+                            </label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="checkbox" id="produto-cor-06">
+                            <label for="produto-cor-06">
+                                <i class="fa fa-circle" aria-hidden="true" style="color: white"></i>
+                                Branco
+                            </label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="checkbox" id="produto-cor-07">
+                            <label for="produto-cor-07">
+                                <i class="fa fa-circle" aria-hidden="true" style="color: Green"></i>
+                                Verde
+                            </label><br>
+                        </fieldset>
+                    </div>
+
+                    <div class="btn waves-effect waves-light">Criar Nova Cor</div>
+
+
+                   
+                   
+                    <h2>Selecione os tamanhos deste produto</h2>
+
+                    <div class="lista-tamanhos-produto">
+                        <fieldset>
+                            <input type="checkbox" id="produto-tam-01">
+                            <label for="produto-tam-01">P</label><br>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <input type="checkbox" id="produto-tam-02">
+                            <label for="produto-tam-02">M</label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="checkbox" id="produto-tam-03">
+                            <label for="produto-tam-03">G</label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="checkbox" id="produto-tam-04">
+                            <label for="produto-tam-04">GG</label><br>
+                        </fieldset>
+                    </div>
+                    
+                    <div class="btn waves-effect waves-light">Criar Novo Tamanho</div>
+
+
+                    <h2>Enviar guia de tamanhos</h2>
+
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <i class="fa fa-upload" aria-hidden="true"></i>
+                            <input type="file" multiple>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Escolher Arquivos">
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="acao-final">
+                        <input type="submit" id="submit-cor-tam" class="hide">
+                        <label for="submit-cor-tam" class="btn-floating btn-large waves-effect waves-light slider-block close-block" data-bloco="cores-tamanhos">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </label>
+
+                        <input type="reset" id="reset-cor-tam" class="hide">
+                        <label for="reset-cor-tam" class="btn-floating btn-large waves-effect waves-light slider-block close-block" data-bloco="cores-tamanhos">
+                            <i class="fa fa-close" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                </form>
             </div>
-            <!-- editar produto -->
+            <!-- Cores e tamanhos do produto -->
 
        
         </main>

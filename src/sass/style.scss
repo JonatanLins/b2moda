@@ -10900,12 +10900,28 @@ select.input-sm {
                 }
             }
         }
+        
+        @media (max-width: 500px){
+            tbody tr{
+                    flex: 1;
+            }
+        }
     }
 }
 
-.block-adicionar-produto.block-content,
-.block-editar-produto.block-content{
+
+
+
+
+
+.block-config-produto.block-content,
+.block-cores-tamanhos.block-content{
     padding: 30px;
+    
+    form{
+        display: flex;
+        flex-direction: column;
+    }
     
     h2{
         margin: 30px 0 40px;
@@ -10920,8 +10936,14 @@ select.input-sm {
         color: #555;
     }
     
-    btn:active{
-        box-shadow: none;
+    [data-bloco="cores-tamanhos"]{
+        align-self: center;
+        margin: 10px 0 30px;
+    }
+    
+    .info-pagamento{
+        border: 1px solid #aaa;
+        padding: 10px;
     }
     
     .file-field .btn{
@@ -10931,6 +10953,41 @@ select.input-sm {
         text-align: center;
         height: initial;
         padding: 0;
+    }
+    
+    .caret{display: none}
+    
+    .acao-final{
+        padding: 30px 0 50px;
+        display: flex;
+        justify-content: center;
+        
+        label{
+            margin: 0 20px;
+            
+            .fa{
+                font-size: 2em;
+            }
+        }
+    }
+    
+    .lista-cores-produto{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        
+        fieldset{
+            width: 50%;
+        }
+    }
+    .lista-tamanhos-produto{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        
+        fieldset{
+            width: 33%;
+        }
     }
 }
 
