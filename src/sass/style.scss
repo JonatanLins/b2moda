@@ -10980,6 +10980,7 @@ select.input-sm {
             width: 50%;
         }
     }
+    
     .lista-tamanhos-produto{
         display: flex;
         flex-wrap: wrap;
@@ -10987,6 +10988,80 @@ select.input-sm {
         
         fieldset{
             width: 33%;
+        }
+    }
+    
+    .adicionar-cor{
+        border: 1px solid #aaa;
+        padding: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        transition: all .2s;
+        overflow: hidden;
+        
+        form{
+            width: 100%;
+        }
+        
+        h2{
+            margin: 0 0 20px;
+            flex-basis: 100%;
+        }
+        
+        input[type=color]{
+            margin-right: 10px;
+            border: none;
+            width: 40px;
+            height: 40px;
+        }
+        
+        input[type=text]{
+            flex: 1 1 5%;
+        }
+        
+        .input-field{
+            flex-basis: 100%;
+        }
+        
+        .acao-final{
+            margin: 0 0 0 auto;
+            padding: 0;
+        }
+        
+        &:not(.open){
+            border-width: 0;
+            height: 0;
+            padding: 0;
+        }
+    }
+        
+    .adicionar-tamanho{
+        border: 1px solid #aaa;
+        padding: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        transition: all .2s;
+        overflow: hidden;
+        
+        h2{
+            margin: 0 0 20px;
+        }
+        
+        form{
+            width: 100%;
+        }
+        
+        .acao-final{
+            margin: 0 0 0 auto;
+            padding: 0;
+        }
+        
+        &:not(.open){
+            border-width: 0;
+            height: 0;
+            padding: 0;
         }
     }
 }
