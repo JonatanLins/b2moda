@@ -10249,6 +10249,7 @@ select.input-sm {
 
 .header-opt-13 .header-top .container {
     position: relative;
+    display: flex;
 }
 
 .header-opt-13 .header-top .container:after,
@@ -10261,6 +10262,9 @@ select.input-sm {
     clear: both
 }
 
+.header-opt-13 .header-top .nav-left{
+    margin-right: 3px;
+}
 .header-opt-13 .header-top .nav-left,
 .header-opt-13 .header-top .nav-right {
     float: left;
@@ -10316,25 +10320,18 @@ select.input-sm {
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
+    flex: 1;
+}
+
+.header-opt-13 .header-top .nav-left > li,
+.header-opt-13 .header-top .nav-right > li{
+    white-space: nowrap;
 }
 
 @media (max-width: 380px){
-    .header-opt-13 .header-top .container{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        
-        > ul > li{
-            white-space: nowrap;
-        }
-    }
-}
-
-@media (max-width: 420px){
     .header-opt-13 .header-top .nav-left>li,
     .header-opt-13 .header-top .nav-right>li{
-        margin: 2px;
+        margin: 0;
     }
 }
 
