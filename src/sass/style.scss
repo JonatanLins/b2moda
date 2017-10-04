@@ -10319,11 +10319,15 @@ select.input-sm {
 }
 
 @media (max-width: 380px){
-    .header-opt-13 .header-top .nav-left,
-    .header-opt-13 .header-top .nav-right{
-        width: 100%;
+    .header-opt-13 .header-top .container{
+        margin: 0;
+        padding: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        
+        > ul > li{
+            white-space: nowrap;
+        }
     }
 }
 
@@ -11426,7 +11430,6 @@ select.input-sm {
 @media (max-width: 380px) {
     .detalhes-produto .imagem-produto-lightbox {
         width: 80%;
-        margin-left: 10%;
         position: relative;
     }
     .detalhes-produto .descricao-produto {
