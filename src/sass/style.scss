@@ -10848,10 +10848,10 @@ select.input-sm {
     
     .btn{
         background-color: #f36;
+        display: inline-block;
         color: #fff;
-        display: block;
         font-size: 1.5rem;
-        padding: .5em 1em;
+        padding: .5em 1.5em;
     }
     .btn-floating{
         background-color: #f36;
@@ -10878,6 +10878,10 @@ select.input-sm {
         
         tbody td:last-child{
             white-space: nowrap;
+            
+            a{
+                margin-right: 10px;
+            }
             
             .fa{
                 font-size: 2em;
@@ -10934,171 +10938,169 @@ select.input-sm {
 
 
 
-.block-config-produto.block-content,
-.block-cores-tamanhos.block-content{
-    padding: 30px;
-    
-    form{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    h2{
-        margin: 30px 0 40px;
-        font-size: 24px;
-    }
-    h3{
-        margin: 30px 0 40px;
-        font-size: 20px;
-    }
-    
-    .switch{
-        margin-bottom: 20px;
-    }
-    
-    .select-wrapper{
-        margin-top: 20px;
-    }
-    
-    label, input{
-        font-size: 1.5rem;
-        color: #555;
-    }
-    
-    [data-bloco="cores-tamanhos"]{
-        align-self: center;
-        margin: 10px 0 30px;
-    }
-    
-    .info-pagamento{
-        border: 1px solid #aaa;
-        padding: 10px;
-    }
-    
-    .file-field .btn{
-        line-height: 45px;
-        width: 45px;
-        border: none;
-        text-align: center;
-        height: initial;
-        padding: 0;
-    }
-    
-    .caret{display: none}
-    
-    .acao-final{
-        padding: 30px 0 50px;
-        display: flex;
-        justify-content: center;
-        
-        label{
-            margin: 0 20px;
-            
-            .fa{
-                font-size: 2em;
-            }
-        }
-    }
-    
-    .lista-cores-produto{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-        
-        fieldset{
-            width: 50%;
-        }
-    }
-    
-    .lista-tamanhos-produto{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-        
-        fieldset{
-            width: 33%;
-        }
-    }
-    
-    .adicionar-cor{
-        border: 1px solid #aaa;
-        padding: 10px;
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        transition: all .2s;
-        overflow: hidden;
-        
-        form{
-            width: 100%;
-        }
-        
-        h2{
-            margin: 0 0 20px;
-            flex-basis: 100%;
-        }
-        
-        .color-picker{
-            margin: 0;
-            width: 100%;
-            
-            .color{
-                @media (max-width: 380px){
-                    font-size: 90%;
-                }
-            }
-        }
-        
-        input[type=text]{
-            width: 100%;
-            margin-top: 20px;
-        }
-        
-        .input-field{
-            flex-basis: 100%;
-        }
-        
-        .acao-final{
-            margin: 0 0 0 auto;
-            padding: 0;
-        }
-        
-        &:not(.open){
-            border-width: 0;
-            height: 0;
-            padding: 0;
-        }
-    }
-        
-    .adicionar-tamanho{
-        border: 1px solid #aaa;
-        padding: 10px;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        transition: all .2s;
-        overflow: hidden;
-        
-        h2{
-            margin: 0 0 20px;
-        }
-        
-        form{
-            width: 100%;
-        }
-        
-        .acao-final{
-            margin: 0 0 0 auto;
-            padding: 0;
-        }
-        
-        &:not(.open){
-            border-width: 0;
-            height: 0;
-            padding: 0;
-        }
-    }
-}
+
+//    padding: 30px;
+//    
+//    form{
+//        display: flex;
+//        flex-direction: column;
+//    }
+//    
+//    h2{
+//        margin: 30px 0 40px;
+//        font-size: 24px;
+//    }
+//    h3{
+//        margin: 30px 0 40px;
+//        font-size: 20px;
+//    }
+//    
+//    .switch{
+//        margin-bottom: 20px;
+//    }
+//    
+//    .select-wrapper{
+//        margin-top: 20px;
+//    }
+//    
+//    label, input{
+//        font-size: 1.5rem;
+//        color: #555;
+//    }
+//    
+//    [data-bloco="cores-tamanhos"]{
+//        align-self: center;
+//        margin: 10px 0 30px;
+//    }
+//    
+//    .info-pagamento{
+//        border: 1px solid #aaa;
+//        padding: 10px;
+//    }
+//    
+//    .file-field .btn{
+//        line-height: 45px;
+//        width: 45px;
+//        border: none;
+//        text-align: center;
+//        height: initial;
+//        padding: 0;
+//    }
+//    
+//    .caret{display: none}
+//    
+//    .acao-final{
+//        padding: 30px 0 50px;
+//        display: flex;
+//        justify-content: center;
+//        
+//        label{
+//            margin: 0 20px;
+//            
+//            .fa{
+//                font-size: 2em;
+//            }
+//        }
+//    }
+//    
+//    .lista-cores-produto{
+//        display: flex;
+//        flex-wrap: wrap;
+//        margin-bottom: 30px;
+//        
+//        fieldset{
+//            width: 50%;
+//        }
+//    }
+//    
+//    .lista-tamanhos-produto{
+//        display: flex;
+//        flex-wrap: wrap;
+//        margin-bottom: 30px;
+//        
+//        fieldset{
+//            width: 33%;
+//        }
+//    }
+//    
+//    .adicionar-cor{
+//        border: 1px solid #aaa;
+//        padding: 10px;
+//        margin-top: 20px;
+//        display: flex;
+//        flex-wrap: wrap;
+//        transition: all .2s;
+//        overflow: hidden;
+//        
+//        form{
+//            width: 100%;
+//        }
+//        
+//        h2{
+//            margin: 0 0 20px;
+//            flex-basis: 100%;
+//        }
+//        
+//        .color-picker{
+//            margin: 0;
+//            width: 100%;
+//            
+//            .color{
+//                @media (max-width: 380px){
+//                    font-size: 90%;
+//                }
+//            }
+//        }
+//        
+//        input[type=text]{
+//            width: 100%;
+//            margin-top: 20px;
+//        }
+//        
+//        .input-field{
+//            flex-basis: 100%;
+//        }
+//        
+//        .acao-final{
+//            margin: 0 0 0 auto;
+//            padding: 0;
+//        }
+//        
+//        &:not(.open){
+//            border-width: 0;
+//            height: 0;
+//            padding: 0;
+//        }
+//    }
+//        
+//    .adicionar-tamanho{
+//        border: 1px solid #aaa;
+//        padding: 10px;
+//        margin-top: 20px;
+//        display: flex;
+//        flex-direction: column;
+//        transition: all .2s;
+//        overflow: hidden;
+//        
+//        h2{
+//            margin: 0 0 20px;
+//        }
+//        
+//        form{
+//            width: 100%;
+//        }
+//        
+//        .acao-final{
+//            margin: 0 0 0 auto;
+//            padding: 0;
+//        }
+//        
+//        &:not(.open){
+//            border-width: 0;
+//            height: 0;
+//            padding: 0;
+//        }
+//    }
 
 
 .parceiros img{

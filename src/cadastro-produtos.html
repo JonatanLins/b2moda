@@ -255,104 +255,9 @@
                 </h2>
 
                 <div class="page-content">
-                    <a href="cadastro-produtos.html" class="btn">Adicionar Produto</a>
-
-
-                    <table class="bordered highlight">
-                        <thead>
-                            <tr>
-                                <td>Foto</td>
-                                <td>Referência</td>
-                                <td>Descrição</td>
-                                <td>Grupo</td>
-                                <td>Status</td>
-                                <td></td>
-                            </tr>
-                        </thead>
-
-
-                        <tbody>
-                            <tr>
-                                <td><img src="img/produtos/template-1.jpg" class="responsive-img" alt="Foto do Produto"></td>
-                                <td>789821</td>
-                                <td>Calça Cigarrete Jeans Fashion</td>
-                                <td>Zigurat Jeans</td>
-                                <td>Aguardando Pagamento</td>
-                                <td>
-                                    <a href="cadastro-produtos.html" class="btn-floating waves-effect waves-light">
-                                        <i class="fa fa-cog" aria-hidden="true"></i>
-                                    </a>
-                                    <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><img src="img/produtos/template-2.jpg" class="responsive-img" alt="Foto do Produto"></td>
-                                <td>789821</td>
-                                <td>Calça Cigarrete Jeans Fashion</td>
-                                <td>Zigurat Jeans</td>
-                                <td>Aguardando Pagamento</td>
-                                <td>
-                                    <a href="cadastro-produtos.html" class="btn-floating waves-effect waves-light">
-                                        <i class="fa fa-cog" aria-hidden="true"></i>
-                                    </a>
-                                    <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><img src="img/produtos/template-3.jpg" class="responsive-img" alt="Foto do Produto"></td>
-                                <td>789821</td>
-                                <td>Calça Cigarrete Jeans Fashion</td>
-                                <td>Zigurat Jeans</td>
-                                <td>Aguardando Pagamento</td>
-                                <td>
-                                    <a href="cadastro-produtos.html" class="btn-floating waves-effect waves-light">
-                                        <i class="fa fa-cog" aria-hidden="true"></i>
-                                    </a>
-                                    <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><img src="img/produtos/template-4.jpg" class="responsive-img" alt="Foto do Produto"></td>
-                                <td>789821</td>
-                                <td>Calça Cigarrete Jeans Fashion</td>
-                                <td>Zigurat Jeans</td>
-                                <td>Aguardando Pagamento</td>
-                                <td>
-                                    <a href="cadastro-produtos.html" class="btn-floating waves-effect waves-light">
-                                        <i class="fa fa-cog" aria-hidden="true"></i>
-                                    </a>
-                                    <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><img src="img/produtos/template-5.jpg" class="responsive-img" alt="Foto do Produto"></td>
-                                <td>789821</td>
-                                <td>Calça Cigarrete Jeans Fashion</td>
-                                <td>Zigurat Jeans</td>
-                                <td>Aguardando Pagamento</td>
-                                <td>
-                                    <a href="cadastro-produtos.html" class="btn-floating waves-effect waves-light">
-                                        <i class="fa fa-cog" aria-hidden="true"></i>
-                                    </a>
-                                    <button data-action="deletar-item" class="btn-floating waves-effect waves-light" onclick="alert('Item deletado com sucesso!')">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    
+                    
+                    
                 </div>
             </div>
 
@@ -387,7 +292,6 @@
                 </div>
             </div>
             <!-- chat lateral deslizante -->
-
 
         </main>
         <!-- end MAIN -->
@@ -470,13 +374,56 @@
     <!-- arcticmodal -->
     <script src="js/arcticmodal/jquery.arcticmodal.js"></script>
 
+    <!-- Color Picker -->
+    <link rel="stylesheet" type="text/css" href="css/color-picker.css">
+    <script type="text/javascript" src="js/color-picker.js"></script>
+
     <!-- Materialize -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script type="text/javascript" src="js/materialize.js"></script>
 
     <!-- Main -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/cadastro-produtos.js"></script>
 
+
+
+
+    <!-- Custom -->
+    <script>
+        // Ativar objetos do materialize
+        $('select').material_select();
+
+        $('.chips.grupos-clientes').material_chip({
+            placeholder: 'Digite um grupo',
+            secondaryPlaceholder: '+Grupo',
+//            autocompleteOptions: {
+//                data: {
+//                    'Grupo 1': null,
+//                    'Grupo 2': null,
+//                    'Grupo 3': null
+//                },
+//                limit: Infinity,
+//                minLength: 1
+//            }
+            data: [{
+                tag: 'Grupo 1',
+            }, {
+                tag: 'Grupo 2',
+            }],
+        });
+
+
+
+        // Abrir menus de adicionar tamanhos e cores
+        $('.open-next').click(function() {
+            $(this).next().addClass('open');
+        });
+        $('.close-this').click(function() {
+            $(this).closest('.adicionar-cor, .adicionar-tamanho').removeClass('open');
+        });
+
+    </script>
 </body>
 
 </html>
