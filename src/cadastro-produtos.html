@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" type="text/css" href="css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/cadastro-produtos.css">
 </head>
 
 <body class="index-opt-1 catalog-product-view catalog-view_op1 page-order">
@@ -255,9 +254,356 @@
                 </h2>
 
                 <div class="page-content">
-                    
-                    
-                    
+
+                    <section class="cadastro-produtos">
+                        <div class="guia-procedimento">
+                            <div class="etapa ativo">01</div>
+                            <div class="etapa">02</div>
+                            <div class="etapa">03</div>
+                            <div class="etapa">04</div>
+                        </div>
+
+                        <form action="" class="etapas-cadastro">
+                            <div class="etapa ativo" data-passo="01">
+                                <hgroup>
+                                    <h2>Informações básicas</h2>
+                                    <h3>Descreva Seu Produto</h3>
+                                </hgroup>
+
+                                <select id="categoria-config" name="categoria">
+                                    <option value="" disabled selected>Escolha uma Categoria</option>
+
+                                    <optgroup label="Moda Masculina">
+                                        <option value="camisetas">Camisetas</option>
+                                        <option value="bermudas">Bermudas</option>
+                                        <option value="moda-intima">Moda Íntima</option>
+                                        <option value="acessorios">Acessórios</option>
+                                        <option value="moda-praia">Moda Praia</option>
+                                        <option value="camisas">Camisas</option>
+                                        <option value="calcas">Calças</option>
+                                    </optgroup>
+
+                                    <optgroup label="Moda Feminina">
+                                        <option value="vestidos">Vestidos</option>
+                                        <option value="blusas-camisas">Blusas e Camisas</option>
+                                        <option value="acessorios">Acessórios</option>
+                                        <option value="calcas">Calças</option>
+                                        <option value="shorts-bermudas">Shorts e Bermudas</option>
+                                        <option value="moda-praia">Moda Praia</option>
+                                        <option value="moda-intima">Moda Íntima</option>
+                                    </optgroup>
+
+                                    <optgroup label="Moda Infantil">
+                                        <option value="vestidos">Vestidos</option>
+                                        <option value="shorts-bermudas">Shorts e Bermudas</option>
+                                        <option value="calcas">Calças</option>
+                                        <option value="blusas-camisas">Blusas e Camisas</option>
+                                        <option value="acessorios">Acessórios</option>
+                                        <option value="moda-praia">Moda Praia</option>
+                                        <option value="moda-intima">Moda Íntima</option>
+                                    </optgroup>
+                                </select>
+                                <label for="categoria-config"></label>
+
+                                <label for="titulo-config">Título</label>
+                                <input type="text" id="titulo-config" name="titulo">
+
+                                <label for="descricao-config">Descrição</label>
+                                <input type="text" id="descricao-config" name="descricao">
+
+                                <label for="composicao-config">Composição</label>
+                                <input type="text" id="composicao-config" name="composicao">
+
+                                <div class="switch">
+                                    <label>
+                                        Publicar Produto
+                                        <input type="checkbox" name="ativo">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+
+                                <div class="navegacao-etapas">
+                                    <div class="btn anterior waves-effect waves-light">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
+                                    </div>
+                                    <div class="btn proximo waves-effect waves-light">
+                                        Próximo
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="etapa" data-passo="02">
+                                <hgroup>
+                                    <h2>Escolha as Cores e tamanhos do seu produto!</h2>
+                                </hgroup>
+
+                                <div class="navegacao-etapas">
+                                    <div class="btn anterior waves-effect waves-light">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
+                                    </div>
+                                    <div class="btn proximo waves-effect waves-light">
+                                        Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="etapa" data-passo="02">
+                                <hgroup>
+                                    <h2>Escolha uma cor para o seu produto</h2>
+                                    <h3>Crie uma nova cor ou estampa</h3>
+                                </hgroup>
+
+                                <div class="lista-cores">
+                                    <fieldset>
+                                        <input type="radio" id="produto-cor-01" name="cor">
+                                        <label for="produto-cor-01">
+                                            <i class="fa fa-circle" aria-hidden="true" style="color: #f36"></i> Rosa
+                                        </label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="radio" id="produto-cor-02" name="cor">
+                                        <label for="produto-cor-02">
+                                            <i class="fa fa-circle" aria-hidden="true" style="color: blue"></i> Azul
+                                        </label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="radio" id="produto-cor-03" name="cor">
+                                        <label for="produto-cor-03">
+                                            <i class="fa fa-circle" aria-hidden="true" style="color: red"></i> Vermelho
+                                        </label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="radio" id="produto-cor-04" name="cor">
+                                        <label for="produto-cor-04">
+                                            <i class="fa fa-circle" aria-hidden="true" style="color: yellow"></i> Amarelo
+                                        </label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="radio" id="produto-cor-05" name="cor">
+                                        <label for="produto-cor-05">
+                                            <i class="fa fa-circle" aria-hidden="true" style="color: black"></i> Preto
+                                        </label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="radio" id="produto-cor-06" name="cor">
+                                        <label for="produto-cor-06">
+                                            <i class="fa fa-circle" aria-hidden="true" style="color: white"></i> Branco
+                                        </label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="radio" id="produto-cor-07" name="cor">
+                                        <label for="produto-cor-07">
+                                            <i class="fa fa-circle" aria-hidden="true" style="color: Green"></i> Verde
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+
+                                <div class="criar-cor-estampa">
+                                    <a href="#criar-cor" class="btn waves-effect waves-light modal-trigger">Criar Cor</a>
+                                    <a href="#criar-estampa" class="btn waves-effect waves-light modal-trigger">Criar Estampa</a>
+                                </div>
+
+
+                                <div id="criar-cor" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Escolha a cor e digite um nome</h4>
+                                        <fieldset class="color-picker">
+                                            <select class="format browser-default hide">
+                                                <option>Hex</option>
+                                                <option>RGB</option>
+                                                <option selected>HSL</option>
+                                            </select>
+                                            <input class="color" type="text" value="#ff3366" />
+                                            <div class="spectrum">
+                                                <div class="lightness-filter"></div>
+                                                <div class="pin"></div>
+                                            </div>
+                                            <input class="lightness" type="range" min="0" max="100" />
+                                        </fieldset>
+
+                                        <input type="text" placeholder="Nome da Cor">
+
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-light btn">
+                                            Salvar <i class="fa fa-check" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div id="criar-estampa" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Envie uma imagem da estampa (400 x 400 pixels)</h4>
+
+                                        <div class="file-field input-field">
+                                            <div class="btn">
+                                                <i class="fa fa-upload" aria-hidden="true"></i>
+                                                <input type="file" name="estampa">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                                <input class="file-path validate" type="text" placeholder="Enviar Imagem">
+                                            </div>
+                                        </div>
+
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-light btn">
+                                            Salvar <i class="fa fa-check" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="navegacao-etapas">
+                                    <div class="btn anterior waves-effect waves-light">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
+                                    </div>
+                                    <div class="btn proximo waves-effect waves-light">
+                                        Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="etapa" data-passo="02">
+                                <hgroup>
+                                    <h2>Agora que você escolheu a cor, defina os tamanhos disponíveis para seu produto!</h2>
+                                </hgroup>
+
+                                <span class="cor-final"><i class="fa fa-circle" aria-hidden="true" style="color: Green"></i> Verde</span>
+
+                                <div class="lista-tamanhos-produto">
+                                    <fieldset>
+                                        <input type="checkbox" id="produto-tam-01" name="tamanho-01">
+                                        <label for="produto-tam-01">P</label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="checkbox" id="produto-tam-02" name="tamanho-02">
+                                        <label for="produto-tam-02">M</label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="checkbox" id="produto-tam-03" name="tamanho-03">
+                                        <label for="produto-tam-03">G</label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="checkbox" id="produto-tam-04" name="tamanho-04">
+                                        <label for="produto-tam-04">GG</label><br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input type="checkbox" id="produto-tam-05" name="tamanho-05">
+                                        <label for="produto-tam-05">GGG</label><br>
+                                    </fieldset>
+                                </div>
+
+                                <fieldset class="mini-form-tamanho">
+                                    <input type="text" id="adicionar-tamanho-config" placeholder="Adicionar Tamanho Personalizado">
+                                    <div class="btn-floating waves-effect waves-light"><i class="fa fa-check" aria-hidden="true"></i></div>
+                                </fieldset>
+
+                                <div class="navegacao-etapas">
+                                    <div class="btn anterior waves-effect waves-light">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
+                                    </div>
+                                    <div class="btn proximo waves-effect waves-light">
+                                        Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="etapa" data-passo="02">
+                                <hgroup>
+                                    <h2>Cores e tamanhos disponíveis para seu produto</h2>
+                                </hgroup>
+
+                                <ul class="cores-tamanhos-final">
+                                    <li>
+                                        <div class="bloco-cor">
+                                            <h3>Cor</h3>
+                                            <div class="cor" style="background-color: #00B"></div>
+                                            <div class="nome-cor">Azul Royal</div>
+                                        </div>
+
+                                        <div class="bloco-tamanho">
+                                            <h3>Tamanhos</h3>
+                                            <ul class="tam-qnt">
+                                                <li>36</li>
+                                                <li>38</li>
+                                                <li>40</li>
+                                                <li>42</li>
+                                                <li>44</li>
+                                                <li>46</li>
+                                                <li>48</li>
+                                                <li>50</li>
+                                                <li>52</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="btn-floating waves-effect waves-light">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="navegacao-etapas">
+                                    <div class="btn anterior waves-effect waves-light">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
+                                    </div>
+                                    <div class="btn proximo waves-effect waves-light">
+                                        Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="etapa" data-passo="03">
+                                <hgroup>
+                                    <h2></h2>
+                                </hgroup>
+
+                                <div class="navegacao-etapas">
+                                    <div class="btn anterior waves-effect waves-light">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
+                                    </div>
+                                    <div class="btn proximo waves-effect waves-light">
+                                        Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="etapa" data-passo="04">
+                                <hgroup>
+                                    <h2></h2>
+                                </hgroup>
+
+                                <div class="navegacao-etapas">
+                                    <div class="btn anterior waves-effect waves-light">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
+                                    </div>
+                                    <div class="btn proximo waves-effect waves-light">
+                                        Finalizar <i class="fa fa-check" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
                 </div>
             </div>
 
@@ -386,44 +732,6 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/cadastro-produtos.js"></script>
 
-
-
-
-    <!-- Custom -->
-    <script>
-        // Ativar objetos do materialize
-        $('select').material_select();
-
-        $('.chips.grupos-clientes').material_chip({
-            placeholder: 'Digite um grupo',
-            secondaryPlaceholder: '+Grupo',
-//            autocompleteOptions: {
-//                data: {
-//                    'Grupo 1': null,
-//                    'Grupo 2': null,
-//                    'Grupo 3': null
-//                },
-//                limit: Infinity,
-//                minLength: 1
-//            }
-            data: [{
-                tag: 'Grupo 1',
-            }, {
-                tag: 'Grupo 2',
-            }],
-        });
-
-
-
-        // Abrir menus de adicionar tamanhos e cores
-        $('.open-next').click(function() {
-            $(this).next().addClass('open');
-        });
-        $('.close-this').click(function() {
-            $(this).closest('.adicionar-cor, .adicionar-tamanho').removeClass('open');
-        });
-
-    </script>
 </body>
 
 </html>
