@@ -5,6 +5,10 @@ $(document).ready(function () {
 
     $('select').material_select();
 
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+
     $('.chips.grupos-clientes').material_chip({
         placeholder: 'Digite um grupo',
         secondaryPlaceholder: '+Grupo',
@@ -30,40 +34,38 @@ $(document).ready(function () {
     $('.navegacao-etapas .anterior').click(function () {
         var etapa = $('.etapas-cadastro .etapa.ativo');
 
-        if (etapa.index() > 0) {
-            etapa.removeClass('ativo').prev('.etapa').addClass('ativo');
-            $('.guia-procedimento .etapa').removeClass('ativo');
-            $('.guia-procedimento .etapa:nth-child(' + etapa.prev('.etapa').data('passo') + ')').addClass('ativo');
-        }
+        etapa.removeClass('ativo').prev('.etapa').addClass('ativo');
+        $('.guia-procedimento .etapa').removeClass('ativo');
+        $('.guia-procedimento .etapa:nth-child(' + etapa.prev('.etapa').data('passo') + ')').addClass('ativo');
     });
     $('.navegacao-etapas .proximo').click(function () {
         var etapa = $('.etapas-cadastro .etapa.ativo');
 
-        if (etapa.index() < $('.etapas-cadastro .etapa').length - 1) {
-            etapa.removeClass('ativo').next('.etapa').addClass('ativo');
-            $('.guia-procedimento .etapa').removeClass('ativo');
-            $('.guia-procedimento .etapa:nth-child(' + etapa.next('.etapa').data('passo') + ')').addClass('ativo');
-        }
+        etapa.removeClass('ativo').next('.etapa').addClass('ativo');
+        $('.guia-procedimento .etapa').removeClass('ativo');
+        $('.guia-procedimento .etapa:nth-child(' + etapa.next('.etapa').data('passo') + ')').addClass('ativo');
     });
-    
-    
-    
+
+
+
     // Adiconar Tamanho com mini formulário
-    $('.mini-form-tamanho .salvar-cor').click(function(){
+    $('.mini-form-tamanho .salvar-cor').click(function () {
         var tamanho = $(this).closest('.mini-form-tamanho').find('#adicionar-tamanho').val().replace(/[^\w]/g, '').toUpperCase();
-        
-        if(!$(this).closest('.etapa').find('.lista-tamanhos-produto #produto-tam-' + tamanho).length){
-            
+
+        if (tamanho == '') {
+            alert("Digite um nome!");
+        } else if (!$(this).closest('.etapa').find('.lista-tamanhos-produto #produto-tam-' + tamanho).length) {
+
             tamanho = '<fieldset><input type="checkbox" id="produto-tam-' + tamanho + '" name="tamanho-' + tamanho +
-                      '"><label for="produto-tam-' + tamanho + '">' + tamanho + '</label><br></fieldset>';
-           
+                '"><label for="produto-tam-' + tamanho + '">' + tamanho + '</label><br></fieldset>';
+
             $(this).closest('.etapa').find('.lista-tamanhos-produto').append(tamanho);
-            
+
             $(this).closest('.etapa').find('.btn.proximo').removeClass('hide');
         } else {
             alert("Esta cor já existe!");
         }
     });
-    
+
 
 });

@@ -246,7 +246,7 @@
 
 
         <!-- MAIN -->
-        <main class="site-main pagina-produtos">
+        <main class="site-main pagina-cadastro-produtos">
 
             <div class="columns container">
                 <h2 class="page-heading">
@@ -266,11 +266,11 @@
                         <form action="" class="etapas-cadastro">
                             <div class="etapa ativo" data-passo="01">
                                 <hgroup>
-                                    <h2>Informações básicas</h2>
+                                    <h2>Informações Básicas</h2>
                                     <h3>Descreva Seu Produto</h3>
                                 </hgroup>
 
-                                <select id="categoria-config" name="categoria" required>
+                                <select id="categoria" name="categoria" required>
                                     <option value="" disabled selected>Escolha uma Categoria</option>
 
                                     <optgroup label="Moda Masculina">
@@ -303,16 +303,16 @@
                                         <option value="moda-intima">Moda Íntima</option>
                                     </optgroup>
                                 </select>
-                                <label for="categoria-config"></label>
+                                <label for="categoria"></label>
 
-                                <label for="titulo-config">Título</label>
-                                <input type="text" id="titulo-config" name="titulo" required>
+                                <label for="titulo">Título</label>
+                                <input type="text" id="titulo" name="titulo" required>
 
-                                <label for="descricao-config">Descrição</label>
-                                <input type="text" id="descricao-config" name="descricao" required>
+                                <label for="descricao">Descrição</label>
+                                <input type="text" id="descricao" name="descricao" required>
 
-                                <label for="composicao-config">Composição</label>
-                                <input type="text" id="composicao-config" name="composicao" required>
+                                <label for="composicao">Composição</label>
+                                <input type="text" id="composicao" name="composicao" required>
 
                                 <div class="switch">
                                     <label>
@@ -323,12 +323,8 @@
                                 </div>
 
                                 <div class="navegacao-etapas">
-                                    <div class="btn anterior waves-effect waves-light">
-                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
-                                    </div>
                                     <div class="btn proximo waves-effect waves-light">
-                                        Próximo
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -354,7 +350,7 @@
 
                             <div class="etapa" data-passo="02">
                                 <hgroup>
-                                    <h2>Escolha uma cor para o seu produto</h2>
+                                    <h2>Escolha uma Cor para o seu Produto</h2>
                                     <h3>Crie uma nova cor ou estampa</h3>
                                 </hgroup>
 
@@ -424,7 +420,7 @@
                                                 <option>RGB</option>
                                                 <option selected>HSL</option>
                                             </select>
-                                            <input class="color" type="text" value="#ff3366"/>
+                                            <input class="color" type="text" value="#ff3366" />
                                             <div class="spectrum">
                                                 <div class="lightness-filter"></div>
                                                 <div class="pin"></div>
@@ -476,7 +472,7 @@
 
                             <div class="etapa" data-passo="02">
                                 <hgroup>
-                                    <h2>Agora que você escolheu a cor, defina os tamanhos disponíveis para seu produto!</h2>
+                                    <h2>Agora que Você Escolheu a Cor, Defina os Tamanhos Disponíveis Para seu Produto!</h2>
                                 </hgroup>
 
                                 <span class="cor-final"><i class="fa fa-circle" aria-hidden="true" style="color: Green"></i> Verde</span>
@@ -504,7 +500,7 @@
 
                             <div class="etapa" data-passo="02">
                                 <hgroup>
-                                    <h2>Cores e tamanhos disponíveis para seu produto</h2>
+                                    <h2>Cores e Tamanhos Disponíveis Para seu Produto</h2>
                                 </hgroup>
 
                                 <ul class="cores-tamanhos-final">
@@ -546,8 +542,141 @@
 
                             <div class="etapa" data-passo="03">
                                 <hgroup>
-                                    <h2>Exibição, preço e formas de pagamento</h2>
+                                    <h2>Exibição, Preço e Formas de Pagamento</h2>
+                                    <h3>Quem você deseja que veja seu produto?</h3>
                                 </hgroup>
+
+                                <ul class="grupos collapsible" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header">Público <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        <div class="collapsible-body">
+                                            <table class="bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Modo de Pagamento</td>
+                                                        <td>Preços</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><label for="preco-a-vista-publico">Á Vista</label></td>
+                                                        <td><input type="text" id="preco-a-vista-publico" name="preco-a-vista-publico"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-30-dias-publico">Prazo de 30 Dias</label></td>
+                                                        <td><input type="text" id="preco-30-dias-publico" name="preco-30-dias-publico"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-60-dias-publico">Prazo de 60 Dias</label></td>
+                                                        <td><input type="text" id="preco-60-dias-publico" name="preco-60-dias-publico"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-90-dias-publico">Prazo de 90 Dias</label></td>
+                                                        <td><input type="text" id="preco-90-dias-publico" name="preco-90-dias-publico"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">Pernambuco <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        <div class="collapsible-body">
+                                            <table class="bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Modo de Pagamento</td>
+                                                        <td>Preços</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><label for="preco-a-vista-pe">Á Vista</label></td>
+                                                        <td><input type="text" id="preco-a-vista-pe" name="preco-a-vista-pe"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-30-dias-pe">Prazo de 30 Dias</label></td>
+                                                        <td><input type="text" id="preco-30-dias-pe" name="preco-30-dias-pe"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-60-dias-pe">Prazo de 60 Dias</label></td>
+                                                        <td><input type="text" id="preco-60-dias-pe" name="preco-60-dias-pe"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-90-dias-pe">Prazo de 90 Dias</label></td>
+                                                        <td><input type="text" id="preco-90-dias-pe" name="preco-90-dias-pe"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">Bahia <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        <div class="collapsible-body">
+                                            <table class="bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Modo de Pagamento</td>
+                                                        <td>Preços</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><label for="preco-a-vista-ba">Á Vista</label></td>
+                                                        <td><input type="text" id="preco-a-vista-ba" name="preco-a-vista-ba"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-30-dias-ba">Prazo de 30 Dias</label></td>
+                                                        <td><input type="text" id="preco-30-dias-ba" name="preco-30-dias-ba"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-60-dias-ba">Prazo de 60 Dias</label></td>
+                                                        <td><input type="text" id="preco-60-dias-ba" name="preco-60-dias-ba"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-90-dias-ba">Prazo de 90 Dias</label></td>
+                                                        <td><input type="text" id="preco-90-dias-ba" name="preco-90-dias-ba"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">Alagoas <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        <div class="collapsible-body">
+                                            <table class="bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Modo de Pagamento</td>
+                                                        <td>Preços</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><label for="preco-a-vista-al">Á Vista</label></td>
+                                                        <td><input type="text" id="preco-a-vista-al" name="preco-a-vista-al"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-30-dias-al">Prazo de 30 Dias</label></td>
+                                                        <td><input type="text" id="preco-30-dias-al" name="preco-30-dias-al"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-60-dias-al">Prazo de 60 Dias</label></td>
+                                                        <td><input type="text" id="preco-60-dias-al" name="preco-60-dias-al"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="preco-90-dias-al">Prazo de 90 Dias</label></td>
+                                                        <td><input type="text" id="preco-90-dias-al" name="preco-90-dias-al"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <p class="aviso"><b>Atenção:</b> O cliente que estiver cadastrado em mais de um grupo, receberá a melhor oferta (menor preço).</p>
 
                                 <div class="navegacao-etapas">
                                     <div class="btn anterior waves-effect waves-light">
@@ -563,16 +692,25 @@
 
                             <div class="etapa" data-passo="04">
                                 <hgroup>
-                                    <h2></h2>
+                                    <h2>Pedido Mínimo, Disponibilidade e Frete</h2>
                                 </hgroup>
+
+                                <label for="titulo">Pedido Mínimo <small>(ex: 20 pcs.)</small></label>
+                                <input type="text" id="titulo" name="titulo" required>
+
+                                <label for="disponibilidade">Disponibilidade <small>(ex: pronta-entrega)</small></label>
+                                <input type="text" id="disponibilidade" name="disponibilidade" required>
+
+                                <label for="frete">Frete <small>(ex: CIF)</small></label>
+                                <input type="text" id="frete" name="frete" required>
 
                                 <div class="navegacao-etapas">
                                     <div class="btn anterior waves-effect waves-light">
                                         <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
                                     </div>
-                                    <div class="btn proximo waves-effect waves-light">
+                                    <button class="btn waves-effect waves-light">
                                         Finalizar <i class="fa fa-check" aria-hidden="true"></i>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </form>

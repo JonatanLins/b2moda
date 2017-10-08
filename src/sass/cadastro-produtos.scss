@@ -73,7 +73,7 @@ $cinza-medio: #999;
         }
 
         label {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #555 !important;
         }
 
@@ -87,7 +87,7 @@ $cinza-medio: #999;
 
         .etapa {
             margin: 0 auto;
-            width: 400px;
+            width: 450px;
             max-width: 100%;
             display: none;
 
@@ -153,6 +153,14 @@ $cinza-medio: #999;
             label {
                 font-size: 1.5rem;
             }
+        }
+    }
+    
+    .aviso{
+        margin-top: 50px;
+        
+        b{
+            color: #f36;
         }
     }
 
@@ -230,6 +238,38 @@ $cinza-medio: #999;
                 height: initial;
                 line-height: initial;
                 padding: .5em 1em;
+            }
+        }
+    }
+    
+    .collapsible.grupos{
+        .collapsible-header{
+            color: #f36;
+            font-weight: bold;
+        }
+        
+        table{
+            margin: 0;
+            
+            td{
+                width: 50%;
+            }
+            
+            thead td{
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            
+            label{
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: initial;
+            }
+            
+            input[type=text]{
+                margin: 10px 0;
             }
         }
     }
