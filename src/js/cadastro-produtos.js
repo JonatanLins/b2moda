@@ -60,34 +60,49 @@ $(document).ready(function () {
                 '"><label for="produto-tam-' + tamanho + '">' + tamanho + '</label><br></fieldset>';
 
             $(this).closest('.etapa').find('.lista-tamanhos-produto').append(tamanho);
+
+            $(this).closest('.mini-form-tamanho').find('#adicionar-tamanho').val('');
         } else {
             alert("Esta cor já existe!");
         }
     });
-    
-    
-    
+
+
+
     // Adiconar cor dinamicamente
-    $('#criar-cor .btn.salvar').click(function(){
+    $('#criar-cor .btn.salvar').click(function () {
         var cor = $(this).closest('#criar-cor').find('.jscolor').css('background-color');
         var nomeCor = $(this).closest('#criar-cor').find('.nome-cor').val().replace(/[^\w]/g, '');
-        
-        if (nomeCor == ''){
+
+        if (nomeCor == '') {
             alert('Digite um nome!');
-        } else if (!$(this).closest('.etapa').find('.lista-cores #produto-cor-' + nomeCor).length){
+        } else if (!$(this).closest('.etapa').find('.lista-cores #produto-cor-' + nomeCor).length) {
             $(this).closest('.etapa').find('.lista-cores').append(
                 '<fieldset>' +
-                    '<input type="radio" id="produto-cor-' + nomeCor + '" name="cor">' +
-                    '<label for="produto-cor-' + nomeCor + '">' +
-                        '<i class="fa fa-circle" aria-hidden="true" style="color:' + cor + '"></i> <span>' + nomeCor + '</span>' +
-                    '</label><br>' +
+                '<input type="radio" id="produto-cor-' + nomeCor + '" name="cor">' +
+                '<label for="produto-cor-' + nomeCor + '">' +
+                '<i class="fa fa-circle" aria-hidden="true" style="color:' + cor + '"></i> <span>' + nomeCor + '</span>' +
+                '</label><br>' +
                 '</fieldset>'
             );
             $(this).closest('#criar-cor').find('.nome-cor').val('');
         } else {
             alert('Já existe uma cor com esse nome!');
         }
-            
+    });
+
+
+
+    $('.lista-cores, .lista-tamanhos-produto').click(function () {
+        var info = $('.etapa.checar-cor-tam .cores-tamanhos-final .info-atual');
+
+        info.find('.bloco-cor .cor').css('background-color', $('#lista-cores-produto input[name=cor]:checked + label .fa').css('color'));
+        info.find('.bloco-cor .nome-cor').text($('#lista-cores-produto input[name=cor]:checked + label span').text());
+
+        info.find('.bloco-tamanho .tam-qnt li').remove();
+        $('#lista-tamanhos-produto input[type=checkbox]:checked').each(function () {
+            info.find('.bloco-tamanho .tam-qnt').append('<li>' + $(this).next('label').text() + '</li>');
+        });
     });
 
 
