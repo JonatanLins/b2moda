@@ -67,9 +67,8 @@ $cinza-medio: #999;
 
         h3 {
             margin-top: 0;
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-transform: uppercase;
-            font-weight: bold;
             color: #999;
         }
 
@@ -115,7 +114,7 @@ $cinza-medio: #999;
     }
 
     .modal {
-        .modal-content{
+        .modal-content {
             height: 100%;
         }
         .modal-close {
@@ -125,29 +124,30 @@ $cinza-medio: #999;
             text-align: center;
         }
     }
-    
-    .lista-tamanhos-produto{
+
+    .lista-tamanhos-produto {
         margin: 30px 0;
     }
-    
-    .mini-form-tamanho{
-        input[type=text]{
+
+    .mini-form-tamanho {
+        input[type=text] {
             text-align: center;
             text-transform: uppercase;
         }
-        .btn-floating{
+        .btn-floating {
             margin: 0 auto;
             display: block;
             width: 40px;
         }
     }
-    
+
     .lista-tamanhos-produto,
     .lista-cores {
         display: flex;
         flex-wrap: wrap;
-        
-        li, fieldset {
+
+        li,
+        fieldset {
             flex: 1 1 50%;
 
             label {
@@ -155,30 +155,63 @@ $cinza-medio: #999;
             }
         }
     }
-    
-    .cores-tamanhos-final{
+
+    .cores-tamanhos-final {
         display: flex;
         flex-wrap: wrap;
-        
-        li{
-            flex: 0 0 33%;
-            
-            .bloco-cor{
-                .cor{
+        justify-content: center;
+
+        > li {
+            @extend .card;
+            padding: 20px;
+            margin: 10px;
+            flex: 0 1 200px;
+
+            .bloco-cor {
+                cursor: default;
+                user-select: none;
+                
+                .cor {
                     width: 30px;
                     height: 30px;
+                    float: left;
+                    margin-right: 10px;
+                    margin-bottom: 20px;
                 }
+                
+                .nome-cor{
+                    line-height: 30px;
+                }
+            }
+
+            h3 {
+                clear: both;
+            }
+
+            .tam-qnt {
+                display: flex;
+                flex-wrap: wrap;
+
+                > li {
+                    padding: 5px 10px;
+                    cursor: default;
+                }
+            }
+            
+            .excluir-cor{
+                display: block;
+                margin: 20px auto;
             }
         }
     }
-    
-    span.cor-final{
+
+    span.cor-final {
         display: flex;
         justify-content: center;
         width: 100%;
         font-size: 2rem;
-            
-        .fa{
+
+        .fa {
             margin: 0 1em;
         }
     }
@@ -187,14 +220,16 @@ $cinza-medio: #999;
         @extend .navegacao-etapas;
         margin-top: 30px;
     }
-    
-    #criar-estampa {
+
+    #criar-estampa,
+    #criar-cor {
         .file-field {
             margin: 50px 0;
-            
+
             .btn {
                 height: initial;
                 line-height: initial;
+                padding: .5em 1em;
             }
         }
     }

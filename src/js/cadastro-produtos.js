@@ -45,5 +45,25 @@ $(document).ready(function () {
             $('.guia-procedimento .etapa:nth-child(' + etapa.next('.etapa').data('passo') + ')').addClass('ativo');
         }
     });
+    
+    
+    
+    // Adiconar Tamanho com mini formulário
+    $('.mini-form-tamanho .salvar-cor').click(function(){
+        var tamanho = $(this).closest('.mini-form-tamanho').find('#adicionar-tamanho').val().replace(/[^\w]/g, '').toUpperCase();
+        
+        if(!$(this).closest('.etapa').find('.lista-tamanhos-produto #produto-tam-' + tamanho).length){
+            
+            tamanho = '<fieldset><input type="checkbox" id="produto-tam-' + tamanho + '" name="tamanho-' + tamanho +
+                      '"><label for="produto-tam-' + tamanho + '">' + tamanho + '</label><br></fieldset>';
+           
+            $(this).closest('.etapa').find('.lista-tamanhos-produto').append(tamanho);
+            
+            $(this).closest('.etapa').find('.btn.proximo').removeClass('hide');
+        } else {
+            alert("Esta cor já existe!");
+        }
+    });
+    
 
 });

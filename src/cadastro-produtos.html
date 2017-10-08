@@ -270,7 +270,7 @@
                                     <h3>Descreva Seu Produto</h3>
                                 </hgroup>
 
-                                <select id="categoria-config" name="categoria">
+                                <select id="categoria-config" name="categoria" required>
                                     <option value="" disabled selected>Escolha uma Categoria</option>
 
                                     <optgroup label="Moda Masculina">
@@ -306,13 +306,13 @@
                                 <label for="categoria-config"></label>
 
                                 <label for="titulo-config">Título</label>
-                                <input type="text" id="titulo-config" name="titulo">
+                                <input type="text" id="titulo-config" name="titulo" required>
 
                                 <label for="descricao-config">Descrição</label>
-                                <input type="text" id="descricao-config" name="descricao">
+                                <input type="text" id="descricao-config" name="descricao" required>
 
                                 <label for="composicao-config">Composição</label>
-                                <input type="text" id="composicao-config" name="composicao">
+                                <input type="text" id="composicao-config" name="composicao" required>
 
                                 <div class="switch">
                                     <label>
@@ -360,7 +360,7 @@
 
                                 <div class="lista-cores">
                                     <fieldset>
-                                        <input type="radio" id="produto-cor-01" name="cor">
+                                        <input type="radio" id="produto-cor-01" name="cor" required>
                                         <label for="produto-cor-01">
                                             <i class="fa fa-circle" aria-hidden="true" style="color: #f36"></i> Rosa
                                         </label><br>
@@ -424,7 +424,7 @@
                                                 <option>RGB</option>
                                                 <option selected>HSL</option>
                                             </select>
-                                            <input class="color" type="text" value="#ff3366" />
+                                            <input class="color" type="text" value="#ff3366"/>
                                             <div class="spectrum">
                                                 <div class="lightness-filter"></div>
                                                 <div class="pin"></div>
@@ -482,42 +482,19 @@
                                 <span class="cor-final"><i class="fa fa-circle" aria-hidden="true" style="color: Green"></i> Verde</span>
 
                                 <div class="lista-tamanhos-produto">
-                                    <fieldset>
-                                        <input type="checkbox" id="produto-tam-01" name="tamanho-01">
-                                        <label for="produto-tam-01">P</label><br>
-                                    </fieldset>
-
-                                    <fieldset>
-                                        <input type="checkbox" id="produto-tam-02" name="tamanho-02">
-                                        <label for="produto-tam-02">M</label><br>
-                                    </fieldset>
-
-                                    <fieldset>
-                                        <input type="checkbox" id="produto-tam-03" name="tamanho-03">
-                                        <label for="produto-tam-03">G</label><br>
-                                    </fieldset>
-
-                                    <fieldset>
-                                        <input type="checkbox" id="produto-tam-04" name="tamanho-04">
-                                        <label for="produto-tam-04">GG</label><br>
-                                    </fieldset>
-
-                                    <fieldset>
-                                        <input type="checkbox" id="produto-tam-05" name="tamanho-05">
-                                        <label for="produto-tam-05">GGG</label><br>
-                                    </fieldset>
+                                    <!-- Checkboxes são geradas dinamicamente -->
                                 </div>
 
                                 <fieldset class="mini-form-tamanho">
-                                    <input type="text" id="adicionar-tamanho-config" placeholder="Adicionar Tamanho Personalizado">
-                                    <div class="btn-floating waves-effect waves-light"><i class="fa fa-check" aria-hidden="true"></i></div>
+                                    <input type="text" id="adicionar-tamanho" placeholder="Adicionar Tamanho Personalizado">
+                                    <div class="btn-floating waves-effect waves-light salvar-cor"><i class="fa fa-check" aria-hidden="true"></i></div>
                                 </fieldset>
 
                                 <div class="navegacao-etapas">
                                     <div class="btn anterior waves-effect waves-light">
                                         <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
                                     </div>
-                                    <div class="btn proximo waves-effect waves-light">
+                                    <div class="btn proximo waves-effect waves-light hide">
                                         Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -552,10 +529,6 @@
                                                 <li>52</li>
                                             </ul>
                                         </div>
-                                        
-                                        <div class="btn-floating waves-effect waves-light">
-                                            <i class="fa fa-trash" aria-hidden="true"></i>
-                                        </div>
                                     </li>
                                 </ul>
 
@@ -573,7 +546,7 @@
 
                             <div class="etapa" data-passo="03">
                                 <hgroup>
-                                    <h2></h2>
+                                    <h2>Exibição, preço e formas de pagamento</h2>
                                 </hgroup>
 
                                 <div class="navegacao-etapas">
