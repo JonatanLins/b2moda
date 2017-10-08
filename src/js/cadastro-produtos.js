@@ -60,8 +60,6 @@ $(document).ready(function () {
                 '"><label for="produto-tam-' + tamanho + '">' + tamanho + '</label><br></fieldset>';
 
             $(this).closest('.etapa').find('.lista-tamanhos-produto').append(tamanho);
-
-            $(this).closest('.etapa').find('.btn.proximo').removeClass('hide');
         } else {
             alert("Esta cor já existe!");
         }
