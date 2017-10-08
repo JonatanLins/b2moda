@@ -27,6 +27,12 @@ $(document).ready(function () {
             tag: 'Grupo 2',
             }],
     });
+    
+    
+    
+    // Ativar máscaras de formulário
+    $('input[type=text].dinheiro').mask('000.000.000.000.000,00', {reverse: true});
+    
 
 
 
@@ -53,7 +59,7 @@ $(document).ready(function () {
         var tamanho = $(this).closest('.mini-form-tamanho').find('#adicionar-tamanho').val().replace(/[^\w]/g, '').toUpperCase();
 
         if (tamanho == '') {
-            alert("Digite um nome!");
+            alert("Digite um nome válido!");
         } else if (!$(this).closest('.etapa').find('.lista-tamanhos-produto #produto-tam-' + tamanho).length) {
 
             tamanho = '<fieldset><input type="checkbox" id="produto-tam-' + tamanho + '" name="tamanho-' + tamanho +
@@ -75,7 +81,7 @@ $(document).ready(function () {
         var nomeCor = $(this).closest('#criar-cor').find('.nome-cor').val().replace(/[^\w]/g, '');
 
         if (nomeCor == '') {
-            alert('Digite um nome!');
+            alert('Digite um nome válido!');
         } else if (!$(this).closest('.etapa').find('.lista-cores #produto-cor-' + nomeCor).length) {
             $(this).closest('.etapa').find('.lista-cores').append(
                 '<fieldset>' +
@@ -92,7 +98,7 @@ $(document).ready(function () {
     });
 
 
-
+    // Criar card para visualizar cores no final do formulário
     $('.lista-cores, .lista-tamanhos-produto').click(function () {
         var info = $('.etapa.checar-cor-tam .cores-tamanhos-final .info-atual');
 
