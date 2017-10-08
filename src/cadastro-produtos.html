@@ -356,53 +356,55 @@
 
                                 <div class="lista-cores">
                                     <fieldset>
-                                        <input type="radio" id="produto-cor-01" name="cor" required>
-                                        <label for="produto-cor-01">
+                                        <input type="radio" id="produto-cor-Rosa" name="cor" required>
+                                        <label for="produto-cor-Rosa">
                                             <i class="fa fa-circle" aria-hidden="true" style="color: #f36"></i> <span>Rosa</span>
                                         </label><br>
                                     </fieldset>
 
                                     <fieldset>
-                                        <input type="radio" id="produto-cor-02" name="cor">
-                                        <label for="produto-cor-02">
+                                        <input type="radio" id="produto-cor-Azul" name="cor">
+                                        <label for="produto-cor-Azul">
                                             <i class="fa fa-circle" aria-hidden="true" style="color: blue"></i> <span>Azul</span>
                                         </label><br>
                                     </fieldset>
 
                                     <fieldset>
-                                        <input type="radio" id="produto-cor-03" name="cor">
-                                        <label for="produto-cor-03">
+                                        <input type="radio" id="produto-cor-Vermelho" name="cor">
+                                        <label for="produto-cor-Vermelho">
                                             <i class="fa fa-circle" aria-hidden="true" style="color: red"></i> <span>Vermelho</span>
                                         </label><br>
                                     </fieldset>
 
                                     <fieldset>
-                                        <input type="radio" id="produto-cor-04" name="cor">
-                                        <label for="produto-cor-04">
+                                        <input type="radio" id="produto-cor-Amarelo" name="cor">
+                                        <label for="produto-cor-Amarelo">
                                             <i class="fa fa-circle" aria-hidden="true" style="color: yellow"></i> <span>Amarelo</span>
                                         </label><br>
                                     </fieldset>
 
                                     <fieldset>
-                                        <input type="radio" id="produto-cor-05" name="cor">
-                                        <label for="produto-cor-05">
+                                        <input type="radio" id="produto-cor-Preto" name="cor">
+                                        <label for="produto-cor-Preto">
                                             <i class="fa fa-circle" aria-hidden="true" style="color: black"></i> <span>Preto</span>
                                         </label><br>
                                     </fieldset>
 
                                     <fieldset>
-                                        <input type="radio" id="produto-cor-06" name="cor">
-                                        <label for="produto-cor-06">
+                                        <input type="radio" id="produto-cor-Branco" name="cor">
+                                        <label for="produto-cor-Branco">
                                             <i class="fa fa-circle" aria-hidden="true" style="color: white"></i> <span>Branco</span>
                                         </label><br>
                                     </fieldset>
 
                                     <fieldset>
-                                        <input type="radio" id="produto-cor-07" name="cor">
-                                        <label for="produto-cor-07">
+                                        <input type="radio" id="produto-cor-Verde" name="cor">
+                                        <label for="produto-cor-Verde">
                                             <i class="fa fa-circle" aria-hidden="true" style="color: Green"></i> <span>Verde</span>
                                         </label><br>
                                     </fieldset>
+
+                                    <!-- Mais cores serão geradas dinamicamente -->
                                 </div>
 
                                 <div class="criar-cor-estampa">
@@ -414,12 +416,12 @@
                                 <div id="criar-cor" class="modal">
                                     <div class="modal-content">
                                         <h4>Escolha a cor e digite um nome</h4>
-                                        
-                                        <input class="jscolor" value="ab2567">
 
-                                        <input type="text" placeholder="Nome da Cor">
+                                        <input class="jscolor {mode:'HS'}" value="ab2567">
 
-                                        <a href="#!" class="modal-action modal-close waves-effect waves-light btn">
+                                        <input type="text" class="nome-cor" placeholder="Nome da Cor">
+
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-light btn salvar">
                                             Salvar <i class="fa fa-check" aria-hidden="true"></i>
                                         </a>
                                     </div>
