@@ -72,7 +72,7 @@ $(document).ready(function () {
     // Adiconar cor dinamicamente
     $('#criar-cor .btn.salvar').click(function () {
         var cor = $(this).closest('#criar-cor').find('.jscolor').css('background-color');
-        var nomeCor = $(this).closest('#criar-cor').find('.nome-cor').val().replace(/[^\w]/g, '');
+        var nomeCor = $(this).closest('#criar-cor').find('.nome-cor').val().replace(/[^\w]/g, '').toUpperCase();
 
         if (nomeCor == '') {
             alert('Digite um nome!');
