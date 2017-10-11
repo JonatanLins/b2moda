@@ -115,7 +115,7 @@ $(document).ready(function () {
         var info = $('.etapa.checar-cor-tam .cores-tamanhos-final .info-atual');
 
         info.find('.bloco-cor .cor').css('background-color', $('#lista-cores-produto input[name=cor]:checked + label .fa').css('color'));
-        info.find('.bloco-cor #nome-cor-adicionar').text($('#lista-cores-produto input[name=cor]:checked + label span').text());
+        info.find('.bloco-cor .nome-cor').text($('#lista-cores-produto input[name=cor]:checked + label span').text());
 
         info.find('.bloco-tamanho .tam-qnt li').remove();
         $('#lista-tamanhos-produto input[type=checkbox]:checked').each(function () {
@@ -129,6 +129,16 @@ $(document).ready(function () {
     $('.cores-tamanhos-final .excluir-cor input[type=checkbox]').click(function (event) {
         $(this).closest('.cores-tamanhos-final li').addClass('hide');
         alert('Item excluído com sucesso!');
+    });
+    
+    
+    
+    // Trocar input ao selecionar opção de pagamento
+    $('.grupos.collapsible .seletor-modo-pagamento .dropdown-content li').click(function(){
+        if($(this).index() > 0){
+            $(this).closest('tr').find('.preco-produto.ativo').removeClass('ativo');
+            $(this).closest('tr').find('.preco-produto:nth-child(' + $(this).index() + ')').addClass('ativo');
+        }
     });
 
 });

@@ -271,16 +271,6 @@ $cinza: #999;
             height: initial;
             min-height: 100%;
         }
-
-        .file-field {
-            margin: 50px 0;
-
-            .btn {
-                height: initial;
-                line-height: initial;
-                padding: .5em 1em;
-            }
-        }
         
         #preview-cor{
             float: right;
@@ -334,11 +324,26 @@ $cinza: #999;
                 padding-bottom: 10px;
                 text-align: center;
             }
+            
+            .select-wrapper{
+                .select-dropdown{
+                    @media (max-width: 500px){
+                        font-size: 1.5rem;
+                    }
+                }
+            }
 
-            label {
-                margin: 0;
-                font-size: 1.5rem;
-                font-weight: initial;
+            .dinheiro.preco-produto{
+                transform: translateY(-7px);
+                
+                @media (min-width: 400px){
+                    margin-left: 1em;
+                    width: calc(100% - 1em);
+                }
+                
+                &:not(.ativo){
+                    display: none;
+                }
             }
 
             input[type=text] {

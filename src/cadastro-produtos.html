@@ -264,7 +264,7 @@
                         </div>
 
                         <form action="" class="etapas-cadastro" id="#cadstro-produtos">
-                            <div class="etapa ativo" data-passo="01">
+                            <div class="etapa" data-passo="01">
                                 <hgroup>
                                     <h2>Informações Básicas</h2>
                                     <h3>Descreva Seu Produto</h3>
@@ -335,6 +335,16 @@
                                 <hgroup>
                                     <h2>Envie algumas fotos do seu produto!</h2>
                                 </hgroup>
+                                
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <i class="fa fa-upload" aria-hidden="true"></i>
+                                        <input type="file" name="fotos">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Enviar Imagens">
+                                    </div>
+                                </div>
 
                                 <div class="navegacao-etapas">
                                     <div class="btn anterior waves-effect waves-light">
@@ -611,7 +621,7 @@
 
 
 
-                            <div class="etapa" data-passo="03">
+                            <div class="etapa ativo" data-passo="03">
                                 <hgroup>
                                     <h2>Exibição, Preço e Formas de Pagamento</h2>
                                     <h3>Quem você deseja que veja seu produto?</h3>
@@ -630,20 +640,23 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><label for="preco-a-vista-publico">Á Vista</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-a-vista-publico" name="preco-a-vista-publico"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-30-dias-publico">Prazo de 30 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-30-dias-publico" name="preco-30-dias-publico"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-60-dias-publico">Prazo de 60 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-60-dias-publico" name="preco-60-dias-publico"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-90-dias-publico">Prazo de 90 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-90-dias-publico" name="preco-90-dias-publico"></td>
+                                                        <td>
+                                                            <select class="seletor-modo-pagamento">
+                                                                <option value="" disabled selected>Escolha Uma Opção</option>
+
+                                                                <option value="a-vista">Á Vista</option>
+                                                                <option value="30-dias">30 Dias</option>
+                                                                <option value="60-dias">60 Dias</option>
+                                                                <option value="90-dias">90 Dias</option>
+                                                            </select><label></label>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-publico-a-vista">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-publico-30-dias">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-publico-60-dias">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-publico-90-dias">
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -662,20 +675,23 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><label for="preco-a-vista-pe">Á Vista</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-a-vista-pe" name="preco-a-vista-pe"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-30-dias-pe">Prazo de 30 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-30-dias-pe" name="preco-30-dias-pe"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-60-dias-pe">Prazo de 60 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-60-dias-pe" name="preco-60-dias-pe"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-90-dias-pe">Prazo de 90 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-90-dias-pe" name="preco-90-dias-pe"></td>
+                                                        <td>
+                                                            <select class="seletor-modo-pagamento">
+                                                                <option value="" disabled selected>Escolha Uma Opção</option>
+
+                                                                <option value="a-vista">Á Vista</option>
+                                                                <option value="30-dias">30 Dias</option>
+                                                                <option value="60-dias">60 Dias</option>
+                                                                <option value="90-dias">90 Dias</option>
+                                                            </select><label></label>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-pernambuco-a-vista">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-pernambuco-30-dias">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-pernambuco-60-dias">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-pernambuco-90-dias">
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -694,20 +710,23 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><label for="preco-a-vista-ba">Á Vista</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-a-vista-ba" name="preco-a-vista-ba"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-30-dias-ba">Prazo de 30 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-30-dias-ba" name="preco-30-dias-ba"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-60-dias-ba">Prazo de 60 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-60-dias-ba" name="preco-60-dias-ba"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-90-dias-ba">Prazo de 90 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-90-dias-ba" name="preco-90-dias-ba"></td>
+                                                        <td>
+                                                            <select class="seletor-modo-pagamento">
+                                                                <option value="" disabled selected>Escolha Uma Opção</option>
+
+                                                                <option value="a-vista">Á Vista</option>
+                                                                <option value="30-dias">30 Dias</option>
+                                                                <option value="60-dias">60 Dias</option>
+                                                                <option value="90-dias">90 Dias</option>
+                                                            </select><label></label>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-bahia-a-vista">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-bahia-30-dias">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-bahia-60-dias">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-bahia-90-dias">
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -726,20 +745,23 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><label for="preco-a-vista-al">Á Vista</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-a-vista-al" name="preco-a-vista-al"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-30-dias-al">Prazo de 30 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-30-dias-al" name="preco-30-dias-al"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-60-dias-al">Prazo de 60 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-60-dias-al" name="preco-60-dias-al"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><label for="preco-90-dias-al">Prazo de 90 Dias</label></td>
-                                                        <td><input type="text" class="dinheiro" id="preco-90-dias-al" name="preco-90-dias-al"></td>
+                                                        <td>
+                                                            <select class="seletor-modo-pagamento">
+                                                                <option value="" disabled selected>Escolha Uma Opção</option>
+
+                                                                <option value="a-vista">Á Vista</option>
+                                                                <option value="30-dias">30 Dias</option>
+                                                                <option value="60-dias">60 Dias</option>
+                                                                <option value="90-dias">90 Dias</option>
+                                                            </select><label></label>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-alagoas-a-vista">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-alagoas-30-dias">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-alagoas-60-dias">
+                                                            <input type="text" class="dinheiro preco-produto" name="pag-alagoas-90-dias">
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -747,7 +769,9 @@
                                     </li>
                                 </ul>
 
-                                <p class="aviso"><b>Atenção:</b> O cliente que estiver cadastrado em mais de um grupo, receberá a melhor oferta (menor preço).</p>
+                                <p class="aviso">
+                                    <b>Atenção:</b> O cliente que estiver cadastrado em mais de um grupo, receberá a melhor oferta (menor preço).
+                                </p>
 
                                 <div class="navegacao-etapas">
                                     <div class="btn anterior waves-effect waves-light">
