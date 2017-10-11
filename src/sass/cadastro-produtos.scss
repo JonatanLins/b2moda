@@ -302,7 +302,23 @@ $cinza: #999;
                 border-radius: 50%;
                 cursor: pointer;
             }
+            
+            @media (max-width: 400px){
+                width: 200px;
+                
+                .selecionar-cor {
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 7px;
+                }
+            }
         }
+    }
+    #criar-estampa{
+        height: 400px;
+    }
+    #criar-cor {
+        height: 550px;
     }
 
     .collapsible.grupos {
