@@ -27,12 +27,14 @@ $(document).ready(function () {
             tag: 'Grupo 2',
             }],
     });
-    
-    
-    
+
+
+
     // Ativar máscaras de formulário
-    $('input[type=text].dinheiro').mask('000.000.000.000.000,00', {reverse: true});
-    
+    $('input[type=text].dinheiro').mask('000.000.000.000.000,00', {
+        reverse: true
+    });
+
 
 
 
@@ -76,26 +78,36 @@ $(document).ready(function () {
 
 
     // Adiconar cor dinamicamente
-    $('#criar-cor .btn.salvar').click(function () {
-        var cor = $(this).closest('#criar-cor').find('.jscolor').css('background-color');
-        var nomeCor = $(this).closest('#criar-cor').find('.nome-cor').val().replace(/[^\w]/g, '');
+    $('#criar-cor .btn.salvar').click(function (event) {
+        var codigoCor = $('#preview-cor').css('background-color');
+        var nomeCor = $('#nome-cor-adicionar').val().replace(/[^\w]/g, '');
 
-        if (nomeCor == '') {
+        if (nomeCor === '') {
+            event.stopImmediatePropagation();
             alert('Digite um nome válido!');
-        } else if (!$(this).closest('.etapa').find('.lista-cores #produto-cor-' + nomeCor).length) {
+        } else if (!$('#produto-cor-' + nomeCor).length) {
             $(this).closest('.etapa').find('.lista-cores').append(
                 '<fieldset>' +
                 '<input type="radio" id="produto-cor-' + nomeCor + '" name="cor">' +
                 '<label for="produto-cor-' + nomeCor + '">' +
-                '<i class="fa fa-circle" aria-hidden="true" style="color:' + cor + '"></i> <span>' + nomeCor + '</span>' +
+                '<i class="fa fa-circle" aria-hidden="true" style="color:' + codigoCor + '"></i> <span>' + nomeCor + '</span>' +
                 '</label><br>' +
                 '</fieldset>'
             );
-            $(this).closest('#criar-cor').find('.nome-cor').val('');
+            $('#nome-cor-adicionar').val('');
         } else {
+            event.stopImmediatePropagation();
             alert('Já existe uma cor com esse nome!');
         }
     });
+    $('#criar-cor .lista-cores-adicionar .selecionar-cor').click(function () {
+        $('#codigo-cor-adicionar').val($(this).css('background-color'));
+        $('#preview-cor').css('background-color', $(this).css('background-color'));
+    });
+    $('#codigo-cor-adicionar').on('keypress change focus blur hover click paste mouseleave mouseenter', function () {
+        $('#preview-cor').css('background-color', $(this).val());
+    });
+
 
 
     // Criar card para visualizar cores no final do formulário
@@ -103,7 +115,7 @@ $(document).ready(function () {
         var info = $('.etapa.checar-cor-tam .cores-tamanhos-final .info-atual');
 
         info.find('.bloco-cor .cor').css('background-color', $('#lista-cores-produto input[name=cor]:checked + label .fa').css('color'));
-        info.find('.bloco-cor .nome-cor').text($('#lista-cores-produto input[name=cor]:checked + label span').text());
+        info.find('.bloco-cor #nome-cor-adicionar').text($('#lista-cores-produto input[name=cor]:checked + label span').text());
 
         info.find('.bloco-tamanho .tam-qnt li').remove();
         $('#lista-tamanhos-produto input[type=checkbox]:checked').each(function () {
@@ -111,5 +123,12 @@ $(document).ready(function () {
         });
     });
 
+
+
+    // Botão para excluir cor previamente criada
+    $('.cores-tamanhos-final .excluir-cor input[type=checkbox]').click(function (event) {
+        $(this).closest('.cores-tamanhos-final li').addClass('hide');
+        alert('Item excluído com sucesso!');
+    });
 
 });
