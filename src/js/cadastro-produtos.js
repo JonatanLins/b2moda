@@ -74,6 +74,20 @@ $(document).ready(function () {
             alert("Esta cor já existe!");
         }
     });
+    
+    
+    
+    // Adicionar Preview das imagens do produto
+    $('#upload-imagens-produto').change(function(event){
+        while($('#preview-produto .owl-item').length){
+            $('#preview-produto').trigger('remove.owl.carousel', [0]).trigger('refresh.owl.carousel');
+        }
+        
+        for(i = 0; i < event.target.files.length; i++){
+            var imgTag = '<img class="item" src="' + URL.createObjectURL(event.target.files[i]) + '">';
+            $('#preview-produto').trigger('add.owl.carousel', [imgTag]).trigger('refresh.owl.carousel');
+        }
+    });
 
 
 

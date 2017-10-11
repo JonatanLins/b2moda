@@ -339,11 +339,26 @@
                                 <div class="file-field input-field">
                                     <div class="btn">
                                         <i class="fa fa-upload" aria-hidden="true"></i>
-                                        <input type="file" name="fotos">
+                                        <input type="file" name="fotos" accept="image/*" id="upload-imagens-produto" multiple>
                                     </div>
                                     <div class="file-path-wrapper">
                                         <input class="file-path validate" type="text" placeholder="Enviar Imagens">
                                     </div>
+                                </div>
+                                
+                                <div class="owl-carousel" id="preview-produto"
+                                    data-nav="true"
+                                    data-loop="false"
+                                    data-dots="true"
+                                    data-margin="10"
+                                    data-responsive='{
+                                        "0":{"items":1},
+                                        "480":{"items":2},
+                                        "768":{"items":3}
+                                    }'>
+                                    
+                                    <img class="item" src="img/produtos/template-1.jpg">
+                                
                                 </div>
 
                                 <div class="navegacao-etapas">
@@ -482,7 +497,7 @@
                                         <div class="file-field input-field">
                                             <div class="btn">
                                                 <i class="fa fa-upload" aria-hidden="true"></i>
-                                                <input type="file" name="estampa">
+                                                <input type="file" name="estampa" accept="image/*">
                                             </div>
                                             <div class="file-path-wrapper">
                                                 <input class="file-path validate" type="text" placeholder="Enviar Imagem">
