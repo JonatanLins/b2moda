@@ -61,6 +61,7 @@ $(document).ready(function () {
         var tamanho = $(this).closest('.mini-form-tamanho').find('#adicionar-tamanho').val().replace(/[^\w]/g, '').toUpperCase();
 
         if (tamanho == '') {
+            event.stopImmediatePropagation();
             alert("Digite um nome válido!");
         } else if (!$(this).closest('.etapa').find('.lista-tamanhos-produto #produto-tam-' + tamanho).length) {
 
@@ -71,6 +72,7 @@ $(document).ready(function () {
 
             $(this).closest('.mini-form-tamanho').find('#adicionar-tamanho').val('');
         } else {
+            event.stopImmediatePropagation();
             alert("Esta cor já existe!");
         }
     });

@@ -545,17 +545,31 @@
                                 <hgroup>
                                     <h2>Agora que Você Escolheu a Cor, Defina os Tamanhos Disponíveis Para seu Produto!</h2>
                                 </hgroup>
-
-                                <span class="cor-final"><i class="fa fa-circle" aria-hidden="true" style="color: Green"></i> Verde</span>
-
+                                
                                 <div class="lista-tamanhos-produto" id="lista-tamanhos-produto">
                                     <!-- Checkboxes são geradas dinamicamente -->
                                 </div>
+                                
+                                <div class="criar-tamanho">
+                                    <a href="#criar-tamanho" class="btn waves-effect waves-light modal-trigger blue">Criar Tamanho</a>
+                                </div>
 
-                                <fieldset class="mini-form-tamanho">
-                                    <input type="text" id="adicionar-tamanho" placeholder="Adicionar Tamanho">
-                                    <div class="btn-floating waves-effect waves-light salvar-cor"><i class="fa fa-check" aria-hidden="true"></i></div>
-                                </fieldset>
+                                <div id="criar-tamanho" class="modal">
+                                    <div class="modal-content">
+                                        <a href="#!" class="btn cancelar modal-action modal-close waves-effect waves-light">
+                                            <i class="fa fa-close" aria-hidden="true"></i>
+                                        </a>
+                                       
+                                        <fieldset class="mini-form-tamanho">
+                                            <input type="text" id="adicionar-tamanho" placeholder="Adicionar Tamanho">
+                                            
+                                            <a href="#!" class="modal-action modal-close salvar-cor waves-effect waves-light btn">
+                                                Salvar <i class="fa fa-check" aria-hidden="true"></i>
+                                            </a>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
 
                                 <div class="navegacao-etapas">
                                     <div class="btn anterior waves-effect waves-light">

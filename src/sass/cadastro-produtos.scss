@@ -254,6 +254,8 @@ $cinza: #999;
                 user-select: none;
 
                 .cor {
+                    @extend .z-depth-1;
+                    border-radius: 2px;
                     width: 30px;
                     height: 30px;
                     float: left;
@@ -298,13 +300,19 @@ $cinza: #999;
         }
     }
 
-    .criar-cor-estampa {
+    .criar-cor-estampa{
         @extend .navegacao-etapas;
         margin-top: 30px;
     }
+    
+    .criar-tamanho{
+        display: flex;
+        justify-content: center;
+    }
 
     #criar-estampa,
-    #criar-cor {
+    #criar-cor,
+    #criar-tamanho {
         max-height: 90%;
         height: auto;
         width: 350px;
@@ -384,6 +392,21 @@ $cinza: #999;
 
         @media (max-width: 400px) {
             height: 500px;
+        }
+    }
+    #criar-tamanho {
+        height: 200px;
+        
+        input[type=text]{
+            margin-top: 30px;
+            
+            .btn.salvar-cor{
+                padding: .3em .8em;
+            }
+            
+            @media(max-width: 400px){
+                font-size: 1.2em;
+            }
         }
     }
 
