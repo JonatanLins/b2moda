@@ -13,7 +13,6 @@ var imagemin     = require('gulp-imagemin');
 // Variáveis de configuração
 var srcPath      = 'src/';
 var distPath     = 'dist/';
-var pluginPath     = 'plugin/';
 
 
 
@@ -56,6 +55,14 @@ gulp.task('img', function(){
 });
 
 
+// Copiar outros arquivos do projeto
+gulp.task('files', function(){
+    gulp.src(srcPath + 'files/**/*')
+        .pipe(gulp.dest(distPath))
+        .pipe(browserSync.reload({stream: true}));
+});
+
+
 // Inicializador do BrowserSync
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -68,20 +75,19 @@ gulp.task('browserSync', function() {
 });
 
 
-// Copiador de plugins
-gulp.task('plugin', function(){
-    gulp.src(pluginPath + '**/*')
-        .pipe(gulp.dest(distPath))
-        .pipe(browserSync.reload({stream: true}));
+// Assistir arquivos do projeto
+gulp.task('watch', function() {
+    gulp.watch(srcPath + '**/*.html', ['html']);
+    gulp.watch(srcPath + 'sass/**/*.+(scss|sass)', ['sass']);
+    gulp.watch(srcPath + 'js/**/*.js', ['js']);
+    gulp.watch(srcPath + 'img/**/*.+(jpg|png|gif)', ['img']);
+    gulp.watch(srcPath + 'files/**/*', ['files']);
 });
+
+
+
 
 
 
 // Tarefa padrão
-gulp.task('default', ['browserSync'], function() {
-    gulp.watch(srcPath + '**/*.html', ['html']);
-    gulp.watch(srcPath + 'sass/*.+(scss|sass)', ['sass']);
-    gulp.watch(srcPath + 'js/*.js', ['js']);
-    gulp.watch(srcPath + 'img/*.+(jpg|png|gif)', ['img']);
-    gulp.watch(pluginPath + '**/*', ['plugin']);
-});
+gulp.task('default', ['browserSync', 'html', 'sass', 'js', 'img', 'files', 'watch']);
