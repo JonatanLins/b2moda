@@ -194,7 +194,8 @@ $cinza: #999;
         }
     }
 
-    .owl-carousel.preview {
+    .preview-images {
+        &.estampa,
         .item {
             position: relative;
             padding: 5px;
@@ -203,6 +204,12 @@ $cinza: #999;
                 @extend .z-depth-2;
                 width: 100%;
                 height: auto;
+            }
+        
+            #preview-estampa{
+                @extend .z-depth-3;
+                display: block;
+                margin: 0 auto 20px;
             }
 
             .fa-trash,
@@ -401,14 +408,6 @@ $cinza: #999;
             input[type=file] {
                 font-size: 1.7rem;
             }
-        }
-        
-        #preview-estampa{
-            border: 3px solid #ccc;
-            width: 250px;
-            display: block;
-            max-width: 100%;
-            margin: 0 auto 20px;
         }
     }
     #criar-cor {

@@ -102,7 +102,12 @@ $(document).ready(function () {
     
     // Adicionar preview da estampa
     $('#upload-imagem-estampa').change(function (event) {
-        $('#preview-estampa').attr('src', URL.createObjectURL(event.target.files[0])).removeClass('hide');
+        $('#preview-estampa').attr('src', URL.createObjectURL(event.target.files[0])).closest('.preview-images').removeClass('hide');
+    });
+    $('#preview-estampa + .fa-close').click(function(){
+        $(this).closest('.preview-images').addClass('hide');
+//        document.getElementById('upload-imagem-estampa').value = '';
+        $('#upload-imagem-estampa').val('').closest('.input-field').find('input[type=text]').val('');
     });
     
     
