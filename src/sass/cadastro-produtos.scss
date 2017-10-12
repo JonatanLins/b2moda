@@ -354,10 +354,6 @@ $cinza: #999;
                 font-size: 1.5em;
             }
         }
-        
-        #nome-cor-adicionar{
-            transform: translate3d(0,0,0);
-        }
 
         #preview-cor {
             float: right;
@@ -375,17 +371,18 @@ $cinza: #999;
         }
 
         .lista-cores-adicionar {
-            column-count: 5;
-            width: 250px;
-            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 286px;
+            justify-content: center;
             padding-bottom: 20px;
 
             .selecionar-cor {
                 display: inline-block;
-                break-inside: avoid;
                 width: 40px;
                 height: 40px;
-                margin-bottom: 10px;
+                margin: 0 5px 10px;
                 border-radius: 50%;
                 cursor: pointer;
             }
