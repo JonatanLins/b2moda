@@ -346,7 +346,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="owl-carousel" id="preview-produto"
+                                <div class="owl-carousel preview" id="preview-produto"
                                     data-nav="true"
                                     data-loop="false"
                                     data-dots="true"
@@ -512,7 +512,7 @@
                                         <div class="file-field input-field">
                                             <div class="btn">
                                                 <i class="fa fa-upload" aria-hidden="true"></i>
-                                                <input type="file" name="estampa" accept="image/*">
+                                                <input type="file" name="estampa" accept="image/*" id="upload-imagem-estampa">
                                             </div>
                                             <div class="file-path-wrapper">
                                                 <input class="file-path validate" type="text" placeholder="Enviar Imagem">
@@ -521,6 +521,10 @@
 
                                         <label for="nome-estampa">Nome da Estampa</label>
                                         <input type="text" id="nome-estampa" name="nome-estampa" required>
+                                        
+                                        <!-- Imagem adicionada dinamicamente -->
+                                        <img id="preview-estampa" src="" class="hide">
+                                        <!-- Imagem adicionada dinamicamente -->
 
                                         <a href="#!" class="modal-action modal-close waves-effect waves-light btn">
                                             Salvar <i class="fa fa-check" aria-hidden="true"></i>

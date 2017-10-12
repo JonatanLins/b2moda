@@ -37,7 +37,6 @@ $(document).ready(function () {
 
 
 
-
     // Mostras etapas do cadastro de produtos
     $('.navegacao-etapas .anterior').click(function () {
         var etapa = $('.etapas-cadastro .etapa.ativo');
@@ -76,10 +75,10 @@ $(document).ready(function () {
             alert("Esta cor já existe!");
         }
     });
+    
+    
 
-
-
-    // Adicionar Preview das imagens do produto
+    // Adicionar preview das imagens do produto
     function removerImagemPreview(){
         $('#preview-produto').trigger('remove.owl.carousel', [$(this).closest('.owl-item').index()]).trigger('refresh.owl.carousel');
     }
@@ -98,9 +97,16 @@ $(document).ready(function () {
         $('#preview-produto .item .fa-close').click(removerImagemPreview);
     });
     $('#preview-produto .item .fa-close').click(removerImagemPreview);
-
-
-
+    
+    
+    
+    // Adicionar preview da estampa
+    $('#upload-imagem-estampa').change(function (event) {
+        $('#preview-estampa').attr('src', URL.createObjectURL(event.target.files[0])).removeClass('hide');
+    });
+    
+    
+    
     // Adiconar cor dinamicamente
     $('#criar-cor .btn.salvar').click(function (event) {
         var codigoCor = $('#preview-cor').css('background-color');

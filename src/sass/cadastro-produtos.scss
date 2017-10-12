@@ -137,6 +137,8 @@ $cinza: #999;
     }
 
     .modal {
+        max-width: 90%;
+
         .modal-content {
             height: 100%;
         }
@@ -192,7 +194,7 @@ $cinza: #999;
         }
     }
 
-    #preview-produto {
+    .owl-carousel.preview {
         .item {
             position: relative;
             padding: 5px;
@@ -300,12 +302,12 @@ $cinza: #999;
         }
     }
 
-    .criar-cor-estampa{
+    .criar-cor-estampa {
         @extend .navegacao-etapas;
         margin-top: 30px;
     }
-    
-    .criar-tamanho{
+
+    .criar-tamanho {
         display: flex;
         justify-content: center;
     }
@@ -313,12 +315,16 @@ $cinza: #999;
     #criar-estampa,
     #criar-cor,
     #criar-tamanho {
-        max-height: 90%;
+        max-height: 90% !important;
         height: auto;
         width: 350px;
         max-width: 80%;
         overflow: auto;
         top: 0 !important;
+
+        h4 {
+            width: calc(100% - 25px);
+        }
 
         .modal-content {
             height: initial;
@@ -385,7 +391,25 @@ $cinza: #999;
         }
     }
     #criar-estampa {
-        height: 400px;
+        height: 500px;
+        width: 450px;
+        max-width: 90%;
+
+        .file-field {
+            margin: 30px 0 10px;
+
+            input[type=file] {
+                font-size: 1.7rem;
+            }
+        }
+        
+        #preview-estampa{
+            border: 3px solid #ccc;
+            width: 250px;
+            display: block;
+            max-width: 100%;
+            margin: 0 auto 20px;
+        }
     }
     #criar-cor {
         height: 550px;
@@ -396,15 +420,15 @@ $cinza: #999;
     }
     #criar-tamanho {
         height: 200px;
-        
-        input[type=text]{
+
+        input[type=text] {
             margin-top: 30px;
-            
-            .btn.salvar-cor{
+
+            .btn.salvar-cor {
                 padding: .3em .8em;
             }
-            
-            @media(max-width: 400px){
+
+            @media(max-width: 400px) {
                 font-size: 1.2em;
             }
         }
