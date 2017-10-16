@@ -48,8 +48,8 @@ gulp.task('js', function(){
 
 // Compressor de imagens
 gulp.task('img', function(){
-    gulp.src(srcPath + 'img/**/*.+(jpg|png|gif)')
-//        .pipe(imagemin())
+    gulp.src(srcPath + 'img/**/*')
+        .pipe(imagemin())
         .pipe(gulp.dest(distPath + 'img'))
         .pipe(browserSync.reload({stream: true}));
 });
@@ -80,7 +80,7 @@ gulp.task('watch', function() {
     gulp.watch(srcPath + '**/*.html', ['html']);
     gulp.watch(srcPath + 'sass/**/*.+(scss|sass)', ['sass']);
     gulp.watch(srcPath + 'js/**/*.js', ['js']);
-    gulp.watch(srcPath + 'img/**/*.+(jpg|png|gif)', ['img']);
+    gulp.watch(srcPath + 'img/**/*', ['img']);
     gulp.watch(srcPath + 'files/**/*', ['files']);
 });
 
