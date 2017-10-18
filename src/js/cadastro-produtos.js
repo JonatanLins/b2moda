@@ -75,11 +75,11 @@ $(document).ready(function () {
             alert("Esta cor já existe!");
         }
     });
-    
-    
+
+
 
     // Adicionar preview das imagens do produto
-    function removerImagemPreview(){
+    function removerImagemPreview() {
         $('#preview-produto').trigger('remove.owl.carousel', [$(this).closest('.owl-item').index()]).trigger('refresh.owl.carousel');
     }
     $('#upload-imagens-produto').change(function (event) {
@@ -93,25 +93,25 @@ $(document).ready(function () {
 
             $('#preview-produto').trigger('add.owl.carousel', [imgTag]).trigger('refresh.owl.carousel');
         }
-        
+
         $('#preview-produto .item .fa-close').click(removerImagemPreview);
     });
     $('#preview-produto .item .fa-close').click(removerImagemPreview);
-    
-    
-    
+
+
+
     // Adicionar preview da estampa
     $('#upload-imagem-estampa').change(function (event) {
         $('#preview-estampa').attr('src', URL.createObjectURL(event.target.files[0])).closest('.preview-images').removeClass('hide');
     });
-    $('#preview-estampa + .fa-close').click(function(){
+    $('#preview-estampa + .fa-close').click(function () {
         $(this).closest('.preview-images').addClass('hide');
-//        document.getElementById('upload-imagem-estampa').value = '';
+        //        document.getElementById('upload-imagem-estampa').value = '';
         $('#upload-imagem-estampa').val('').closest('.input-field').find('input[type=text]').val('');
     });
-    
-    
-    
+
+
+
     // Adiconar cor dinamicamente
     $('#criar-cor .btn.salvar').click(function (event) {
         var codigoCor = $('#preview-cor').css('background-color');

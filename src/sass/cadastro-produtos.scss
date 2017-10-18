@@ -141,12 +141,16 @@ $cinza: #999;
 
         .modal-content {
             height: 100%;
+
         }
         .modal-close {
             display: block;
             margin: 0 auto;
             width: 150px;
             text-align: center;
+        }
+        input[type=text] {
+            overflow: hidden;
         }
     }
 
@@ -205,8 +209,8 @@ $cinza: #999;
                 width: 100%;
                 height: auto;
             }
-        
-            #preview-estampa{
+
+            #preview-estampa {
                 @extend .z-depth-3;
                 display: block;
                 margin: 0 auto 20px;
