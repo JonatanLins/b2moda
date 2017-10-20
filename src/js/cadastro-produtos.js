@@ -185,7 +185,7 @@ $(document).ready(function () {
         }
     })
     $(window).scroll(function () {
-        if ($('.modal input[type=text]:active').length && $(window).width() < 768) {
+        if ($('.modal input[type=text]:focus').length && $(window).width() < 768) {
             $(window).scrollTop(0);
         }
     });
