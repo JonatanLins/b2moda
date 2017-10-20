@@ -175,13 +175,14 @@ $(document).ready(function () {
             $(this).closest('tr').find('.preco-produto:nth-child(' + $(this).index() + ')').addClass('ativo');
         }
     });
-    
-    
-    
+
+
+
     // Corrigir bug do input text dentro do modal
-    $('.modal input[type=text]').focus(function(){
+    $('.modal input[type=text]').focus(function () {
         $(window).scrollTop(0);
-    }).change(function(){
+    })
+    $('.modal input[type=text]').change(function () {
         $(window).scrollTop(0);
     });
 
