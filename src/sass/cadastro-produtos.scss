@@ -13,7 +13,6 @@ $cinza: #999;
         width: 100%;
         display: flex;
         justify-content: space-around;
-        justify-content: space-evenly;
         cursor: default;
         position: relative;
 
@@ -41,7 +40,7 @@ $cinza: #999;
 
         &:after {
             content: "";
-            width: 60%;
+            width: 75%;
             position: absolute;
             border-top: 4px solid $cinza;
             top: 50%;
@@ -164,6 +163,10 @@ $cinza: #999;
 
             label {
                 font-size: 1.5rem;
+            }
+
+            .fa-circle {
+                text-shadow: 0 2px 2px rgba(0, 0, 0, 0.14), 0 1px 5px rgba(0, 0, 0, 0.12), 0 3px 1px rgba(0, 0, 0, 0.2);
             }
 
             @media (max-width: 500px) {
@@ -374,6 +377,7 @@ $cinza: #999;
             padding-bottom: 20px;
 
             .selecionar-cor {
+                @extend .z-depth-2;
                 display: inline-block;
                 width: 40px;
                 height: 40px;
