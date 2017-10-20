@@ -180,10 +180,14 @@ $(document).ready(function () {
 
     // Corrigir bug do input text dentro do modal
     $('.modal input[type=text]').focus(function () {
-        $(window).scrollTop(0);
+        if ($(window).width < 768) {
+            $(window).scrollTop(0);
+        }
     })
-    $('.modal input[type=text]').change(function () {
-        $(window).scrollTop(0);
+    $(window).scroll(function () {
+        if ($('.modal input[type=text]:active').length && $(window).width < 768) {
+            $(window).scrollTop(0);
+        }
     });
 
 });

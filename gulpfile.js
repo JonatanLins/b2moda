@@ -7,6 +7,7 @@ var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var imagemin     = require('gulp-imagemin');
+var ngrok        = require('ngrok');
 
 
 
@@ -71,6 +72,12 @@ gulp.task('browserSync', function() {
         },
         port: 8080,
         startPath: '.',
+    }, function (err, bs) {
+        ngrok.connect({
+            proto: 'http',
+            addr: 8080,
+            authtoken: '6sSZEU46iXCTdzwDVb9Et_6bDkknSEoqdEPAhmM4X39'
+        }, function (err, url) {});
     });
 });
 
