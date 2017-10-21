@@ -4,6 +4,12 @@
 @import '../js/fancybox/source/jquery.fancybox.css';
 
 
+@font-face {
+    font-family: theBoldFont;
+    src: url(../fonts/theboldfont.ttf);
+}
+
+
 
 
 body {
@@ -45,6 +51,14 @@ ul li {
 
 .site-main {
     position: relative;
+}
+
+.theBoldFont{
+    font-family: theBoldFont;
+    
+    *{
+        font-family: theBoldFont;
+    }
 }
 
 @media (max-width: 991px) {
