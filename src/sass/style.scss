@@ -10711,7 +10711,7 @@ select.input-sm {
                 justify-content: flex-end;
             }
 
-            button {
+            .botao {
                 white-space: nowrap;
                 background-color: #f36;
                 color: #FFF;
@@ -10721,6 +10721,7 @@ select.input-sm {
                 margin: 5px 2px;
                 transition: all .1s;
                 border-radius: 2px;
+                padding: .2em .5em;
 
                 &:hover {
                     background-color: lighten(#f36, 10%);
