@@ -10752,12 +10752,15 @@ select.input-sm {
         margin-right: 1em;
     }
 
-    button {
+    button,
+    .botao {
         border: none;
         outline: none;
         background-color: #f36;
         font-size: 1.3em;
         padding: .4em .8em;
+        display: inline-block;
+        margin: 0 .5rem;
         color: #fff;
         border-radius: 3px;
         text-transform: uppercase;
@@ -11022,7 +11025,7 @@ select.input-sm {
     .selecionar-tipo-vendedor {
         display: flex;
         justify-content: center;
-        
+
         label {
             font-size: 1.5rem;
             margin: 0 2rem;

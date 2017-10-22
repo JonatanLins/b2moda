@@ -785,4 +785,14 @@
     });
     
     
+    
+    // Confirmar ação ao clicar em botão
+    $('.confirmar-acao').click(function(event){
+        var continuar = confirm($(this).attr('data-confirmar'));
+        if(!continuar){
+            event.preventDefault();
+        }
+    });
+    
+    
 })(jQuery);
