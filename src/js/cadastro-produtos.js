@@ -190,4 +190,13 @@ $(document).ready(function () {
         }
     });
 
+
+    // Alerta depois que enviar imagens
+    $('.alerta-envio-imagens-concluido').click(function () {
+        if ($('#preview-produto .owl-item').length && $(this).hasClass('alerta-envio-imagens-concluido')) {
+            alert('Agora que você já enviou as fotos, diga quais as cores e tamanhos disponíveis para seu produto!');
+            $(this).removeClass('alerta-envio-imagens-concluido');
+        }
+    });
+
 });
