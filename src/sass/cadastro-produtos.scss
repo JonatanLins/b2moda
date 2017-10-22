@@ -316,6 +316,7 @@ $cinza: #999;
         max-width: 90%;
         overflow: auto;
         top: 0 !important;
+        background-color: white;
 
         .modal-close {
             display: block;
@@ -334,6 +335,7 @@ $cinza: #999;
             border-radius: 0;
             box-shadow: none;
             border: none;
+            background-color: white;
         }
 
         .modal-close.cancelar {
