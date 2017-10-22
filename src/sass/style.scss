@@ -53,10 +53,10 @@ ul li {
     position: relative;
 }
 
-.theBoldFont{
+.theBoldFont {
     font-family: theBoldFont;
-    
-    *{
+
+    * {
         font-family: theBoldFont;
     }
 }
@@ -11017,6 +11017,16 @@ select.input-sm {
         font-size: 1.5rem;
         font-weight: initial;
         color: #444 !important;
+    }
+
+    .selecionar-tipo-vendedor {
+        display: flex;
+        justify-content: center;
+        
+        label {
+            font-size: 1.5rem;
+            margin: 0 2rem;
+        }
     }
 
     input {
