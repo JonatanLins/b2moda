@@ -3,8 +3,6 @@
 
 
 
-$azul: #2196F3;
-$cinza: #999;
 
 
 
@@ -70,7 +68,7 @@ $cinza: #999;
             font-size: 2rem;
             line-height: 3rem;
             text-transform: uppercase;
-            color: #333;
+            color: $cinza-escuro;
 
         }
 
@@ -179,7 +177,7 @@ $cinza: #999;
         margin-top: 50px;
 
         b {
-            color: #f36;
+            color: $rosa;
         }
     }
 
@@ -206,7 +204,7 @@ $cinza: #999;
                 position: absolute;
                 top: 0;
                 right: 0;
-                background-color: #f36;
+                background-color: $rosa;
                 width: 40px;
                 line-height: 40px;
                 font-size: 1.5em;
@@ -224,7 +222,7 @@ $cinza: #999;
             .owl-dot {
                 width: 10px;
                 height: 10px;
-                background-color: #ccc;
+                background-color: $cinza-claro;
                 margin: 0 4px;
                 border-radius: 50%;
 
@@ -359,7 +357,7 @@ $cinza: #999;
             float: right;
             width: 50px;
             height: 50px;
-            background-color: #f36;
+            background-color: $rosa;
             border-radius: 2px;
             transition: all .2s ease;
 
@@ -436,50 +434,93 @@ $cinza: #999;
     }
 
     .collapsible.grupos {
+        * {
+            box-sizing: border-box;
+        }
+
         .collapsible-header {
-            color: #f36;
+            color: $rosa;
             font-weight: bold;
         }
 
-        table {
-            margin: 0;
+        h4 {
+            margin-bottom: 20px;
+        }
 
-            td {
-                width: 50%;
-            }
+        .seletor-modo-pagamento {
+            width: 200px;
+            max-width: 100%;
+            margin: 0 auto;
 
-            thead td {
-                font-size: 1.5rem;
-                font-weight: bold;
-                padding-bottom: 10px;
+            * {
                 text-align: center;
             }
-
-            .select-wrapper {
-                .select-dropdown {
-                    @media (max-width: 500px) {
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-
-            .dinheiro.preco-produto {
-                transform: translateY(-7px);
-
-                @media (min-width: 400px) {
-                    margin-left: 1em;
-                    width: calc(100% - 1em);
-                }
-
-                &:not(.ativo) {
-                    display: none;
-                }
-            }
-
-            input[type=text] {
-                margin: 10px 0;
-            }
         }
+
+        .preco-produto {
+            font-weight: 400;
+            width: 100%;
+            font-size: 2rem;
+            display: flex;
+
+            span {
+                flex: 0 0 auto;
+                margin-right: 1rem;
+            }
+            
+            button {
+                flex: 0 0 auto;
+                margin-left: 1rem;
+                transform: translateY(-6px);
+            }
+
+            .dinheiro {
+                transform: translateY(-1px);
+                box-sizing: border-box;
+                margin-left: -3.5rem;
+                padding-left: 3rem;
+                width: 150px;
+                flex: 1 1 auto;
+            }
+
+        } //        table {
+        //            margin: 0;
+        //
+        //            td {
+        //                box-sizing: content-box;
+        //                display: flex;
+        //                width: 50%;
+        //            }
+        //
+        //            thead td {
+        //                font-size: 1.5rem;
+        //                font-weight: bold;
+        //                padding-bottom: 10px;
+        //                text-align: center;
+        //            }
+        //
+        //            .select-wrapper {
+        //                .select-dropdown {
+        //                    @media (max-width: 500px) {
+        //                        font-size: 1.5rem;
+        //                    }
+        //                }
+        //            }
+        //
+        //            .dinheiro.preco-produto {
+        //                transform: translateY(-7px);
+        //                box-sizing: border-box;
+        //                width: 100%;
+        //
+        //                &:not(.ativo) {
+        //                    display: none;
+        //                }
+        //            }
+        //
+        //            input[type=text] {
+        //                margin: 10px 0;
+        //            }
+        //        }
     }
 
     .caret {

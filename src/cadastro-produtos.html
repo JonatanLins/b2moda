@@ -260,7 +260,7 @@
                         </div>
 
                         <form action="" class="etapas-cadastro" id="#cadstro-produtos">
-                            <div class="etapa ativo" data-passo="01">
+                            <div class="etapa" data-passo="01">
                                 <hgroup>
                                     <h2>Informações Básicas</h2>
                                     <h3>Descreva Seu Produto</h3>
@@ -676,7 +676,7 @@
 
 
 
-                            <div class="etapa" data-passo="03">
+                            <div class="etapa ativo" data-passo="03">
                                 <hgroup>
                                     <h2>Exibição, Preço e Formas de Pagamento</h2>
                                     <h3>Quem você deseja que veja seu produto?</h3>
@@ -685,141 +685,88 @@
                                 <ul class="grupos collapsible" data-collapsible="accordion">
                                     <li>
                                         <div class="collapsible-header">Público <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                        <div class="collapsible-body">
-                                            <table class="bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <td>Modo de Pagamento</td>
-                                                        <td>Preços</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <select class="seletor-modo-pagamento">
-                                                                <option value="" disabled selected>Selecione</option>
+                                        <div class="collapsible-body" data-grupo="publico">
+                                            <h4 class="center">Adicione um Modo de Pagamento</h4>
 
-                                                                <option value="a-vista">Á Vista</option>
-                                                                <option value="30-dias">30 Dias</option>
-                                                                <option value="60-dias">60 Dias</option>
-                                                                <option value="90-dias">90 Dias</option>
-                                                            </select><label></label>
-                                                        </td>
+                                            <select class="seletor-modo-pagamento">
+                                                <option value="" disabled selected>Selecione</option>
 
-                                                        <td>
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-publico-a-vista">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-publico-30-dias">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-publico-60-dias">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-publico-90-dias">
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                <option value="a-vista">Á Vista</option>
+                                                <option value="30-dias">30 Dias</option>
+                                                <option value="60-dias">60 Dias</option>
+                                                <option value="90-dias">90 Dias</option>
+                                            </select><label></label>
+
+                                            <!-- Inputs são adicionados dinamicamente -->
+<!--
+                                            <label class="preco-produto">
+                                                <span>À Vista: </span>
+                                                <span class="simbolo-reais">R$</span>
+                                                <input type="text" class="dinheiro preco-produto" name="pag-publico-a-vista">
+                                                <button class="btn-floating waves-effect waves-light excluir">
+                                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                                </button>
+                                            </label>
+-->
+                                            <!-- Inputs são adicionados dinamicamente -->
+
                                         </div>
                                     </li>
 
                                     <li>
                                         <div class="collapsible-header">Pernambuco <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                        <div class="collapsible-body">
-                                            <table class="bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <td>Modo de Pagamento</td>
-                                                        <td>Preços</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <select class="seletor-modo-pagamento">
-                                                                <option value="" disabled selected>Selecione</option>
+                                        <div class="collapsible-body" data-grupo="pernambuco">
+                                            <h4 class="center">Adicione um Modo de Pagamento</h4>
 
-                                                                <option value="a-vista">Á Vista</option>
-                                                                <option value="30-dias">30 Dias</option>
-                                                                <option value="60-dias">60 Dias</option>
-                                                                <option value="90-dias">90 Dias</option>
-                                                            </select><label></label>
-                                                        </td>
+                                            <select class="seletor-modo-pagamento">
+                                                <option value="" disabled selected>Selecione</option>
 
-                                                        <td>
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-pernambuco-a-vista">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-pernambuco-30-dias">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-pernambuco-60-dias">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-pernambuco-90-dias">
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                <option value="a-vista">Á Vista</option>
+                                                <option value="30-dias">30 Dias</option>
+                                                <option value="60-dias">60 Dias</option>
+                                                <option value="90-dias">90 Dias</option>
+                                            </select><label></label>
+
+                                            <!-- Inputs são adicionados dinamicamente -->
+
                                         </div>
                                     </li>
 
                                     <li>
                                         <div class="collapsible-header">Bahia <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                        <div class="collapsible-body">
-                                            <table class="bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <td>Modo de Pagamento</td>
-                                                        <td>Preços</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <select class="seletor-modo-pagamento">
-                                                                <option value="" disabled selected>Selecione</option>
+                                        <div class="collapsible-body" data-grupo="bahia">
+                                            <h4 class="center">Adicione um Modo de Pagamento</h4>
 
-                                                                <option value="a-vista">Á Vista</option>
-                                                                <option value="30-dias">30 Dias</option>
-                                                                <option value="60-dias">60 Dias</option>
-                                                                <option value="90-dias">90 Dias</option>
-                                                            </select><label></label>
-                                                        </td>
+                                            <select class="seletor-modo-pagamento">
+                                                <option value="" disabled selected>Selecione</option>
 
-                                                        <td>
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-bahia-a-vista">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-bahia-30-dias">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-bahia-60-dias">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-bahia-90-dias">
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                <option value="a-vista">Á Vista</option>
+                                                <option value="30-dias">30 Dias</option>
+                                                <option value="60-dias">60 Dias</option>
+                                                <option value="90-dias">90 Dias</option>
+                                            </select><label></label>
+
+                                            <!-- Inputs são adicionados dinamicamente -->
+
                                         </div>
                                     </li>
 
                                     <li>
                                         <div class="collapsible-header">Alagoas <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                        <div class="collapsible-body">
-                                            <table class="bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <td>Modo de Pagamento</td>
-                                                        <td>Preços</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <select class="seletor-modo-pagamento">
-                                                                <option value="" disabled selected>Selecione</option>
+                                        <div class="collapsible-body" data-grupo="alagoas">
+                                            <h4 class="center">Adicione um Modo de Pagamento</h4>
 
-                                                                <option value="a-vista">Á Vista</option>
-                                                                <option value="30-dias">30 Dias</option>
-                                                                <option value="60-dias">60 Dias</option>
-                                                                <option value="90-dias">90 Dias</option>
-                                                            </select><label></label>
-                                                        </td>
+                                            <select class="seletor-modo-pagamento">
+                                                <option value="" disabled selected>Selecione</option>
 
-                                                        <td>
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-alagoas-a-vista">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-alagoas-30-dias">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-alagoas-60-dias">
-                                                            <input type="text" class="dinheiro preco-produto" name="pag-alagoas-90-dias">
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                <option value="a-vista">Á Vista</option>
+                                                <option value="30-dias">30 Dias</option>
+                                                <option value="60-dias">60 Dias</option>
+                                                <option value="90-dias">90 Dias</option>
+                                            </select><label></label>
+
+                                            <!-- Inputs são adicionados dinamicamente -->
+
                                         </div>
                                     </li>
                                 </ul>

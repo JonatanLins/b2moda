@@ -11,27 +11,39 @@
 
 
 
+// CORES
+$rosa: #F36;
+$azul: #2196F3;
+$azul-jeans: #5095AD;
+$cinza: #999;
+$cinza-claro: #CCC;
+$cinza-escuro: #333;
 
+
+
+
+
+// ESTILO
 body {
     max-width: 1920px;
     margin: auto;
     font-size: 14px;
     font-family: Arial, sans-serif;
     font-weight: 400;
-    color: #333;
+    color: $cinza-escuro;
     background-color: #fff;
     overflow-x: hidden
 }
 
 a {
-    color: #333
+    color: $cinza-escuro
 }
 
 a:focus,
 a:hover {
     outline: 0;
     text-decoration: none;
-    color: #f36
+    color: $rosa
 }
 
 img {
@@ -120,7 +132,7 @@ ul li {
 
 .pagination > li > a,
 .pagination > li > span {
-    color: #333;
+    color: $cinza-escuro;
     border: 1px solid #dfdfdf;
     line-height: 32px;
     min-width: 34px;
@@ -135,7 +147,7 @@ ul li {
 .pagination > li > span:focus,
 .pagination > li > span:hover {
     background-color: #fff;
-    color: #f36;
+    color: $rosa;
     border-color: #dfdfdf
 }
 
@@ -151,7 +163,7 @@ ul li {
 .pagination .active > span:focus,
 .pagination .active > span:hover {
     background-color: #fff;
-    color: #f36;
+    color: $rosa;
     border-color: #dfdfdf
 }
 
@@ -189,7 +201,7 @@ ul li {
 }
 
 .breadcrumb li {
-    color: #333;
+    color: $cinza-escuro;
     line-height: 25px
 }
 
@@ -200,11 +212,11 @@ ul li {
 }
 
 .breadcrumb li a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .breadcrumb li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .breadcrumb .active,
@@ -220,12 +232,12 @@ ul li {
 }
 
 .dropdown-menu > li > a {
-    color: #333;
+    color: $cinza-escuro;
     padding: 6px 12px
 }
 
 .dropdown-menu > li > a:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff
 }
 
@@ -310,7 +322,7 @@ a.btn-sm {
 .btn-default:hover,
 .open .btn-default.dropdown-toggle {
     color: #fff;
-    background-color: #f36;
+    background-color: $rosa;
     border-color: #e3e3e3
 }
 
@@ -346,8 +358,8 @@ fieldset[disabled] .btn-default:hover {
 
 .btn-inline {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .btn-inline.active,
@@ -382,12 +394,12 @@ fieldset[disabled] .btn-inline.active,
 fieldset[disabled] .btn-inline:active,
 fieldset[disabled] .btn-inline:focus,
 fieldset[disabled] .btn-inline:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .btn-inline .badge {
-    color: #f36;
+    color: $rosa;
     background-color: #fff
 }
 
@@ -404,12 +416,12 @@ fieldset[disabled] .btn-inline:hover {
 .btn-inline-sub:hover,
 .open .btn-inline-sub.dropdown-toggle {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .follow-store-button {
-    background-color: #F36;
+    background-color: $rosa;
     padding: 10px 0;
     border: none;
 }
@@ -589,7 +601,7 @@ select.input-sm {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .nav-pills {
@@ -648,7 +660,7 @@ select.input-sm {
     width: 60px;
     height: 49px;
     padding: 0;
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     text-align: center;
     line-height: 1px;
@@ -694,7 +706,7 @@ select.input-sm {
     padding-right: 28px;
     position: relative;
     text-transform: capitalize;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     font-weight: 400
 }
@@ -762,7 +774,7 @@ select.input-sm {
 .block-search .form-search .btn-search {
     width: 60px;
     padding: 0;
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     text-align: center;
     position: absolute;
@@ -878,7 +890,7 @@ select.input-sm {
     text-transform: uppercase;
     color: #fff;
     border: none;
-    background-color: #f36;
+    background-color: $rosa;
     width: calc((100% - 12px)/ 2);
     width: -o-calc((100% - 12px)/ 2);
     margin-top: 12px;
@@ -944,7 +956,7 @@ select.input-sm {
 }
 
 .block-minicart .minicart-items .product-item .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-minicart .minicart-items .product-item .product-item-qty {
@@ -960,7 +972,7 @@ select.input-sm {
 
 .block-minicart .minicart-items .product-item .product-item-price {
     font-size: 14px;
-    color: #f36;
+    color: $rosa;
     display: block
 }
 
@@ -968,7 +980,7 @@ select.input-sm {
     position: absolute;
     top: 0;
     left: 0;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     width: 12px;
     height: 12px;
@@ -979,7 +991,7 @@ select.input-sm {
 
 .block-minicart .minicart-items .product-item .action.delete:focus,
 .block-minicart .minicart-items .product-item .action.delete:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-minicart .minicart-items .product-item .action.delete span {
@@ -993,7 +1005,7 @@ select.input-sm {
 .block-nav-categori .block-title {
     cursor: pointer;
     line-height: 57px;
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     font-size: 15px;
     font-weight: 700;
@@ -1212,7 +1224,7 @@ select.input-sm {
 }
 
 .block-nav-categori .ui-categori .submenu .categori-list .title a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-nav-categori .ui-categori .submenu .categori-list > li {
@@ -1228,7 +1240,7 @@ select.input-sm {
 }
 
 .block-nav-categori .ui-categori .submenu .categori-list li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-nav-categori .ui-categori .submenu .subtitle {
@@ -1255,7 +1267,7 @@ select.input-sm {
 }
 
 .block-nav-categori .ui-categori .submenu .product-item-opt-1 .product-item-price {
-    color: #333;
+    color: $cinza-escuro;
     font-size: 16px
 }
 
@@ -1266,7 +1278,7 @@ select.input-sm {
     padding: 0 65px;
     line-height: 55px;
     background-color: #f9f9f9;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 600;
     cursor: pointer
 }
@@ -1283,7 +1295,7 @@ select.input-sm {
 
 .block-nav-categori .view-all-categori .btn-view-all:hover,
 .block-nav-categori .view-all-categori a:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     -webkit-transition: .2s;
     transition: .2s
@@ -1317,10 +1329,10 @@ select.input-sm {
         text-transform: uppercase;
         font-weight: 400;
         font-size: 14px;
-        color: #333
+        color: $cinza-escuro
     }
     .block-nav-menu .ui-menu > li:hover > a {
-        color: #f36
+        color: $rosa
     }
     .block-nav-menu .ui-menu > li .label-menu {
         position: absolute;
@@ -1405,7 +1417,7 @@ select.input-sm {
     }
     .block-nav-menu .ui-menu .submenu li > a:focus,
     .block-nav-menu .ui-menu .submenu li > a:hover {
-        color: #f36
+        color: $rosa
     }
     .block-nav-menu .ui-menu .megamenu {
         width: 900px;
@@ -1431,7 +1443,7 @@ select.input-sm {
     }
     .block-nav-menu .ui-menu .megamenu .title span {
         display: inline-block;
-        border-bottom: 1px solid #f36;
+        border-bottom: 1px solid $rosa;
         margin-bottom: -1px
     }
     .block-nav-menu .ui-menu .megamenu .img-categori {
@@ -1491,7 +1503,7 @@ select.input-sm {
         color: #888
     }
     .block-nav-menu .ui-menu .megamenu .list-submenu a:hover {
-        color: #f36
+        color: $rosa
     }
 }
 
@@ -1578,7 +1590,7 @@ select.input-sm {
     display: block;
     position: relative;
     color: #fff;
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-nav .block-minicart > .dropdown-toggle:after,
@@ -1666,12 +1678,12 @@ select.input-sm {
     left: auto;
     -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .5);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .5);
-    color: #333;
+    color: $cinza-escuro;
     font-size: 12px
 }
 
 .site-header .setting .dropdown-menu a {
-    color: #333
+    color: $cinza-escuro
 }
 
 @media (max-width: 600px) {
@@ -1726,7 +1738,7 @@ select.input-sm {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     margin-bottom: 12px
 }
@@ -1769,7 +1781,7 @@ select.input-sm {
     text-align: center;
     background-color: #eee;
     font-size: 12px;
-    color: #333
+    color: $cinza-escuro
 }
 
 .site-header .setting .switcher-currency .switcher-active {
@@ -1795,18 +1807,18 @@ select.input-sm {
 }
 
 .site-header .setting .account li a {
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px
 }
 
 .site-header .setting .account li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .site-header .nav-toggle-menu {
     text-transform: uppercase;
     text-align: center;
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     display: none;
     float: right;
@@ -1860,10 +1872,10 @@ select.input-sm {
         text-transform: uppercase;
         font-weight: 400;
         font-size: 14px;
-        color: #333
+        color: $cinza-escuro
     }
     .block-nav-menu .ui-menu > li:hover > a {
-        color: #f36
+        color: $rosa
     }
     .block-nav-menu .ui-menu > li .label-menu {
         position: absolute;
@@ -1899,7 +1911,7 @@ select.input-sm {
         z-index: 10
     }
     .block-nav-menu .ui-menu > li.active > a {
-        color: #f36
+        color: $rosa
     }
     .block-nav-menu .ui-menu.open-submenu .drop-menu {
         display: block
@@ -1932,7 +1944,7 @@ select.input-sm {
     }
     .block-nav-menu .ui-menu .megamenu .title span {
         display: inline-block;
-        border-bottom: 1px solid #f36;
+        border-bottom: 1px solid $rosa;
         margin-bottom: -1px
     }
     .block-nav-menu .ui-menu .megamenu .img-categori {
@@ -1992,7 +2004,7 @@ select.input-sm {
         color: #888
     }
     .block-nav-menu .ui-menu .megamenu .list-submenu a:hover {
-        color: #f36
+        color: $rosa
     }
     .site-header .block-nav-menu {
         position: fixed;
@@ -2048,7 +2060,7 @@ select.input-sm {
         z-index: 20;
     }
     .site-header .block-nav-menu .ui-menu .open-submenu > a {
-        color: #f36
+        color: $rosa
     }
     .site-header .block-nav-menu .ui-menu .open-submenu > .drop-menu,
     .site-header .block-nav-menu .ui-menu .open-submenu > .submenu {
@@ -2152,7 +2164,7 @@ select.input-sm {
         margin-right: 30px
     }
     .site-header .block-nav-categori .ui-categori .open-submenu > a {
-        color: #f36
+        color: $rosa
     }
     .site-header .block-nav-categori .ui-categori .open-submenu > .submenu {
         display: block
@@ -2232,7 +2244,7 @@ select.input-sm {
     width: 50px;
     font-size: 24px;
     color: #fff;
-    background-color: #f36;
+    background-color: $rosa;
     text-align: center
 }
 
@@ -2259,7 +2271,7 @@ select.input-sm {
 }
 
 .header-opt-1 .header-nav .setting .dropdown-toggle {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-2 .header-nav .setting .dropdown-toggle {
@@ -2287,7 +2299,7 @@ select.input-sm {
 }
 
 .header-opt-8 .header-nav .setting .dropdown-toggle {
-    background-color: #333
+    background-color: $cinza-escuro
 }
 
 .header-opt-9 .header-nav .setting .dropdown-toggle {
@@ -2345,7 +2357,7 @@ select.input-sm {
 }
 
 .header-opt-1 .header-nav .block-minicart .dropdown-toggle .cart-icon {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-2 .header-nav .block-minicart .dropdown-toggle .cart-icon {
@@ -2373,7 +2385,7 @@ select.input-sm {
 }
 
 .header-opt-8 .header-nav .block-minicart .dropdown-toggle .cart-icon {
-    background-color: #333
+    background-color: $cinza-escuro
 }
 
 .header-opt-9 .header-nav .block-minicart .dropdown-toggle .cart-icon {
@@ -2415,7 +2427,7 @@ select.input-sm {
 }
 
 .header-opt-1 .header-nav .block-search .block-title {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-2 .header-nav .block-search .block-title {
@@ -2443,7 +2455,7 @@ select.input-sm {
 }
 
 .header-opt-8 .header-nav .block-search .block-title {
-    background-color: #333
+    background-color: $cinza-escuro
 }
 
 .header-opt-9 .header-nav .block-search .block-title {
@@ -2483,7 +2495,7 @@ select.input-sm {
 }
 
 .header-opt-1 .header-nav .block-search .form-search .btn-search {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-1 .header-nav .block-search .form-search .btn-search:focus,
@@ -2662,7 +2674,7 @@ select.input-sm {
     line-height: 40px;
     float: right;
     clear: right;
-    background-color: #F36;
+    background-color: $rosa;
     display: none;
     cursor: pointer;
     color: #FFF;
@@ -2685,7 +2697,7 @@ select.input-sm {
 .header-opt-1 .close-cate:hover,
 .header-opt-1 .close-nav:focus,
 .header-opt-1 .close-nav:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-2 .close-cate:focus,
@@ -2755,7 +2767,7 @@ select.input-sm {
 .header-opt-12 .close-cate:hover,
 .header-opt-12 .close-nav:focus,
 .header-opt-12 .close-nav:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-13 .close-cate:focus,
@@ -2859,7 +2871,7 @@ select.input-sm {
 
 .header-opt-1 .header-top .nav-left > li > a:hover,
 .header-opt-1 .header-top .nav-right > li > a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .header-opt-1 .header-top .nav-left > li:before,
@@ -2890,7 +2902,7 @@ select.input-sm {
 
 .header-opt-1 .header-top .setting .account li a:focus,
 .header-opt-1 .header-top .setting .account li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .header-opt-1 .header-top .dropdown .dropdown-toggle .fa {
@@ -2898,7 +2910,7 @@ select.input-sm {
 }
 
 .header-opt-1 .switcher .dropdown-menu > li > a:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-1 .header-content {
@@ -2933,7 +2945,7 @@ select.input-sm {
     color: #fff;
     text-align: center;
     padding: 0;
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-1 .header-content .block-search .block-title:before {
@@ -2958,7 +2970,7 @@ select.input-sm {
     border-color: #eee;
     line-height: 38px;
     height: 40px;
-    color: #333
+    color: $cinza-escuro
 }
 
 .header-opt-1 .header-content .block-search .form-search {
@@ -3001,7 +3013,7 @@ select.input-sm {
 
 .header-opt-1 .header-content .block-search .form-search .btn-search {
     width: 45px;
-    background-color: #f36;
+    background-color: $rosa;
     background-image: none;
     color: #fff;
     text-align: center;
@@ -3061,7 +3073,7 @@ select.input-sm {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../img/icon/minicart.png);
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-1 .header-content .block-minicart > .dropdown-toggle .counter-number {
@@ -3112,7 +3124,7 @@ select.input-sm {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     padding-top: 5px;
     line-height: 1;
     margin-bottom: 1px
@@ -3130,7 +3142,7 @@ select.input-sm {
 
 .header-opt-1 .block-minicart .minicart-items .product-item .product-item-name a:focus,
 .header-opt-1 .block-minicart .minicart-items .product-item .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .header-opt-1 .block-nav-categori {
@@ -3164,12 +3176,12 @@ select.input-sm {
 
 @media (min-width: 992px) {
     .header-opt-1 .block-nav-categori .ui-categori > li ul a {
-        color: #333;
+        color: $cinza-escuro;
         font-size: 14px
     }
     .header-opt-1 .block-nav-categori .ui-categori > li ul a:focus,
     .header-opt-1 .block-nav-categori .ui-categori > li ul a:hover {
-        color: #f36!important
+        color: $rosa!important
     }
 }
 
@@ -3185,7 +3197,7 @@ select.input-sm {
 }
 
 .header-opt-1 .block-nav-categori .view-all-categori a:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-1 .block-nav-categori .block-title {
@@ -3210,7 +3222,7 @@ select.input-sm {
     }
     .header-opt-1 .block-nav-menu .ui-menu > li:focus,
     .header-opt-1 .block-nav-menu .ui-menu > li:hover {
-        background-color: #f36
+        background-color: $rosa
     }
     .header-opt-1 .block-nav-menu .ui-menu > li:focus > a,
     .header-opt-1 .block-nav-menu .ui-menu > li:hover > a {
@@ -3221,7 +3233,7 @@ select.input-sm {
         content: none
     }
     .header-opt-1 .block-nav-menu .ui-menu > li.active {
-        background-color: #f36
+        background-color: $rosa
     }
     .header-opt-1 .block-nav-menu .ui-menu > li.active:focus > a,
     .header-opt-1 .block-nav-menu .ui-menu > li.active:hover > a,
@@ -3247,7 +3259,7 @@ select.input-sm {
     }
     .header-opt-1 .block-nav-menu .ui-menu > li ul a:focus,
     .header-opt-1 .block-nav-menu .ui-menu > li ul a:hover {
-        color: #f36
+        color: $rosa
     }
 }
 
@@ -3269,7 +3281,7 @@ select.input-sm {
 }
 
 .header-opt-1 .header-nav .box-header-nav {
-    border-bottom: 3px solid #f36
+    border-bottom: 3px solid $rosa
 }
 
 @media (max-width: 991px) {
@@ -3643,7 +3655,7 @@ select.input-sm {
 
 .header-opt-2 .header-content .link-compare:hover,
 .header-opt-2 .header-content .link-wishlist:hover {
-    border-color: #f36
+    border-color: $rosa
 }
 
 .header-opt-2 .header-content .link-wishlist {
@@ -3713,7 +3725,7 @@ select.input-sm {
 
 .header-opt-2 .block-nav-categori .ui-categori > li > a {
     line-height: 35px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -4013,7 +4025,7 @@ select.input-sm {
 
 .header-opt-3 .nav-right {
     float: right;
-    color: #333;
+    color: $cinza-escuro;
     position: relative
 }
 
@@ -4426,7 +4438,7 @@ select.input-sm {
 
 .header-opt-3 .block-nav-categori .ui-categori > li > a {
     line-height: 35px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -4682,7 +4694,7 @@ select.input-sm {
     content: "";
     width: 2px;
     height: 13px;
-    background-color: #ccc;
+    background-color: $cinza-claro;
     border-right: 1px solid #ebebeb;
     position: absolute;
     top: 50%;
@@ -4922,7 +4934,7 @@ select.input-sm {
 
 .header-opt-4 .block-nav-categori .ui-categori > li > a {
     line-height: 35px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -4995,14 +5007,14 @@ select.input-sm {
         text-align: center
     }
     .header-opt-4 .block-nav-menu .ui-menu > li {
-        color: #333;
+        color: $cinza-escuro;
         padding: 0 10px;
         float: none;
         display: inline-block;
         text-align: left
     }
     .header-opt-4 .block-nav-menu .ui-menu > li > a {
-        color: #333;
+        color: $cinza-escuro;
         text-transform: uppercase
     }
     .header-opt-4 .block-nav-menu .ui-menu > li:focus,
@@ -5040,8 +5052,8 @@ select.input-sm {
 
 .header-opt-4 .header-nav {
     background-color: #fff;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc
+    border-top: 1px solid $cinza-claro;
+    border-bottom: 1px solid $cinza-claro
 }
 
 @media (max-width: 767px) {
@@ -5061,7 +5073,7 @@ select.input-sm {
 
 .header-opt-4 .header-nav .switcher {
     float: right;
-    border-right: 1px solid #ccc
+    border-right: 1px solid $cinza-claro
 }
 
 .header-opt-4 .header-nav .switcher > .dropdown-toggle {
@@ -5137,8 +5149,8 @@ select.input-sm {
     color: #666;
     width: 50px;
     background-image: none;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc
+    border-right: 1px solid $cinza-claro;
+    border-left: 1px solid $cinza-claro
 }
 
 .header-opt-4 .header-nav .block-search .form-search .btn-search:before {
@@ -5259,13 +5271,13 @@ select.input-sm {
         clear: both;
         width: calc(100% - 215px);
         width: -o-calc(100% - 215px);
-        border: 1px solid #ccc;
+        border: 1px solid $cinza-claro;
         border-right: none;
         margin-bottom: -1px;
         margin-right: -1px
     }
     .header-opt-4 .header-nav .switcher {
-        border: 1px solid #ccc;
+        border: 1px solid $cinza-claro;
         margin-bottom: -1px;
         border-left: none
     }
@@ -5299,7 +5311,7 @@ select.input-sm {
         width: 50%
     }
     .header-opt-4 .header-nav .switcher + .switcher {
-        border-left: 1px solid #ccc
+        border-left: 1px solid $cinza-claro
     }
 }
 
@@ -5533,7 +5545,7 @@ select.input-sm {
 }
 
 .header-opt-5 .header-content .block-minicart > .dropdown-toggle .cart-icon:hover {
-    border-color: #f36;
+    border-color: $rosa;
     background-image: url(../img/icon/cart-hover.png)
 }
 
@@ -5678,7 +5690,7 @@ select.input-sm {
 
 .header-opt-5 .block-nav-categori .ui-categori > li > a {
     line-height: 36px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -5906,7 +5918,7 @@ select.input-sm {
 .header-opt-6 .header-top .nav-left > li > a:hover,
 .header-opt-6 .header-top .nav-right > li > a:focus,
 .header-opt-6 .header-top .nav-right > li > a:hover {
-    color: #333
+    color: $cinza-escuro
 }
 
 .header-opt-6 .header-top .nav-left > li:before,
@@ -6266,7 +6278,7 @@ select.input-sm {
 
 .header-opt-6 .block-nav-categori .ui-categori > li > a {
     line-height: 36px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -6520,7 +6532,7 @@ select.input-sm {
 .header-opt-7 .header-top .nav-left > li > a:hover,
 .header-opt-7 .header-top .nav-right > li > a:focus,
 .header-opt-7 .header-top .nav-right > li > a:hover {
-    color: #333
+    color: $cinza-escuro
 }
 
 .header-opt-7 .header-top .nav-left > li:before,
@@ -6762,7 +6774,7 @@ select.input-sm {
 
 .header-opt-7 .block-nav-categori .ui-categori > li > a {
     line-height: 35px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -6918,14 +6930,14 @@ select.input-sm {
 .header-opt-7 .header-nav .box-header-nav {
     position: relative;
     z-index: 100;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid $cinza-claro;
+    border-bottom: 1px solid $cinza-claro;
     background-color: #fff
 }
 
 .header-opt-7 .header-nav .switcher {
     float: right;
-    border-right: 1px solid #ccc
+    border-right: 1px solid $cinza-claro
 }
 
 .header-opt-7 .header-nav .switcher > .dropdown-toggle {
@@ -7001,8 +7013,8 @@ select.input-sm {
     color: #666;
     width: 50px;
     background-image: none;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc
+    border-right: 1px solid $cinza-claro;
+    border-left: 1px solid $cinza-claro
 }
 
 .header-opt-7 .header-nav .block-search .form-search .btn-search:before {
@@ -7140,13 +7152,13 @@ select.input-sm {
         clear: both;
         width: calc(100% - 215px);
         width: -o-calc(100% - 215px);
-        border: 1px solid #ccc;
+        border: 1px solid $cinza-claro;
         border-right: none;
         margin-bottom: -1px;
         margin-right: -1px
     }
     .header-opt-7 .header-nav .switcher {
-        border: 1px solid #ccc;
+        border: 1px solid $cinza-claro;
         margin-bottom: -1px;
         border-left: none
     }
@@ -7499,11 +7511,11 @@ select.input-sm {
         padding-left: 1px
     }
     .header-opt-8 .block-nav-menu .ui-menu > li {
-        color: #333;
+        color: $cinza-escuro;
         padding: 0 15px
     }
     .header-opt-8 .block-nav-menu .ui-menu > li > a {
-        color: #333;
+        color: $cinza-escuro;
         text-transform: uppercase
     }
     .header-opt-8 .block-nav-menu .ui-menu > li:focus,
@@ -7535,8 +7547,8 @@ select.input-sm {
 
 .header-opt-8 .header-nav {
     background-color: #fff;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc
+    border-top: 1px solid $cinza-claro;
+    border-bottom: 1px solid $cinza-claro
 }
 
 .header-opt-8 .header-nav .box-header-nav {
@@ -7547,7 +7559,7 @@ select.input-sm {
 
 .header-opt-8 .header-nav .switcher {
     float: right;
-    border-right: 1px solid #ccc
+    border-right: 1px solid $cinza-claro
 }
 
 .header-opt-8 .header-nav .switcher > .dropdown-toggle {
@@ -7623,8 +7635,8 @@ select.input-sm {
     color: #666;
     width: 50px;
     background-image: none;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc
+    border-right: 1px solid $cinza-claro;
+    border-left: 1px solid $cinza-claro
 }
 
 .header-opt-8 .header-nav .block-search .form-search .btn-search:before {
@@ -7764,7 +7776,7 @@ select.input-sm {
 .header-opt-9 .header-top .nav-left,
 .header-opt-9 .header-top .nav-right {
     float: left;
-    color: #333
+    color: $cinza-escuro
 }
 
 .header-opt-9 .header-top .nav-left:after,
@@ -7805,7 +7817,7 @@ select.input-sm {
 .header-opt-9 .header-top .nav-right > li > a,
 .header-opt-9 .header-top .nav-right > li > span {
     line-height: 50px;
-    color: #ccc;
+    color: $cinza-claro;
     font-family: Montserrat, sans-serif;
     font-weight: 300
 }
@@ -7832,8 +7844,8 @@ select.input-sm {
     line-height: 20px;
     width: 24px;
     border-radius: 100%;
-    border: 2px solid #ccc;
-    color: #ccc;
+    border: 2px solid $cinza-claro;
+    color: $cinza-claro;
     text-align: center;
     display: inline-block;
     margin-right: 7px;
@@ -7858,7 +7870,7 @@ select.input-sm {
     width: 23px;
     line-height: 23px;
     border-radius: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     text-align: center;
     margin-right: 5px
 }
@@ -7870,7 +7882,7 @@ select.input-sm {
 .header-opt-9 .switcher .dropdown-toggle .fa {
     margin-left: 6px;
     font-size: 14px;
-    color: #ccc
+    color: $cinza-claro
 }
 
 .header-opt-9 .switcher .dropdown-menu > li > a:hover {
@@ -8304,7 +8316,7 @@ select.input-sm {
 
 .header-opt-10 .header-content .block-minicart > .dropdown-toggle .counter-number {
     background-color: #ffd68f;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     width: 16px;
     line-height: 16px;
@@ -8410,7 +8422,7 @@ select.input-sm {
     border: none;
     line-height: 40px;
     height: 40px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 300;
     position: relative;
     border-radius: 20px 0 0 20px
@@ -8424,7 +8436,7 @@ select.input-sm {
     top: 50%;
     margin-top: -12px;
     right: 0;
-    background-color: #ccc
+    background-color: $cinza-claro
 }
 
 .header-opt-10 .block-search .form-search {
@@ -8470,7 +8482,7 @@ select.input-sm {
 }
 
 .header-opt-10 .block-search .form-search .btn-search {
-    background-color: #333;
+    background-color: $cinza-escuro;
     background-image: url(../img/icon/search.png);
     display: block;
     width: 32px;
@@ -8783,7 +8795,7 @@ select.input-sm {
     color: #fff;
     width: 70px;
     text-align: center;
-    background-color: #333;
+    background-color: $cinza-escuro;
     height: 80px;
     padding-top: 16px;
     font-family: ProximaNova-Regular, sans-serif;
@@ -8805,7 +8817,7 @@ select.input-sm {
     height: 0;
     border-style: solid;
     border-width: 8px 35px 0 0;
-    border-color: #333 transparent transparent;
+    border-color: $cinza-escuro transparent transparent;
     position: absolute;
     bottom: -7px;
     left: 0
@@ -8817,7 +8829,7 @@ select.input-sm {
     height: 0;
     border-style: solid;
     border-width: 0 35px 8px 0;
-    border-color: transparent #333 transparent transparent;
+    border-color: transparent $cinza-escuro transparent transparent;
     position: absolute;
     bottom: -7px;
     right: 0
@@ -8831,7 +8843,7 @@ select.input-sm {
     background-image: url(../img/icon/minicart.png);
     display: inline-block;
     vertical-align: bottom;
-    background-color: #333;
+    background-color: $cinza-escuro;
     margin-bottom: 5px
 }
 
@@ -8939,7 +8951,7 @@ select.input-sm {
 
 .header-opt-11 .block-nav-categori .ui-categori > li > a {
     line-height: 35px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -9015,7 +9027,7 @@ select.input-sm {
         padding-left: 1px
     }
     .header-opt-11 .block-nav-menu .ui-menu > li {
-        color: #333;
+        color: $cinza-escuro;
         background-color: transparent;
         -webkit-transition: .3s;
         transition: .3s;
@@ -9024,14 +9036,14 @@ select.input-sm {
         line-height: 52px
     }
     .header-opt-11 .block-nav-menu .ui-menu > li > a {
-        color: #333;
+        color: $cinza-escuro;
         text-transform: uppercase;
         font-family: UTM-Bebas, sans-serif;
         font-size: 18px
     }
     .header-opt-11 .block-nav-menu .ui-menu > li:focus,
     .header-opt-11 .block-nav-menu .ui-menu > li:hover {
-        background-color: #333;
+        background-color: $cinza-escuro;
         -webkit-transition: .3s;
         transition: .3s;
         color: #fff
@@ -9063,7 +9075,7 @@ select.input-sm {
         transition: .3s
     }
     .header-opt-11 .block-nav-menu .ui-menu > li.active {
-        background-color: #333;
+        background-color: $cinza-escuro;
         color: #fff
     }
     .header-opt-11 .block-nav-menu .ui-menu > li.active:focus > a,
@@ -9099,7 +9111,7 @@ select.input-sm {
 .header-opt-11 .header-nav .box-header-nav {
     position: relative;
     z-index: 500;
-    background-color: #333;
+    background-color: $cinza-escuro;
     padding: 15px 14px 13px
 }
 
@@ -9293,7 +9305,7 @@ select.input-sm {
     height: 40px;
     line-height: 40px;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     padding-left: 15px;
     font-family: ProximaNova-Regular, sans-serif
 }
@@ -9528,7 +9540,7 @@ select.input-sm {
 .header-opt-12 .header-top .nav-left > li > a:hover,
 .header-opt-12 .header-top .nav-right > li > a:focus,
 .header-opt-12 .header-top .nav-right > li > a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .header-opt-12 .header-top .nav-left > li:before,
@@ -9572,8 +9584,8 @@ select.input-sm {
 }
 
 .header-opt-12 .header-top .top-social a:hover {
-    background-color: #f36;
-    border-color: #f36;
+    background-color: $rosa;
+    border-color: $rosa;
     color: #fff
 }
 
@@ -9598,7 +9610,7 @@ select.input-sm {
 }
 
 .header-opt-12 .switcher .dropdown-menu > li > a:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-12 .header-content {
@@ -9655,12 +9667,12 @@ select.input-sm {
 
 .header-opt-12 .block-minicart .actions .btn:focus,
 .header-opt-12 .block-minicart .actions .btn:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .header-opt-12 .block-minicart .minicart-items .product-item .product-item-name a:focus,
 .header-opt-12 .block-minicart .minicart-items .product-item .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .header-opt-12 .block-nav-categori {
@@ -9668,7 +9680,7 @@ select.input-sm {
 }
 
 .header-opt-12 .block-nav-categori .block-title {
-    background-color: #f36;
+    background-color: $rosa;
     cursor: pointer;
     line-height: 45px;
     height: 45px;
@@ -9710,7 +9722,7 @@ select.input-sm {
 
 .header-opt-12 .block-nav-categori .ui-categori .submenu .categori-list li a:focus,
 .header-opt-12 .block-nav-categori .ui-categori .submenu .categori-list li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .header-opt-12 .block-nav-categori .ui-categori {
@@ -9728,7 +9740,7 @@ select.input-sm {
     border-top: 1px solid #eee;
     padding: 0 20px 0 0;
     font-family: Arimo, sans-serif;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px
 }
 
@@ -9740,7 +9752,7 @@ select.input-sm {
 }
 
 .header-opt-12 .block-nav-categori .ui-categori > li:hover > a {
-    color: #f36
+    color: $rosa
 }
 
 .header-opt-12 .block-nav-categori .ui-categori > li:first-child > a {
@@ -9791,7 +9803,7 @@ select.input-sm {
 
 .header-opt-12 .block-nav-categori .view-all-categori .btn-view-all:hover,
 .header-opt-12 .block-nav-categori .view-all-categori a:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff
 }
 
@@ -9851,7 +9863,7 @@ select.input-sm {
     .header-opt-12 .block-nav-menu .ui-menu > li .label-menu {
         line-height: 20px;
         width: 36px;
-        background-color: #f36;
+        background-color: $rosa;
         border-radius: 0;
         font-family: Oswald, sans-serif;
         font-size: 12px;
@@ -9863,7 +9875,7 @@ select.input-sm {
     .header-opt-12 .block-nav-menu .ui-menu > li .label-menu:before {
         left: 0;
         margin: 0;
-        border-color: #f36 transparent transparent
+        border-color: $rosa transparent transparent
     }
     .header-opt-12 .block-nav-menu .ui-menu > li:before {
         content: "";
@@ -9899,12 +9911,12 @@ select.input-sm {
     }
     .header-opt-12 .block-nav-menu .ui-menu > li ul a:focus,
     .header-opt-12 .block-nav-menu .ui-menu > li ul a:hover {
-        color: #f36!important
+        color: $rosa!important
     }
 }
 
 .header-opt-12 .nav-toggle-menu {
-    background-color: #f36;
+    background-color: $rosa;
     cursor: pointer;
     line-height: 45px;
     height: 45px;
@@ -10022,7 +10034,7 @@ select.input-sm {
 
 .header-opt-12 .header-nav .block-search .form-search .btn-search:focus,
 .header-opt-12 .header-nav .block-search .form-search .btn-search:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff
 }
 
@@ -10041,7 +10053,7 @@ select.input-sm {
     height: 45px;
     line-height: 45px;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     padding-left: 15px;
     font-family: ProximaNova-Regular, sans-serif
 }
@@ -10086,7 +10098,7 @@ select.input-sm {
 
 .header-opt-12 .header-nav .block-minicart.open > .dropdown-toggle .counter,
 .header-opt-12 .header-nav .block-minicart:hover > .dropdown-toggle .counter {
-    color: #f36
+    color: $rosa
 }
 
 .header-opt-12 .header-nav .block-minicart > .dropdown-toggle {
@@ -10133,7 +10145,7 @@ select.input-sm {
 }
 
 .header-opt-12 .header-nav .block-minicart > .dropdown-toggle .counter-number {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     display: block;
     width: 20px;
@@ -10332,7 +10344,7 @@ select.input-sm {
 .header-opt-13 .header-top .nav-left > li > a:hover,
 .header-opt-13 .header-top .nav-right > li > a:focus,
 .header-opt-13 .header-top .nav-right > li > a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .header-opt-13 .header-top .nav-left > li:first-child:before,
@@ -10503,13 +10515,13 @@ select.input-sm {
 
 .header-opt-13 .block-search .form-search .form-control {
     padding-left: 20px;
-    border: 1px solid #f36;
+    border: 1px solid $rosa;
     height: 45px;
     width: 100%;
     max-width: 100%;
     background-color: #fff;
     padding-right: 50px;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     font-weight: 300;
     margin: 0;
@@ -10517,16 +10529,16 @@ select.input-sm {
 }
 
 .header-opt-13 .block-search .form-search .form-control::-moz-placeholder {
-    color: #333;
+    color: $cinza-escuro;
     opacity: 1
 }
 
 .header-opt-13 .block-search .form-search .form-control:-ms-input-placeholder {
-    color: #333
+    color: $cinza-escuro
 }
 
 .header-opt-13 .block-search .form-search .form-control::-webkit-input-placeholder {
-    color: #333
+    color: $cinza-escuro
 }
 
 .header-opt-13 .block-search .form-search .btn-search {
@@ -10534,7 +10546,7 @@ select.input-sm {
     box-shadow: none;
     color: #fff;
     width: 55px;
-    background-color: #f36;
+    background-color: $rosa;
     border: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -10543,7 +10555,7 @@ select.input-sm {
 
 .header-opt-13 .block-search .form-search .btn-search:focus,
 .header-opt-13 .block-search .form-search .btn-search:hover {
-    background-color: lighten(#f36, 15%);
+    background-color: lighten($rosa, 15%);
     color: #fff
 }
 
@@ -10586,7 +10598,7 @@ select.input-sm {
 
 .header-opt-13 .block-search .categori-search .chosen-container .chosen-single > div b:before {
     content: "\f107";
-    color: #ccc
+    color: $cinza-claro
 }
 
 @media (max-width: 1199px) {
@@ -10607,7 +10619,7 @@ select.input-sm {
 .header-opt-13 .block-minicart > .dropdown-toggle {
     display: block;
     position: relative;
-    color: #333;
+    color: $cinza-escuro;
     background-color: #fff;
     height: 45px;
     font-size: 14px;
@@ -10655,7 +10667,7 @@ select.input-sm {
 
         .notif-header {
             text-align: center;
-            color: #f36;
+            color: $rosa;
             text-transform: uppercase;
             font-weight: bold;
             padding: 10px;
@@ -10664,7 +10676,7 @@ select.input-sm {
         li:not(.notif-header) {
             display: flex;
             flex-wrap: wrap;
-            color: #333;
+            color: $cinza-escuro;
         }
     }
 
@@ -10679,7 +10691,7 @@ select.input-sm {
 
                 &:hover {
                     background-color: #ebebeb;
-                    color: #333;
+                    color: $cinza-escuro;
                 }
             }
 
@@ -10713,7 +10725,7 @@ select.input-sm {
 
             .botao {
                 white-space: nowrap;
-                background-color: #f36;
+                background-color: $rosa;
                 color: #FFF;
                 border: none;
                 outline: none;
@@ -10724,11 +10736,11 @@ select.input-sm {
                 padding: .2em .5em;
 
                 &:hover {
-                    background-color: lighten(#f36, 10%);
+                    background-color: lighten($rosa, 10%);
                 }
 
                 &:active {
-                    background-color: lighten(#f36, 15%);
+                    background-color: lighten($rosa, 15%);
                 }
             }
         }
@@ -10746,7 +10758,7 @@ select.input-sm {
 .lista-parceiros {
 
     h3 {
-        border-bottom: 3px solid #f36;
+        border-bottom: 3px solid $rosa;
         display: inline-block;
         padding-bottom: 5px;
         margin-right: 1em;
@@ -10756,7 +10768,7 @@ select.input-sm {
     .botao {
         border: none;
         outline: none;
-        background-color: #f36;
+        background-color: $rosa;
         font-size: 1.3em;
         padding: .4em .8em;
         display: inline-block;
@@ -10778,7 +10790,7 @@ select.input-sm {
     }
 
     .expansivel {
-        border: 2px solid #ccc;
+        border: 2px solid $cinza-claro;
         padding: 30px;
         overflow: hidden;
         transition: all .5s;
@@ -10822,7 +10834,7 @@ select.input-sm {
 
         .listagem-grupos {
             padding-bottom: 20px;
-            border-bottom: 2px solid #ccc;
+            border-bottom: 2px solid $cinza-claro;
             margin-bottom: 30px;
 
             h4 {
@@ -10841,7 +10853,7 @@ select.input-sm {
 
         .adicionar-parceiro,
         .salvar-parceiro {
-            background-color: #2196F3;
+            background-color: $azul;
         }
 
         &:not(.open) {
@@ -10882,8 +10894,8 @@ select.input-sm {
         text-transform: capitalize;
 
         &:focus {
-            border-bottom: 1px solid #f36;
-            box-shadow: 0 -1px #f36 inset;
+            border-bottom: 1px solid $rosa;
+            box-shadow: 0 -1px $rosa inset;
         }
     }
 
@@ -10895,7 +10907,7 @@ select.input-sm {
         border: none;
         outline: none;
         border-radius: 2px;
-        background: #f36 url(../img/icon/search.png) no-repeat center;
+        background: $rosa url(../img/icon/search.png) no-repeat center;
     }
 }
 
@@ -10918,14 +10930,14 @@ select.input-sm {
 .pagina-produtos {
 
     .btn {
-        background-color: #f36;
+        background-color: $rosa;
         display: inline-block;
         color: #fff;
         font-size: 1.5rem;
         padding: .5em 1.5em;
     }
     .btn-floating {
-        background-color: #f36;
+        background-color: $rosa;
     }
 
     .lista-meus-produtos {
@@ -11043,20 +11055,20 @@ select.input-sm {
         border: none;
         outline: none;
         color: #fff;
-        background-color: lighten(#f36, 10%);
-        box-shadow: 0 5px #f36;
+        background-color: lighten($rosa, 10%);
+        box-shadow: 0 5px $rosa;
         min-width: 200px;
         display: block;
         margin: 40px auto;
         transition: all .1s;
 
         &:hover {
-            background-color: lighten(#f36, 15%);
+            background-color: lighten($rosa, 15%);
         }
 
         &:active {
             transform: translateY(3px);
-            box-shadow: 0 2px #f36;
+            box-shadow: 0 2px $rosa;
         }
     }
 
@@ -11081,7 +11093,7 @@ select.input-sm {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    border-top: 10px solid #F36;
+    border-top: 10px solid $rosa;
     clear: both;
     margin-bottom: 50px;
 }
@@ -11143,7 +11155,7 @@ select.input-sm {
 .detalhes-produto .descricao-produto li,
 .detalhes-produto .descricao-produto li * {
     line-height: 1.8em;
-    color: #333;
+    color: $cinza-escuro;
     margin: 0 !important;
 }
 
@@ -11366,7 +11378,7 @@ select.input-sm {
 }
 
 .counter-number {
-    background-color: #F36;
+    background-color: $rosa;
     display: inline-block;
     color: #fff;
     padding: 0 5px;
@@ -11394,7 +11406,7 @@ select.input-sm {
 
 .header-opt-13 .block-nav-categori .block-title,
 .detalhes-produto .block-title {
-    background-color: #333;
+    background-color: $cinza-escuro;
     cursor: pointer;
     line-height: 50px;
     height: 50px;
@@ -11464,7 +11476,7 @@ select.input-sm {
     border-top: 1px solid #eee;
     padding: 0 20px 0 0;
     font-family: Montserrat, sans-serif;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     font-weight: 300;
     cursor: pointer;
@@ -11479,7 +11491,7 @@ select.input-sm {
 
 .header-opt-13 .block-nav-categori .ui-categori > li:hover > label,
 .header-opt-13 .block-nav-categori .ui-categori > li:hover > a {
-    color: #f36;
+    color: $rosa;
 }
 
 .header-opt-13 .block-nav-categori .ui-categori > li:first-child > a {
@@ -11531,7 +11543,7 @@ select.input-sm {
     .header-opt-13 .block-nav-menu .ui-menu > li:focus > a,
     .header-opt-13 .block-nav-menu .ui-menu > li:hover,
     .header-opt-13 .block-nav-menu .ui-menu > li:hover > a {
-        color: #333
+        color: $cinza-escuro
     }
     .header-opt-13 .block-nav-menu .ui-menu > li:focus:before,
     .header-opt-13 .block-nav-menu .ui-menu > li:hover:before {
@@ -11544,7 +11556,7 @@ select.input-sm {
         content: "";
         width: 100%;
         height: 2px;
-        background-color: #f36;
+        background-color: $rosa;
         position: absolute;
         top: -2px;
         left: 0;
@@ -11571,10 +11583,10 @@ select.input-sm {
         border-color: #2ea76f transparent transparent
     }
     .header-opt-13 .block-nav-menu .ui-menu > li.active {
-        color: #333
+        color: $cinza-escuro
     }
     .header-opt-13 .block-nav-menu .ui-menu > li.active > a {
-        color: #333;
+        color: $cinza-escuro;
         font-weight: 700
     }
     .header-opt-13 .block-nav-menu .ui-menu > li.active:before {
@@ -11596,7 +11608,7 @@ select.input-sm {
 }
 
 .header-opt-13 .nav-toggle-menu {
-    background-color: #333;
+    background-color: $cinza-escuro;
     line-height: 50px;
     height: 50px
 }
@@ -11817,22 +11829,22 @@ select.input-sm {
     max-width: 100%;
     background-color: #fff;
     padding-right: 50px;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     font-weight: 300
 }
 
 .header-opt-14 .block-search .form-search .form-control::-moz-placeholder {
-    color: #333;
+    color: $cinza-escuro;
     opacity: 1
 }
 
 .header-opt-14 .block-search .form-search .form-control:-ms-input-placeholder {
-    color: #333
+    color: $cinza-escuro
 }
 
 .header-opt-14 .block-search .form-search .form-control::-webkit-input-placeholder {
-    color: #333
+    color: $cinza-escuro
 }
 
 .header-opt-14 .block-search .form-search .btn-search {
@@ -11864,7 +11876,7 @@ select.input-sm {
 .header-opt-14 .block-minicart > .dropdown-toggle {
     display: block;
     position: relative;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     line-height: 42px;
     font-weight: 400;
@@ -11935,7 +11947,7 @@ select.input-sm {
 }
 
 .header-opt-14 .nav-links > li > a {
-    color: #333;
+    color: $cinza-escuro;
     display: block
 }
 
@@ -11966,7 +11978,7 @@ select.input-sm {
         padding-left: 1px
     }
     .header-opt-14 .block-nav-menu .ui-menu > li {
-        color: #333;
+        color: $cinza-escuro;
         margin-left: 20px;
         padding: 0
     }
@@ -11974,7 +11986,7 @@ select.input-sm {
         margin-left: 0
     }
     .header-opt-14 .block-nav-menu .ui-menu > li > a {
-        color: #333;
+        color: $cinza-escuro;
         text-transform: none;
         font-size: 14px
     }
@@ -12112,7 +12124,7 @@ select.input-sm {
 
 .catalog-view_op1 .slider-range .ui-slider {
     height: 7px;
-    background-color: #f36
+    background-color: $rosa
 }
 
 .slider-range .ui-slider-range {
@@ -12124,7 +12136,7 @@ select.input-sm {
 
 .catalog-view_op1 .slider-range .ui-slider-range {
     height: 7px;
-    background-color: #ccc
+    background-color: $cinza-claro
 }
 
 .slider-range .ui-slider-handle {
@@ -12197,7 +12209,7 @@ select.input-sm {
     padding: 0;
     font-size: 14px;
     color: #fff;
-    background-color: #f36;
+    background-color: $rosa;
     float: left;
     margin-bottom: 15px
 }
@@ -12236,7 +12248,7 @@ select.input-sm {
 
 .block-sidebar .block-title strong {
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
@@ -12352,7 +12364,7 @@ select.input-sm {
 }
 
 .block-filter .filter-options-content .item label:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-filter .filter-options-content .item label > span {
@@ -12378,20 +12390,20 @@ select.input-sm {
 }
 
 .block-filter .filter-options-content .item label input[type=checkbox]:checked + span {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1 .block-filter .filter-options-content .item label input[type=checkbox]:checked + span {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1 .block-filter .filter-options-content .item label input[type=checkbox]:checked + span:before {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .block-filter .filter-options-content .item label input[type=checkbox]:checked + span:before {
-    background-color: #f36;
+    background-color: $rosa;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../img/icon/checked.png)
@@ -12413,7 +12425,7 @@ select.input-sm {
 }
 
 .block-filter .filter-options-content .item a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-filter .filter-options-content .item .count {
@@ -12493,7 +12505,7 @@ select.input-sm {
     padding: 0 6px;
     border: 1px solid #dfdfdf;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase
 }
 
@@ -12534,7 +12546,7 @@ select.input-sm {
 }
 
 .block-filter .filter-options-color .filter-options-content .item label input[type=checkbox]:checked + span:before {
-    background-color: #f36;
+    background-color: $rosa;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../img/icon/checked.png)
@@ -12542,15 +12554,15 @@ select.input-sm {
 
 .block-filter .filter-options-color .filter-options-content .item label input[type=checkbox]:checked + span .img,
 .block-filter .filter-options-color .filter-options-content .item label input[type=checkbox]:checked + span .text {
-    border: 1px solid #f36
+    border: 1px solid $rosa
 }
 
 .catalog-view_op1 .block-filter .filter-options-color .filter-options-content .item label input[type=checkbox]:checked + span .img {
-    border: 1px solid #f36
+    border: 1px solid $rosa
 }
 
 .catalog-view_op1 .block-filter .filter-options-color .filter-options-content .item label input[type=checkbox]:checked + span:before {
-    background-color: #f36
+    background-color: $rosa
 }
 
 @media (max-width: 991px) {
@@ -12600,7 +12612,7 @@ select.input-sm {
         font-weight: 400
     }
     .block-filter .block-content .filter-options-title.active {
-        color: #f36
+        color: $rosa
     }
     .block-filter .block-content .filter-options-title.active:after {
         content: "\f107"
@@ -12633,13 +12645,13 @@ select.input-sm {
     font-size: 16px;
     font-weight: 700;
     line-height: 46px;
-    color: #333
+    color: $cinza-escuro
 }
 
 @media (min-width: 992px) {
     .catalog-view_op1_style2.catalog-view_op1 .block-sidebar .block-title strong {
         font-weight: 600;
-        color: #333;
+        color: $cinza-escuro;
         line-height: 32px
     }
 }
@@ -12709,7 +12721,7 @@ select.input-sm {
 
 .catalog-view_op1 .block-filter .filter-options-title {
     font-size: 15px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 400;
 }
 
@@ -12730,7 +12742,7 @@ select.input-sm {
 
 .catalog-view_op1 .block-filter .filter-options-content .item label:hover,
 .catalog-view_op1 .block-filter .filter-options-content .item label:hover .count {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1 .block-filter .filter-options-size .filter-options-content {
@@ -12809,20 +12821,20 @@ select.input-sm {
 }
 
 .block-sidebar-tags .block-content a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1_style2 .block-sidebar-tags .block-content a {
     line-height: 33px;
     font-size: 14px;
     font-style: italic;
-    color: #333;
+    color: $cinza-escuro;
     margin-right: 5px;
     margin-bottom: 5px
 }
 
 .catalog-view_op1_style2 .block-sidebar-tags .block-content a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1:not(.catalog-view_op1_style2) .block-sidebar-tags .block-content a {
@@ -12834,7 +12846,7 @@ select.input-sm {
 }
 
 .catalog-view_op1:not(.catalog-view_op1_style2) .block-sidebar-tags .block-content a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1:not(.catalog-view_op1_style2) .block-sidebar-tags .block-content a.lv1 {
@@ -12858,7 +12870,7 @@ select.input-sm {
 }
 
 .block-sidebar-tags .block-content .view-all {
-    color: #333;
+    color: $cinza-escuro;
     text-transform: capitalize
 }
 
@@ -12909,12 +12921,12 @@ select.input-sm {
 }
 
 .block-sidebar-products .product-item2:not(.product-item-opt-2) .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-sidebar-products .product-item2:not(.product-item-opt-2) .product-item-price {
     font-size: 16px;
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-sidebar-products .product-item2:not(.product-item-opt-2) .product-item-price .old-price {
@@ -12974,13 +12986,13 @@ select.input-sm {
     height: auto;
     border: 1px solid #e9e9e9;
     padding: 0 10px;
-    color: #f36;
+    color: $rosa;
     font-size: 13px;
     text-transform: none
 }
 
 .block-sidebar-products .all-products:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     border-color: #fafafa
 }
@@ -13000,7 +13012,7 @@ select.input-sm {
 }
 
 .block-sidebar-products .owl-dots .owl-dot.active {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-sidebar-products .owl-carousel .product-item {
@@ -13034,7 +13046,7 @@ select.input-sm {
 }
 
 .block-sidebar-products-opt2 .owl-dots .owl-dot.active {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-sidebar-products-opt2 .product-item-opt-2 {
@@ -13056,7 +13068,7 @@ select.input-sm {
     bottom: 0;
     height: 36px!important;
     line-height: 34px!important;
-    background-color: #f36!important;
+    background-color: $rosa!important;
     width: 130px;
     left: 50%;
     margin-left: -65px;
@@ -13099,7 +13111,7 @@ select.input-sm {
 .block-banner-sidebar .owl-dots .owl-dot.active {
     width: 14px;
     height: 14px;
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-banner-sidebar:hover img {
@@ -13128,7 +13140,7 @@ select.input-sm {
 .block-sidebar-categorie .items .toggle-submenu:hover:before,
 .block-sidebar-categorie .items a:hover,
 .block-sidebar-categorie .items a:hover:before {
-    color: #f36
+    color: $rosa
 }
 
 .block-sidebar-categorie .items .toggle-submenu:before,
@@ -13138,7 +13150,7 @@ select.input-sm {
     position: absolute;
     top: 0;
     left: -17px;
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 13px
 }
 
@@ -13158,7 +13170,7 @@ select.input-sm {
 
 .block-sidebar-categorie .items > li:hover > a,
 .block-sidebar-categorie .items > li:hover > a:before {
-    color: #f36
+    color: $rosa
 }
 
 .block-sidebar-categorie .items > li ul {
@@ -13228,7 +13240,7 @@ select.input-sm {
 }
 
 .block-sidebar-testimonials .owl-dots .owl-dot.active {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-sidebar-testimonials2 .block-content {
@@ -13253,7 +13265,7 @@ select.input-sm {
 }
 
 .block-sidebar-testimonials2 .block-content .title {
-    color: #f36;
+    color: $rosa;
     font-size: 16px;
     font-family: Arial;
     display: block;
@@ -13275,13 +13287,13 @@ select.input-sm {
     border: 1px solid #e8e8e8;
     background-color: #fff;
     padding: 0 9px;
-    color: #333;
+    color: $cinza-escuro;
     font-family: Arial;
     text-transform: none
 }
 
 .block-sidebar-testimonials2 .block-content .btn:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff
 }
 
@@ -13293,7 +13305,7 @@ select.input-sm {
     display: block;
     font-weight: 700;
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     margin-top: 12px;
     margin-bottom: 55px;
@@ -13377,7 +13389,7 @@ select.input-sm {
     display: block;
     font-weight: 700;
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     margin-top: 12px;
     margin-bottom: 55px
@@ -13388,7 +13400,7 @@ select.input-sm {
 }
 
 .site-footer .footer-column .links a:hover {
-    color: #333
+    color: $cinza-escuro
 }
 
 .site-footer .footer-column .links li {
@@ -13409,7 +13421,7 @@ select.input-sm {
 .site-footer .address b {
     font-weight: 600;
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     padding-right: 15px
 }
 
@@ -13422,7 +13434,7 @@ select.input-sm {
     display: block;
     font-weight: 700;
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     margin-top: 12px;
     margin-bottom: 25px;
@@ -13444,7 +13456,7 @@ select.input-sm {
     border: 1px solid #aaa;
     border-radius: 100%;
     text-align: center;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 30px;
     -webkit-transition: .2s;
     transition: .2s;
@@ -13461,8 +13473,8 @@ select.input-sm {
 
 .site-footer .block-social .block-content a:hover {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36;
+    background-color: $rosa;
+    border-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -13492,7 +13504,7 @@ select.input-sm {
 }
 
 .site-footer .footer-bottom .links a {
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     line-height: 24px;
     position: relative;
@@ -13504,7 +13516,7 @@ select.input-sm {
     content: "";
     width: 1px;
     height: 15px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     display: block;
     position: absolute;
     top: 50%;
@@ -13513,7 +13525,7 @@ select.input-sm {
 }
 
 .site-footer .footer-bottom .links a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .site-footer .payment {
@@ -13528,7 +13540,7 @@ select.input-sm {
 
 .site-footer .copyright {
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     padding-bottom: 40px;
     text-align: center
 }
@@ -13540,7 +13552,7 @@ select.input-sm {
 .site-footer .footer-tag .title {
     font-size: 16px;
     line-height: 20px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     font-weight: 600;
     display: block;
@@ -13576,12 +13588,12 @@ select.input-sm {
 }
 
 .site-footer .footer-tag a:hover {
-    color: #333
+    color: $cinza-escuro
 }
 
 .back-to-top {
     display: block;
-    border: 2px solid #f36;
+    border: 2px solid $rosa;
     padding: 3px;
     border-radius: 100%;
     text-align: center;
@@ -13602,14 +13614,14 @@ select.input-sm {
     line-height: 36px;
     width: 36px;
     border-radius: 100%;
-    background-color: #f36;
+    background-color: $rosa;
     font-size: 22px;
     color: #fff
 }
 
 .back-to-top:hover {
     color: #fff;
-    background-color: #f36;
+    background-color: $rosa;
     -webkit-transition: .3s;
     transition: .3s
 }
@@ -13638,7 +13650,7 @@ select.input-sm {
 }
 
 .footer-opt-1 .footer-column .links li:hover {
-    color: #f36
+    color: $rosa
 }
 
 .footer-opt-1 .footer-column .links li a {
@@ -13647,7 +13659,7 @@ select.input-sm {
 }
 
 .footer-opt-1 .footer-column .links li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .footer-opt-1 .footer-column .logo-footer {
@@ -13655,7 +13667,7 @@ select.input-sm {
 }
 
 .footer-opt-1 .footer-column .address {
-    color: #333;
+    color: $cinza-escuro;
     margin-bottom: 28px
 }
 
@@ -13723,7 +13735,7 @@ select.input-sm {
 }
 
 .footer-opt-1 .block-newletter .btn-subcribe {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     height: 30px;
     padding: 0 10px
@@ -13815,7 +13827,7 @@ select.input-sm {
 
 .footer-opt-1 .footer-links .title {
     font-weight: 700;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 13px;
     text-transform: uppercase
 }
@@ -13866,7 +13878,7 @@ select.input-sm {
 }
 
 .footer-opt-1 .footer-links .links a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .footer-opt-1 .footer-bottom {
@@ -13893,7 +13905,7 @@ select.input-sm {
 }
 
 .footer-opt-1 .footer-bottom .links a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .footer-opt-1 .copyright {
@@ -14129,7 +14141,7 @@ select.input-sm {
     height: 36px;
     border: none;
     background-color: transparent;
-    color: #ccc;
+    color: $cinza-claro;
     text-align: center;
     z-index: 10;
     font-weight: 400;
@@ -14166,7 +14178,7 @@ select.input-sm {
 }
 
 .footer-opt-3 .footer-content .footer-column2 {
-    border-top: 1px solid #333;
+    border-top: 1px solid $cinza-escuro;
     padding: 30px 0 20px
 }
 
@@ -14184,7 +14196,7 @@ select.input-sm {
     float: left;
     margin-bottom: 10px;
     padding: 0;
-    color: #ccc
+    color: $cinza-claro
 }
 
 .footer-opt-3 .footer-content .footer-column2 .payment {
@@ -14630,7 +14642,7 @@ select.input-sm {
 }
 
 .footer-opt-8 .footer-column .links a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .footer-opt-8 .footer-column .block-social {
@@ -14658,8 +14670,8 @@ select.input-sm {
 
 .footer-opt-8 .footer-column .block-social a:hover {
     color: #fff;
-    border-color: #f36;
-    background-color: #f36
+    border-color: $rosa;
+    background-color: $rosa
 }
 
 .footer-opt-8 .footer-column .block-social a:last-child {
@@ -14716,7 +14728,7 @@ select.input-sm {
 }
 
 .footer-opt-8 .footer-bottom .links a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .footer-opt-8 .copyright {
@@ -14730,7 +14742,7 @@ select.input-sm {
 }
 
 .footer-opt-9 {
-    background-color: #333;
+    background-color: $cinza-escuro;
     padding: 0;
     font-family: Montserrat, sans-serif
 }
@@ -14745,7 +14757,7 @@ select.input-sm {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.1;
-    color: #ccc;
+    color: $cinza-claro;
     text-transform: uppercase
 }
 
@@ -14773,7 +14785,7 @@ select.input-sm {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.1;
-    color: #ccc;
+    color: $cinza-claro;
     text-transform: uppercase
 }
 
@@ -14838,7 +14850,7 @@ select.input-sm {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.1;
-    color: #ccc;
+    color: $cinza-claro;
     text-transform: uppercase
 }
 
@@ -14859,7 +14871,7 @@ select.input-sm {
 
 .footer-opt-9 .copyright {
     float: left;
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 14px;
     font-weight: 300
 }
@@ -14881,7 +14893,7 @@ select.input-sm {
 }
 
 .footer-opt-11 {
-    background-color: #333;
+    background-color: $cinza-escuro;
     padding: 0;
     font-family: ProximaNova, sans-serif;
     font-weight: 300
@@ -15091,8 +15103,8 @@ select.input-sm {
 }
 
 .index-opt-13 .footer-opt-12 .block-social .block-content a:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .index-opt-13 .footer-opt-12 .copyright {
@@ -15102,7 +15114,7 @@ select.input-sm {
 
 .footer-opt-14 {
     padding: 47px 0 0;
-    background-color: #333;
+    background-color: $cinza-escuro;
     font-size: 13px;
     color: #999;
     font-family: 'Open Sans', sans-serif
@@ -15211,7 +15223,7 @@ select.input-sm {
 }
 
 .footer-opt-14 .footer-column h3.title {
-    color: #ccc;
+    color: $cinza-claro;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
@@ -15244,7 +15256,7 @@ select.input-sm {
 }
 
 .footer-opt-14 .footer-column .links h3.title {
-    color: #ccc;
+    color: $cinza-claro;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
@@ -15424,7 +15436,7 @@ select.input-sm {
 }
 
 .post-items .post-item .post-item-actions .btn:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff
 }
 
@@ -15474,18 +15486,18 @@ select.input-sm {
 
 .post-items .post-item .post-item-name {
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 400;
     display: block;
     margin-bottom: 6px
 }
 
 .post-items .post-item .post-item-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .post-items .post-item .post-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .post-items .post-item .post-item-athur {
@@ -15613,7 +15625,7 @@ select.input-sm {
 }
 
 .blog-posts .post-item .entry-more a:hover {
-    background: #f36;
+    background: $rosa;
     color: #fff
 }
 
@@ -15678,7 +15690,7 @@ select.input-sm {
 
 .sortPagiBar .bottom-pagination .pagination .active a,
 .sortPagiBar .bottom-pagination .pagination a:hover {
-    background: #f36;
+    background: $rosa;
     color: #fff
 }
 
@@ -15757,7 +15769,7 @@ select.input-sm {
 
 .sidebar-blog .block-categori-blog li a:hover,
 .sidebar-blog .block-categori-blog li a:hover .count {
-    color: #f36
+    color: $rosa
 }
 
 .sidebar-blog .block-categori-blog li .count {
@@ -15822,7 +15834,7 @@ select.input-sm {
 }
 
 .sidebar-blog .block-tag-blog .block-content a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .recent-comment-list li {
@@ -15849,7 +15861,7 @@ select.input-sm {
 }
 
 .recent-comment-list li > h5 > a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .blog-list-sidebar .entry_title {
@@ -15997,7 +16009,7 @@ select.input-sm {
 }
 
 .comment-list .comment-meta {
-    color: #ccc
+    color: $cinza-claro
 }
 
 .comment-list .comment-meta .author a {
@@ -16030,8 +16042,8 @@ select.input-sm {
 }
 
 .coment-form .btn-comment:hover {
-    background: #f36;
-    border: 1px solid #f36
+    background: $rosa;
+    border: 1px solid $rosa
 }
 
 .related-posts {
@@ -16043,7 +16055,7 @@ select.input-sm {
     background: #eaeaea;
     width: 24px;
     height: 24px;
-    color: #ccc;
+    color: $cinza-claro;
     text-align: center;
     line-height: 24px;
     top: -31px;
@@ -16060,7 +16072,7 @@ select.input-sm {
 
 .related-posts .owl-next:hover,
 .related-posts .owl-prev:hover {
-    background: #f36;
+    background: $rosa;
     color: #fff
 }
 
@@ -16141,7 +16153,7 @@ select.input-sm {
 .post-detail .post-item-info .post-item-name {
     font-weight: 600;
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     margin: 24px 0 15px;
     display: block
 }
@@ -16173,7 +16185,7 @@ select.input-sm {
 
 .post-detail .post-item-info .post-item-des blockquote {
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     font-family: Merriweather;
     border-left: 3px solid #e9c77b;
     padding-left: 29px;
@@ -16195,13 +16207,13 @@ select.input-sm {
 }
 
 .post-detail .post-item-info .post-item-tag a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .post-detail .post-item-info .post-item-tag label {
     font-size: 13px;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     padding: 0;
     font-weight: 400;
     margin-right: 3px;
@@ -16210,20 +16222,20 @@ select.input-sm {
 
 .post-detail .post-item-info .post-item-share {
     font-size: 18px;
-    color: #333;
+    color: $cinza-escuro;
     float: right;
     line-height: 28px;
     margin-bottom: 23px
 }
 
 .post-detail .post-item-info .post-item-share a {
-    color: #333;
+    color: $cinza-escuro;
     margin-left: 5px;
     line-height: 28px
 }
 
 .post-detail .post-item-info .post-item-share a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .post-detail .post-item-info .post-item-share label {
@@ -16284,7 +16296,7 @@ select.input-sm {
 
 .post-detail .post-arthur .des .name {
     font-size: 13px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 600;
     display: block;
     font-family: "Open Sans";
@@ -16298,7 +16310,7 @@ select.input-sm {
 
 .block-comment-blog .list-commnet .block-title {
     font-size: 18px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 600;
     margin-bottom: 25px
 }
@@ -16352,7 +16364,7 @@ select.input-sm {
 .block-comment-blog .list-commnet .item .actions {
     text-align: right;
     font-size: 12px;
-    color: #333;
+    color: $cinza-escuro;
     font-family: Merriweather;
     font-style: italic;
     margin-top: 45px
@@ -16366,7 +16378,7 @@ select.input-sm {
 
 .block-comment-blog .list-commnet .item .actions .reply:hover,
 .block-comment-blog .list-commnet .item .actions .reply:hover .fa {
-    color: #f36
+    color: $rosa
 }
 
 .block-comment-blog .block-leave-reply {
@@ -16375,7 +16387,7 @@ select.input-sm {
 
 .block-comment-blog .block-leave-reply .block-title {
     font-size: 18px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 600;
     margin-bottom: 15px
 }
@@ -16437,7 +16449,7 @@ select.input-sm {
 
 .product-reviews-summary .rating-result,
 .product-reviews-summary .rating-result > span {
-    color: #ccc;
+    color: $cinza-claro;
     white-space: nowrap;
     line-height: 1;
     display: block
@@ -16507,7 +16519,7 @@ select.input-sm {
 }
 
 .product-item-opt-1 .product-item-info .btn-cart:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .product-item-opt-1 .product-item-info .product-reviews-summary {
@@ -16563,12 +16575,12 @@ select.input-sm {
 }
 
 .product-item-opt-1 .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .product-item-opt-1 .product-item-price {
     font-size: 18px;
-    color: #f36;
+    color: $rosa;
     font-weight: 700;
     margin-bottom: 2px;
     float: left;
@@ -16652,7 +16664,7 @@ select.input-sm {
 
 .product-item-opt-1 .product-item-actions .btn:hover {
     color: #fff;
-    background-color: #f36
+    background-color: $rosa
 }
 
 .product-item-opt-1 .product-item-actions .btn-wishlist {
@@ -16839,12 +16851,12 @@ select.input-sm {
 }
 
 .product-item-opt-0 .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .product-item-opt-0 .product-item-price {
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     margin-bottom: 10px
 }
 
@@ -16870,7 +16882,7 @@ select.input-sm {
     padding: 0;
     text-align: center;
     background-color: #fff;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     margin-bottom: 10px;
     display: block;
@@ -16892,8 +16904,8 @@ select.input-sm {
 
 .product-item-opt-0 .product-item-actions .btn:hover {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .product-item-opt-0 .product-item-actions .btn-wishlist {
@@ -16937,7 +16949,7 @@ select.input-sm {
 }
 
 .product-item-opt-0 .product-item-review .action:hover {
-    color: #f36
+    color: $rosa
 }
 
 .product-item-opt-0 .product-item-des {
@@ -17310,7 +17322,7 @@ select.input-sm {
 .product-item-opt-3 .product-item-name {
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     margin-bottom: 4px;
     overflow: hidden;
@@ -17321,11 +17333,11 @@ select.input-sm {
 }
 
 .product-item-opt-3 .product-item-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .product-item-opt-3 .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .product-item-opt-3 .product-item-actions .btn {
@@ -17334,7 +17346,7 @@ select.input-sm {
     padding: 0 15px;
     text-align: center;
     background-color: #ddd;
-    color: #333;
+    color: $cinza-escuro;
     margin-bottom: 7px;
     display: inline-block;
     background-position: center;
@@ -17348,7 +17360,7 @@ select.input-sm {
 
 .product-item-opt-3 .product-item-actions .btn:hover {
     color: #fff;
-    background-color: #f36;
+    background-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -17438,7 +17450,7 @@ select.input-sm {
 .product-item-opt-4 .product-item-name {
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     margin-bottom: 1px;
     overflow: hidden;
@@ -17448,11 +17460,11 @@ select.input-sm {
 }
 
 .product-item-opt-4 .product-item-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .product-item-opt-4 .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .product-item-opt-4 .product-item-price {
@@ -18005,7 +18017,7 @@ select.input-sm {
     background-repeat: no-repeat;
     border-radius: 0;
     display: inline-block;
-    border: 1px solid #ccc
+    border: 1px solid $cinza-claro
 }
 
 .product-item-opt-8 .product-item-actions .btn span {
@@ -18125,7 +18137,7 @@ select.input-sm {
 }
 
 .product-collections-opt-8 .product-item-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .product-collections-opt-8 .product-item-name a:hover {
@@ -18146,7 +18158,7 @@ select.input-sm {
 
 .product-collections-opt-8 .product-item-actions .btn-view {
     background-color: #fff;
-    color: #333;
+    color: $cinza-escuro;
     border: 1px solid #666;
     text-transform: capitalize;
     padding: 0 25px;
@@ -18241,7 +18253,7 @@ select.input-sm {
 }
 
 .product-item-opt-12 .product-item-info .btn-cart:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .product-item-opt-12 .product-item-info .product-reviews-summary {
@@ -18278,7 +18290,7 @@ select.input-sm {
 .product-item-opt-12 .product-item-name {
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     margin-bottom: 7px;
     overflow: hidden;
@@ -18288,16 +18300,16 @@ select.input-sm {
 }
 
 .product-item-opt-12 .product-item-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .product-item-opt-12 .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .product-item-opt-12 .product-item-price {
     font-size: 14px;
-    color: #f36;
+    color: $rosa;
     font-weight: 400;
     line-height: 1
 }
@@ -18312,7 +18324,7 @@ select.input-sm {
 
 .product-item-opt-12 .product-item-price .old-price {
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     text-decoration: line-through;
     font-weight: 400
 }
@@ -18370,7 +18382,7 @@ select.input-sm {
 
 .product-item-opt-12 .product-item-actions .btn:hover {
     color: #fff;
-    background-color: #f36
+    background-color: $rosa
 }
 
 .product-item-opt-12 .product-item-actions .btn-wishlist {
@@ -18456,7 +18468,7 @@ select.input-sm {
 .product-item-deal-opt12 .product-item-name {
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     margin-bottom: 7px;
     overflow: hidden;
@@ -18466,16 +18478,16 @@ select.input-sm {
 }
 
 .product-item-deal-opt12 .product-item-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .product-item-deal-opt12 .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .product-item-deal-opt12 .product-item-price {
     font-size: 14px;
-    color: #f36;
+    color: $rosa;
     font-weight: 400;
     line-height: 1;
     margin-bottom: 15px
@@ -18491,7 +18503,7 @@ select.input-sm {
 
 .product-item-deal-opt12 .product-item-price .old-price {
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     text-decoration: line-through;
     font-weight: 400
 }
@@ -18516,7 +18528,7 @@ select.input-sm {
 
 .product-item-deal-opt12 .product-item-actions .btn:hover {
     color: #fff;
-    background-color: #f36
+    background-color: $rosa
 }
 
 .product-item-deal-opt12 .product-item-actions .btn-cart {
@@ -18543,7 +18555,7 @@ select.input-sm {
 }
 
 .product-item-deal-opt12 .product-item-actions .btn-cart:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .product-item-deal-opt12 .product-item-actions .btn-compare,
@@ -18665,7 +18677,7 @@ select.input-sm {
 
 .product-item-opt-13 .product-item-info .product-reviews-summary .rating-result,
 .product-item-opt-13 .product-item-info .product-reviews-summary .rating-result > span {
-    color: #ccc
+    color: $cinza-claro
 }
 
 .product-item-opt-13 .product-item-info .product-reviews-summary .rating-result:before,
@@ -18729,7 +18741,7 @@ select.input-sm {
 
 .product-item-opt-13 .product-item-price {
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 300;
     margin-bottom: 16px;
     line-height: 1
@@ -18939,7 +18951,7 @@ select.input-sm {
 
 .product-item-opt-14 .product-item-info .product-reviews-summary .rating-result,
 .product-item-opt-14 .product-item-info .product-reviews-summary .rating-result > span {
-    color: #ccc
+    color: $cinza-claro
 }
 
 .product-item-opt-14 .product-item-info .product-reviews-summary .rating-result:before,
@@ -19006,7 +19018,7 @@ select.input-sm {
 
 .product-item-opt-14 .product-item-price {
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     margin-bottom: 16px;
     line-height: 1
 }
@@ -19249,7 +19261,7 @@ select.input-sm {
 }
 
 .toolbar-products .btn-filter-products:hover {
-    color: #f36
+    color: $rosa
 }
 
 .toolbar-products .modes .label {
@@ -19311,7 +19323,7 @@ select.input-sm {
 .toolbar-products .modes .modes-mode.active,
 .toolbar-products .modes .modes-mode:hover {
     color: #fff;
-    background-color: #f36
+    background-color: $rosa
 }
 
 .toolbar-products .modes .mode-grid {
@@ -19492,7 +19504,7 @@ select.input-sm {
 
 .category-view .owl-nav .owl-next:hover,
 .category-view .owl-nav .owl-prev:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff
 }
 
@@ -19619,7 +19631,7 @@ select.input-sm {
 
 .products.products-list .product-items .product-item .product-item-name {
     font-size: 15px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 600;
     margin-top: 38px
 }
@@ -19637,12 +19649,12 @@ select.input-sm {
 }
 
 .products.products-list .product-items .product-item .product-item-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .products.products-list .product-items .product-item .product-item-name a:focus,
 .products.products-list .product-items .product-item .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 @media (max-width: 680px) {
@@ -19699,7 +19711,7 @@ select.input-sm {
 
 .products.products-list .product-items .product-item-opt-1 .product-item-info .btn-cart:hover,
 .products.products-list .product-items .product-item-opt-1 .product-item-info .btn:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .products.products-list .product-items .product-item-opt-1 .product-item-info .btn-cart {
@@ -19710,7 +19722,7 @@ select.input-sm {
     margin: 0 0 15px;
     float: none;
     clear: both;
-    background-color: #f36;
+    background-color: $rosa;
     line-height: 1
 }
 
@@ -19774,7 +19786,7 @@ select.input-sm {
 }
 
 .products.products-list .product-items .product-item-opt-1 .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .products.products-list .product-items .product-item-opt-1 .product-item-label.label-price {
@@ -19841,7 +19853,7 @@ select.input-sm {
     font-weight: 700;
     padding: 0 12px;
     line-height: 32px;
-    border-bottom: 3px solid #f36
+    border-bottom: 3px solid $rosa
 }
 
 .catalog-view_op1 .toolbar-products.toolbar-top {
@@ -19874,7 +19886,7 @@ select.input-sm {
 }
 
 .catalog-view_op1 .toolbar-products .btn-filter-products:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1 .toolbar-products .modes {
@@ -19904,8 +19916,8 @@ select.input-sm {
 
 .catalog-view_op1 .toolbar-products .modes .modes-mode.active,
 .catalog-view_op1 .toolbar-products .modes .modes-mode:hover {
-    background-color: #f36;
-    border-color: #f36;
+    background-color: $rosa;
+    border-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -20021,9 +20033,9 @@ select.input-sm {
 
 .catalog-view_op1 .toolbar-products .pagination > li.active > a,
 .catalog-view_op1 .toolbar-products .pagination > li.active > span {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
-    border-color: #f36
+    border-color: $rosa
 }
 
 .catalog-view_op1 .toolbar-products .pagination > li.action > a,
@@ -20061,7 +20073,7 @@ select.input-sm {
 }
 
 .catalog-view_op1 .product-item-opt-2 .product-item-info .btn-cart:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .catalog-view_op1 .product-item-opt-2 .product-item-actions {
@@ -20074,16 +20086,16 @@ select.input-sm {
 
 .catalog-view_op1 .breadcrumb li + li:before {
     content: ">";
-    color: #333;
+    color: $cinza-escuro;
     font-family: 'Libre Baskerville', serif
 }
 
 .catalog-view_op1 .breadcrumb li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1 .breadcrumb .active {
-    color: #333
+    color: $cinza-escuro
 }
 
 .category-links {
@@ -20184,12 +20196,12 @@ select.input-sm {
 }
 
 .breadcrumb-page .breadcrumb li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .breadcrumb-page .breadcrumb li.active,
 .breadcrumb-page .breadcrumb li.active a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .catalog-view_default .product-media {
@@ -20251,7 +20263,7 @@ select.input-sm {
 }
 
 .catalog-view_default .product-media .images-small a.active {
-    border: 1px solid #f36
+    border: 1px solid $rosa
 }
 
 .catalog-view_default .product-media .images-small a img {
@@ -20277,7 +20289,7 @@ select.input-sm {
 
 .catalog-view_default .product-media .images-small .owl-next:hover,
 .catalog-view_default .product-media .images-small .owl-prev:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_default .product-media .images-small .owl-next:before,
@@ -20309,7 +20321,7 @@ select.input-sm {
 
 .catalog-view_default .product-info-main .page-title {
     font-size: 20px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: capitalize;
     font-weight: 600;
     display: block;
@@ -20342,7 +20354,7 @@ select.input-sm {
 }
 
 .catalog-view_default .product-info-main .product-reviews-summary .rating-action a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_default .product-info-main .product-info-price {
@@ -20366,7 +20378,7 @@ select.input-sm {
 
 .catalog-view_default .product-info-main .price-box .price {
     font-size: 18px;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 24px
 }
 
@@ -20376,14 +20388,14 @@ select.input-sm {
 
 .catalog-view_default .product-info-main .product-info-stock-sku {
     float: left;
-    color: #f36;
+    color: $rosa;
     text-transform: capitalize;
     font-size: 14px;
     line-height: 24px
 }
 
 .catalog-view_default .product-info-main .product-info-stock-sku .label {
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 400;
     padding: 0;
     margin-right: 10px;
@@ -20399,7 +20411,7 @@ select.input-sm {
 .catalog-view_default .product-info-main .product-overview .overview-label {
     text-transform: uppercase;
     display: block;
-    color: #333;
+    color: $cinza-escuro;
     margin-bottom: 5px
 }
 
@@ -20425,12 +20437,12 @@ select.input-sm {
     font-weight: 400;
     padding: 0;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px
 }
 
 .catalog-view_default .product-info-main .product-add-form .product-options-wrapper .form-group label sup {
-    color: #f36;
+    color: $rosa;
     font-size: 15px;
     top: 0
 }
@@ -20474,7 +20486,7 @@ select.input-sm {
 .catalog-view_default .product-info-main .product-add-form .form-qty label {
     display: inline-block;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 34px;
     margin: 0 15px 0 0;
     vertical-align: top;
@@ -20501,7 +20513,7 @@ select.input-sm {
 }
 
 .catalog-view_default .product-info-main .product-add-form .form-qty .btn-number {
-    background-color: #333;
+    background-color: $cinza-escuro;
     cursor: pointer;
     line-height: 17px;
     width: 16px;
@@ -20520,7 +20532,7 @@ select.input-sm {
 .catalog-view_default .product-info-main .product-add-form .form-qty .btn-number:disabled,
 .catalog-view_default .product-info-main .product-add-form .form-qty .btn-number:focus,
 .catalog-view_default .product-info-main .product-add-form .form-qty .btn-number:hover {
-    background-color: #333;
+    background-color: $cinza-escuro;
     color: #fff;
     outline: 0
 }
@@ -20555,7 +20567,7 @@ select.input-sm {
     padding: 0;
     text-align: center;
     background-color: #fff;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     margin-bottom: 10px;
     display: block;
@@ -20577,8 +20589,8 @@ select.input-sm {
 
 .catalog-view_default .product-info-main .actions .action:hover {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .catalog-view_default .product-info-main .actions .btn-wishlist {
@@ -20643,14 +20655,14 @@ select.input-sm {
     line-height: 43px;
     padding: 0 10px 0 27px;
     border-bottom: 1px solid #dfdfdf;
-    color: #333;
+    color: $cinza-escuro;
     white-space: nowrap
 }
 
 .catalog-view_default .product-info-detailed > .nav li.active a,
 .catalog-view_default .product-info-detailed > .nav li:hover a {
     color: #fff;
-    background-color: #f36;
+    background-color: $rosa;
     z-index: 100
 }
 
@@ -20703,7 +20715,7 @@ select.input-sm {
         display: block
     }
     .catalog-view_default .product-info-detailed > .tab-content .tab-pane.has-active .block-title {
-        color: #f36
+        color: $rosa
     }
 }
 
@@ -20715,7 +20727,7 @@ select.input-sm {
 .block-related .block-title,
 .block-upsell .block-title {
     font-size: 18px;
-    color: #333;
+    color: $cinza-escuro;
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 30px;
     text-transform: uppercase
@@ -20739,7 +20751,7 @@ select.input-sm {
     margin-bottom: 8px;
     border-bottom: none;
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 700
 }
 
@@ -20778,7 +20790,7 @@ select.input-sm {
     display: block;
     text-align: center;
     background-color: #fff;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 20px;
     float: left;
     margin-left: 10px
@@ -20800,7 +20812,7 @@ select.input-sm {
 .catalog-view_op1 .block-related .owl-nav .owl-prev:hover,
 .catalog-view_op1 .block-upsell .owl-nav .owl-next:hover,
 .catalog-view_op1 .block-upsell .owl-nav .owl-prev:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-related .owl-nav .owl-next:before,
@@ -20815,8 +20827,8 @@ select.input-sm {
 .block-upsell .owl-nav .owl-next:hover,
 .block-upsell .owl-nav .owl-prev:hover {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .block-related .owl-nav .owl-next:before,
@@ -20896,7 +20908,7 @@ select.input-sm {
 }
 
 .catalog-view_op1 .product-media .images-small a.active {
-    border: 1px solid #f36
+    border: 1px solid $rosa
 }
 
 .catalog-view_op1 .product-media .images-small a img {
@@ -20928,7 +20940,7 @@ select.input-sm {
 
 .catalog-view_op1 .product-media .images-small .owl-next:hover,
 .catalog-view_op1 .product-media .images-small .owl-prev:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .catalog-view_op1 .product-media .images-small .owl-next:before,
@@ -20994,7 +21006,7 @@ select.input-sm {
 }
 
 .catalog-view_op1 .product-info-main .product-reviews-summary .reviews-actions a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1 .product-info-main .product-reviews-summary .reviews-actions .action {
@@ -21008,7 +21020,7 @@ select.input-sm {
 .catalog-view_op1 .product-info-main .product-info-price {
     margin-bottom: 10px;
     font-weight: 700;
-    color: #f36;
+    color: $rosa;
     font-size: 18px;
 }
 
@@ -21032,7 +21044,7 @@ select.input-sm {
 
 .catalog-view_op1 .product-info-main .product-info-price .conteudo-menu li:hover {
     cursor: pointer;
-    background-color: #F36;
+    background-color: $rosa;
     color: #FFF;
 }
 
@@ -21081,7 +21093,7 @@ select.input-sm {
     padding: 0 25px;
     font-size: 14px;
     font-weight: 700;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     background-color: #e2e2e2
 }
@@ -21117,7 +21129,7 @@ select.input-sm {
     padding: 0 35px 0 25px;
     font-size: 14px;
     font-weight: 700;
-    color: #333;
+    color: $cinza-escuro;
     cursor: pointer;
     position: relative
 }
@@ -21294,7 +21306,7 @@ select.input-sm {
 }
 
 .catalog-view_op1 .product-options-wrapper .form-configurable .size-chart {
-    color: #f36;
+    color: $rosa;
     line-height: 30px;
     display: inline-block;
     text-decoration: underline;
@@ -21311,7 +21323,7 @@ select.input-sm {
 
 .catalog-view_op1 .product-options-bottom .btn-cart {
     height: 36px;
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     font-size: 14px;
     padding: 0 12px;
@@ -21372,11 +21384,11 @@ select.input-sm {
 }
 
 .catalog-view_op1 .product-options-bottom .product-addto-links .action:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1 .product-options-bottom .product-addto-links .action:hover:before {
-    background-color: #f36;
+    background-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -21408,7 +21420,7 @@ select.input-sm {
 }
 
 .catalog-view_op1 .product-addto-links-second .action:hover {
-    color: #f36
+    color: $rosa
 }
 
 .catalog-view_op1 .product-addto-links-second .action-print {
@@ -21455,7 +21467,7 @@ select.input-sm {
 
 .swatch-opt .swatch-attribute .swatch-attribute-options .swatch-option.selected,
 .swatch-opt .swatch-attribute .swatch-attribute-options .swatch-option:hover {
-    outline: #f36 solid 1px
+    outline: $rosa solid 1px
 }
 
 .fancybox-overlay {
@@ -21466,7 +21478,7 @@ select.input-sm {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 600;
-    color: #333;
+    color: $cinza-escuro;
     margin: 0 0 15px
 }
 
@@ -21482,7 +21494,7 @@ select.input-sm {
     display: block;
     font-size: 15px;
     font-weight: 600;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 30px;
     text-transform: uppercase
 }
@@ -21529,7 +21541,7 @@ select.input-sm {
     display: block;
     font-size: 15px;
     font-weight: 600;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 30px;
     text-transform: uppercase
 }
@@ -21558,11 +21570,11 @@ select.input-sm {
 }
 
 .block-why-choos-us ul li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-why-choos-us ul li:hover {
-    color: #f36;
+    color: $rosa;
     background-image: url(../img/icon/check-hover.png)
 }
 
@@ -21585,7 +21597,7 @@ select.input-sm {
     display: block;
     font-size: 15px;
     font-weight: 600;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 5px
@@ -21638,7 +21650,7 @@ select.input-sm {
 .block-our-member .owl-dots .owl-dot.active {
     width: 19px;
     height: 19px;
-    background-color: #f36
+    background-color: $rosa
 }
 
 .alignleft {
@@ -21693,7 +21705,7 @@ img.alignright {
 }
 
 .page-heading span.page-heading-title {
-    border-bottom: 3px solid #f36;
+    border-bottom: 3px solid $rosa;
     position: absolute;
     bottom: -1px;
     padding: 0 12px
@@ -21759,7 +21771,7 @@ img.alignright {
 }
 
 #contact #btn-send-contact:hover {
-    background: #F36
+    background: $rosa
 }
 
 #contact_form_map ul {
@@ -21805,8 +21817,8 @@ img.alignright {
 }
 
 .table-compare button:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .block-form-login {
@@ -21923,7 +21935,7 @@ img.alignright {
     top: 3px;
     left: 0;
     border-radius: 100%;
-    color: #f36;
+    color: $rosa;
     line-height: 14px;
     font-size: 11px;
     text-align: center
@@ -21934,7 +21946,7 @@ img.alignright {
 }
 
 .block-form-login .checkbox input[type=checkbox]:checked + span:before {
-    border-color: #f36;
+    border-color: $rosa;
     content: "\f00c";
     font-family: FontAwesome
 }
@@ -21990,7 +22002,7 @@ img.alignright {
 .form-cart table thead tr th {
     background-color: #ebebeb;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 600;
     text-transform: capitalize;
     border: none;
@@ -22000,7 +22012,7 @@ img.alignright {
 }
 
 .form-cart table thead .tb-available {
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     font-style: normal;
     font-weight: 600
@@ -22074,7 +22086,7 @@ img.alignright {
 }
 
 .form-cart table .tb-product .item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .form-cart table .tb-available {
@@ -22135,13 +22147,13 @@ img.alignright {
 }
 
 .form-cart table .tb-remove .action-remove {
-    color: #ccc;
+    color: $cinza-claro;
     display: inline-block;
     padding-top: 6px
 }
 
 .form-cart table .tb-remove .action-remove:hover {
-    color: #f36
+    color: $rosa
 }
 
 .form-cart table .tb-remove .action-remove span {
@@ -22213,9 +22225,9 @@ img.alignright {
 }
 
 .form-cart .cart-actions .action:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
-    border-color: #f36;
+    border-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -22294,7 +22306,7 @@ img.alignright {
     background-size: cover;
     border-radius: 0;
     border: none;
-    color: #333;
+    color: $cinza-escuro;
     width: 100%;
     max-width: 830px;
     background-color: #fff
@@ -22390,7 +22402,7 @@ img.alignright {
 
 #popup-newsletter .block-newletter label {
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     text-transform: uppercase;
     font-weight: 400;
@@ -22515,8 +22527,8 @@ img.alignright {
 }
 
 .box-authentication .button:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .box-border {
@@ -22537,8 +22549,8 @@ img.alignright {
 }
 
 .box-border button:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .box-wishlist .button,
@@ -22569,8 +22581,8 @@ img.alignright {
 }
 
 .list-wishlist button:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .list-wishlist li {
@@ -22616,11 +22628,11 @@ img.alignright {
 
 .table-compare .price {
     font-weight: 700;
-    color: #f36
+    color: $rosa
 }
 
 .table-compare .add-cart {
-    background: #f36;
+    background: $rosa;
     color: #fff
 }
 
@@ -22675,11 +22687,11 @@ img.alignright {
     width: 20%;
     float: left;
     text-align: center;
-    border-bottom: 3px solid #ccc
+    border-bottom: 3px solid $cinza-claro
 }
 
 .page-order ul.step li.current-step {
-    border-bottom: 3px solid #f36
+    border-bottom: 3px solid $rosa
 }
 
 .page-order .heading-counter {
@@ -22727,9 +22739,9 @@ img.alignright {
 
 .page-order .cart_navigation a.next-btn {
     float: right;
-    background: #f36;
+    background: $rosa;
     color: #fff;
-    border: 1px solid #f36
+    border: 1px solid $rosa
 }
 
 .page-order .cart_navigation a.next-btn:hover {
@@ -22753,7 +22765,7 @@ img.alignright {
 }
 
 .page-order .cart_navigation a:hover {
-    background: #f36;
+    background: $rosa;
     color: #fff
 }
 
@@ -22818,7 +22830,7 @@ img.alignright {
 }
 
 .cart_summary .qty span:hover {
-    background: #f36;
+    background: $rosa;
     color: #fff
 }
 
@@ -22862,7 +22874,7 @@ img.alignright {
         margin-top: 10px
     }
     .page-order ul.step li.current-step {
-        border-left: 3px solid #f36;
+        border-left: 3px solid $rosa;
         border-bottom: none
     }
 }
@@ -22935,7 +22947,7 @@ img.alignright {
 
 .effect-bg:before {
     content: "";
-    background-color: #f36;
+    background-color: $rosa;
     position: absolute;
     top: 0;
     left: 0;
@@ -23138,7 +23150,7 @@ img.alignright {
 }
 
 .block-slide-main .btn:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-slide-main .owl-dots {
@@ -23158,7 +23170,7 @@ img.alignright {
 }
 
 .block-slide-main .owl-dots .owl-dot.active {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-slide-main .dotsData .owl-dots {
@@ -23188,7 +23200,7 @@ img.alignright {
 }
 
 .block-slide-main .dotsData .owl-dots .owl-dot.active {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     border-color: #fff
 }
@@ -23222,7 +23234,7 @@ img.alignright {
     border: 1px solid #dfdfdf;
     border-radius: 2px;
     font-size: 24px;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     -webkit-transition: .3s;
     transition: .3s;
@@ -23429,7 +23441,7 @@ img.alignright {
     text-align: center;
     line-height: 80px;
     height: 84px;
-    background-color: #f36;
+    background-color: $rosa;
     border-radius: 100%;
     display: block;
     position: absolute;
@@ -23443,7 +23455,7 @@ img.alignright {
 
 .block-service .item .title {
     display: block;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
@@ -23528,7 +23540,7 @@ img.alignright {
     font-weight: 600;
     margin-bottom: 2px;
     font-size: 16px;
-    color: #333
+    color: $cinza-escuro
 }
 
 .slide-opt-1 .item1 .subtitle {
@@ -23553,7 +23565,7 @@ img.alignright {
 }
 
 .slide-opt-1 .item1 .btn:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .slide-opt-1 .item2 {
@@ -23579,7 +23591,7 @@ img.alignright {
 .slide-opt-1 .item2 .subtitle {
     font-weight: 700;
     display: block;
-    border: 2px solid #333;
+    border: 2px solid $cinza-escuro;
     font-size: 48px;
     line-height: 60px;
     padding: 0 15px;
@@ -23605,8 +23617,8 @@ img.alignright {
     font-size: 15px;
     display: inline-block;
     font-weight: 300;
-    border: 3px solid #333;
-    color: #333;
+    border: 3px solid $cinza-escuro;
+    color: $cinza-escuro;
     margin-top: 70px;
     text-decoration: none;
     -webkit-transition: .3s;
@@ -23615,7 +23627,7 @@ img.alignright {
 
 .slide-opt-1 .item2 .btn:hover {
     text-decoration: none;
-    background-color: #333;
+    background-color: $cinza-escuro;
     color: #fff;
     -webkit-transition: .3s;
     transition: .3s
@@ -23661,7 +23673,7 @@ img.alignright {
 }
 
 .slide-opt-1 .item3 .btn:hover {
-    background-color: #333;
+    background-color: $cinza-escuro;
     color: #fff;
     -webkit-transition: .3s;
     transition: .3s
@@ -23687,7 +23699,7 @@ img.alignright {
 
 .slide-opt-1 .dotsData .owl-dots .owl-dot.active {
     border-color: #fff;
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff
 }
 
@@ -23721,7 +23733,7 @@ img.alignright {
     right: 0;
     width: 234px;
     padding: 0 12px;
-    background-color: #F36;
+    background-color: $rosa;
     max-height: 453px;
     overflow: hidden
 }
@@ -23878,7 +23890,7 @@ img.alignright {
 
 .block-section-top1 .block-nav-categori .view-all-categori .btn-view-all:hover,
 .block-section-top1 .block-nav-categori .view-all-categori a:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff
 }
 
@@ -23928,7 +23940,7 @@ img.alignright {
 
 .block-service-opt1 .item .title {
     display: block;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 400;
     text-transform: uppercase
 }
@@ -24232,11 +24244,11 @@ img.alignright {
     background-position: top 15px right 43px;
     background-repeat: no-repeat;
     background-image: url(../img/icon/actions-floor.png);
-    border-bottom: 3px solid #f36
+    border-bottom: 3px solid $rosa
 }
 
 .floor-products1.block-floor-products-opt1 .block-title {
-    border-bottom-color: #f36
+    border-bottom-color: $rosa
 }
 
 .floor-products2.block-floor-products-opt1 .block-title {
@@ -24350,12 +24362,12 @@ img.alignright {
 }
 
 .block-floor-products-opt1 .block-title .links li a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-floor-products-opt1 .block-title .links li.active > a {
     color: #fff;
-    background-color: #f36;
+    background-color: $rosa;
     z-index: 5
 }
 
@@ -24364,7 +24376,7 @@ img.alignright {
 }
 
 .floor-products1.block-floor-products-opt1 .block-title .links li.active > a {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products2.block-floor-products-opt1 .block-title .links li.active > a {
@@ -24414,7 +24426,7 @@ img.alignright {
 .block-floor-products-opt1 .block-title .links a {
     display: block;
     line-height: 50px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: capitalize;
     font-size: 14px;
     padding: 0 20px;
@@ -24422,7 +24434,7 @@ img.alignright {
 }
 
 .block-floor-products-opt1 .block-title .links a:hover {
-    color: #f36;
+    color: $rosa;
     background-color: transparent
 }
 
@@ -24482,7 +24494,7 @@ img.alignright {
     line-height: 20px;
     display: block;
     cursor: pointer;
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 18px
 }
 
@@ -24681,7 +24693,7 @@ img.alignright {
     border: 1px solid #dfdfdf;
     border-radius: 2px;
     font-size: 24px;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     -webkit-transition: .3s;
     transition: .3s;
@@ -24694,8 +24706,8 @@ img.alignright {
 .block-floor-products-opt1 .col-products .owl-nav .owl-next:hover,
 .block-floor-products-opt1 .col-products .owl-nav .owl-prev:hover {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36;
+    background-color: $rosa;
+    border-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -24749,13 +24761,13 @@ img.alignright {
 
 .floor-products1.block-floor-products-opt1 .product-item .product-item-info .btn-cart:hover,
 .floor-products1.block-floor-products-opt1 .product-item .product-item-info .product-item-actions .btn:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products1.block-floor-products-opt1 .col-products .owl-nav .owl-next:hover,
 .floor-products1.block-floor-products-opt1 .col-products .owl-nav .owl-prev:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .floor-products2.block-floor-products-opt1 .product-item .product-item-info .btn-cart:hover,
@@ -24844,7 +24856,7 @@ img.alignright {
     line-height: 38px;
     color: #999;
     margin-bottom: -1px;
-    border-bottom: 3px solid #ccc;
+    border-bottom: 3px solid $cinza-claro;
     padding: 0 12px;
     font-size: 16px;
     font-weight: 700
@@ -24853,18 +24865,18 @@ img.alignright {
 .block-tab-products-opt1 .nav > li > a:focus,
 .block-tab-products-opt1 .nav > li > a:hover {
     background-color: transparent;
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-tab-products-opt1 .nav > li.active > a {
-    color: #333;
-    border-bottom: 3px solid #f36
+    color: $cinza-escuro;
+    border-bottom: 3px solid $rosa
 }
 
 .block-tab-products-opt1 .nav > li.active > a:focus,
 .block-tab-products-opt1 .nav > li.active > a:hover {
     background-color: transparent;
-    color: #333
+    color: $cinza-escuro
 }
 
 @media (max-width: 600px) {
@@ -24915,7 +24927,7 @@ img.alignright {
     width: 24px;
     line-height: 24px;
     background-color: #eee;
-    color: #ccc
+    color: $cinza-claro
 }
 
 .block-tab-products-opt1 .owl-nav .owl-next:hover,
@@ -24974,13 +24986,13 @@ img.alignright {
 }
 
 .block-showcase .col-title .des {
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding-top: 15px;
     padding-bottom: 32px
 }
 
 .block-showcase .col-title .actions {
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding-top: 23px
 }
 
@@ -24990,8 +25002,8 @@ img.alignright {
     padding-left: 20px;
     padding-right: 10px;
     font-size: 12px;
-    border-color: #ccc;
-    color: #333;
+    border-color: $cinza-claro;
+    color: $cinza-escuro;
     font-family: Arial
 }
 
@@ -25000,8 +25012,8 @@ img.alignright {
 }
 
 .block-showcase .col-title .btn:hover {
-    background-color: #f36;
-    border-color: #f36;
+    background-color: $rosa;
+    border-color: $rosa;
     color: #fff
 }
 
@@ -25110,7 +25122,7 @@ img.alignright {
 
 .block-showcase-opt1 .block-title {
     margin-bottom: 0;
-    border-bottom: 3px solid #f36
+    border-bottom: 3px solid $rosa
 }
 
 .block-showcase-opt1 .block-title .title {
@@ -25216,7 +25228,7 @@ img.alignright {
 }
 
 .qc-top-site1 .close:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .qc-top-site1 .description {
@@ -25232,7 +25244,7 @@ img.alignright {
     text-transform: capitalize;
     font-size: 44px;
     font-weight: 700;
-    color: #f36;
+    color: $rosa;
     font-family: Arial;
     line-height: 1;
     margin-bottom: 0
@@ -25274,7 +25286,7 @@ img.alignright {
 
 .qc-top-site1 .description .btn:focus,
 .qc-top-site1 .description .btn:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-deals-of-opt1 {
@@ -25293,7 +25305,7 @@ img.alignright {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 16px;
     line-height: 43px
 }
@@ -25306,7 +25318,7 @@ img.alignright {
     height: 44px;
     display: inline-block;
     vertical-align: bottom;
-    background-color: #f36;
+    background-color: $rosa;
     position: relative;
     margin-right: 4px
 }
@@ -25316,7 +25328,7 @@ img.alignright {
     height: 0;
     border-style: solid;
     border-width: 0 22px 7px;
-    border-color: transparent transparent #f36;
+    border-color: transparent transparent $rosa;
     content: "";
     position: absolute;
     top: -7px;
@@ -25324,7 +25336,7 @@ img.alignright {
 }
 
 .block-deals-of-opt1 .block-content {
-    border: 3px solid #f36;
+    border: 3px solid $rosa;
     background-color: #fff
 }
 
@@ -25452,7 +25464,7 @@ img.alignright {
     font-weight: 700;
     display: inline-block;
     padding: 0 24px 0 12px;
-    border-bottom: 3px solid #f36;
+    border-bottom: 3px solid $rosa;
     font-size: 16px
 }
 
@@ -25497,7 +25509,7 @@ img.alignright {
 
 .block-hot-categories-opt1 .item li > a:hover,
 .block-hot-categories-opt1 .item li > a:hover:after {
-    color: #f36
+    color: $rosa
 }
 
 .block-hot-categories-opt1 .item li > a:after {
@@ -25506,7 +25518,7 @@ img.alignright {
     position: absolute;
     top: 0;
     left: 10px;
-    color: #ccc
+    color: $cinza-claro
 }
 
 .block-hot-categories-opt1 .item .description {
@@ -25521,7 +25533,7 @@ img.alignright {
 .block-hot-categories-opt1 .item .description .title {
     font-size: 16px;
     font-weight: 700;
-    color: #333;
+    color: $cinza-escuro;
     display: table;
     height: 73px
 }
@@ -25550,7 +25562,7 @@ img.alignright {
 }
 
 .block-hot-categories-opt1 .item .description .btn:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-banner-opt1 .box-img {
@@ -25617,7 +25629,7 @@ img.alignright {
 
 .block-section-top2 .block-nav-categori .ui-categori > li > a {
     line-height: 35px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -25706,7 +25718,7 @@ img.alignright {
 
 .block-deals-of-opt2 .block-title > .title {
     float: left;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     font-size: 16px;
     font-weight: 700;
@@ -25911,15 +25923,15 @@ img.alignright {
     background-position: top 15px right 43px;
     background-repeat: no-repeat;
     background-image: url(../img/icon/actions-floor.png);
-    border-bottom: 2px solid #f36
+    border-bottom: 2px solid $rosa
 }
 
 .floor-products1.block-floor-products-opt2 .block-title {
-    border-bottom-color: #f36
+    border-bottom-color: $rosa
 }
 
 .floor-products1.block-floor-products-opt2 .block-title > .title {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products2.block-floor-products-opt2 .block-title {
@@ -25963,11 +25975,11 @@ img.alignright {
 }
 
 .floor-products7.block-floor-products-opt2 .block-title {
-    border-bottom-color: #f36
+    border-bottom-color: $rosa
 }
 
 .floor-products7.block-floor-products-opt2 .block-title > .title {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products8.block-floor-products-opt2 .block-title {
@@ -26127,15 +26139,15 @@ img.alignright {
 }
 
 .floor-products1.block-floor-products-opt2 .block-title .links li.active > a {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products1.block-floor-products-opt2 .block-title .links li.active > a:before {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products1.block-floor-products-opt2 .block-title .links li.active > a:after {
-    border-color: transparent transparent #f36
+    border-color: transparent transparent $rosa
 }
 
 .floor-products2.block-floor-products-opt2 .block-title .links li.active > a {
@@ -26199,15 +26211,15 @@ img.alignright {
 }
 
 .floor-products7.block-floor-products-opt2 .block-title .links li.active > a {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products7.block-floor-products-opt2 .block-title .links li.active > a:before {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products7.block-floor-products-opt2 .block-title .links li.active > a:after {
-    border-color: transparent transparent #f36
+    border-color: transparent transparent $rosa
 }
 
 .floor-products8.block-floor-products-opt2 .block-title .links li.active > a {
@@ -26279,7 +26291,7 @@ img.alignright {
 .block-floor-products-opt2 .block-title .links a {
     display: block;
     line-height: 48px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: capitalize;
     font-size: 14px;
     padding: 0 12px;
@@ -26287,12 +26299,12 @@ img.alignright {
 }
 
 .block-floor-products-opt2 .block-title .links a:hover {
-    color: #f36;
+    color: $rosa;
     background-color: transparent
 }
 
 .floor-products1.block-floor-products-opt2 .block-title .links a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products2.block-floor-products-opt2 .block-title .links a:hover {
@@ -26316,7 +26328,7 @@ img.alignright {
 }
 
 .floor-products7.block-floor-products-opt2 .block-title .links a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products8.block-floor-products-opt2 .block-title .links a:hover {
@@ -26407,7 +26419,7 @@ img.alignright {
     line-height: 20px;
     display: block;
     cursor: pointer;
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 18px
 }
 
@@ -26505,7 +26517,7 @@ img.alignright {
     border: 1px solid #dfdfdf;
     border-radius: 2px;
     font-size: 24px;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     -webkit-transition: .3s;
     transition: .3s;
@@ -26518,16 +26530,16 @@ img.alignright {
 .block-floor-products-opt2 .col-products .owl-nav .owl-next:hover,
 .block-floor-products-opt2 .col-products .owl-nav .owl-prev:hover {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36;
+    background-color: $rosa;
+    border-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
 
 .floor-products1.block-floor-products-opt2 .col-products .owl-nav .owl-next:hover,
 .floor-products1.block-floor-products-opt2 .col-products .owl-nav .owl-prev:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .floor-products2.block-floor-products-opt2 .col-products .owl-nav .owl-next:hover,
@@ -26562,8 +26574,8 @@ img.alignright {
 
 .floor-products7.block-floor-products-opt2 .col-products .owl-nav .owl-next:hover,
 .floor-products7.block-floor-products-opt2 .col-products .owl-nav .owl-prev:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .floor-products8.block-floor-products-opt2 .col-products .owl-nav .owl-next:hover,
@@ -26665,7 +26677,7 @@ img.alignright {
 
 .block-floor-products-opt2 .product-item .product-item-name a:hover,
 .floor-products1.block-floor-products-opt2 .product-item .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products2.block-floor-products-opt2 .product-item .product-item-name a:hover {
@@ -26689,7 +26701,7 @@ img.alignright {
 }
 
 .floor-products7.block-floor-products-opt2 .product-item .product-item-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products8.block-floor-products-opt2 .product-item .product-item-name a:hover {
@@ -26715,16 +26727,16 @@ img.alignright {
 .block-floor-products-opt2 .product-item .btn-cart:hover,
 .block-floor-products-opt2 .product-item .product-item-actions .btn:hover {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36;
+    background-color: $rosa;
+    border-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
 
 .floor-products1.block-floor-products-opt2 .product-item .btn-cart:hover,
 .floor-products1.block-floor-products-opt2 .product-item .product-item-actions .btn:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .floor-products2.block-floor-products-opt2 .product-item .btn-cart:hover,
@@ -26759,8 +26771,8 @@ img.alignright {
 
 .floor-products7.block-floor-products-opt2 .product-item .btn-cart:hover,
 .floor-products7.block-floor-products-opt2 .product-item .product-item-actions .btn:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .floor-products8.block-floor-products-opt2 .product-item .btn-cart:hover,
@@ -26922,7 +26934,7 @@ img.alignright {
 }
 
 .floor-products1.block-floor-products-opt2 .col-categori ul a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products2.block-floor-products-opt2 .col-categori ul a:hover {
@@ -26946,7 +26958,7 @@ img.alignright {
 }
 
 .floor-products7.block-floor-products-opt2 .col-categori ul a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products8.block-floor-products-opt2 .col-categori ul a:hover {
@@ -27003,7 +27015,7 @@ img.alignright {
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    border-top: 1px solid #ccc
+    border-top: 1px solid $cinza-claro
 }
 
 .block-floor-products-opt2 .col-deal .box-title:before {
@@ -27510,7 +27522,7 @@ img.alignright {
 .block-service-opt2 .items .title {
     display: block;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     padding-top: 8px;
     text-transform: uppercase;
     font-weight: 700
@@ -27585,7 +27597,7 @@ img.alignright {
 
 .block-the-blog .block-title .title {
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 700;
     border-bottom: 3px solid #f78031;
     padding-left: 10px;
@@ -27662,7 +27674,7 @@ img.alignright {
 .block-the-blog .blog-item .blog-name {
     font-weight: 400;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     margin: 0 0 3px;
     text-transform: none;
@@ -27672,7 +27684,7 @@ img.alignright {
 }
 
 .block-the-blog .blog-item .blog-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-the-blog .blog-item .blog-name a:hover {
@@ -27816,7 +27828,7 @@ img.alignright {
 
 .block-section-top3 .block-nav-categori .ui-categori > li > a {
     line-height: 35px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -28025,7 +28037,7 @@ img.alignright {
 
 .block-floor-products-opt3 .block-title .title {
     font-size: 18px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     font-weight: 400;
     padding-left: 10px;
@@ -28098,7 +28110,7 @@ img.alignright {
 .block-floor-products-opt3 .block-title .links a {
     display: block;
     line-height: 28px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     font-size: 14px;
     padding: 0;
@@ -28156,7 +28168,7 @@ img.alignright {
 
 .block-floor-products-opt3 .block-title .links li.active > a,
 .block-floor-products-opt3 .block-title .links li:hover > a {
-    color: #333;
+    color: $cinza-escuro;
     position: relative;
     z-index: 5
 }
@@ -28435,7 +28447,7 @@ img.alignright {
     border: 1px solid #dfdfdf;
     border-radius: 2px;
     font-size: 24px;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     -webkit-transition: .3s;
     transition: .3s;
@@ -28448,8 +28460,8 @@ img.alignright {
 .block-floor-products-opt3 .col-products .owl-nav .owl-next:hover,
 .block-floor-products-opt3 .col-products .owl-nav .owl-prev:hover {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36;
+    background-color: $rosa;
+    border-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -28878,7 +28890,7 @@ img.alignright {
     border: 1px solid #dfdfdf;
     border-radius: 2px;
     font-size: 24px;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     -webkit-transition: .3s;
     transition: .3s;
@@ -29111,7 +29123,7 @@ img.alignright {
     line-height: 33px;
     padding: 0 20px;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 400;
     display: inline-block;
     margin-top: 22px;
@@ -29314,7 +29326,7 @@ img.alignright {
 
 .block-section-top4 .block-nav-categori .ui-categori > li > a {
     line-height: 35px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -29565,7 +29577,7 @@ img.alignright {
 }
 
 .index-opt-4 .block-floor-products-opt3 .block-title {
-    border-bottom-color: #ccc
+    border-bottom-color: $cinza-claro
 }
 
 .index-opt-4 .block-hot-deals-opt3 .block-title > .title > span:last-child {
@@ -30476,13 +30488,13 @@ img.alignright {
     font-size: 36px;
     margin-bottom: 0;
     font-family: Arial;
-    color: #333
+    color: $cinza-escuro
 }
 
 .slide-opt-7 .des {
     display: block;
     font-size: 48px;
-    color: #333;
+    color: $cinza-escuro;
     font-family: Giddyup
 }
 
@@ -30667,7 +30679,7 @@ img.alignright {
 
 .block-section-top7 .block-nav-categori .ui-categori > li > a {
     line-height: 35px;
-    border-top: 1px dotted #ccc;
+    border-top: 1px dotted $cinza-claro;
     padding: 0 20px 0 0
 }
 
@@ -30918,7 +30930,7 @@ img.alignright {
     border: 1px solid #E3E1E2;
     border-radius: 0;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     display: block;
     margin-bottom: 2px
@@ -31004,7 +31016,7 @@ img.alignright {
     margin-bottom: 0;
     padding-right: 50px;
     position: relative;
-    border-bottom: 1px solid #f36
+    border-bottom: 1px solid $rosa
 }
 
 .floor-banner-right.block-floor-products-opt7 .block-title {
@@ -31061,11 +31073,11 @@ img.alignright {
 }
 
 .floor-products7.block-floor-products-opt7 .block-title {
-    border-bottom-color: #f36
+    border-bottom-color: $rosa
 }
 
 .floor-products7.block-floor-products-opt7 .block-title > .title {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products8.block-floor-products-opt7 .block-title {
@@ -31322,15 +31334,15 @@ img.alignright {
 }
 
 .floor-products7.block-floor-products-opt7 .block-title .links li.active > a {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products7.block-floor-products-opt7 .block-title .links li.active > a:before {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products7.block-floor-products-opt7 .block-title .links li.active > a:after {
-    border-color: transparent transparent #f36
+    border-color: transparent transparent $rosa
 }
 
 .floor-products8.block-floor-products-opt7 .block-title .links li.active > a {
@@ -31396,7 +31408,7 @@ img.alignright {
 .block-floor-products-opt7 .block-title .links a {
     display: block;
     line-height: 49px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: capitalize;
     font-size: 13px;
     padding: 0 12px;
@@ -31404,7 +31416,7 @@ img.alignright {
 }
 
 .block-floor-products-opt7 .block-title .links a:hover {
-    color: #f36;
+    color: $rosa;
     background-color: transparent
 }
 
@@ -31433,7 +31445,7 @@ img.alignright {
 }
 
 .floor-products7.block-floor-products-opt7 .block-title .links a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products8.block-floor-products-opt7 .block-title .links a:hover {
@@ -31522,7 +31534,7 @@ img.alignright {
     line-height: 20px;
     display: block;
     cursor: pointer;
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 18px
 }
 
@@ -31633,7 +31645,7 @@ img.alignright {
     border: 1px solid #dfdfdf;
     border-radius: 2px;
     font-size: 24px;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     -webkit-transition: .3s;
     transition: .3s;
@@ -31646,8 +31658,8 @@ img.alignright {
 .block-floor-products-opt7 .col-products .owl-nav .owl-next:hover,
 .block-floor-products-opt7 .col-products .owl-nav .owl-prev:hover {
     color: #fff;
-    background-color: #f36;
-    border-color: #f36;
+    background-color: $rosa;
+    border-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -31860,7 +31872,7 @@ img.alignright {
 
 .floor-products7.block-floor-products-opt7 .col-categori ul a:focus,
 .floor-products7.block-floor-products-opt7 .col-categori ul a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products8.block-floor-products-opt7 .col-categori ul a:focus,
@@ -31963,8 +31975,8 @@ img.alignright {
 
 .floor-products7.block-floor-products-opt7 .col-categori .owl-nav .owl-next:hover,
 .floor-products7.block-floor-products-opt7 .col-categori .owl-nav .owl-prev:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .floor-products8.block-floor-products-opt7 .col-categori .owl-nav .owl-next:hover,
@@ -32029,7 +32041,7 @@ img.alignright {
 }
 
 .block-showcase-opt7 .block-title {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $cinza-claro;
     margin-bottom: 30px
 }
 
@@ -32067,7 +32079,7 @@ img.alignright {
     cursor: pointer;
     background-color: #eee;
     margin-bottom: 2px;
-    border: 1px solid #ccc
+    border: 1px solid $cinza-claro
 }
 
 .block-showcase-opt7 .nav-brand .item-img:hover {
@@ -32147,7 +32159,7 @@ img.alignright {
 
 .block-the-blog-opt7 .block-title .title {
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 700;
     border-bottom: 1px solid #e52e04;
     padding-left: 10px;
@@ -32212,7 +32224,7 @@ img.alignright {
 .block-the-blog-opt7 .blog-item .blog-name {
     font-weight: 400;
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     display: block;
     margin: 0 0 6px;
     text-transform: none;
@@ -32223,7 +32235,7 @@ img.alignright {
 }
 
 .block-the-blog-opt7 .blog-item .blog-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-the-blog-opt7 .blog-item .blog-name a:hover {
@@ -32622,12 +32634,12 @@ img.alignright {
 .block-tab-products-opt8 .nav > li > a:focus,
 .block-tab-products-opt8 .nav > li > a:hover {
     background-color: transparent;
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-tab-products-opt8 .nav > li.active > a {
-    border-bottom: 1px solid #333;
-    color: #333
+    border-bottom: 1px solid $cinza-escuro;
+    color: $cinza-escuro
 }
 
 @media (max-width: 767px) {
@@ -32714,7 +32726,7 @@ img.alignright {
     line-height: 34px;
     border: 1px solid #666;
     background-color: transparent;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     padding: 0 22px;
     text-transform: uppercase
@@ -32843,7 +32855,7 @@ img.alignright {
     display: block;
     text-align: center;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 24px;
     margin-bottom: 45px
 }
@@ -32852,7 +32864,7 @@ img.alignright {
     content: "";
     width: 120px;
     height: 1px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -32863,7 +32875,7 @@ img.alignright {
     content: "";
     width: 30px;
     height: 3px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: -1px;
     left: 50%;
@@ -33016,7 +33028,7 @@ img.alignright {
     display: block;
     text-align: center;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 24px;
     margin-bottom: 45px
 }
@@ -33025,7 +33037,7 @@ img.alignright {
     content: "";
     width: 120px;
     height: 1px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -33036,7 +33048,7 @@ img.alignright {
     content: "";
     width: 30px;
     height: 3px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: -1px;
     left: 50%;
@@ -33057,7 +33069,7 @@ img.alignright {
     display: block;
     text-align: center;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 24px;
     margin-bottom: 45px
 }
@@ -33066,7 +33078,7 @@ img.alignright {
     content: "";
     width: 120px;
     height: 1px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -33077,7 +33089,7 @@ img.alignright {
     content: "";
     width: 30px;
     height: 3px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: -1px;
     left: 50%;
@@ -33107,8 +33119,8 @@ img.alignright {
 .block-collections-opt8 .nav > li > a {
     display: block;
     line-height: 36px;
-    color: #333;
-    background-color: #ccc;
+    color: $cinza-escuro;
+    background-color: $cinza-claro;
     text-transform: uppercase;
     font-weight: 400;
     padding: 0;
@@ -33305,7 +33317,7 @@ img.alignright {
     display: block;
     text-align: center;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 24px;
     margin-bottom: 45px
 }
@@ -33314,7 +33326,7 @@ img.alignright {
     content: "";
     width: 120px;
     height: 1px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -33325,7 +33337,7 @@ img.alignright {
     content: "";
     width: 30px;
     height: 3px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: -1px;
     left: 50%;
@@ -33365,7 +33377,7 @@ img.alignright {
 }
 
 .index-opt-8 .block-the-blog .blog-item .blog-actions .action {
-    color: #333
+    color: $cinza-escuro
 }
 
 .index-opt-8 .block-the-blog .blog-item .blog-actions .action:focus,
@@ -33385,7 +33397,7 @@ img.alignright {
 }
 
 .index-opt-8 .block-brand-op6 .item img {
-    border: 1px solid #ccc
+    border: 1px solid $cinza-claro
 }
 
 .index-opt-8 .block-brand-op6 .item:hover img {
@@ -33666,7 +33678,7 @@ img.alignright {
 }
 
 .heading-opt9 {
-    color: #333;
+    color: $cinza-escuro;
     position: relative;
     margin-bottom: 40px;
     text-align: center;
@@ -33681,7 +33693,7 @@ img.alignright {
     content: "";
     width: 50px;
     height: 2px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -33826,7 +33838,7 @@ img.alignright {
 .block-categori-product-opt9 .count-down-time {
     position: relative;
     float: left;
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-categori-product-opt9 .count-down-time:after,
@@ -33955,7 +33967,7 @@ img.alignright {
 
 .block-categori-product-opt9 .col-product .product-name {
     font-size: 18px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 700;
     display: block;
     line-height: 24px;
@@ -33966,7 +33978,7 @@ img.alignright {
 }
 
 .block-categori-product-opt9 .col-product .product-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-categori-product-opt9 .col-product .product-name:before {
@@ -33976,7 +33988,7 @@ img.alignright {
     bottom: 0;
     width: 50px;
     height: 2px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     left: 50%;
     margin-left: -25px
 }
@@ -34310,7 +34322,7 @@ img.alignright {
 
 .block-categori-product-opt9 .col-categori .btn:hover {
     background-color: #fff;
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-hot-categori-opt9 {
@@ -34387,11 +34399,11 @@ img.alignright {
 .style-opt11.block-hot-categori-opt9 .item {
     font-family: ProximaNova, sans-serif;
     font-weight: 300;
-    color: #ccc
+    color: $cinza-claro
 }
 
 .style-opt11.block-hot-categori-opt9 .item a {
-    color: #ccc
+    color: $cinza-claro
 }
 
 .block-hot-categori-opt9 .item a {
@@ -34421,7 +34433,7 @@ img.alignright {
 }
 
 .style-opt11.block-hot-categori-opt9 .item .name {
-    color: #ccc;
+    color: $cinza-claro;
     margin-bottom: 3px;
     margin-top: 17px;
     line-height: 1
@@ -34517,7 +34529,7 @@ img.alignright {
 }
 
 .block-recent-blog-opt9 .block-title {
-    color: #333;
+    color: $cinza-escuro;
     position: relative;
     margin-bottom: 40px;
     text-align: center;
@@ -34532,7 +34544,7 @@ img.alignright {
     content: "";
     width: 50px;
     height: 2px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -34639,13 +34651,13 @@ img.alignright {
     display: block;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 1;
     font-size: 24px
 }
 
 .block-recent-blog-opt9 .blog-item .blog-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-recent-blog-opt9 .blog-item .blog-name a:focus,
@@ -34708,7 +34720,7 @@ img.alignright {
 
 .block-brand-op9 .item {
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     text-align: center;
     border-radius: 3px;
     overflow: hidden
@@ -34776,7 +34788,7 @@ img.alignright {
 
 .block-service-opt9 .item .title {
     display: block;
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase
@@ -34864,7 +34876,7 @@ img.alignright {
 .block-parallax-opt-9 .btn:hover {
     background-color: #FED690;
     border-color: #FED690;
-    color: #333
+    color: $cinza-escuro
 }
 
 @media (max-width: 767px) {
@@ -34890,7 +34902,7 @@ img.alignright {
 
 .block-lookbook-opt-9 .title {
     display: block;
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 160px;
     font-weight: 100;
     letter-spacing: 20px;
@@ -34957,7 +34969,7 @@ img.alignright {
 }
 
 .block-modern-opt-9 .title > span {
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 140px;
     text-transform: uppercase;
     display: block;
@@ -35048,7 +35060,7 @@ img.alignright {
 
 .block-style-opt-9 .title {
     display: block;
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 160px;
     font-weight: 100;
     letter-spacing: 20px;
@@ -35118,7 +35130,7 @@ img.alignright {
 
 .block-street-opt-9 .title {
     display: block;
-    color: #ccc;
+    color: $cinza-claro;
     font-size: 160px;
     font-weight: 100;
     letter-spacing: 20px;
@@ -35432,7 +35444,7 @@ img.alignright {
     content: "";
     width: 50px;
     height: 2px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -35445,7 +35457,7 @@ img.alignright {
     font-family: ProximaNova-Black, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-recent-blog-opt11 .blog-item {
@@ -35505,7 +35517,7 @@ img.alignright {
     display: block;
     text-transform: none;
     font-weight: 600;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 18px;
     line-height: 20px;
     font-family: ProximaNovaSemibold, sans-serif;
@@ -35513,7 +35525,7 @@ img.alignright {
 }
 
 .block-recent-blog-opt11 .blog-item .blog-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-recent-blog-opt11 .blog-item .blog-name a:focus,
@@ -35580,7 +35592,7 @@ img.alignright {
 
 .block-brand-op11 .item a {
     display: block;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     background-color: #fff;
     border-radius: 3px;
     overflow: hidden
@@ -35760,7 +35772,7 @@ img.alignright {
 
 .slide-opt-12 .view-opt12 {
     background-color: #fff;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 40px;
     padding: 0 26px;
     font-size: 16px;
@@ -35775,7 +35787,7 @@ img.alignright {
 
 .slide-opt-12 .view-opt12:hover {
     text-decoration: none;
-    background-color: #333;
+    background-color: $cinza-escuro;
     color: #fff;
     -webkit-transition: .3s;
     transition: .3s
@@ -35939,7 +35951,7 @@ img.alignright {
     border-top: 1px solid #eee;
     padding: 0 20px 0 0;
     font-family: Arimo, sans-serif;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px
 }
 
@@ -35951,7 +35963,7 @@ img.alignright {
 }
 
 .block-section-top12 .block-nav-categori .ui-categori > li:hover > a {
-    color: #f36
+    color: $rosa
 }
 
 .block-section-top12 .block-nav-categori .ui-categori > li:first-child > a {
@@ -36002,7 +36014,7 @@ img.alignright {
 
 .block-section-top12 .block-nav-categori .view-all-categori .btn-view-all:hover,
 .block-section-top12 .block-nav-categori .view-all-categori a:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff
 }
 
@@ -36113,7 +36125,7 @@ img.alignright {
 
 .block-section-top12 .block-logo-brand .owl-nav .owl-next:hover,
 .block-section-top12 .block-logo-brand .owl-nav .owl-prev:hover {
-    color: #f36;
+    color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -36282,7 +36294,7 @@ img.alignright {
 }
 
 .block-banner-main-opt12 .item .btn:hover {
-    color: #f36;
+    color: $rosa;
     background-color: transparent
 }
 
@@ -36399,7 +36411,7 @@ img.alignright {
 .block-floor-products-opt12 .block-title {
     margin-bottom: 0;
     background-color: #eee;
-    border-bottom: 2px solid #f36
+    border-bottom: 2px solid $rosa
 }
 
 .block-floor-products-opt12 .block-title:after,
@@ -36414,7 +36426,7 @@ img.alignright {
 
 .block-floor-products-opt12 .block-title .title {
     font-size: 18px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     font-weight: 300;
     padding-left: 8px;
@@ -36449,7 +36461,7 @@ img.alignright {
 
 .block-floor-products-opt12 .block-title .box-categori .dropdown-toggle:hover,
 .floor-products1.block-floor-products-opt12 .block-title .box-categori .dropdown-toggle:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products2.block-floor-products-opt12 .block-title .box-categori .dropdown-toggle:hover {
@@ -36461,14 +36473,14 @@ img.alignright {
 }
 
 .block-floor-products-opt12 .block-title .box-categori.open .dropdown-toggle {
-    background-color: #f36;
+    background-color: $rosa;
     -webkit-transition: .2s;
     transition: .2s;
     background-image: url(../img/icon/btn-cat-floor-active.png)
 }
 
 .floor-products1.block-floor-products-opt12 .block-title .box-categori.open .dropdown-toggle {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .floor-products2.block-floor-products-opt12 .block-title .box-categori.open .dropdown-toggle {
@@ -36518,7 +36530,7 @@ img.alignright {
 .block-floor-products-opt12 .block-title .box-categori .dropdown-menu a:focus,
 .block-floor-products-opt12 .block-title .box-categori .dropdown-menu a:hover {
     background-color: #fff;
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-floor-products-opt12 .block-title .box-categori .dropdown-menu a:focus .img-show,
@@ -36583,7 +36595,7 @@ img.alignright {
 .block-floor-products-opt12 .block-title .links a {
     display: block;
     line-height: 50px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: capitalize;
     font-size: 14px;
     padding: 0 20px;
@@ -36592,12 +36604,12 @@ img.alignright {
 }
 
 .block-floor-products-opt12 .block-title .links a:hover {
-    color: #f36;
+    color: $rosa;
     background-color: transparent
 }
 
 .floor-products1.block-floor-products-opt12 .block-title .links a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products2.block-floor-products-opt12 .block-title .links a:hover {
@@ -36621,7 +36633,7 @@ img.alignright {
 
 .block-floor-products-opt12 .block-title .links li.active > a,
 .block-floor-products-opt12 .block-title .links li:hover > a {
-    color: #f36;
+    color: $rosa;
     position: relative;
     z-index: 5
 }
@@ -36633,7 +36645,7 @@ img.alignright {
     height: 0;
     border-style: solid;
     border-width: 0 4px 4px;
-    border-color: transparent transparent #f36;
+    border-color: transparent transparent $rosa;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -36642,12 +36654,12 @@ img.alignright {
 
 .floor-products1.block-floor-products-opt12 .block-title .links li.active > a,
 .floor-products1.block-floor-products-opt12 .block-title .links li:hover > a {
-    color: #f36
+    color: $rosa
 }
 
 .floor-products1.block-floor-products-opt12 .block-title .links li.active > a:after,
 .floor-products1.block-floor-products-opt12 .block-title .links li:hover > a:after {
-    border-color: transparent transparent #f36
+    border-color: transparent transparent $rosa
 }
 
 .floor-products2.block-floor-products-opt12 .block-title .links li.active > a,
@@ -36874,8 +36886,8 @@ img.alignright {
 }
 
 .block-floor-products-opt12 .col-banner .description .btn:hover {
-    background-color: #f36;
-    border-color: #f36
+    background-color: $rosa;
+    border-color: $rosa
 }
 
 .floor-products1.block-floor-products-opt12 .col-banner .description {
@@ -36933,7 +36945,7 @@ img.alignright {
 
 .block-floor-products-opt12 .col-products .owl-nav .owl-next:hover,
 .block-floor-products-opt12 .col-products .owl-nav .owl-prev:hover {
-    color: #f36;
+    color: $rosa;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -36982,7 +36994,7 @@ img.alignright {
     font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     font-family: Oswald, sans-serif;
     line-height: 50px;
     padding-left: 23px
@@ -37011,7 +37023,7 @@ img.alignright {
     width: 42px;
     height: 34px;
     line-height: 34px;
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     display: block;
     font-size: 16px;
@@ -37068,9 +37080,9 @@ img.alignright {
 
 .block-deal-opt12 .owl-nav .owl-next:hover,
 .block-deal-opt12 .owl-nav .owl-prev:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
-    border-color: #f36
+    border-color: $rosa
 }
 
 .block-deal-opt12 .owl-nav .owl-prev {
@@ -37228,7 +37240,7 @@ img.alignright {
     font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     font-family: Oswald, sans-serif;
     line-height: 50px;
     padding-left: 23px
@@ -37307,9 +37319,9 @@ img.alignright {
 
 .block-new-product-opt12 .owl-nav .owl-next:hover,
 .block-new-product-opt12 .owl-nav .owl-prev:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
-    border-color: #f36
+    border-color: $rosa
 }
 
 .block-new-product-opt12 .owl-nav .owl-prev {
@@ -37373,7 +37385,7 @@ img.alignright {
     display: block;
     text-transform: uppercase;
     font-weight: 700;
-    color: #f36;
+    color: $rosa;
     font-size: 30px;
     font-family: Montserrat-Black, sans-serif;
     line-height: 1
@@ -37426,7 +37438,7 @@ img.alignright {
 }
 
 .block-categori-opt12 .item .list-cat li a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-categori-opt12 .item .list-cat li a:before {
@@ -37460,11 +37472,11 @@ img.alignright {
 }
 
 .block-categori-opt12 .item .btn-view:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-categori-opt12 .item .btn-view:hover:before {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-categori-opt12 .item .btn-view:before {
@@ -37495,7 +37507,7 @@ img.alignright {
 }
 
 .style-opt13.block-categori-opt12 .item2 .title .sub-title {
-    color: #f36
+    color: $rosa
 }
 
 .block-categori-opt12 .item3 .title .sub-title {
@@ -37503,7 +37515,7 @@ img.alignright {
 }
 
 .style-opt13.block-categori-opt12 .item3 .title .sub-title {
-    color: #f36
+    color: $rosa
 }
 
 .block-recent-blog-opt12 {
@@ -37527,13 +37539,13 @@ img.alignright {
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: #333
+    background-color: $cinza-escuro
 }
 
 .block-recent-blog-opt12 .block-title .title {
     font-size: 18px;
     display: block;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -37603,7 +37615,7 @@ img.alignright {
 
 .block-recent-blog-opt12 .blog-item .blog-date {
     display: inline-block;
-    background-color: #f36;
+    background-color: $rosa;
     line-height: 30px;
     padding: 0 13px;
     color: #fff;
@@ -37615,18 +37627,18 @@ img.alignright {
     display: block;
     text-transform: uppercase;
     font-weight: 400;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 1;
     font-size: 24px
 }
 
 .block-recent-blog-opt12 .blog-item .blog-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-recent-blog-opt12 .blog-item .blog-name a:focus,
 .block-recent-blog-opt12 .blog-item .blog-name a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-recent-blog-opt12 .blog-item .blog-actions {
@@ -37653,11 +37665,11 @@ img.alignright {
 }
 
 .block-recent-blog-opt12 .blog-item .blog-actions a:hover {
-    color: #f36
+    color: $rosa
 }
 
 .block-recent-blog-opt12 .blog-item .blog-actions a:hover:before {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .block-recent-blog-opt12 .blog-item .blog-actions a:before {
@@ -37694,9 +37706,9 @@ img.alignright {
 
 .block-recent-blog-opt12 .owl-nav .owl-next:hover,
 .block-recent-blog-opt12 .owl-nav .owl-prev:hover {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
-    border-color: #f36
+    border-color: $rosa
 }
 
 .block-recent-blog-opt12 .owl-nav .owl-prev {
@@ -37749,12 +37761,12 @@ img.alignright {
 }
 
 .index-opt-12 .back-to-top {
-    border-color: #f36
+    border-color: $rosa
 }
 
 .index-opt-12 .back-to-top .fa,
 .index-opt-12 .back-to-top:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .slide-opt-13 {
@@ -37838,7 +37850,7 @@ img.alignright {
 }
 
 .slide-opt-13 .view-opt13 {
-    background-color: #f36;
+    background-color: $rosa;
     color: #fff;
     line-height: 40px;
     padding: 0 15px;
@@ -38020,7 +38032,7 @@ img.alignright {
     border-top: 1px solid #eee;
     padding: 0 20px 0 0;
     font-family: Montserrat, sans-serif;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     font-weight: 300
 }
@@ -38085,7 +38097,7 @@ img.alignright {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     font-family: Montserrat, sans-serif;
     line-height: 50px;
     padding-left: 23px
@@ -38115,7 +38127,7 @@ img.alignright {
     width: 42px;
     height: 34px;
     line-height: 34px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     color: #fff;
     display: block;
     font-size: 16px;
@@ -38134,7 +38146,7 @@ img.alignright {
 }
 
 .block-deal-opt13 .product-item .product-item-price {
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 700;
     margin-bottom: 20px
 }
@@ -38156,7 +38168,7 @@ img.alignright {
 }
 
 .block-deal-opt13 .product-item .product-item-actions .btn-cart {
-    background-color: #F36;
+    background-color: $rosa;
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 400
@@ -38180,7 +38192,7 @@ img.alignright {
 }
 
 .block-deal-opt13 .product-item .product-item-label.label-sale {
-    background-color: #f36;
+    background-color: $rosa;
     top: 30px;
     right: 30px
 }
@@ -38210,10 +38222,10 @@ img.alignright {
     width: 25px;
     height: 25px;
     line-height: 25px;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     border-radius: 100%;
     background-color: #fff;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     display: block;
     background-position: center;
@@ -38260,7 +38272,7 @@ img.alignright {
 
 .block-testimonials-opt13 .block-content {
     background-color: #F2E9E0;
-    color: #333;
+    color: $cinza-escuro;
     padding: 0 19px 25px
 }
 
@@ -38349,7 +38361,7 @@ img.alignright {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #333;
+    color: $cinza-escuro;
     font-family: Montserrat, sans-serif;
     line-height: 50px;
     padding-left: 23px
@@ -38420,7 +38432,7 @@ img.alignright {
     width: 25px;
     height: 25px;
     border-radius: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     text-align: center;
     margin: 0 21px;
     color: #b2b2b2;
@@ -38528,7 +38540,7 @@ img.alignright {
 
 .block-service-opt13 .item .title {
     display: block;
-    color: #333;
+    color: $cinza-escuro;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -38589,7 +38601,7 @@ img.alignright {
     height: 2px;
     position: absolute;
     bottom: -2px;
-    background-color: #f36;
+    background-color: $rosa;
     opacity: 0;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
@@ -38614,7 +38626,7 @@ img.alignright {
 
 .block-tab-product-opt13 .nav-links li.active a,
 .block-tab-product-opt13 .nav-links li:hover a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-tab-product-opt13 .nav-links li.active a:before,
@@ -38673,10 +38685,10 @@ img.alignright {
     width: 25px;
     height: 25px;
     line-height: 25px;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     border-radius: 100%;
     background-color: #fff;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     margin: 0 5px;
     display: inline-block;
@@ -38863,7 +38875,7 @@ img.alignright {
 
 .block-hot-categori-opy13 .nav-links li.active a,
 .block-hot-categori-opy13 .nav-links li:hover a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-hot-categori-opy13 .nav-links li.active a:before,
@@ -38907,10 +38919,10 @@ img.alignright {
     width: 25px;
     height: 25px;
     line-height: 25px;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     border-radius: 100%;
     background-color: #fff;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     display: inline-block;
     position: absolute;
@@ -39058,10 +39070,10 @@ img.alignright {
     width: 25px;
     height: 25px;
     line-height: 25px;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     border-radius: 100%;
     background-color: #fff;
-    color: #333;
+    color: $cinza-escuro;
     text-align: center;
     display: inline-block;
     position: absolute;
@@ -39119,7 +39131,7 @@ img.alignright {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     position: absolute;
     left: 50%;
     margin-left: -14px
@@ -39170,13 +39182,13 @@ img.alignright {
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: #333
+    background-color: $cinza-escuro
 }
 
 .block-recent-blog-opt13 .block-title .title {
     font-size: 16px;
     display: block;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -39204,7 +39216,7 @@ img.alignright {
     left: 0;
     width: 0;
     height: 4px;
-    background-color: #f36;
+    background-color: $rosa;
     -webkit-transition: .35s;
     transition: .35s;
     z-index: 10
@@ -39261,7 +39273,7 @@ img.alignright {
 
 .block-recent-blog-opt13 .blog-item .blog-date {
     display: inline-block;
-    background-color: #f36;
+    background-color: $rosa;
     line-height: 30px;
     padding: 0 13px;
     color: #fff;
@@ -39273,13 +39285,13 @@ img.alignright {
     display: block;
     text-transform: uppercase;
     font-weight: 400;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 1;
     font-size: 24px
 }
 
 .block-recent-blog-opt13 .blog-item .blog-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-recent-blog-opt13 .blog-item .blog-name a:focus,
@@ -39371,7 +39383,7 @@ img.alignright {
 
 .index-opt-13 .back-to-top .fa,
 .index-opt-13 .back-to-top:hover {
-    background-color: #f36
+    background-color: $rosa
 }
 
 .slide-opt-14 {
@@ -39762,7 +39774,7 @@ img.alignright {
     .block-tab-product-opt14 .block-title .nav-links .dropdown-menu li a {
         display: block;
         line-height: 32px;
-        color: #333;
+        color: $cinza-escuro;
         text-transform: capitalize;
         position: relative;
         float: left
@@ -39806,7 +39818,7 @@ img.alignright {
 .block-tab-product-opt14 .block-title .nav-links .dropdown-menu li a {
     display: block;
     line-height: 32px;
-    color: #333;
+    color: $cinza-escuro;
     text-transform: capitalize;
     position: relative
 }
@@ -39981,7 +39993,7 @@ img.alignright {
     width: 50px;
     height: 40px;
     line-height: 40px;
-    background-color: #333;
+    background-color: $cinza-escuro;
     color: #fff;
     display: block;
     font-size: 18px;
@@ -39991,7 +40003,7 @@ img.alignright {
 
 .block-deal-opt14 .count-down-time .box-count .text {
     font-size: 12px;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 600
 }
 
@@ -40000,12 +40012,12 @@ img.alignright {
     font-size: 24px;
     font-weight: 700;
     text-transform: capitalize;
-    color: #333;
+    color: $cinza-escuro;
     margin-bottom: 3px
 }
 
 .block-deal-opt14 .product-item .product-item-name a {
-    color: #333
+    color: $cinza-escuro
 }
 
 .block-deal-opt14 .product-item .product-item-name a:hover {
@@ -40037,7 +40049,7 @@ img.alignright {
     width: 44px;
     height: 44px;
     line-height: 44px;
-    border: 1px solid #ccc;
+    border: 1px solid $cinza-claro;
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(204, 204, 204, .5);
@@ -40084,7 +40096,7 @@ img.alignright {
     font-size: 24px;
     display: block;
     text-transform: capitalize;
-    color: #333;
+    color: $cinza-escuro;
     font-weight: 600
 }
 
@@ -40366,7 +40378,7 @@ img.alignright {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
-    color: #333;
+    color: $cinza-escuro;
     line-height: 24px;
     padding-right: 10px
 }
@@ -40501,7 +40513,7 @@ img.alignright {
 
 .block-list-products-opt14 .product-item .product-item-info .product-item-price {
     font-size: 16px;
-    color: #333;
+    color: $cinza-escuro;
     margin-bottom: 30px;
     line-height: 1
 }
@@ -40740,7 +40752,7 @@ img.alignright {
     right: 0;
     width: 40px;
     line-height: 40px;
-    background-color: #F36;
+    background-color: $rosa;
     font-size: 30px;
     text-align: center;
     color: #FFF;
@@ -40751,7 +40763,7 @@ img.alignright {
 .product-info-main .product-add-form .slider-block.botao {
     width: 250px;
     padding: 10px;
-    border: 2px solid #CCC;
+    border: 2px solid $cinza-claro;
     cursor: pointer;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -40759,7 +40771,7 @@ img.alignright {
 
 .product-info-main .product-info-price .form-control {
     width: 250px;
-    border: 2px solid #CCC;
+    border: 2px solid $cinza-claro;
     padding: 6px 18px;
 }
 
@@ -40773,9 +40785,9 @@ img.alignright {
 }
 
 .product-info-main .product-add-form .slider-block.botao:hover {
-    background-color: #F36;
+    background-color: $rosa;
     color: #FFF;
-    border-color: #F36;
+    border-color: $rosa;
 }
 
 .block-tam-cores .close-block {
@@ -40871,7 +40883,7 @@ img.alignright {
 
 .block-chat .header-chat {
     height: 80px;
-    background-color: #F36;
+    background-color: $rosa;
     position: relative;
     width: 100%;
 }
@@ -40933,7 +40945,7 @@ img.alignright {
 
 .block-chat .chat-area .chat-me {
     float: right;
-    background-color: #F36;
+    background-color: $rosa;
     color: #FFF;
 }
 
@@ -40951,7 +40963,7 @@ img.alignright {
 
 .block-chat .write-area {
     height: 60px;
-    background-color: #F36;
+    background-color: $rosa;
     width: 100%;
 }
 
@@ -41013,7 +41025,7 @@ img.alignright {
     cursor: pointer;
     right: 0;
     width: 40px;
-    background-color: #F36;
+    background-color: $rosa;
     color: #FFF;
     text-align: center;
 }
@@ -41037,7 +41049,7 @@ img.alignright {
     width: 100px;
     display: block;
     margin: -5px auto;
-    background-color: #F36;
+    background-color: $rosa;
     border: none;
     color: #FFF;
     padding: 5px;
@@ -41049,7 +41061,7 @@ img.alignright {
 
 .popup-cupom-desconto input[type=submit]:hover {
     background-color: #EEE;
-    color: #F36;
+    color: $rosa;
 }
 
 .block-content.block-categorias {
@@ -41069,7 +41081,7 @@ img.alignright {
 }
 
 .product-info-main .product-add-form .detalhes-produto {
-    border: 2px solid #CCC;
+    border: 2px solid $cinza-claro;
     width: 250px;
     margin: 20px 0;
     text-align: left;
@@ -41090,7 +41102,7 @@ img.alignright {
     border: none;
     padding-top: 10px;
     min-height: initial;
-    border-top: 1px solid #CCC;
+    border-top: 1px solid $cinza-claro;
 }
 
 .product-info-main .product-add-form .detalhes-produto .editar-tam-qnt {
