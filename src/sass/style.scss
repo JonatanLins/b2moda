@@ -31261,10 +31261,10 @@ img.alignright {
     }
 }
 
-.heading-blue {
+.heading-alt-1 {
     @extend .theBoldFont;
     color: white;
-    background-color: $azul-escuro;
+    background-color: $cinza-escuro;
     padding: 0 1em;
     height: 5rem;
 
@@ -31278,7 +31278,7 @@ img.alignright {
 
     a {
         padding: .5em 1.5em;
-        color: $azul-escuro;
+        color: $cinza-escuro;
         font-size: 2rem;
         position: relative;
         display: inline-block;
