@@ -681,7 +681,7 @@
             $(".slider-block.block-content.ativo").removeClass("ativo");
         }
     });
-    $('[data-action="toggle-nav"], .dropdown.switcher').click(function(){
+    $('[data-action="toggle-nav"], .dropdown.switcher').click(function () {
         $(".slider-block.block-content.ativo").removeClass("ativo");
     });
 
@@ -742,64 +742,85 @@
 
 
     // submenu dropdown
-    $(".parent .toggle-submenu").click(function(){
+    $(".parent .toggle-submenu").click(function () {
         $(this).parent().children(".subcategory").toggleClass("active");
     });
 
 
     // lightbox da imagem dos produtos
     $("a.imagem-produto-lightbox").fancybox({
-		'hideOnContentClick': true
-	});
-    
-    
+        'hideOnContentClick': true
+    });
+
+
     // menu dropdown do menu principal do lado direito
-    $(".drop-menu .open-drop-menu").click(function(){
+    $(".drop-menu .open-drop-menu").click(function () {
         var parentMenu = $(this).parent('.drop-menu');
-        if(parentMenu.hasClass('open')){
+        if (parentMenu.hasClass('open')) {
             parentMenu.removeClass('open');
-        }else{
+        } else {
             $('.drop-menu').removeClass('open');
             parentMenu.addClass('open');
         }
     });
-    $(document).click(function(event){
+    $(document).click(function (event) {
         if (!$(event.target).closest('.drop-menu').length) {
             $(".drop-menu.open").removeClass("open");
         }
     });
-    $('[data-action="toggle-nav"], .nav-left .dropdown.switcher').click(function(){
+    $('[data-action="toggle-nav"], .nav-left .dropdown.switcher').click(function () {
         $(".drop-menu.open").removeClass("open");
     });
-    
-    
+
+
     // Abrir divisão expansível
-    $('.abrir-expansivel').click(function(){
+    $('.abrir-expansivel').click(function () {
         $(this).parent().children('.expansivel').toggleClass('open');
     });
-    
-    
+
+
     // Deletar item da lista de produtos ao clicar no botão referente
-    $('[data-action="deletar-item"]').click(function(){
+    $('[data-action="deletar-item"]').click(function () {
         $(this).closest('tr').addClass('hide');
     });
-    
-    
-    
+
+
+
     // Confirmar ação ao clicar em botão
-    $('.confirmar-acao').click(function(event){
+    $('.confirmar-acao').click(function (event) {
         var continuar = confirm($(this).attr('data-confirmar'));
-        if(!continuar){
+        if (!continuar) {
             event.preventDefault();
         }
     });
-    
-    
-    
-    // Trocar nome do grupo na página de grupos
-    $('.manusear-grupos .lista-grupos > li .excluir').click(function(){
+
+
+
+    // Manusear grupos na página de grupos
+    $('.manusear-grupos .adicionar-grupo').click(function () {
+        $(this).children('.fa').toggleClass('fa-plus').toggleClass('fa-check');
+        if ($('#nome-grupo-adicionar').hasClass('ativo')) {
+            if ($('#nome-grupo-adicionar').val() !== '') {
+                $('.manusear-grupos .lista-grupos').prepend(
+                    '<li>' +
+                    '<span class="nome-grupo">' + $('#nome-grupo-adicionar').val() + '</span>' +
+                    '<div class="btn-floating waves-effect waves-light editar"><i class="fa fa-cog" aria-hidden="true"></i></div>' +
+                    '<div class="btn-floating waves-effect waves-light excluir"><i class="fa fa-trash" aria-hidden="true"></i></div>' +
+                    '</li>'
+                );
+            } else {
+                alert('Digite um nome!');
+            }
+        }
+        $('#nome-grupo-adicionar').toggleClass('ativo').val('').slideToggle('slow');
+        $('.manusear-grupos .lista-grupos > li:first-child .excluir').click(function () {
+            $(this).closest('li').remove();
+        });
+    });
+    $('#nome-grupo-adicionar').slideToggle(0);
+    $('.manusear-grupos .lista-grupos > li .excluir').click(function () {
         $(this).closest('li').remove();
     });
-    
-    
+
+
 })(jQuery);

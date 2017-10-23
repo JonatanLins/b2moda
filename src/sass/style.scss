@@ -31275,7 +31275,7 @@ img.alignright {
 
 .paginacao-parceiros {
     white-space: nowrap;
-    
+
     a {
         padding: .5em 1.5em;
         color: $azul-escuro;
@@ -31324,19 +31324,30 @@ img.alignright {
 }
 
 .manusear-grupos {
-    > h2 {
-        display: inline-block;
-        margin: 0 .5em .5em;
-        color: $azul-escuro;
+    hgroup {
+        display: flex;
+
+        h2 {
+            flex: 1;
+            display: inline-block;
+            margin: 0 .5em .5em;
+            color: $azul-escuro;
+        }
+
+        .adicionar-grupo {
+            border: none;
+            background-color: $rosa;
+            color: white;
+            font-size: 2rem;
+            padding: .3em .7em;
+            transform: translateY(-3px);
+        }
     }
 
-    > .adicionar-grupo {
-        border: none;
-        background-color: $rosa;
-        color: white;
+    #nome-grupo-adicionar {
+        margin: 3rem 1.5rem 5rem;
         font-size: 2rem;
-        padding: .3em .7em;
-        transform: translateY(-3px);
+        box-sizing: border-box;
     }
 
     .lista-grupos {
