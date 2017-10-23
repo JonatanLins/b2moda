@@ -31274,6 +31274,8 @@ img.alignright {
 }
 
 .paginacao-parceiros {
+    white-space: nowrap;
+    
     a {
         padding: .5em 1.5em;
         color: $azul-escuro;
@@ -31293,13 +31295,26 @@ img.alignright {
             height: 20px;
         }
 
-        @media (max-width: 480px) {
-            font-size: 1.5rem;
+        @media (max-width: 520px) {
+            font-size: 1.7rem;
 
             &:before {
                 width: 15px;
                 height: 15px;
             }
+        }
+
+        @media (max-width: 440px) {
+            font-size: 1.4rem;
+
+            &:before {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            font-size: 1.2rem;
         }
 
         &:hover {
