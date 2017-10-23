@@ -14,7 +14,7 @@
 // CORES
 $rosa: #F36;
 $azul: #2196F3;
-$azul-jeans: #5095AD;
+$azul-escuro: #006486;
 $cinza: #999;
 $cinza-claro: #CCC;
 $cinza-escuro: #333;
@@ -66,10 +66,10 @@ ul li {
 }
 
 .theBoldFont {
-    font-family: theBoldFont;
+    font-family: theBoldFont, Roboto, sans-serif;
 
     * {
-        font-family: theBoldFont;
+        font-family: inherit;
     }
 }
 
@@ -31258,6 +31258,96 @@ img.alignright {
     .block-floor-products-opt7 .block-title .links li.active > a:after {
         left: 20px;
         margin-left: 0
+    }
+}
+
+.heading-blue {
+    @extend .theBoldFont;
+    color: white;
+    background-color: $azul-escuro;
+    padding: 0 1em;
+    height: 5rem;
+
+    span {
+        line-height: 5rem;
+    }
+}
+
+.paginacao-parceiros {
+    a {
+        padding: .5em 1.5em;
+        color: $azul-escuro;
+        font-size: 2rem;
+        position: relative;
+        display: inline-block;
+        transition: all .2s ease;
+
+        &:before {
+            content: '';
+            transform: translateY(3px);
+            background-color: $rosa;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 20px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.5rem;
+
+            &:before {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.manusear-grupos {
+    > h2 {
+        display: inline-block;
+        margin-right: 1em;
+        color: $azul-escuro;
+    }
+
+    > .adicionar-grupo {
+        border: none;
+        background-color: $rosa;
+        color: white;
+        font-size: 2rem;
+        padding: .3em .7em;
+        transform: translateY(-3px);
+    }
+
+    .lista-grupos {
+        li {
+            display: flex;
+            min-height: 60px;
+            align-items: center;
+            padding: 0 1em;
+
+            .nome-grupo {
+                flex: 1;
+                font-size: 2rem;
+                border: none;
+                color: $cinza-escuro;
+                margin: 0;
+            }
+
+            .btn-floating {
+                float: right;
+                margin-left: 1em;
+            }
+
+            &:hover {
+                background-color: $cinza-claro;
+            }
+        }
     }
 }
 
