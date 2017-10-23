@@ -797,8 +797,8 @@
     
     
     // Trocar nome do grupo na página de grupos
-    $('.manusear-grupos .lista-grupos > li .editar').click(function(){
-        $(this).closest('li').find('.nome-grupo').disabled = false;
+    $('.manusear-grupos .lista-grupos > li .excluir').click(function(){
+        $(this).closest('li').remove();
     });
     
     

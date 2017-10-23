@@ -31303,7 +31303,7 @@ img.alignright {
         }
 
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
 }
@@ -31311,7 +31311,7 @@ img.alignright {
 .manusear-grupos {
     > h2 {
         display: inline-block;
-        margin-right: 1em;
+        margin: 0 .5em .5em;
         color: $azul-escuro;
     }
 
