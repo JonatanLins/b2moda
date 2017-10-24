@@ -116,7 +116,6 @@ $(document).ready(function () {
     $('#criar-cor .btn.salvar').click(function (event) {
         var codigoCor = $('#preview-cor').css('background-color');
         var nomeCor = $('#nome-cor-adicionar').val().replace(/[^\w]/g, '');
-
         if (nomeCor === '') {
             event.stopImmediatePropagation();
             alert('Digite um nome válido!');
@@ -141,6 +140,9 @@ $(document).ready(function () {
     });
     $('#codigo-cor-adicionar').on('keypress change focus blur hover click paste mouseleave mouseenter', function () {
         $('#preview-cor').css('background-color', $(this).val());
+    });
+    $('#lista-cores-produto fieldset').click(function(){
+        $('.preview-cor').css('background-color', $(this).find('.fa-circle').css('color'));
     });
 
 
@@ -202,8 +204,9 @@ $(document).ready(function () {
             $(window).scrollTop(0);
         }
     })
-    $(window).scroll(function () {
+    $(window).scroll(function (event) {
         if ($('.modal input[type=text]:focus').length && $(window).width() < 768) {
+            event.preventDefault();
             $(window).scrollTop(0);
         }
     });
