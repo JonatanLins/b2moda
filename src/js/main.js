@@ -163,7 +163,11 @@
             var $this = $(this),
                 finalDate = $(this).data('countdown');
             $this.countdown(finalDate, function (event) {
-                var fomat = '<div class="box-count box-days"><div class="number">%D</div><div class="text">Dias</div></div><div class="box-count box-hours"><div class="number">%H</div><div class="text">Hrs</div></div><div class="box-count box-min"><div class="number">%M</div><div class="text">Mins</div></div><div class="box-count box-secs"><div class="number">%S</div><div class="text">Segs</div></div>';
+                var fomat =
+                    '<div class="box-count box-days"><div class="number">%D</div><div class="text">Dias</div></div>' +
+                    '<div class="box-count box-hours"><div class="number">%H</div><div class="text">Hrs</div></div>' +
+                    '<div class="box-count box-min"><div class="number">%M</div><div class="text">Mins</div></div>' +
+                    '<div class="box-count box-secs"><div class="number">%S</div><div class="text">Segs</div></div>';
                 $this.html(event.strftime(fomat));
             });
         });
@@ -384,7 +388,10 @@
                 $(this).slideUp();
             });
             $(this).parent().removeClass('open');
-            $(this).addClass('btn-show-cat').removeClass('btn-close-cat').html('All Categories <i class="fa fa-angle-double-right" aria-hidden="true"></i>');
+            $(this)
+                .addClass('btn-show-cat')
+                .removeClass('btn-close-cat')
+                .html('All Categories <i class="fa fa-angle-double-right" aria-hidden="true"></i>');
             return false;
         })
 
@@ -797,30 +804,42 @@
 
 
     // Manusear grupos na página de grupos
-    $('.manusear-grupos .adicionar-grupo').click(function () {
-        $(this).children('.fa').toggleClass('fa-plus').toggleClass('fa-check');
-        if ($('#nome-grupo-adicionar').hasClass('ativo')) {
-            if ($('#nome-grupo-adicionar').val() !== '') {
-                $('.manusear-grupos .lista-grupos').prepend(
-                    '<li>' +
-                    '<span class="nome-grupo">' + $('#nome-grupo-adicionar').val() + '</span>' +
-                    '<div class="btn-floating waves-effect waves-light editar"><i class="fa fa-cog" aria-hidden="true"></i></div>' +
-                    '<div class="btn-floating waves-effect waves-light excluir"><i class="fa fa-trash" aria-hidden="true"></i></div>' +
-                    '</li>'
-                );
-            } else {
-                alert('Digite um nome!');
-            }
-        }
-        $('#nome-grupo-adicionar').toggleClass('ativo').val('').slideToggle('slow');
-        $('.manusear-grupos .lista-grupos > li:first-child .excluir').click(function () {
-            $(this).closest('li').remove();
-        });
-    });
-    $('#nome-grupo-adicionar').slideToggle(0);
-    $('.manusear-grupos .lista-grupos > li .excluir').click(function () {
+    function editarGrupo() {
+        $(this)
+            .addClass('hide')
+            .closest('li')
+            .prepend(
+                '<input type="text" class="novo-nome-grupo" value="' + $(this).closest('li').children('.nome-grupo').text() +
+                '"></input><div onclick="$(this).siblings(\'.nome-grupo\').removeClass(\'hide\').text($(this).prev(\'.novo-nome-grupo\').val())' +
+                '.siblings(\'.editar\').removeClass(\'hide\').parent().children(\'.novo-nome-grupo, .salvar\').remove()"' +
+                'class="btn-floating waves-effect waves-light salvar"><i class="fa fa-check" aria-hidden="true"></i></div>')
+            .children('.nome-grupo')
+            .addClass('hide');
+    }
+
+    function excluirGrupo() {
         $(this).closest('li').remove();
+    }
+    $('.manusear-grupos .adicionar-grupo').click(function () {
+        $('#info-grupo-adicionar').removeClass('hide');
     });
+    $('#info-grupo-adicionar .salvar').click(function () {
+        if ($('#info-grupo-adicionar .nome-grupo').val() !== '') {
+            $('.manusear-grupos .lista-grupos').prepend(
+                '<li>' +
+                '<span class="nome-grupo">' + $('#info-grupo-adicionar .nome-grupo').val() + '</span>' +
+                '<div class="btn-floating waves-effect waves-light editar"><i class="fa fa-cog" aria-hidden="true">' +
+                '</i></div><div class="btn-floating waves-effect waves-light excluir">' +
+                '<i class="fa fa-trash" aria-hidden="true"></i></div>' +
+                '</li>'
+            ).find('li:first-child .editar').click(editarGrupo).next('.excluir').click(excluirGrupo);
+        } else {
+            alert('Digite um nome!');
+        }
+        $('#info-grupo-adicionar').addClass('hide').find('.nome-grupo').val('');
+    });
+    $('.manusear-grupos .lista-grupos > li .editar').on('click', editarGrupo);
+    $('.manusear-grupos .lista-grupos > li .excluir').on('click', excluirGrupo);
 
 
 })(jQuery);

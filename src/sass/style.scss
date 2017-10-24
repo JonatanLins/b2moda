@@ -31266,7 +31266,12 @@ img.alignright {
     color: white;
     background-color: $cinza-escuro;
     padding: 0 1em;
-    height: 5rem;
+    height: 51px;
+
+    @media (max-width: 992px) {
+        transform: translateY(-50px);
+        width: calc(100% - 116px);
+    }
 
     span {
         line-height: 5rem;
@@ -31335,6 +31340,7 @@ img.alignright {
         }
 
         .adicionar-grupo {
+            border-radius: 2px;
             border: none;
             background-color: $rosa;
             color: white;
@@ -31344,10 +31350,24 @@ img.alignright {
         }
     }
 
-    #nome-grupo-adicionar {
+    #info-grupo-adicionar {
+        display: flex;
         margin: 3rem 1.5rem 5rem;
-        font-size: 2rem;
-        box-sizing: border-box;
+
+        input[type=text] {
+            flex: 1 1 auto;
+            font-size: 2rem;
+            margin-right: 1em;
+            box-sizing: border-box;
+        }
+
+        .salvar {
+            background-color: $rosa;
+            color: white;
+            flex: 0 0 auto;
+            width: 40px;
+            line-height: 40px;
+        }
     }
 
     .lista-grupos {
@@ -31367,6 +31387,7 @@ img.alignright {
 
             .btn-floating {
                 float: right;
+                flex: 0 0 auto;
                 margin-left: 1em;
             }
 
