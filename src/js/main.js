@@ -840,6 +840,21 @@
     });
     $('.manusear-grupos .lista-grupos > li .editar').on('click', editarGrupo);
     $('.manusear-grupos .lista-grupos > li .excluir').on('click', excluirGrupo);
+    
+    
+    
+    // Corrigir bug do input de texto dentro de um elemento fixo
+    $('.modal input[type=text], .block-tam-cores input[type=text]').focus(function () {
+        if ($(window).width() <= 480) {
+            $(window).scrollTop(0);
+        }
+    })
+    $(window).scroll(function (event) {
+        if ($('.modal input[type=text]:focus, .block-tam-cores input[type=text]:focus').length && $(window).width() <= 480) {
+            event.preventDefault();
+            $(window).scrollTop(0);
+        }
+    });
 
 
 })(jQuery);

@@ -198,20 +198,6 @@ $(document).ready(function () {
 
 
 
-    // Corrigir bug do input text dentro do modal
-    $('.modal input[type=text]').focus(function () {
-        if ($(window).width() < 768) {
-            $(window).scrollTop(0);
-        }
-    })
-    $(window).scroll(function (event) {
-        if ($('.modal input[type=text]:focus').length && $(window).width() < 768) {
-            event.preventDefault();
-            $(window).scrollTop(0);
-        }
-    });
-
-
     // Alerta depois que enviar imagens
     $('.alerta-envio-imagens-concluido').click(function () {
         if ($('#preview-produto .owl-item').length && $(this).hasClass('alerta-envio-imagens-concluido')) {
