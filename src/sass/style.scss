@@ -426,14 +426,10 @@ fieldset[disabled] .btn-inline:hover {
         background-color: rgba(255, 51, 102, 0.75);
     }
 
-    span {
+    > span {
         font-size: 18px;
         color: #FFF;
         padding: 10px 20px;
-    }
-
-    span .fa {
-        margin-right: 20px;
     }
 }
 

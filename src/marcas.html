@@ -256,41 +256,36 @@
                         <ul class="lista-marcas">
                             <li>
                                 <span>Pepe Jeans</span>
-                                <button class="follow-store-button" onclick="$(this).children('span').toggleClass('hide')">
-                                    <span><i class="fa fa-plus" aria-hidden="true"></i>Seguir</span>
-                                    <span class="hide"><i class="fa fa-check" aria-hidden="true"></i>Seguindo</span>
+                                <button class="follow-store-button">
+                                    <span><i class="fa fa-plus" aria-hidden="true"></i> <span>Seguir</span></span>
                                 </button>
                             </li>
-                            
+
                             <li>
                                 <span>Pepe Jeans</span>
-                                <button class="follow-store-button" onclick="$(this).children('span').toggleClass('hide')">
-                                    <span><i class="fa fa-plus" aria-hidden="true"></i>Seguir</span>
-                                    <span class="hide"><i class="fa fa-check" aria-hidden="true"></i>Seguindo</span>
+                                <button class="follow-store-button">
+                                    <span><i class="fa fa-plus" aria-hidden="true"></i> <span>Seguir</span></span>
                                 </button>
                             </li>
-                            
+
                             <li>
                                 <span>Pepe Jeans</span>
-                                <button class="follow-store-button" onclick="$(this).children('span').toggleClass('hide')">
-                                    <span><i class="fa fa-plus" aria-hidden="true"></i>Seguir</span>
-                                    <span class="hide"><i class="fa fa-check" aria-hidden="true"></i>Seguindo</span>
+                                <button class="follow-store-button">
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> <span>Aguardando</span></span>
                                 </button>
                             </li>
-                            
+
                             <li>
                                 <span>Pepe Jeans</span>
-                                <button class="follow-store-button" onclick="$(this).children('span').toggleClass('hide')">
-                                    <span><i class="fa fa-plus" aria-hidden="true"></i>Seguir</span>
-                                    <span class="hide"><i class="fa fa-check" aria-hidden="true"></i>Seguindo</span>
+                                <button class="follow-store-button">
+                                    <span><i class="fa fa-check" aria-hidden="true"></i> <span>Seguindo</span></span>
                                 </button>
                             </li>
-                            
+
                             <li>
                                 <span>Pepe Jeans</span>
-                                <button class="follow-store-button" onclick="$(this).children('span').toggleClass('hide')">
-                                    <span><i class="fa fa-plus" aria-hidden="true"></i>Seguir</span>
-                                    <span class="hide"><i class="fa fa-check" aria-hidden="true"></i>Seguindo</span>
+                                <button class="follow-store-button">
+                                    <span><i class="fa fa-check" aria-hidden="true"></i> <span>Seguindo</span></span>
                                 </button>
                             </li>
                         </ul>
@@ -415,6 +410,25 @@
 
     <!-- Main -->
     <script type="text/javascript" src="js/main.js"></script>
+
+
+    <!-- Custom -->
+    <script>
+        $('.lista-marcas > li .follow-store-button').click(function() {
+            var icon = $(this).find('> span > .fa');
+            var texto = $(this).find('> span > span');
+
+            if (icon.hasClass('fa-plus')) {
+                icon.removeClass('fa-plus').addClass('fa-clock-o');
+                texto.text('Aguardando');
+                alert('Aguarde a aprovação do lojista!');
+            } else{
+                icon.removeClass('fa-check fa-clock-o').addClass('fa-plus');
+                texto.text('Seguir');
+            }
+        });
+
+    </script>
 
 </body>
 
