@@ -417,24 +417,49 @@ fieldset[disabled] .btn-inline:hover {
 }
 
 .follow-store-button {
-    background-color: $rosa;
+    background-color: $rosa !important;
     padding: 10px 0;
+    float: right;
     border: none;
+
+    &:hover {
+        background-color: rgba(255, 51, 102, 0.75);
+    }
+
+    span {
+        font-size: 18px;
+        color: #FFF;
+        padding: 10px 20px;
+    }
+
+    span .fa {
+        margin-right: 20px;
+    }
 }
 
-.follow-store-button:hover {
-    background-color: rgba(255, 51, 102, 0.75);
+
+
+.pagina-marcas {
+    .lista-marcas {
+        li {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            transition: all .2s ease;
+            padding: 0 1em;
+
+            > span {
+                flex: 1 1 auto;
+                font-size: 2rem;
+            }
+
+            &:hover {
+                background-color: $cinza-claro;
+            }
+        }
+    }
 }
 
-.follow-store-button span {
-    font-size: 18px;
-    color: #FFF;
-    padding: 10px 20px;
-}
-
-.follow-store-button span .fa {
-    margin-right: 20px;
-}
 
 .btn-inline-sub.active,
 .btn-inline-sub:active,
