@@ -141,7 +141,7 @@ $(document).ready(function () {
     $('#codigo-cor-adicionar').on('keypress change focus blur hover click paste mouseleave mouseenter', function () {
         $('#preview-cor').css('background-color', $(this).val());
     });
-    $('#lista-cores-produto fieldset').click(function(){
+    $('#lista-cores-produto fieldset').click(function () {
         $('.preview-cor').css('background-color', $(this).find('.fa-circle').css('color'));
     });
 
@@ -173,26 +173,39 @@ $(document).ready(function () {
     // Trocar input ao selecionar opção de pagamento
     $('.grupos.collapsible .seletor-modo-pagamento .dropdown-content li').click(function () {
         if ($(this).index() > 0) {
-            $(this).closest('.collapsible-body').append(
-                '<label class="preco-produto" data-index="' + ($(this).index() + 1) + '">' +
+            var collapsibleBody = $(this).closest('.collapsible-body');
+            if (collapsibleBody.children('.preco-produto.temporario').length) {
+                collapsibleBody.find('.seletor-modo-pagamento .dropdown-content li:nth-child(' +
+                    collapsibleBody.find('.preco-produto.temporario').attr('data-index') + ')').removeClass('hide');
+                collapsibleBody.find('.preco-produto.temporario').remove();
+            }
+            collapsibleBody.children('.seletor-modo-pagamento + label').after(
+                '<label class="preco-produto temporario" data-index="' + ($(this).index() + 1) + '">' +
                 '<span>' + $(this).text() + ': </span>' +
                 '<span class="simbolo-reais">R$</span>' +
                 '<input type="text" class="dinheiro preco-produto" name="pag-' +
-                $(this).closest('.collapsible-body').attr('data-grupo') + '-' +
+                collapsibleBody.attr('data-grupo') + '-' +
                 $(this).closest('.select-wrapper').find('select option:nth-child(' + ($(this).index() + 1) + ')').val() + '">' +
-                '<button class="btn-floating waves-effect waves-light excluir">' +
-                '<i class="fa fa-trash" aria-hidden="true"></i>' +
+                '<button class="btn-floating waves-effect waves-light acao-preco">' +
+                '<i class="fa fa-check" aria-hidden="true"></i>' +
                 '</button>' +
                 '</label>'
             );
             $(this).addClass('hide').closest('.select-wrapper').find('.select-dropdown').val('Selecione');
         }
-        $('.grupos.collapsible .preco-produto .excluir').click(function () {
-            $(this)
-                .closest('.collapsible-body')
-                .find('.seletor-modo-pagamento .dropdown-content li:nth-child(' + $(this).closest('.preco-produto').attr('data-index') + ')')
-                .removeClass('hide');
-            $(this).closest('.preco-produto').remove();
+        $('.grupos.collapsible .preco-produto .acao-preco').click(function () {
+            if ($(this).siblings('input.dinheiro').val() != '') {
+                $(this).children('.fa-check').removeClass('fa-check').addClass('fa-trash').closest('.preco-produto').removeClass('temporario');
+                $(this).off('click').click(function () {
+                    $(this)
+                        .closest('.collapsible-body')
+                        .find('.seletor-modo-pagamento .dropdown-content li:nth-child(' + $(this).closest('.preco-produto').attr('data-index') + ')')
+                        .removeClass('hide');
+                    $(this).closest('.preco-produto').remove();
+                });
+            } else {
+                alert('Digite um valor!');
+            }
         });
     });
 
