@@ -845,7 +845,7 @@
 
     // Evitar bug do iPhone (input de texto dentro de um elemento fixo)
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-        $('.block-tam-cores .cores .tamanhos li:last-child').css('margin-bottom', '50vh');
+        $('.block-tam-cores .cores .tamanhos li:last-child').css('margin-bottom', '60vh');
         
         $('.modal input[type=text]').focus(function () {
             $(window).scrollTop(0);
