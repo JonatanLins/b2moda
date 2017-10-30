@@ -845,12 +845,13 @@
 
     // Evitar bug do iPhone (input de texto dentro de um elemento fixo)
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+        $('.block-tam-cores .cores .tamanhos li:last-child').css('margin-bottom', '50vh');
+        
         $('.modal input[type=text]').focus(function () {
             $(window).scrollTop(0);
         })
         $('.block-tam-cores input[type=number]').focus(function () {
             $(window).scrollTop(0);
-            $(this).closest('.block-tam-cores').find('.cores .tamanhos li:last-child').css('margin-bottom', '50vh');
         })
         $(window).scroll(function (event) {
             if ($('.modal input[type=text]:focus, .block-tam-cores input[type=number]:focus').length) {
