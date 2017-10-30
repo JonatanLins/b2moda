@@ -850,7 +850,7 @@
         })
         $('.block-tam-cores input[type=number]').focus(function () {
             $(window).scrollTop(0);
-//            &(this).closest('.block-tam-cores').css('height', '60vh');
+            $(this).closest('.block-tam-cores').css('height', '50vh');
         })
         $(window).scroll(function (event) {
             if ($('.modal input[type=text]:focus, .block-tam-cores input[type=number]:focus').length) {
