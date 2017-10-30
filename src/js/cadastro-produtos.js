@@ -41,12 +41,20 @@ $(document).ready(function () {
     $('.navegacao-etapas .anterior').click(function () {
         var etapa = $('.etapas-cadastro .etapa.ativo');
 
+        $('html, body').animate({
+            scrollTop: ($('.cadastro-produtos').offset().top - 60)
+        }, 500);
+
         etapa.removeClass('ativo').prev('.etapa').addClass('ativo');
         $('.guia-procedimento .etapa.ativo').removeClass('ativo');
         $('.guia-procedimento .etapa:nth-child(' + etapa.prev('.etapa').data('passo') + ')').addClass('ativo');
     });
     $('.navegacao-etapas .proximo').click(function () {
         var etapa = $('.etapas-cadastro .etapa.ativo');
+
+        $('html, body').animate({
+            scrollTop: ($('.cadastro-produtos').offset().top - 60)
+        }, 500);
 
         etapa.removeClass('ativo').next('.etapa').addClass('ativo');
         $('.guia-procedimento .etapa.ativo').removeClass('ativo');
