@@ -20,7 +20,7 @@ var distPath     = 'dist/';
 // Compressor de HTML
 gulp.task('html', function() {
     gulp.src(srcPath + '*.html')
-        .pipe(htmlMin({collapseWhitespace: true}))
+        //.pipe(htmlMin({collapseWhitespace: true}))
         .pipe(gulp.dest(distPath))
         .pipe(browserSync.reload({stream: true}));
 });
