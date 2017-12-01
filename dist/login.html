@@ -81,7 +81,7 @@
 
                         <label for="cidade-reg">Cidade</label>
                         <input type="text" id="cidade-reg" name="cidade">
-                        
+
                         <div class="input-field"><br>
                             <select id="estado-reg" name="estado">
                                 <option value="" disabled selected>Escolha um Estado</option>
@@ -174,26 +174,45 @@
 
     <!-- jquery mask -->
     <script type="text/javascript" src="js/jquery.mask.js"></script>
-    
+
     <!-- Materialize JS -->
     <script type="text/javascript" src="js/materialize.js"></script>
-    
-    
-    
+
+
+
     <!-- Custom -->
     <script>
         // Expandir formulário ao clicar em criar cadastro na tela de login
-        $('.criar-cadastro').click(function(event){
-            if($(this).hasClass('ativo')){
+        $('.criar-cadastro').click(function(event) {
+            if ($(this).hasClass('ativo')) {
                 event.preventDefault();
                 $(this).removeClass('ativo').prev('.formulario-expansivel').addClass('open');
             }
         });
-        
+
         // Ativa o seletor do materialize
         $('select').material_select();
-        
-        
+
+
+        // Preenche endereço automaticamente ao digitar CEP.
+        $("#cep-reg").blur(function() {
+            var cep = $(this).val().replace(/\D/g, '');
+            if (cep != "") {
+                var validacep = /^[0-9]{8}$/;
+                if (validacep.test(cep)) {
+                    //Consulta o webservice viacep.com.br/
+                    $.getJSON("//viacep.com.br/ws/" + cep + "/json/?callback=?", function(dados) {
+                        if (!("erro" in dados)) {
+                            $("#endereco-reg").val(dados.logradouro);
+                            $("#bairro-reg").val(dados.bairro);
+                            $("#cidade-reg").val(dados.localidade);
+                            $("#estado-reg").val(dados.uf);
+                        }
+                    });
+                }
+            }
+        });
+
     </script>
 
 </body>
