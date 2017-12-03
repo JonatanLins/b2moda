@@ -253,12 +253,6 @@
 
                 <div class="row">
 
-                    <!-- images categori -->
-                    <div class="category-view">
-                        <a href=""><img src="img/banner/pepe-jeans-01.jpeg" alt="category-images"></a>
-                    </div>
-                    <!-- images categori -->
-
                     <!-- Sidebar -->
                     <div class="col-md-3 col-sidebar">
                         <!-- block filter products -->
@@ -273,34 +267,11 @@
 
                                     <div class="block-content filter-options-content">
                                         <ul class="items">
-                                            <li class="parent">
-                                                <span class="toggle-submenu">Moda Masculina</span>
-                                                <ul class="subcategory">
-                                                    <li><a href="">Calças</a></li>
-                                                    <li><a href="">Camisas</a></li>
-                                                    <li><a href="">Bermudas</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="parent">
-                                                <span class="toggle-submenu">Moda Feminina</span>
-                                                <ul class="subcategory">
-                                                    <li><a href="">Calças</a></li>
-                                                    <li><a href="">Camisas</a></li>
-                                                    <li><a href="">Casacos</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="parent">
-                                                <span class="toggle-submenu">Moda Infantil</span>
-                                                <ul class="subcategory">
-                                                    <li><a href="">Calças</a></li>
-                                                    <li><a href="">Camisas</a></li>
-                                                </ul>
+                                            <li>
+                                                <a href="">Zigurat Jeans</a>
                                             </li>
                                             <li>
-                                                <a href="">Moda Praia</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Acessórios</a>
+                                                <a href="">Pepe Jeans</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -317,10 +288,11 @@
                         <!-- Toolbar -->
                         <div class=" toolbar-products toolbar-top">
 
-                            <h1 class="cate-title">Pepe Jeans</h1>
+                            <h1 class="cate-title">Moda Masculina <i class="fa fa-caret-right" aria-hidden="true"></i> Calças</h1>
 
-                            <button class="follow-store-button">
-                                <span><i class="fa fa-plus" aria-hidden="true"></i> <span>Seguir</span></span>
+                            <button class="follow-store-button" type="button" onclick="$(this).children('span').toggleClass('hide')">
+                                <span><i class="fa fa-plus" aria-hidden="true"></i>Seguir</span>
+                                <span class="hide"><i class="fa fa-check" aria-hidden="true"></i>Seguindo</span>
                             </button>
 
                         </div>
@@ -738,39 +710,40 @@
 
     <script>
         (function($) {
+
             "use strict";
+
             $(document).ready(function() {
+
                 /*  [ Filter by price ]
+
                 - - - - - - - - - - - - - - - - - - - - */
+
                 $('#slider-range').slider({
+
                     range: true,
+
                     min: 0,
+
                     max: 500,
+
                     values: [0, 300],
+
                     slide: function(event, ui) {
+
                         $('#amount-left').text(ui.values[0]);
                         $('#amount-right').text(ui.values[1]);
+
                     }
+
                 });
+
                 $('#amount-left').text($('#slider-range').slider('values', 0));
+
                 $('#amount-right').text($('#slider-range').slider('values', 1));
             });
+
         })(jQuery);
-
-
-        $('.follow-store-button').click(function() {
-            var icon = $(this).find('> span > .fa');
-            var texto = $(this).find('> span > span');
-
-            if (icon.hasClass('fa-plus')) {
-                icon.removeClass('fa-plus').addClass('fa-clock-o');
-                texto.text('Aguardando');
-                alert('Aguarde a aprovação do lojista!');
-            } else {
-                icon.removeClass('fa-check fa-clock-o').addClass('fa-plus');
-                texto.text('Seguir');
-            }
-        });
 
     </script>
 </body>

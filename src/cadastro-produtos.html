@@ -46,7 +46,7 @@
                                     </a>
                                 </li>
                                 <li class="switcher-option">
-                                    <a href="pedidos.html">
+                                    <a href="pedidos-comprador.html">
                                         <span>Pedidos</span>
                                     </a>
                                 </li>
@@ -332,41 +332,108 @@
 
                             <div class="etapa" data-passo="02">
                                 <hgroup>
-                                    <h2>Envie algumas fotos do seu produto!</h2>
+                                    <h2>Formas de Pagamento</h2>
+                                    <h3>Quem você deseja que veja seu produto?</h3>
                                 </hgroup>
 
-                                <div class="file-field input-field">
-                                    <div class="btn">
-                                        <i class="fa fa-upload" aria-hidden="true"></i>
-                                        <input type="file" name="fotos" accept="image/*" id="upload-imagens-produto" multiple>
-                                    </div>
-                                    <div class="file-path-wrapper">
-                                        <input class="file-path validate" type="text" placeholder="Enviar Imagens">
-                                    </div>
-                                </div>
+                                <ul class="grupos collapsible" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header">Público <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        <div class="collapsible-body" data-grupo="publico">
+                                            <h4 class="center">Modo de Pagamento</h4>
 
-                                <div class="owl-carousel preview-images" id="preview-produto" data-nav="true" data-loop="false" data-dots="true" data-margin="10" data-responsive='{
-                                        "0":{"items":1},
-                                        "480":{"items":2},
-                                        "768":{"items":3}
-                                    }'>
+                                            <select class="seletor-modo-pagamento">
+                                                <option value="" disabled selected>Adicionar</option>
 
-                                    <!-- Imagens adicionadas dinamicamente -->
-                                    <!--
-                                    <div class="item">
-                                        <img src="">
-                                        <i class="fa fa-close" aria-hidden="true"></i>
-                                    </div>
+                                                <option value="a-vista">Á Vista</option>
+                                                <option value="30-dias">30 Dias</option>
+                                                <option value="60-dias">60 Dias</option>
+                                                <option value="90-dias">90 Dias</option>
+                                            </select><label></label>
+
+                                            <!-- Inputs são adicionados dinamicamente -->
+<!--
+                                            <label class="preco-produto temporario">
+                                                <span>À Vista: </span>
+                                                <span class="simbolo-reais">R$</span>
+                                                <input type="text" class="dinheiro preco-produto" name="pag-publico-a-vista">
+                                                <button class="btn-floating waves-effect waves-light acao-preco">
+                                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                                </button>
+                                            </label>
 -->
-                                    <!-- Imagens adicionadas dinamicamente -->
+                                            <!-- Inputs são adicionados dinamicamente -->
 
-                                </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">Pernambuco <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        <div class="collapsible-body" data-grupo="pernambuco">
+                                            <h4 class="center">Modo de Pagamento</h4>
+
+                                            <select class="seletor-modo-pagamento">
+                                                <option value="" disabled selected>Adicionar</option>
+
+                                                <option value="a-vista">Á Vista</option>
+                                                <option value="30-dias">30 Dias</option>
+                                                <option value="60-dias">60 Dias</option>
+                                                <option value="90-dias">90 Dias</option>
+                                            </select><label></label>
+
+                                            <!-- Inputs são adicionados dinamicamente -->
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">Bahia <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        <div class="collapsible-body" data-grupo="bahia">
+                                            <h4 class="center">Modo de Pagamento</h4>
+
+                                            <select class="seletor-modo-pagamento">
+                                                <option value="" disabled selected>Adicionar</option>
+
+                                                <option value="a-vista">Á Vista</option>
+                                                <option value="30-dias">30 Dias</option>
+                                                <option value="60-dias">60 Dias</option>
+                                                <option value="90-dias">90 Dias</option>
+                                            </select><label></label>
+
+                                            <!-- Inputs são adicionados dinamicamente -->
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="collapsible-header">Alagoas <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        <div class="collapsible-body" data-grupo="alagoas">
+                                            <h4 class="center">Modo de Pagamento</h4>
+
+                                            <select class="seletor-modo-pagamento">
+                                                <option value="" disabled selected>Adicionar</option>
+
+                                                <option value="a-vista">Á Vista</option>
+                                                <option value="30-dias">30 Dias</option>
+                                                <option value="60-dias">60 Dias</option>
+                                                <option value="90-dias">90 Dias</option>
+                                            </select><label></label>
+
+                                            <!-- Inputs são adicionados dinamicamente -->
+
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <p class="aviso">
+                                    <b>Atenção:</b> O cliente que estiver cadastrado em mais de um grupo, receberá a melhor oferta (menor preço).
+                                </p>
 
                                 <div class="navegacao-etapas">
                                     <div class="btn anterior waves-effect waves-light">
                                         <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
                                     </div>
-                                    <div class="btn proximo waves-effect waves-light alerta-envio-imagens-concluido">
+                                    <div class="btn proximo waves-effect waves-light">
                                         Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -374,7 +441,33 @@
 
 
 
-                            <div class="etapa" data-passo="02">
+                            <div class="etapa" data-passo="03">
+                                <hgroup>
+                                    <h2>Pedido Mínimo, Disponibilidade e Frete</h2>
+                                </hgroup>
+
+                                <label for="titulo">Pedido Mínimo <small>(ex: 20 pcs.)</small></label>
+                                <input type="number" id="titulo" name="titulo" min="0" required>
+
+                                <label for="disponibilidade">Disponibilidade <small>(ex: pronta-entrega)</small></label>
+                                <input type="text" id="disponibilidade" name="disponibilidade" required>
+
+                                <label for="frete">Frete <small>(ex: CIF)</small></label>
+                                <input type="text" id="frete" name="frete" required>
+
+                                <div class="navegacao-etapas">
+                                    <div class="btn anterior waves-effect waves-light">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
+                                    </div>
+                                    <div class="btn proximo waves-effect waves-light">
+                                        Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="etapa" data-passo="04">
                                 <hgroup>
                                     <h2>Escolha uma Cor para o seu Produto</h2>
                                 </hgroup>
@@ -541,7 +634,7 @@
 
 
 
-                            <div class="etapa" data-passo="02">
+                            <div class="etapa" data-passo="04">
                                 <hgroup>
                                     <h2>Defina os Tamanhos Disponíveis Para seu Produto!</h2>
                                 </hgroup>
@@ -597,7 +690,7 @@
 
 
 
-                            <div class="etapa checar-cor-tam" data-passo="02">
+                            <div class="etapa checar-cor-tam" data-passo="04">
                                 <hgroup>
                                     <h2>Cores e Tamanhos Disponíveis Para seu Produto</h2>
                                 </hgroup>
@@ -689,133 +782,40 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
-                            <div class="etapa" data-passo="03">
-                                <hgroup>
-                                    <h2>Formas de Pagamento</h2>
-                                    <h3>Quem você deseja que veja seu produto?</h3>
-                                </hgroup>
-
-                                <ul class="grupos collapsible" data-collapsible="accordion">
-                                    <li>
-                                        <div class="collapsible-header">Público <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                        <div class="collapsible-body" data-grupo="publico">
-                                            <h4 class="center">Modo de Pagamento</h4>
-
-                                            <select class="seletor-modo-pagamento">
-                                                <option value="" disabled selected>Adicionar</option>
-
-                                                <option value="a-vista">Á Vista</option>
-                                                <option value="30-dias">30 Dias</option>
-                                                <option value="60-dias">60 Dias</option>
-                                                <option value="90-dias">90 Dias</option>
-                                            </select><label></label>
-
-                                            <!-- Inputs são adicionados dinamicamente -->
-<!--
-                                            <label class="preco-produto temporario">
-                                                <span>À Vista: </span>
-                                                <span class="simbolo-reais">R$</span>
-                                                <input type="text" class="dinheiro preco-produto" name="pag-publico-a-vista">
-                                                <button class="btn-floating waves-effect waves-light acao-preco">
-                                                    <i class="fa fa-check" aria-hidden="true"></i>
-                                                </button>
-                                            </label>
--->
-                                            <!-- Inputs são adicionados dinamicamente -->
-
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="collapsible-header">Pernambuco <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                        <div class="collapsible-body" data-grupo="pernambuco">
-                                            <h4 class="center">Modo de Pagamento</h4>
-
-                                            <select class="seletor-modo-pagamento">
-                                                <option value="" disabled selected>Adicionar</option>
-
-                                                <option value="a-vista">Á Vista</option>
-                                                <option value="30-dias">30 Dias</option>
-                                                <option value="60-dias">60 Dias</option>
-                                                <option value="90-dias">90 Dias</option>
-                                            </select><label></label>
-
-                                            <!-- Inputs são adicionados dinamicamente -->
-
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="collapsible-header">Bahia <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                        <div class="collapsible-body" data-grupo="bahia">
-                                            <h4 class="center">Modo de Pagamento</h4>
-
-                                            <select class="seletor-modo-pagamento">
-                                                <option value="" disabled selected>Adicionar</option>
-
-                                                <option value="a-vista">Á Vista</option>
-                                                <option value="30-dias">30 Dias</option>
-                                                <option value="60-dias">60 Dias</option>
-                                                <option value="90-dias">90 Dias</option>
-                                            </select><label></label>
-
-                                            <!-- Inputs são adicionados dinamicamente -->
-
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="collapsible-header">Alagoas <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                        <div class="collapsible-body" data-grupo="alagoas">
-                                            <h4 class="center">Modo de Pagamento</h4>
-
-                                            <select class="seletor-modo-pagamento">
-                                                <option value="" disabled selected>Adicionar</option>
-
-                                                <option value="a-vista">Á Vista</option>
-                                                <option value="30-dias">30 Dias</option>
-                                                <option value="60-dias">60 Dias</option>
-                                                <option value="90-dias">90 Dias</option>
-                                            </select><label></label>
-
-                                            <!-- Inputs são adicionados dinamicamente -->
-
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="aviso">
-                                    <b>Atenção:</b> O cliente que estiver cadastrado em mais de um grupo, receberá a melhor oferta (menor preço).
-                                </p>
-
-                                <div class="navegacao-etapas">
-                                    <div class="btn anterior waves-effect waves-light">
-                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Anterior
-                                    </div>
-                                    <div class="btn proximo waves-effect waves-light">
-                                        Próximo <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
+                            
+                            
+                            
                             <div class="etapa" data-passo="04">
                                 <hgroup>
-                                    <h2>Pedido Mínimo, Disponibilidade e Frete</h2>
+                                    <h2>Envie algumas fotos do seu produto!</h2>
                                 </hgroup>
 
-                                <label for="titulo">Pedido Mínimo <small>(ex: 20 pcs.)</small></label>
-                                <input type="number" id="titulo" name="titulo" min="0" required>
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <i class="fa fa-upload" aria-hidden="true"></i>
+                                        <input type="file" name="fotos" accept="image/*" id="upload-imagens-produto" multiple>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Enviar Imagens">
+                                    </div>
+                                </div>
 
-                                <label for="disponibilidade">Disponibilidade <small>(ex: pronta-entrega)</small></label>
-                                <input type="text" id="disponibilidade" name="disponibilidade" required>
+                                <div class="owl-carousel preview-images" id="preview-produto" data-nav="true" data-loop="false" data-dots="true" data-margin="10" data-responsive='{
+                                        "0":{"items":1},
+                                        "480":{"items":2},
+                                        "768":{"items":3}
+                                    }'>
 
-                                <label for="frete">Frete <small>(ex: CIF)</small></label>
-                                <input type="text" id="frete" name="frete" required>
+                                    <!-- Imagens adicionadas dinamicamente -->
+                                    <!--
+                                    <div class="item">
+                                        <img src="">
+                                        <i class="fa fa-close" aria-hidden="true"></i>
+                                    </div>
+-->
+                                    <!-- Imagens adicionadas dinamicamente -->
+
+                                </div>
 
                                 <div class="navegacao-etapas">
                                     <div class="btn anterior waves-effect waves-light">
