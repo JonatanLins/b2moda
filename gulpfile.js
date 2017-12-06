@@ -72,7 +72,7 @@ gulp.task('browserSync', function() {
         },
         port: 8080,
         startPath: '.',
-        plugins: [require('bs-console-qrcode')],
+//        plugins: [require('bs-console-qrcode')],
     }, function (err, bs) {
         ngrok.connect({
             proto: 'http',

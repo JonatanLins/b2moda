@@ -1,0 +1,132 @@
+@import 'style';
+
+
+.detalhes-produto {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .bloco {
+        padding: 5px;
+        box-sizing: border-box;
+
+        &:not(:last-child) {
+            border-right: none;
+        }
+
+        h3 {
+            margin: -32px 0 20px;
+            color: white;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+
+    h4 {
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .bloco-descricao {
+        flex: 1 1 auto;
+    }
+
+    .bloco-cor-tam-qnt {
+        flex: 1 0 300px;
+
+        .cor {
+            position: relative;    min-height: 60px;
+
+            .preview-cor {
+                width: 50px;
+                height: 30px;
+                margin: 0 25px;
+                border-radius: 2px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .nome-cor {
+                transform: none;
+                width: 100px;
+                text-align: center;
+                font-size: 13px;
+                font-weight: bold;
+                position: absolute;
+                top: 33px;
+                left: 0;
+                text-transform: uppercase;
+            }
+
+            .tam-qnt {
+                margin-left: 100px;
+                margin-bottom: 15px;
+
+                > div {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    .bloco-total {
+        flex: 0 0 230px;
+
+        label[for="forma-pagamento"] {
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        select[name="forma-pagamento"] {
+            background-color: transparent;
+            padding: .4em .6em;
+            font-weight: bold;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            border-radius: 3px;
+            width: 60%;
+        }
+
+        .slider-block.botao-chat {
+            text-align: right;
+            clear: both;
+            margin-bottom: 1em;
+            white-space: nowrap;
+
+            .texto {
+                color: #38ba38;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        .preco-val,
+        .preco-leg {
+            margin-top: 0;
+        }
+    }
+    
+    .botao-alterar{
+        float: right;
+        font-weight: bold;
+    }
+
+    @media(max-width: 991px) {
+        .bloco {
+            flex: 1 1 33%;
+        }
+
+        .imagem-produto-lightbox {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .descricao-produto {
+            text-align: center;
+            margin: 0;
+        }
+    }
+}

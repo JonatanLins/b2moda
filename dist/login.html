@@ -52,30 +52,38 @@
                     </label><br><br>
 
                     <label for="cnpj-reg">CNPJ</label>
-                    <input type="text" id="cnpj-reg" name="cnpj">
+                    <input type="text" id="cnpj-reg" name="cnpj" required>
 
                     <section class="formulario-expansivel">
                         <label for="email-reg">E-mail</label>
-                        <input type="email" id="email-reg" name="email">
+                        <input type="email" id="email-reg" name="email" required>
 
                         <label for="senha-reg">Crie sua Senha</label>
-                        <input type="password" id="senha-reg" name="senha">
+                        <input type="password" id="senha-reg" name="senha" required>
 
                         <label for="razao-social-reg">Razão Social</label>
                         <input type="text" id="razao-social-reg" name="razaoSocial">
 
+<!--
                         <label for="nome-fantasia-reg">Nome de Fantasia</label>
                         <input type="text" id="nome-fantasia-reg" name="nomeFantasia">
 
                         <label for="inscricao-estadual-reg">Inscrição Estadual</label>
                         <input type="text" id="inscricao-estadual-reg" name="inscricaoEstadual">
+-->
 
                         <label for="cep-reg">CEP</label>
-                        <input type="text" id="cep-reg" name="cep">
+                        <input type="text" id="cep-reg" name="cep" required>
 
+<!--
                         <label for="endereco-reg">Endereço</label>
                         <input type="text" id="endereco-reg" name="endereco">
+-->
 
+                        <label for="numero-imovel-reg">Nº do Imóvel</label>
+                        <input type="text" id="numero-imovel-reg" name="numero-imovel" required>
+                        
+<!--
                         <label for="bairro-reg">Bairro</label>
                         <input type="text" id="bairro-reg" name="bairro">
 
@@ -114,15 +122,28 @@
                                 <option value="TO">Tocantins</option>
                             </select>
                         </div><br>
+-->
+                        
+                        <div class="input-field"><br>
+                            <select id="categorias-reg" name="categorias" multiple>
+                                <option value="" disabled selected>Escolha suas Categorias</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="infantil">Infantil</option>
+                            </select>
+                        </div><br>
 
-                        <label for="responsavel-reg">Responsável por Contato Comercial</label>
-                        <input type="text" id="responsavel-reg" name="responsavel">
+                        <label for="responsavel-reg">Responsável pelo Dpto. Comercial</label>
+                        <input type="text" id="responsavel-reg" name="responsavel" required>
 
                         <label for="email-responsavel-reg">E-mail para Contato Comercial</label>
                         <input type="email" id="email-responsavel-reg" name="emailResponsavel">
 
-                        <label for="celular-reg">Celular</label>
+                        <label for="celular-reg">Celular para Contato Comercial</label>
                         <input type="tel" id="celular-reg" name="celular">
+                        
+                        <label for="telefone-reg">Telefone da Empresa</label>
+                        <input type="tel" id="telefone-reg" name="telefone">
                     </section>
 
                     <input type="submit" value="Criar Cadastro" class="criar-cadastro ativo">
@@ -195,21 +216,20 @@
 
 
         // Preenche endereço automaticamente ao digitar CEP.
-        $("#cep-reg").blur(function() {
+        $('#cep-reg').blur(function() {
             var cep = $(this).val().replace(/\D/g, '');
-            if (cep != "") {
-                var validacep = /^[0-9]{8}$/;
-                if (validacep.test(cep)) {
-                    //Consulta o webservice viacep.com.br/
-                    $.getJSON("//viacep.com.br/ws/" + cep + "/json/?callback=?", function(dados) {
-                        if (!("erro" in dados)) {
-                            $("#endereco-reg").val(dados.logradouro);
-                            $("#bairro-reg").val(dados.bairro);
-                            $("#cidade-reg").val(dados.localidade);
-                            $("#estado-reg").val(dados.uf);
-                        }
-                    });
-                }
+            if (cep != '' && /^[0-9]{8}$/.test(cep)) {
+                $.getJSON('//viacep.com.br/ws/' + cep + '/json/?callback=?', function(dados) {
+                    if (!('erro' in dados)) {
+                        $('#endereco-reg').val(dados.logradouro);
+                        $('#bairro-reg').val(dados.bairro);
+                        $('#cidade-reg').val(dados.localidade);
+                        $('#estado-reg').val(dados.uf);
+                        $('#estado-reg').parent().find('.dropdown-content li:not(.optgroup)').removeClass('selected').removeClass('active');
+                        $('#estado-reg').parent().find('.dropdown-content li').addClass('selected').addClass('active');
+                        $('#estado-reg').parent().find('input.select-dropdown').val();
+                    }
+                });
             }
         });
 

@@ -81,6 +81,70 @@ ul li {
     }
 }
 
+.blur {
+    transition: all 1s ease;
+    filter: blur(5px);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.aviso-seguir-loja {
+    position: fixed;
+    width: 500px;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: #f36;
+    z-index: 200;
+    opacity: 0;
+    transition: opacity .3s ease;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding-bottom: 50px;
+
+    p {
+        font-size: 2rem;
+        padding: 1.5em;
+        color: white;
+
+        b {
+            text-align: center;
+        }
+
+        small {
+            font-size: .6em;
+        }
+        
+        @media (min-width: 768px){
+            font-size: 2.5rem;
+        }
+    }
+
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        background-color: #f36;
+
+        .seguir-loja,
+        .fechar-aviso-seguir-loja {
+            float: none;
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 18px;
+            border-bottom: 2px solid aliceblue;
+            padding: 5px 0;
+            margin: 5px 30px;
+        }
+    }
+}
+
 .video-responsive {
     height: 0;
     padding-top: 0;
@@ -11102,7 +11166,24 @@ select.input-sm {
     }
 }
 
+.quantidade-minima-compras{
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 0 .5em;
+    font-weight: bold;
+    border-radius: .5em;
+    text-align: right;
+    font-size: 12px;
+}
 
+
+.order-detail-content > h4 {
+    background-color: #064371;
+    color: white;
+    margin: 0;
+    padding: 9px;
+    font-weight: bold;
+}
 
 .detalhes-produto {
     display: -webkit-box;
@@ -11110,7 +11191,6 @@ select.input-sm {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    border-top: 10px solid $rosa;
     clear: both;
     margin-bottom: 50px;
 
@@ -11138,7 +11218,6 @@ select.input-sm {
     }
 
     h4 {
-        text-transform: uppercase;
         margin-left: 10px;
     }
 
@@ -34215,6 +34294,7 @@ img.alignright {
 .style-opt11.block-categori-product-opt9 .col-product .product-price {
     font-size: 18px
 }
+
 
 .block-categori-product-opt9 .col-product .product-actions .btn {
     width: 32px;
