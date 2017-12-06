@@ -121,7 +121,7 @@
                                 <option value="SE">Sergipe</option>
                                 <option value="TO">Tocantins</option>
                             </select>
-                        </div><br>
+                        </div>
 -->
                         
                         <div class="input-field"><br>
@@ -227,7 +227,7 @@
                         $('#estado-reg').val(dados.uf);
                         $('#estado-reg').parent().find('.dropdown-content li:not(.optgroup)').removeClass('selected').removeClass('active');
                         $('#estado-reg').parent().find('.dropdown-content li').addClass('selected').addClass('active');
-                        $('#estado-reg').parent().find('input.select-dropdown').val();
+                        $('#estado-reg').parent().find('input.select-dropdown').val($('#estado-reg option:selected').text());
                     }
                 });
             }
