@@ -90,6 +90,26 @@ ul li {
     overflow: hidden;
 }
 
+input[type=text].select-dropdown {
+    font-size: 1.8rem;
+}
+
+.selecionar-status-produto {
+    width: calc(100% - 95px);
+    display: inline-block;
+}
+
+.botao-salvar-status {
+    width: 70px;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    background-color: #f36;
+    border-radius: 2px;
+    margin-left: 10px;
+    padding: 4px 0;
+}
+
 .aviso-seguir-loja {
     position: fixed;
     width: 500px;
@@ -116,8 +136,8 @@ ul li {
         small {
             font-size: .6em;
         }
-        
-        @media (min-width: 768px){
+
+        @media (min-width: 768px) {
             font-size: 2.5rem;
         }
     }
@@ -483,7 +503,6 @@ fieldset[disabled] .btn-inline:hover {
 .follow-store-button {
     background-color: $rosa !important;
     padding: 10px 0;
-    float: right;
     border: none;
 
     &:hover {
@@ -504,17 +523,37 @@ fieldset[disabled] .btn-inline:hover {
         li {
             height: 60px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            transition: all .2s ease;
             padding: 0 1em;
+            font-size: 2rem;
 
             > a {
-                flex: 1 1 auto;
-                font-size: 2rem;
+                font-weight: bold;
             }
 
             &:hover {
                 background-color: $cinza-claro;
+            }
+
+            @media (max-width: 600px) {
+                font-size: 1.5rem;
+                flex-wrap: wrap;
+                margin-bottom: 1em;
+
+                > span {
+                    order: 3;
+                    flex: 1 0 100%;
+                }
+
+                .follow-store-button {
+                    padding: 6px 0;
+
+                    > span {
+                        padding: 6px 10px;
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }
@@ -10973,6 +11012,9 @@ select.input-sm {
         color: #555;
         max-width: calc(100% - 70px);
         text-transform: capitalize;
+        width: 270px;
+        box-sizing: border-box;
+        margin: 0;
 
         &:focus {
             border-bottom: 1px solid $rosa;
@@ -11166,7 +11208,7 @@ select.input-sm {
     }
 }
 
-.quantidade-minima-compras{
+.quantidade-minima-compras {
     color: white;
     background-color: rgba(0, 0, 0, .6);
     padding: 0 .5em;
@@ -11191,6 +11233,7 @@ select.input-sm {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    border-top: 10px solid $rosa;
     clear: both;
     margin-bottom: 50px;
 

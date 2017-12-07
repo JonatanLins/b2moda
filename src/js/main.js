@@ -716,28 +716,35 @@
 
     // soma dos itens comprados
     $(".block-tam-cores .tamanhos input").change(function () {
-        var totalItens = 0;
         $(this).val(parseInt($(this).val()));
         if ($(this).val() < 0) {
             $(this).val(0);
         }
+        if ($(this).val() != 0) {
+            $('.card-cor-produto .tam-qnt > div:contains(\'' + $(this).prev('span').text() + '\') .qnt')
+                .removeClass('hide')
+                .text('[' + $(this).val() + ' unid.]');
+        } else {
+            $('.card-cor-produto .tam-qnt > div:contains(\'' + $(this).prev('span').text() + '\')').addClass('hide');
+        }
+
+        // Analisa o total de itens selecionados
+        var totalItens = 0;
         $(".block-tam-cores .tamanhos input").each(function (index, element) {
-            if ($(element).val()) {
-                totalItens += parseInt($(element).val());
-            }
+            totalItens += parseInt($(element).val());
         });
-        var strTamanho = $(this).parent().children("span").text();
-        var quantidadePecasTam = 0;
-        $(".block-tam-cores .tamanhos li span:contains('" + strTamanho + "')").each(function () {
-            quantidadePecasTam += parseInt($(this).parent().children("input").val());
-        });
-        $(".bloco-tam-qnt .tam:contains('" + strTamanho + "')").parent().children(".qnt").text("[" + quantidadePecasTam + " unid.]");
+        $('.block-tam-cores .qnt-total > span').text(totalItens);
         if (totalItens < 30) {
             $(".alerta-quantidades .qnt-min").removeClass("hide");
         } else {
             $(".alerta-quantidades .qnt-min").addClass("hide");
-        }
-        $(".alerta-quantidades .qnt-total span").text(totalItens);
+        } //
+
+        // Verifica a quantidade de itens da mesma cor
+        totalItens = 0;
+        $(this).closest('.tamanhos').find('input').each(function (index, element) {
+            totalItens += $(element).val();
+        });
     });
 
 
@@ -846,7 +853,7 @@
     // Evitar bug do iPhone (input de texto dentro de um elemento fixo)
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
         $('.block-tam-cores .cores .tamanhos li:last-child').css('margin-bottom', '60vh');
-        
+
         $('.modal input[type=text]').focus(function () {
             $(window).scrollTop(0);
         })

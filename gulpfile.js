@@ -73,12 +73,12 @@ gulp.task('browserSync', function() {
         port: 8080,
         startPath: '.',
 //        plugins: [require('bs-console-qrcode')],
-    }, function (err, bs) {
-        ngrok.connect({
-            proto: 'http',
-            addr: 8080,
-            authtoken: '6sSZEU46iXCTdzwDVb9Et_6bDkknSEoqdEPAhmM4X39'
-        }, function (err, url) {});
+//    }, function (err, bs) {
+//        ngrok.connect({
+//            proto: 'http',
+//            addr: 8080,
+//            authtoken: '6sSZEU46iXCTdzwDVb9Et_6bDkknSEoqdEPAhmM4X39'
+//        }, function (err, url) {});
     });
 });
 
