@@ -716,16 +716,17 @@
 
     // soma dos itens comprados
     $(".block-tam-cores .tamanhos input").change(function () {
-        $(this).val(parseInt($(this).val()));
-        if ($(this).val() < 0) {
+        var indexCor = $(this).closest('.cores > .ativo').index();
+        if (parseInt($(this).val()) < 0) {
             $(this).val(0);
         }
         if ($(this).val() != 0) {
-            $('.card-cor-produto .tam-qnt > div:contains(\'' + $(this).prev('span').text() + '\') .qnt')
+            $('.card-cor-' + indexCor + ' .tam-qnt > div:contains(\'' + $(this).prev('span').text() + '\')')
                 .removeClass('hide')
+                .find('.qnt')
                 .text('[' + $(this).val() + ' unid.]');
         } else {
-            $('.card-cor-produto .tam-qnt > div:contains(\'' + $(this).prev('span').text() + '\')').addClass('hide');
+            $('.card-cor-' + indexCor + ' .tam-qnt > div:contains(\'' + $(this).prev('span').text() + '\')').addClass('hide');
         }
 
         // Analisa o total de itens selecionados
@@ -743,8 +744,32 @@
         // Verifica a quantidade de itens da mesma cor
         totalItens = 0;
         $(this).closest('.tamanhos').find('input').each(function (index, element) {
-            totalItens += $(element).val();
+            totalItens += parseInt($(element).val());
         });
+        if(totalItens != 0){
+            $('.card-cor-' + indexCor + ' .qnt-total > span').text(totalItens);
+            $('.card-cor-' + indexCor).removeClass('hide');
+        } else{
+            $('.card-cor-' + indexCor).addClass('hide');
+        }
+    });
+    
+    // Excluir cor do item
+    $('.block-tam-cores .excluir-cor').click(function(){
+        $(this).closest('li').find('.tamanhos input').val(0);
+        $('.card-cor-' + $(this).closest('.cores > li').index()).addClass('hide').find('.tam-qnt > div').addClass('hide'); 
+        
+        // Analisa o total de itens selecionados
+        var totalItens = 0;
+        $(".block-tam-cores .tamanhos input").each(function (index, element) {
+            totalItens += parseInt($(element).val());
+        });
+        $('.block-tam-cores .qnt-total > span').text(totalItens);
+        if (totalItens < 30) {
+            $(".alerta-quantidades .qnt-min").removeClass("hide");
+        } else {
+            $(".alerta-quantidades .qnt-min").addClass("hide");
+        } //
     });
 
 

@@ -41133,22 +41133,44 @@ img.alignright {
     color: red;
 }
 
-.block-tam-cores .cor div {
+.block-tam-cores .cor div:first-child {
     width: 50px;
     height: 50px;
-    margin: 10px 20px;
+    margin-left: 20px;
     border-radius: 50%;
     font-size: 23px;
     border: 3px solid #FFF;
     cursor: pointer;
+    display: inline-block;
+}
+
+.block-tam-cores .cor div:nth-child(2) {
+    background-color: #AAA;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    top: -16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.block-tam-cores .cor {
+    white-space: nowrap;
 }
 
 .block-tam-cores .ativo .cor {
     background-color: #AAA;
     width: 47px;
+    margin-bottom: 8px;
+    height: 50px;
 }
 
-.block-tam-cores .ativo .cor div {
+.block-tam-cores .ativo .cor div:first-child {
     border-color: #AAA;
 }
 
@@ -41160,7 +41182,7 @@ img.alignright {
 .block-tam-cores .cores .tamanhos {
     display: none;
     position: absolute;
-    margin-left: 90px;
+    margin-left: 130px;
     padding-left: 20px;
     top: 10px;
     border-left: 3px solid #DDD;
