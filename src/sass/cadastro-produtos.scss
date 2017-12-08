@@ -288,15 +288,31 @@
                 }
             }
 
+            .editar-cor,
             .excluir-cor {
-                display: block;
-                margin: 20px auto;
+                display: inline-block;
+                margin: 20px 5px 0 0;
 
                 input[type=checkbox] {
                     display: none;
                 }
             }
         }
+    }
+    
+    .cores-tamanhos-final .info-atual{
+        @extend .z-depth-4;
+        
+        .editar-cor,
+        .excluir-cor{
+            display: none;
+        }
+    }
+    
+    .adicionar-cor{
+        width: 230px;
+        margin: 0 auto;
+        display: block;
     }
 
     span.cor-final {

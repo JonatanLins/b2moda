@@ -63,6 +63,67 @@ $(document).ready(function () {
 
 
 
+    // Editar cor no final do formulário
+    $('.cores-tamanhos-final .editar-cor').click(function () {
+        if ($('#lista-cores-produto input[type=radio]:checked').length && $('#lista-tamanhos-produto input[type=checkbox]:checked').length) {
+            $('.cores-tamanhos-final .info-atual').removeClass('info-atual');
+            $(this).closest('.cores-tamanhos-final > li').addClass('info-atual');
+            $('#lista-cores-produto input[type=radio]:checked').prop('checked', false);
+            $('#produto-cor-' + $(this).closest('.info-atual').find('.nome-cor').text()).prop('checked', true);
+            $('#lista-tamanhos-produto input[type=checkbox]:checked').prop('checked', false);
+            $(this).closest('.info-atual').find('.tam-qnt > li').each(function(){
+                $('#produto-tam-' + $(this).text()).prop('checked', true);
+            });
+            $('.etapas-cadastro .etapa.ativo').removeClass('ativo');
+            $('.etapa-escolher-cor').addClass('ativo');
+        } else {
+            alert('Complete o cadastro da cor atual antes de modificar outra!');
+        }
+    });
+
+
+
+    // Adicionar cor no final do formulário
+    $('.checar-cor-tam .adicionar-cor').click(function () {
+        if ($('#lista-cores-produto input[type=radio]:checked').length && $('#lista-tamanhos-produto input[type=checkbox]:checked').length) {
+            $('.cores-tamanhos-final .info-atual').removeClass('info-atual');
+            $('.cores-tamanhos-final').prepend(
+                '<li class="info-atual">' +
+                '<div class="bloco-cor">' +
+                '<h3>Cor</h3>' +
+                '<div class="cor"></div>' +
+                '<div class="nome-cor">Nenhuma Cor Selecionada</div>' +
+                '</div>' +
+                '<div class="bloco-tamanho">' +
+                '<h3>Tamanhos</h3>' +
+                '<ul class="tam-qnt">' +
+                '<li>Nenhum Tamanho Selecionado</li>' +
+                '</ul>' +
+                '</div>' +
+                '<label class="btn-floating waves-effect waves-light editar-cor">' +
+                '<i class="fa fa-cog" aria-hidden="true"></i>' +
+                '</label>' +
+                '<label class="btn-floating waves-effect waves-light excluir-cor">' +
+                '<i class="fa fa-trash" aria-hidden="true"></i>' +
+                '<input type="checkbox" name="excluir-cor-01">' +
+                '</label>' +
+                '</li>');
+            $('#lista-cores-produto input[type=radio]:checked').prop('checked', false);
+            $('#lista-tamanhos-produto input[type=checkbox]:checked').prop('checked', false);
+            $('html, body').animate({
+                scrollTop: ($('.cadastro-produtos').offset().top - 60)
+            }, 500);
+            $('.etapas-cadastro .etapa.ativo').removeClass('ativo');
+            $('.etapa-escolher-cor').addClass('ativo');
+            $('.guia-procedimento .etapa.ativo').removeClass('ativo');
+            $('.guia-procedimento .etapa:nth-child(' + $('.etapas-cadastro .etapa.ativo').data('passo') + ')').addClass('ativo');
+        } else {
+            alert('Complete o cadastro da cor atual antes de criar uma nova!');
+        }
+    });
+
+
+
     // Adiconar Tamanho com mini formulário
     $('.mini-form-tamanho .salvar-cor').click(function () {
         var tamanho = $(this).closest('.mini-form-tamanho').find('#adicionar-tamanho').val().replace(/[^\w]/g, '').toUpperCase();
