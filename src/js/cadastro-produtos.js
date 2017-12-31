@@ -207,7 +207,7 @@ $(document).ready(function() {
     $('#codigo-cor-adicionar').val($(this).css('background-color'));
     $('#preview-cor').css('background-color', $(this).css('background-color'));
   });
-  $('#codigo-cor-adicionar').on('keypress change focus blur hover click paste mouseleave mouseenter', function() {
+  $('#codigo-cor-adicionar').on('input propertychange', function() {
     $('#preview-cor').css('background-color', $(this).val());
   });
   $('#lista-cores-produto fieldset').click(function() {
